@@ -9,7 +9,7 @@
     <span class="badge {{ index site.Params.kindClass .kind }}">{{ index site.Params.kindLabel .kind }}</span>
     {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
   </div>
-  <h2 class="place-name"><a href="{{ printf "/places/%s/" .slug | relURL }}">{{ .name }}</a></h2>
+  <h2 class="place-name"><a href="{{ printf "places/%s/" .slug | relURL }}">{{ .name }}</a></h2>
   <p class="area">{{ .area.prefecture }} / {{ .area.label }}</p>
   {{ if and (eq .kind "event") .period }}
     <p class="period">開催期間: {{ .period.start }} 〜 {{ .period.end }}{{ if $ended }}（終了）{{ end }}</p>

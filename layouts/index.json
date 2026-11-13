@@ -10,7 +10,7 @@
       "summary" .summary
       "instagram_url" .source.post_url
       "maps_url" .maps_url
-      "url" (printf "/places/%s/" .slug | absURL)
+      "url" (printf "places/%s/" .slug | absURL)
       "added_at" .added_at
   ) }}
 {{- end }}
