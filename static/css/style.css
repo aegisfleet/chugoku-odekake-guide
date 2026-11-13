@@ -49,3 +49,6 @@ a { color: #1565c0; }
 .related-list li { padding: 8px 0; border-bottom: 1px dashed #e5ded2; }
 .related-list li:last-child { border-bottom: none; }
 .related-meta { display: block; font-size: 12px; color: #888; }
+
+/* Instagram埋め込み */
+.embed-section .instagram-media { margin: 0 auto !important; max-width: 540px; width: 100%; }

@@ -6,6 +6,16 @@
 <main class="detail">
   {{ partial "place-card.html" .Params }}
 
+  {{ if eq .Params.source.platform "instagram" }}
+  <section class="detail-section embed-section">
+    <h3>出典投稿</h3>
+    <blockquote class="instagram-media" data-instgrm-permalink="{{ .Params.source.post_url }}" data-instgrm-version="14">
+      <a href="{{ .Params.source.post_url }}" rel="noopener" target="_blank">Instagramで投稿を見る（{{ .Params.source.author }}）</a>
+    </blockquote>
+    <p class="note">埋め込みが表示されない場合は、上のリンクから元投稿を開いてください。</p>
+  </section>
+  {{ end }}
+
   {{ with .Params.official }}
   <section class="detail-section">
     <h3>公式情報</h3>
@@ -49,6 +59,7 @@
   </section>
   <p><a href="{{ site.Home.RelPermalink }}">← 一覧へ戻る</a></p>
 </main>
+{{ if eq .Params.source.platform "instagram" }}<script async src="https://www.instagram.com/embed.js"></script>{{ end }}
 {{ partial "footer.html" . }}
 </body>
 </html>
