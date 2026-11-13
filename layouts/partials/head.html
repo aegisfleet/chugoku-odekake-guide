@@ -1,5 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PGH23RM8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
 {{ $desc := .Params.summary | default site.Params.description }}
 {{ $ogTitle := site.Title }}{{ if not .IsHome }}{{ $ogTitle = printf "%s | %s" .Title site.Title }}{{ end }}
 <title>{{ $ogTitle }}</title>
