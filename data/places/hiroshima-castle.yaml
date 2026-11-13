@@ -12,3 +12,31 @@ maps_url: "https://www.google.com/maps/search/?api=1&query=広島城"
 featured: false
 status: active
 added_at: 2026-11-11
+
+official:
+  instagram: "@hiroshima_castle"
+  instagram_url: "https://www.instagram.com/hiroshima_castle/"
+  website: "https://hiroshimacastle.jp/"
+  website_label: 公式サイト
+
+highlights: [ライトアップされた天守とお堀の水鏡, お堀越しに見る五層の天守, 桜の季節の天守, 二の丸・三の丸の歴史スポット]
+
+related_posts:
+  captured_at: 2026-11-13
+  found_count: 58
+  items:
+    - { post_url: "https://www.instagram.com/reel/DeJaZGmAD-o/", author: "@visitjapanjp", posted_at: 2026-10-06, likes: 1401, note: "出典投稿。夕景の中、お堀に映る五層の天守と石垣、城内を巡る映像" }
+    - { post_url: "https://www.instagram.com/p/DQ0cXWZkzZn/", author: "@kengo_miyamoto", posted_at: 2025-11-09, likes: 890, note: "夜にライトアップされた天守がお堀の水面に映る一枚" }
+    - { post_url: "https://www.instagram.com/p/DSKFjsQkoba/", author: "@hiroshima_city_official", posted_at: 2025-12-12, likes: 790, note: "広島市公式。夜の天守ライトアップとお堀の反射、紅葉まじりの木々" }
+    - { post_url: "https://www.instagram.com/p/DWGbocwEu9Q/", author: "@hiroshima_city_official", posted_at: 2026-03-20, likes: 760, note: "広島市公式。長時間露光で撮った夜の天守と水面に映る姿" }
+    - { post_url: "https://www.instagram.com/p/DJljeSNx4zR/", author: "@kengo_miyamoto", posted_at: 2025-05-13, likes: 620, note: "上空から見たお堀と緑に包まれた城域、市街地までのパノラマ" }
+    - { post_url: "https://www.instagram.com/p/DR1YQJNE2Ch/", author: "@hiroshima_castle", posted_at: 2025-12-03, likes: 370, note: "公式。天守台石垣の発掘調査・現地説明会を知らせる投稿" }
+    - { post_url: "https://www.instagram.com/p/DfHNgo1j5-6/", author: "@hiroshima_city_official", posted_at: 2026-10-30, likes: 360, note: "広島市公式。昼間、お堀の向こうに立つ天守を緑の枝越しに望む景色" }
+    - { post_url: "https://www.instagram.com/p/DWKEm33kweW/", author: "@castle.collection", posted_at: 2026-03-21, likes: 330, note: "見上げる天守の外観と三代目天守の開城記念プレート" }
+    - { post_url: "https://www.instagram.com/p/Da7hd7QRJAD/", author: "@kurochandesuwawa", posted_at: 2026-07-18, likes: 230, note: "虹色にライトアップされた夜の天守を背にした記念写真" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-13
+  note: "公式プロフィールの所在地（中区基町21）が登録情報と一致。復元天守は耐震強度不足のため2026年3月に閉館した旨が複数投稿で言及されており、天守内部の見学可否は要最新確認"

@@ -12,3 +12,31 @@ maps_url: "https://www.google.com/maps/search/?api=1&query=らぁ麺+Penguin+広
 featured: false
 status: active
 added_at: 2026-11-12
+
+official:
+  instagram: "@hiroshima_penguin"
+  instagram_url: "https://www.instagram.com/hiroshima_penguin/"
+  website: "https://youtube.com/@penguin_sessions"
+  website_label: 公式YouTube
+
+highlights: [特製地鶏醤油の全部のせ, 特製魚介塩らぁ麺, 自家製の太麺とワンタン, つけ麺や貝・トマトなど頻繁に変わる限定メニュー]
+
+related_posts:
+  captured_at: 2026-11-13
+  found_count: 47
+  items:
+    - { post_url: "https://www.instagram.com/reel/DVIoXj1E7VP/", author: "@akokichi_mii_18", posted_at: 2026-02-24, likes: 2300, note: "特製地鶏醤油と特製魚介塩の全部のせ、行列と青い外観も紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DCq94ZHyJ73/", author: "@nao_hiroshima_", posted_at: 2024-11-22, likes: 660, note: "特製醤油らぁ麺の全部のせを多枚の写真で紹介" }
+    - { post_url: "https://www.instagram.com/p/DcLRcthE0fU/", author: "@superbboynaoki", posted_at: 2026-08-18, likes: 580, note: "澄んだ塩スープにワンタンとチャーシューの塩らぁ麺" }
+    - { post_url: "https://www.instagram.com/p/DJaUOLQT01f/", author: "@hiroshima.menkatu", posted_at: 2025-05-08, likes: 520, note: "貝の旨みが効いた清湯らぁ麺と大きなチャーシュー" }
+    - { post_url: "https://www.instagram.com/p/DCto73ayQAE/", author: "@nao_hiroshima_", posted_at: 2024-11-23, likes: 500, note: "限定のトマトとカツレツのミラノ風らぁ麺" }
+    - { post_url: "https://www.instagram.com/p/Dff2k8Vk5aB/", author: "@menjaa__taicho", posted_at: 2026-11-08, likes: 460, note: "貝のイベントで提供された立冬パエリアらぁ麺" }
+    - { post_url: "https://www.instagram.com/p/DIV1f_cyzQe/", author: "@nao_hiroshima_", posted_at: 2025-04-12, likes: 400, note: "限定のペンギンつけ麺（太麺に味玉とライム）" }
+    - { post_url: "https://www.instagram.com/p/DTPj62wESvc/", author: "@sunny856", posted_at: 2026-01-08, likes: 380, note: "味玉とチャーシューをのせた塩らぁ麺" }
+    - { post_url: "https://www.instagram.com/p/DJwCO3AhKG4/", author: "@nao_hiroshima_", posted_at: 2025-05-17, likes: 380, note: "限定の貝と焼き鶏の清湯らぁ麺" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-13
+  note: "公式プロフィールの住所（中区大手町五丁目16-1）が登録情報と一致"

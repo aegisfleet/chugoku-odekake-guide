@@ -12,3 +12,31 @@ maps_url: "https://www.google.com/maps/search/?api=1&query=湯来ロッジ"
 featured: false
 status: active
 added_at: 2026-11-09
+
+official:
+  instagram: "@yuki_lodge0621"
+  instagram_url: "https://www.instagram.com/yuki_lodge0621/"
+  website: "https://www.yuki-lodge.jp/"
+  website_label: 公式サイト
+
+highlights: [源泉掛け流しのラジウム温泉（日帰り入浴可）, 森林を一望する露天風呂, 水内川の渓谷と山あいの自然に囲まれた立地, 旬の食材や山の幸を使った食事]
+
+related_posts:
+  captured_at: 2026-11-13
+  found_count: 47
+  items:
+    - { post_url: "https://www.instagram.com/p/DUUSPy7k4r0/", author: "@yuki_lodge0621", posted_at: 2026-02-04, likes: 150, note: "公式: 湯気の立つ露天風呂と冬の森の眺め" }
+    - { post_url: "https://www.instagram.com/reel/DZ9j5j_z2AB/", author: "@yuko7mint", posted_at: 2026-06-24, likes: 130, note: "川沿いのロッジを訪れたひとり温泉旅のリール" }
+    - { post_url: "https://www.instagram.com/p/DeRIzxGEVpr/", author: "@hiroshima_town_walk", posted_at: 2026-10-09, likes: 110, note: "外観・ロビー・テラス・水内川・食事を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DTophiMEbUA/", author: "@yuki_lodge0621", posted_at: 2026-01-18, likes: 110, note: "公式: 瓦屋根のエントランスと霧がかる山並み" }
+    - { post_url: "https://www.instagram.com/p/DTRVUVCk_cc/", author: "@yuki_lodge0621", posted_at: 2026-01-09, likes: 100, note: "公式: ウッドデッキ越しの露天風呂" }
+    - { post_url: "https://www.instagram.com/p/DSTsc5_j7Bl/", author: "@yuki_lodge0621", posted_at: 2025-12-16, likes: 100, note: "公式: 露天風呂を撮影する来館者の後ろ姿" }
+    - { post_url: "https://www.instagram.com/p/DOSlQFBkar6/", author: "@yuki_lodge0621", posted_at: 2025-09-07, likes: 96, note: "公式: 「湯来ロッジ」の赤いのぼりが立つ入口まわり" }
+    - { post_url: "https://www.instagram.com/p/DOutm1_ETWw/", author: "@yuki_lodge0621", posted_at: 2025-09-18, likes: 90, note: "公式: 森林を一望する屋根付きの浴場" }
+    - { post_url: "https://www.instagram.com/p/DUpxiIrkSDj/", author: "@yuki_lodge0621", posted_at: 2026-02-12, likes: 89, note: "公式: 冬の森に面した露天風呂" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-13
+  note: "公式プロフィールの名称・住所・電話が施設情報と一致。出典投稿（@lejapass_chugoku）はいいね数順の上位9件には入らなかった"

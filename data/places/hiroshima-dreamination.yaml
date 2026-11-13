@@ -4,8 +4,8 @@ kind: event
 tags: [イルミネーション, 冬, 夜景]
 area: { prefecture: 広島県, label: 広島市中区・平和大通り }
 summary: 平和大通り一帯が光のオブジェで彩られる冬のイルミネーション。毎年11月中旬から年明けまで開催される。
-# 出典投稿が2024年版のため2024年開催分。終了済みイベントの表示確認を兼ねる
-period: { start: 2024-11-15, end: 2025-01-03 }
+# 公式サイト（dreamination.com）で確認した2026年度の開催期間
+period: { start: 2026-12-04, end: 2027-01-24 }
 source:
   platform: instagram
   post_url: "https://www.instagram.com/reel/DCWZNcNyfJa/"
@@ -14,3 +14,31 @@ maps_url: "https://www.google.com/maps/search/?api=1&query=平和大通り+広�
 featured: false
 status: active
 added_at: 2026-11-10
+
+official:
+  instagram: "@hiroshima_dorimi"
+  instagram_url: "https://www.instagram.com/hiroshima_dorimi/"
+  website: "https://www.dreamination.com/"
+  website_label: 公式サイト
+
+highlights: [平和大通りを彩る光のトンネルとアーチ, 電車・帆船・気球といった乗り物の光オブジェ, お城のような大型オブジェ, 公式フォトコンテスト「#ドリミフォト」]
+
+related_posts:
+  captured_at: 2026-11-13
+  found_count: 50
+  items:
+    - { post_url: "https://www.instagram.com/p/DDobuhBy9gU/", author: "@hiroshima_jpn", posted_at: 2024-12-16, likes: 1500, note: "広島県公式の投稿。王冠のような青と金の塔型オブジェと色とりどりの灯りの展示" }
+    - { post_url: "https://www.instagram.com/reel/DRjqxPokYnA/", author: "@odekake.hiroshima", posted_at: 2025-11-27, likes: 720, note: "2025年版。光のアーチやタワー、クリスマスツリーを巡る家族のおでかけリール" }
+    - { post_url: "https://www.instagram.com/reel/DCWZNcNyfJa/", author: "@hiroshima_dorimi", posted_at: 2024-11-14, likes: 240, note: "出典投稿（公式）。青と白の光のトンネルなど2024年版の会場を巡るリール" }
+    - { post_url: "https://www.instagram.com/reel/DRIo-IkElTy/", author: "@hiroshima_dorimi", posted_at: 2025-11-16, likes: 220, note: "公式リール。お城のような大型オブジェなど2025年版の開幕案内" }
+    - { post_url: "https://www.instagram.com/reel/DDb5lsDyrxa/", author: "@flex_cheer", posted_at: 2024-12-11, likes: 160, note: "カラフルなキャラクター風の光の造形を背に踊る動画" }
+    - { post_url: "https://www.instagram.com/reel/DCVf-BAS-pS/", author: "@chugokunp_u35", posted_at: 2024-11-14, likes: 150, note: "中国新聞系アカウントによる2024年版の開催告知リール" }
+    - { post_url: "https://www.instagram.com/reel/DRUBF6zEvGL/", author: "@hiroshima_dorimi", posted_at: 2025-11-21, likes: 140, note: "公式リール。星型の大型構造物や球形のランタンが並ぶ2025年版の会場" }
+    - { post_url: "https://www.instagram.com/p/DGKGZ0iymL1/", author: "@hiroshima_dorimi", posted_at: 2025-02-17, likes: 120, note: "公式投稿。フォトコンテスト「#ドリミフォト2024」特別賞の発表と受賞作" }
+    - { post_url: "https://www.instagram.com/reel/DSIBiu-j6bJ/", author: "@1140mika", posted_at: 2025-12-11, likes: 96, note: "2025年版。電車と気球のオブジェ、帆船、光のトンネルなど平和大通りの様子" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-13
+  note: "開催期間は公式サイト dreamination.com の2026年度案内（2026-12-04〜2027-01-24、点灯17:30〜22:30）で更新。公式アカウント名は「【公式】ひろしまドリミネーション」"
