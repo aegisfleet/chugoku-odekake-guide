@@ -5,8 +5,8 @@
 <title>{{ $ogTitle }}</title>
 <meta name="description" content="{{ $desc }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf7f2">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171512">
+<meta name="theme-color" id="theme-color" content="#faf7f2">
+<script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light"){document.documentElement.dataset.theme=t;}var dark=t==="dark"||(t!=="light"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var m=document.getElementById("theme-color");if(m){m.setAttribute("content",dark?"#171512":"#faf7f2");}}catch(e){}})();</script>
 <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32.png" | relURL }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
@@ -22,3 +22,4 @@
 <meta name="twitter:description" content="{{ $desc }}">
 <meta name="twitter:image" content="{{ "ogp.png" | absURL }}">
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+<script src="{{ "js/theme.js" | relURL }}" defer></script>

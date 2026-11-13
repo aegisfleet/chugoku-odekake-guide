@@ -30,7 +30,13 @@
   </div>
 </section>
 {{ end }}
-{{ $featured := where $places "featured" true }}
+{{ $eventSlugs := slice }}
+{{ range $events }}{{ $eventSlugs = $eventSlugs | append .slug }}{{ end }}
+{{ $featured := slice }}
+{{ range where $places "featured" true }}
+  {{ if not (in $eventSlugs .slug) }}{{ $featured = $featured | append . }}{{ end }}
+{{ end }}
+{{ $featured = first 3 $featured }}
 {{ with $featured }}
 <section class="home-section">
   <h2 class="home-section-title">今月のおすすめ</h2>
