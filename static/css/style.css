@@ -52,3 +52,18 @@ a { color: #1565c0; }
 
 /* Instagram埋め込み */
 .embed-section .instagram-media { margin: 0 auto !important; max-width: 540px; width: 100%; }
+
+/* ホームの特集セクション・状態バッジ・お知らせ・関連リンク */
+.home-section { max-width: 1100px; margin: 0 auto; padding: 4px 24px 0; }
+.home-section-title { font-size: 18px; margin: 18px 0 0; }
+.grid--section { padding: 12px 0 4px; }
+.badge--new { background: #e65100; }
+.badge--live { background: #c62828; }
+.badge--ending { background: #ef6c00; }
+.badge--soon { background: #fff; color: #7b1fa2; border: 1px solid #7b1fa2; padding: 1px 9px; }
+.tag--notice { background: #fdecea; color: #b71c1c; font-weight: 600; }
+.notices { background: #fffaf0; border-color: #e8a13a; }
+.notices ul { margin: 8px 0; padding-left: 18px; }
+.rec-list { list-style: none; padding: 0; margin: 8px 0; }
+.rec-list li { padding: 6px 0; border-bottom: 1px dashed #e5ded2; }
+.rec-list li:last-child { border-bottom: none; }

@@ -3,6 +3,42 @@
 <head>{{ partial "head.html" . }}</head>
 <body>
 {{ partial "header.html" . }}
+{{ $places := slice }}
+{{ range hugo.Data.places }}{{ $places = $places | append . }}{{ end }}
+{{ $today := (now.Format "2006-01-02") | time.AsTime }}
+{{ $windowEnd := $today.AddDate 0 0 60 }}
+{{ $ongoing := slice }}
+{{ $upcoming := slice }}
+{{ range $places }}
+  {{ if and (eq .kind "event") .period }}
+    {{ $start := .period.start | time.AsTime }}
+    {{ $end := .period.end | time.AsTime }}
+    {{ if not ($today.After $end) }}
+      {{ if le $start $today }}{{ $ongoing = $ongoing | append . }}
+      {{ else if le $start $windowEnd }}{{ $upcoming = $upcoming | append . }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $ongoing = sort $ongoing "period.end" "asc" }}
+{{ $upcoming = sort $upcoming "period.start" "asc" }}
+{{ $events := $ongoing | append $upcoming }}
+{{ with $events }}
+<section class="home-section">
+  <h2 class="home-section-title">開催中・まもなく開催のイベント</h2>
+  <div class="grid grid--section">
+    {{ range . }}{{ partial "place-card.html" . }}{{ end }}
+  </div>
+</section>
+{{ end }}
+{{ $featured := where $places "featured" true }}
+{{ with $featured }}
+<section class="home-section">
+  <h2 class="home-section-title">今月のおすすめ</h2>
+  <div class="grid grid--section">
+    {{ range . }}{{ partial "place-card.html" . }}{{ end }}
+  </div>
+</section>
+{{ end }}
 <nav class="filters" aria-label="絞り込み">
   <button class="filter-btn is-active" data-filter-kind="all">すべて</button>
   {{ range $key, $label := site.Params.kindLabel }}
@@ -10,8 +46,6 @@
   {{ end }}
 </nav>
 <main class="grid" id="places-grid">
-{{ $places := slice }}
-{{ range hugo.Data.places }}{{ $places = $places | append . }}{{ end }}
 {{ range sort $places "added_at" "desc" }}
   {{ partial "place-card.html" . }}
 {{ end }}

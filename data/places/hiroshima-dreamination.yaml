@@ -11,7 +11,7 @@ source:
   post_url: "https://www.instagram.com/reel/DCWZNcNyfJa/"
   author: "@hiroshima_dorimi"
 maps_url: "https://www.google.com/maps/search/?api=1&query=平和大通り+広島市"
-featured: false
+featured: true
 status: active
 added_at: 2026-11-10
 

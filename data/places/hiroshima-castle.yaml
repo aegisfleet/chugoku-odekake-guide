@@ -9,9 +9,12 @@ source:
   post_url: "https://www.instagram.com/reel/DeJaZGmAD-o/"
   author: "@visitjapanjp"
 maps_url: "https://www.google.com/maps/search/?api=1&query=広島城"
-featured: false
+featured: true
 status: active
 added_at: 2026-11-11
+
+notices:
+  - { date: "2026-11-13", text: "天守は老朽化のため2026年3月22日に閉館しました。内部の見学はできませんが、天守の外観や二の丸の復元建物は見学できます（広島市公式サイトで確認）" }
 
 official:
   instagram: "@hiroshima_castle"
@@ -39,4 +42,4 @@ _verification:
   map_match: matched
   closed_check: not_closed
   checked_at: 2026-11-13
-  note: "公式プロフィールの所在地（中区基町21）が登録情報と一致。復元天守は耐震強度不足のため2026年3月に閉館した旨が複数投稿で言及されており、天守内部の見学可否は要最新確認"
+  note: "公式プロフィールの所在地（中区基町21）が登録情報と一致。天守の閉館（2026年3月22日・老朽化のため）は2026-11-13に広島市公式サイトで確認し、notices に掲示した。二の丸・外観は見学可能なため closed_check は not_closed のまま"

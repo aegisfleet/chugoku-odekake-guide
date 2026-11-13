@@ -4,7 +4,17 @@
 <body>
 {{ partial "header.html" . }}
 <main class="detail">
+  {{ $ver := index .Params "_verification" }}
   {{ partial "place-card.html" .Params }}
+
+  {{ with .Params.notices }}
+  <section class="detail-section notices">
+    <h3>お知らせ</h3>
+    <ul>
+      {{ range . }}<li><span class="related-meta">{{ .date }}</span>{{ .text }}</li>{{ end }}
+    </ul>
+  </section>
+  {{ end }}
 
   {{ if eq .Params.source.platform "instagram" }}
   <section class="detail-section embed-section">
@@ -23,6 +33,7 @@
       {{ with .instagram }}<li>公式Instagram: <a href="{{ $.Params.official.instagram_url }}" rel="noopener" target="_blank">{{ . }}</a></li>{{ end }}
       {{ with .website }}<li>{{ $.Params.official.website_label | default "公式サイト" }}: <a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></li>{{ end }}
     </ul>
+    {{ with $ver }}<p class="note">基本情報は {{ .checked_at }} に確認しました。</p>{{ end }}
   </section>
   {{ end }}
 
@@ -45,7 +56,34 @@
       </li>
       {{ end }}
     </ul>
-    <p class="note">いいね数は {{ .captured_at }} 時点のものです。写真は転載せず、各投稿へのリンクのみを掲載しています。</p>
+    <p class="note">関連投稿は {{ .captured_at }} に取得しました（いいね数も取得時点のものです）。写真は転載せず、各投稿へのリンクのみを掲載しています。</p>
+  </section>
+  {{ end }}
+
+  {{ $selfSlug := .Params.slug }}
+  {{ $ward := index (split .Params.area.label "・") 0 }}
+  {{ $sameArea := slice }}
+  {{ $sameKind := slice }}
+  {{ range hugo.Data.places }}
+    {{ if ne .slug $selfSlug }}
+      {{ if eq (index (split .area.label "・") 0) $ward }}{{ $sameArea = $sameArea | append . }}{{ end }}
+      {{ if eq .kind $.Params.kind }}{{ $sameKind = $sameKind | append . }}{{ end }}
+    {{ end }}
+  {{ end }}
+  {{ with $sameArea }}
+  <section class="detail-section">
+    <h3>同じエリアのおでかけ先</h3>
+    <ul class="rec-list">
+      {{ range first 3 . }}<li><a href="{{ printf "places/%s/" .slug | relURL }}">{{ .name }}</a><span class="related-meta">{{ .area.label }}</span></li>{{ end }}
+    </ul>
+  </section>
+  {{ end }}
+  {{ with $sameKind }}
+  <section class="detail-section">
+    <h3>同じジャンルのおすすめ</h3>
+    <ul class="rec-list">
+      {{ range first 3 . }}<li><a href="{{ printf "places/%s/" .slug | relURL }}">{{ .name }}</a><span class="related-meta">{{ .area.prefecture }} / {{ .area.label }}</span></li>{{ end }}
+    </ul>
   </section>
   {{ end }}
 
@@ -55,6 +93,8 @@
       <li>主な出典: {{ .Params.source.platform }} の投稿（{{ .Params.source.author }}）— <a href="{{ .Params.source.post_url }}" rel="noopener" target="_blank">{{ .Params.source.post_url }}</a></li>
       <li>場所の確認: <a href="{{ .Params.maps_url }}" rel="noopener" target="_blank">Googleマップで開く</a>（住所・営業時間はマップ側が最新です）</li>
       <li>このページはAIが収集・作成しました（追加日: {{ .Params.added_at }}）。</li>
+      {{ with $ver }}<li>基本情報の最終確認: {{ .checked_at }}</li>{{ end }}
+      {{ with .Params.related_posts }}<li>関連投稿の取得: {{ .captured_at }}</li>{{ end }}
     </ul>
   </section>
   <p><a href="{{ site.Home.RelPermalink }}">← 一覧へ戻る</a></p>

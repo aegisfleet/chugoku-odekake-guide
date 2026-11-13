@@ -13,6 +13,9 @@ featured: false
 status: active
 added_at: 2026-11-08
 
+notices:
+  - { date: "2026-11-13", text: "2027年4月1日から、耐震改修と展示リニューアルのため臨時休館の予定です（通常開館は2027年3月31日まで。再開は2029年度中の予定）。行かれる前に公式サイトで最新情報をご確認ください" }
+
 official:
   website: "https://www.pyonta.city.hiroshima.jp/"
   website_label: 公式サイト
@@ -37,4 +40,4 @@ _verification:
   map_match: matched
   closed_check: not_closed
   checked_at: 2026-11-13
-  note: "公式Instagramは確認できず、公式サイトのみ掲載。複数投稿によれば2027年3月末からリニューアルのため休館予定"
+  note: "公式Instagramは確認できず、公式サイトのみ掲載。臨時休館（2027年4月1日〜、耐震改修・展示リニューアル、再開は2029年度中の予定）は公式のお知らせに基づく情報として2026-11-13に notices へ掲示"
