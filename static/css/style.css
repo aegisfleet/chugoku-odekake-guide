@@ -67,3 +67,31 @@ a { color: #1565c0; }
 .rec-list { list-style: none; padding: 0; margin: 8px 0; }
 .rec-list li { padding: 6px 0; border-bottom: 1px dashed #e5ded2; }
 .rec-list li:last-child { border-bottom: none; }
+
+/* フォーカスの見やすさ（テーマ共通） */
+:focus-visible { outline: 2px solid #e8a13a; outline-offset: 2px; }
+
+/* ダークテーマ（端末設定に追随。配色はライト側のトーンを暗色に置き換えたもの） */
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; }
+  body { background: #171512; color: #e8e2d6; }
+  a { color: #7ab3f0; }
+  .site-title a { color: #f2ede3; }
+  .site-desc { color: #b3aa99; }
+  .ai-note { background: #262019; color: #a89e8c; }
+  .filter-btn { background: #211d17; border-color: #3d362a; color: #e8e2d6; }
+  .filter-btn.is-active { background: #e8e2d6; color: #171512; border-color: #e8e2d6; }
+  .place-card { background: #211d17; border-color: #3d362a; }
+  .place-card--featured { border-color: #e8a13a; }
+  .place-name a { color: #f2ede3; }
+  .area { color: #9a917f; }
+  .period { color: #c792e0; }
+  .tag { background: #2e2820; color: #b3aa99; }
+  .tag--notice { background: #3d2323; color: #f0a8a8; }
+  .badge--soon { background: transparent; color: #c792e0; border-color: #c792e0; }
+  .detail-section, .source-note { background: #211d17; border-color: #3d362a; }
+  .detail-section .note, .related-meta { color: #9a917f; }
+  .related-list li, .rec-list li { border-bottom-color: #3d362a; }
+  .notices { background: #2a2113; border-color: #e8a13a; }
+  .empty-note, .site-footer { color: #9a917f; }
+}
