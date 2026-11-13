@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>{{ partial "head.html" . }}</head>
+<body>
+{{ partial "header.html" . }}
+<main class="detail">
+  {{ partial "place-card.html" .Params }}
+  <section class="source-note">
+    <h3>情報の出典と確認方法</h3>
+    <ul>
+      <li>出典: {{ .Params.source.platform }} の投稿（{{ .Params.source.author }}）— <a href="{{ .Params.source.post_url }}" rel="noopener" target="_blank">{{ .Params.source.post_url }}</a></li>
+      <li>場所の確認: <a href="{{ .Params.maps_url }}" rel="noopener" target="_blank">Googleマップで開く</a>（住所・営業時間はマップ側が最新です）</li>
+      <li>このページはAIが収集・作成しました（追加日: {{ .Params.added_at }}）。</li>
+    </ul>
+  </section>
+  <p><a href="{{ "/" | relURL }}">← 一覧へ戻る</a></p>
+</main>
+{{ partial "footer.html" . }}
+</body>
+</html>

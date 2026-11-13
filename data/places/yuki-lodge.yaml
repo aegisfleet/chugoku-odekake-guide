@@ -1,0 +1,14 @@
+slug: yuki-lodge
+name: 広島市国民宿舎 湯来ロッジ
+kind: stay
+tags: [温泉, 日帰り入浴]
+area: { prefecture: 広島県, label: 広島市佐伯区・湯来町 }
+summary: 湯来温泉の国民宿舎。日帰り入浴もできる温泉宿として紹介されている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DUg7wOGgZZI/"
+  author: "@lejapass_chugoku"
+maps_url: "https://www.google.com/maps/search/?api=1&query=湯来ロッジ"
+featured: false
+status: active
+added_at: 2026-11-09

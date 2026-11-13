@@ -1,0 +1,12 @@
+{{- /* data/places/*.yaml 1件ごとに個別ページ /places/<slug>/ をビルド時に生成する（Markdownへの変換はしない） */ -}}
+{{ range hugo.Data.places }}
+  {{ $content := dict "mediaType" "text/markdown" "value" "" }}
+  {{ $page := dict
+      "content" $content
+      "kind" "page"
+      "path" (printf "places/%s" .slug)
+      "title" .name
+      "params" .
+  }}
+  {{ $.AddPage $page }}
+{{ end }}

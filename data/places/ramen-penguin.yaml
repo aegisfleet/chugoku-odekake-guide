@@ -1,0 +1,14 @@
+slug: ramen-penguin
+name: らぁ麺 Penguin
+kind: shop
+tags: [ラーメン, 行列]
+area: { prefecture: 広島県, label: 広島市中区・大手町 }
+summary: 地鶏醤油と魚介塩の清湯が人気の行列店。特製の全部のせがよく投稿されている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DVIoXj1E7VP/"
+  author: "@akokichi_mii_18"
+maps_url: "https://www.google.com/maps/search/?api=1&query=らぁ麺+Penguin+広島市中区大手町"
+featured: false
+status: active
+added_at: 2026-11-12

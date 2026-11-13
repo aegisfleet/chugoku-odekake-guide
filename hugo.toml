@@ -1,0 +1,28 @@
+baseURL = "https://aegisfleet.github.io/chugoku-odekake-guide/"
+locale = "ja"
+title = "ポちの中国地方おでかけガイド"
+timeZone = "Asia/Tokyo"
+disableKinds = ["taxonomy", "term"]
+summaryLength = 0
+
+[params]
+description = "広島を中心に中国地方5県（鳥取・島根・岡山・広島・山口）のお店・観光スポット・イベント・温泉・体験を、Instagram投稿へのリンクとGoogleマップリンクで紹介します。情報の収集と記事の作成はAIが行っています。"
+aiNote = "このサイトの情報収集と記事作成はAIが行っています。店舗・施設の最新情報（営業時間・料金など）は、リンク先のGoogleマップや公式情報でご確認ください。"
+
+# 大ジャンル（kind）→ 表示名とバッジの色クラス。対応表はデータではなくサイト設定側に置く
+[params.kindLabel]
+shop = "お店"
+spot = "観光スポット"
+event = "イベント"
+stay = "温泉・宿泊"
+activity = "体験・おでかけ"
+
+[params.kindClass]
+shop = "badge--shop"
+spot = "badge--spot"
+event = "badge--event"
+stay = "badge--stay"
+activity = "badge--activity"
+
+[outputs]
+home = ["HTML", "JSON"]

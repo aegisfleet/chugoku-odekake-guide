@@ -1,0 +1,15 @@
+# 正本データ: 事実と「意味」だけを書く。色・サイズ・余白はここに書かない
+slug: swinging-bird-kitchen
+name: Swinging Bird Kitchen
+kind: shop
+tags: [カフェ, ベーカリー, 焼き菓子]
+area: { prefecture: 広島県, label: 広島市佐伯区・井口 }
+summary: 焼き菓子とケーキが人気のカフェ。ロールケーキやクッキーの投稿が多く紹介されている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/De1Y6dyAX82/"
+  author: "@__yk._"
+maps_url: "https://www.google.com/maps/search/?api=1&query=Swinging+Bird+Kitchen+広島市佐伯区井口"
+featured: true
+status: active
+added_at: 2026-11-13

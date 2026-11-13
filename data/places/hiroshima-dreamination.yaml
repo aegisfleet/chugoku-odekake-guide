@@ -1,0 +1,16 @@
+slug: hiroshima-dreamination
+name: ひろしまドリミネーション
+kind: event
+tags: [イルミネーション, 冬, 夜景]
+area: { prefecture: 広島県, label: 広島市中区・平和大通り }
+summary: 平和大通り一帯が光のオブジェで彩られる冬のイルミネーション。毎年11月中旬から年明けまで開催される。
+# 出典投稿が2024年版のため2024年開催分。終了済みイベントの表示確認を兼ねる
+period: { start: 2024-11-15, end: 2025-01-03 }
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DCWZNcNyfJa/"
+  author: "@hiroshima_dorimi"
+maps_url: "https://www.google.com/maps/search/?api=1&query=平和大通り+広島市"
+featured: false
+status: active
+added_at: 2026-11-10

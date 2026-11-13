@@ -1,0 +1,22 @@
+{{- /* カードの構造はテンプレート側、見た目はCSS側。データ（YAML）は事実と意味だけを持つ */ -}}
+{{- $ended := false }}
+{{- if and (eq .kind "event") .period }}
+  {{- if lt (.period.end | time.AsTime) now }}{{ $ended = true }}{{ end }}
+{{- end }}
+<article class="place-card{{ if .featured }} place-card--featured{{ end }}{{ if $ended }} place-card--ended{{ end }}"
+         data-kind="{{ .kind }}" data-prefecture="{{ .area.prefecture }}">
+  <div class="badges">
+    <span class="badge {{ index site.Params.kindClass .kind }}">{{ index site.Params.kindLabel .kind }}</span>
+    {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+  </div>
+  <h2 class="place-name"><a href="{{ printf "/places/%s/" .slug | relURL }}">{{ .name }}</a></h2>
+  <p class="area">{{ .area.prefecture }} / {{ .area.label }}</p>
+  {{ if and (eq .kind "event") .period }}
+    <p class="period">開催期間: {{ .period.start }} 〜 {{ .period.end }}{{ if $ended }}（終了）{{ end }}</p>
+  {{ end }}
+  <p class="summary">{{ .summary }}</p>
+  <div class="actions">
+    <a class="btn btn--instagram" href="{{ .source.post_url }}" rel="noopener" target="_blank">Instagramで見る（{{ .source.author }}）</a>
+    <a class="btn btn--maps" href="{{ .maps_url }}" rel="noopener" target="_blank">Googleマップ</a>
+  </div>
+</article>
