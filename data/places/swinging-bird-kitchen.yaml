@@ -13,3 +13,34 @@ maps_url: "https://www.google.com/maps/search/?api=1&query=Swinging+Bird+Kitchen
 featured: true
 status: active
 added_at: 2026-11-13
+
+# 公式情報（詳細ページ用）
+official:
+  instagram: "@shizukaoyatu"
+  instagram_url: "https://www.instagram.com/shizukaoyatu/"
+  website: "https://swingingbird.thebase.in/"
+  website_label: 公式通販（BASE）
+
+# 関連投稿から集計した「よく紹介されるもの」
+highlights: [チョコバナナロール, アップルパイ, マフィンなどの焼き菓子, シフォンケーキ]
+
+# 関連投稿の一覧（いいね数・フォロワー数は取得時点のスナップショット）
+related_posts:
+  captured_at: 2026-11-13
+  found_count: 50
+  items:
+    - { post_url: "https://www.instagram.com/p/De1Y6dyAX82/", author: "@__yk._", posted_at: 2026-10-23, likes: 600, note: "チョコバナナのロールケーキとクッキー、紅茶のセット" }
+    - { post_url: "https://www.instagram.com/p/DaVBSlATFBa/", author: "@__yk._", posted_at: 2026-07-03, likes: 510, note: "けしの実のケーキとカップ入りデザート" }
+    - { post_url: "https://www.instagram.com/p/DM6LCl7z1lI/", author: "@__yk._", posted_at: 2025-08-03, likes: 290, note: "桃のクリームパイとマグカップのドリンク" }
+    - { post_url: "https://www.instagram.com/p/DJFxcrLhwAX/", author: "@shizukaoyatu", posted_at: 2025-05-01, likes: 260, note: "公式: 店内ショーケースのいちごムースケーキとフルーツタルト" }
+    - { post_url: "https://www.instagram.com/p/DfGOwsCzHfP/", author: "@shizukaoyatu", posted_at: 2026-10-29, likes: 230, note: "公式: アップルパイ" }
+    - { post_url: "https://www.instagram.com/p/Ddm9lkzT3uQ/", author: "@shizukaoyatu", posted_at: 2026-09-22, likes: 190, note: "公式: 栗とチョコのマフィンなど秋の焼き菓子" }
+    - { post_url: "https://www.instagram.com/p/DX571DgE_oq/", author: "@mai.tug", posted_at: 2026-05-04, likes: 120, note: "ナッツをのせた二層のケーキ" }
+    - { post_url: "https://www.instagram.com/p/DfMTHM3pFLz/", author: "@kei1rou_k", posted_at: 2026-11-01, likes: 110, note: "栗のレイヤードパイとマグカップ" }
+    - { post_url: "https://www.instagram.com/p/DKuHk1STmQx/", author: "@______fuwari_", posted_at: 2025-06-10, likes: 94, note: "カップケーキとマグカップ" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-13
+  note: "区はPlacesが佐伯区と返したが、公式プロフィールと出典投稿の双方で西区井口4-5-7と確認し西区を採用"

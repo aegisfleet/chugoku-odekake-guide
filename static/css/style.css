@@ -40,3 +40,12 @@ a { color: #1565c0; }
 .source-note { background: #fff; border: 1px solid #e5ded2; border-radius: 12px; padding: 4px 16px; margin-top: 16px; font-size: 13px; line-height: 1.8; }
 .empty-note { text-align: center; color: #777; padding: 24px; }
 .site-footer { max-width: 1100px; margin: 0 auto; padding: 8px 24px 32px; font-size: 12px; color: #888; line-height: 1.7; }
+
+/* 詳細ページのセクション（公式情報・関連投稿など） */
+.detail-section { background: #fff; border: 1px solid #e5ded2; border-radius: 12px; padding: 4px 16px 10px; margin-top: 16px; font-size: 14px; line-height: 1.8; }
+.detail-section .note { font-size: 12px; color: #888; }
+.highlights { font-weight: 600; }
+.related-list { list-style: none; padding: 0; margin: 8px 0; }
+.related-list li { padding: 8px 0; border-bottom: 1px dashed #e5ded2; }
+.related-list li:last-child { border-bottom: none; }
+.related-meta { display: block; font-size: 12px; color: #888; }

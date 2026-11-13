@@ -5,10 +5,44 @@
 {{ partial "header.html" . }}
 <main class="detail">
   {{ partial "place-card.html" .Params }}
+
+  {{ with .Params.official }}
+  <section class="detail-section">
+    <h3>公式情報</h3>
+    <ul>
+      {{ with .instagram }}<li>公式Instagram: <a href="{{ $.Params.official.instagram_url }}" rel="noopener" target="_blank">{{ . }}</a></li>{{ end }}
+      {{ with .website }}<li>{{ $.Params.official.website_label | default "公式サイト" }}: <a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></li>{{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{ with .Params.highlights }}
+  <section class="detail-section">
+    <h3>よく紹介されるもの</h3>
+    <p class="highlights">{{ delimit . " / " }}</p>
+    <p class="note">関連投稿の内容から集計したものです。</p>
+  </section>
+  {{ end }}
+
+  {{ with .Params.related_posts }}
+  <section class="detail-section">
+    <h3>関連投稿（{{ .found_count }}件以上を確認）</h3>
+    <ul class="related-list">
+      {{ range .items }}
+      <li>
+        <span class="related-meta">{{ .posted_at }} / {{ .author }}{{ with .likes }} / ♥ {{ . }}{{ end }}</span>
+        <a href="{{ .post_url }}" rel="noopener" target="_blank">{{ .note }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    <p class="note">いいね数は {{ .captured_at }} 時点のものです。写真は転載せず、各投稿へのリンクのみを掲載しています。</p>
+  </section>
+  {{ end }}
+
   <section class="source-note">
     <h3>情報の出典と確認方法</h3>
     <ul>
-      <li>出典: {{ .Params.source.platform }} の投稿（{{ .Params.source.author }}）— <a href="{{ .Params.source.post_url }}" rel="noopener" target="_blank">{{ .Params.source.post_url }}</a></li>
+      <li>主な出典: {{ .Params.source.platform }} の投稿（{{ .Params.source.author }}）— <a href="{{ .Params.source.post_url }}" rel="noopener" target="_blank">{{ .Params.source.post_url }}</a></li>
       <li>場所の確認: <a href="{{ .Params.maps_url }}" rel="noopener" target="_blank">Googleマップで開く</a>（住所・営業時間はマップ側が最新です）</li>
       <li>このページはAIが収集・作成しました（追加日: {{ .Params.added_at }}）。</li>
     </ul>

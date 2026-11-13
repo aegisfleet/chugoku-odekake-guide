@@ -28,6 +28,29 @@ added_at: 2026-11-13               # 追加日 (YYYY-MM-DD)
 period: { start: 2026-11-15, end: 2027-01-03 }   # 開催期間。終了後は自動で「（終了）」表示になる
 ```
 
+## 詳細ページ用の追加フィールド（任意）
+
+詳細ページを厚くするための追加情報。無い項目はセクションごと表示されません。
+
+```yaml
+official:                          # 公式情報（公式アカウントが特定できた場合）
+  instagram: "@example"
+  instagram_url: "https://www.instagram.com/example/"
+  website: "https://example.com/"
+  website_label: 公式サイト          # 例: 公式通販（BASE）
+
+highlights: [看板メニューA, 名物B]     # 関連投稿の内容から集計した「よく紹介されるもの」
+
+related_posts:                     # 関連投稿の一覧（詳細ページにリンク一覧として表示）
+  captured_at: 2026-11-13          # いいね数などの取得日（スナップショットであることを明示）
+  found_count: 50                  # 検索で確認できた関連投稿の件数（下限でよい）
+  items:                           # 反応の大きい順に最大10件程度
+    - { post_url: "https://www.instagram.com/p/xxxx/", author: "@user", posted_at: 2026-10-23, likes: 600, note: "何が写っているかの一言要約（自分の言葉で）" }
+```
+
+- `note` は投稿文のコピーではなく、自分の言葉での一言要約にする。
+- いいね数は揮発情報なので、必ず `captured_at` とセットで持ち、表示側でも取得日を明記する。
+
 ## ルール
 
 - **重複防止**: `source.post_url` と「店舗同一性（名称＋エリア）」が既存と重なるものは追加しない。
