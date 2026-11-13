@@ -6,6 +6,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3122674942116250" crossorigin="anonymous"></script>
 {{ $desc := .Params.summary | default site.Params.description }}
 {{ $ogTitle := site.Title }}{{ if not .IsHome }}{{ $ogTitle = printf "%s | %s" .Title site.Title }}{{ end }}
 <title>{{ $ogTitle }}</title>
