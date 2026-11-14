@@ -1,0 +1,43 @@
+slug: morinomachi-christmas-illumination-2026
+name: 杜の街グレース クリスマスイルミネーション 2026
+kind: event
+tags: [イルミネーション, クリスマス]
+area: { prefecture: 岡山県, label: 岡山市北区・下石井 }
+summary: 岡山駅近くの杜の街グレースで開かれているクリスマスイルミネーション。高さ約12mのモミの木を中心に、約47,000球のシャンパンゴールドの光が街を包む。点灯式は2026年11月7日に行われた。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DeyZf9UzZQs/"
+  author: "@morimachigrace"
+maps_url: "https://www.google.com/maps/search/?api=1&query=杜の街グレース+岡山市北区下石井"
+featured: false
+status: active
+added_at: 2026-11-14
+period: { start: 2026-11-07, end: 2027-02-14 }
+
+official:
+  instagram: "@morimachigrace"
+  instagram_url: "https://www.instagram.com/morimachigrace/"
+  website: "https://www.morinomachi-grace.jp/event/3277/"
+  website_label: 公式イベントページ
+
+highlights: [高さ約12mのモミの木, 約47,000球のシャンパンゴールドの光, グリーンアヴェニューの街路樹イルミネーション]
+
+related_posts:
+  captured_at: 2026-11-14
+  found_count: 15
+  items:
+    - { post_url: "https://www.instagram.com/p/DeyZf9UzZQs/", author: "@morimachigrace", posted_at: 2026-10-25, likes: 78, note: "点灯式の案内フライヤー（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DSYbc3zk0Y4/", author: "@_.yurikamini", posted_at: 2025-12-17, likes: 410, note: "夜のモミの木に温かい光と赤・金の飾りがついた様子（2025年）" }
+    - { post_url: "https://www.instagram.com/p/DfcE-qeE0dc/", author: "@morimachigrace", posted_at: 2026-11-07, likes: 170, note: "2026年の点灯式の夜の様子を伝える公式の投稿" }
+    - { post_url: "https://www.instagram.com/reel/DQyE9ytD_rk/", author: "@morimachigrace", posted_at: 2025-11-08, likes: 160, note: "2025年の点灯式でサンタ姿の出演者がステージで演奏する様子" }
+    - { post_url: "https://www.instagram.com/reel/DSJ2Ra6kcHW/", author: "@tjokayama", posted_at: 2025-12-12, likes: 140, note: "イルミネーション案内として杜の街グレースの大きなモミの木を紹介" }
+    - { post_url: "https://www.instagram.com/p/DfOIFrFzHwe/", author: "@morimachigrace", posted_at: 2026-11-06, likes: 68, note: "2026年の点灯式を告知する公式のグラフィック" }
+    - { post_url: "https://www.instagram.com/p/DQ5nU3Mkx7N/", author: "@issai_okayama", posted_at: 2025-11-11, likes: 30, note: "夜のプラザ入口と白いイルミネーションに包まれた木々" }
+    - { post_url: "https://www.instagram.com/reel/DfgCrnTTNsy/", author: "@chinese_dining_fooquo", posted_at: 2026-11-09, likes: 24, note: "点灯式のステージでサンタ姿の3人が踊る様子" }
+    - { post_url: "https://www.instagram.com/reel/DfkuXfVTgzn/", author: "@hitosi_uemura", posted_at: 2026-11-10, likes: 15, note: "夜の広場で光に包まれた大きなクリスマスツリー" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-14
+  note: "開催期間は公式プレスリリース（PR TIMES 2026-10-28、両備ホールディングス）と公式イベントページで確認：2026-11-07〜2027-02-14、17:00〜22:00。点灯式が2026-11-07に行われたことも公式投稿で確認"

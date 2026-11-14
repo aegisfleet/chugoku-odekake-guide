@@ -1,0 +1,42 @@
+slug: dog-cafe-riku-to-mugi
+name: ドッグカフェ RikuとMugi
+kind: shop
+tags: [ドッグカフェ, ドッグラン, カフェ]
+area: { prefecture: 鳥取県, label: 東伯郡三朝町・大柿 }
+summary: 三朝町のドッグカフェ。室内ドッグランがあり、愛犬と一緒にランチやデザートを楽しめる。ハンバーグのランチセットやチーズケーキ、パフェがよく投稿されている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DZhP8-qGYSx/"
+  author: "@uta.0102"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ドッグカフェ+RikuとMugi+三朝町"
+featured: false
+status: active
+added_at: 2026-11-14
+
+official:
+  instagram: "@rikutomugi"
+  instagram_url: "https://www.instagram.com/rikutomugi/"
+  website: "https://r.goope.jp/dogcafe-rikumugi/"
+  website_label: 公式サイト
+
+highlights: [室内ドッグラン, ハンバーグのランチセット, チーズケーキとパフェ, 愛犬と一緒に食事できるテラス]
+
+related_posts:
+  captured_at: 2026-11-14
+  found_count: 15
+  items:
+    - { post_url: "https://www.instagram.com/p/DZhP8-qGYSx/", author: "@uta.0102", posted_at: 2026-06-13, likes: 580, note: "チーズケーキとパフェ、ランチ、店内と屋外ドッグランを巡る紹介カルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DQ8_vxKkmkJ/", author: "@rikutomugi", posted_at: 2025-11-12, likes: 170, note: "室内ドッグランのオープンを知らせる施設紹介動画" }
+    - { post_url: "https://www.instagram.com/p/DewEgMHlO_U/", author: "@rikutomugi", posted_at: 2026-10-21, likes: 150, note: "室内ドッグランの継続を知らせる運営からのお知らせ" }
+    - { post_url: "https://www.instagram.com/p/DGpWZVCSRtJ/", author: "@rikutomugi", posted_at: 2025-03-01, likes: 140, note: "1周年を記念する手作りの看板と店内の様子" }
+    - { post_url: "https://www.instagram.com/p/Ddr4WQZkmCj/", author: "@teru.teru_bk", posted_at: 2026-09-24, likes: 87, note: "バイクと店の看板、店内での食事を紹介する訪問記録" }
+    - { post_url: "https://www.instagram.com/p/DHbFfnQyBWq/", author: "@rikutomugi", posted_at: 2025-03-20, likes: 76, note: "コラボイベントの案内とカフェの様子" }
+    - { post_url: "https://www.instagram.com/p/DT1Y9RskqNC/", author: "@rikutomugi", posted_at: 2026-01-23, likes: 60, note: "雪の日の木造の外観と営業のお知らせ" }
+    - { post_url: "https://www.instagram.com/p/DfW-uXqFBM7/", author: "@rikutomugi", posted_at: 2026-11-05, likes: 53, note: "看板犬の写真を集めたお店からの投稿" }
+    - { post_url: "https://www.instagram.com/p/DNNSA1wPOXP/", author: "@hairs_slash", posted_at: 2025-08-11, likes: 49, note: "愛犬のドッグカフェデビューとして店内を紹介" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-14
+  note: "Googleマップの店舗情報（三朝町大柿590、営業中）と公式プロフィールの住所が一致。公式アカウントの2026-10-21と2026-11-05の投稿で営業継続を確認。関連投稿の要約にあった三重県でのマルシェ開催との記述は、公式情報と一致しないため当該投稿は関連投稿に含めていない"

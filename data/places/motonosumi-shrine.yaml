@@ -1,0 +1,43 @@
+slug: motonosumi-shrine
+name: 元乃隅神社
+kind: spot
+tags: [神社, 絶景, 鳥居]
+area: { prefecture: 山口県, label: 長門市・油谷津黄 }
+summary: 123基の朱い鳥居が日本海に向かって並ぶ、長門市の絶景神社。CNNの「日本の最も美しい場所31選」にも選ばれた。2026年秋現在、鳥居の修繕工事中でくぐることはできないが、指定の開放エリアから鳥居と海の景色を楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DQ36vGNknWJ/"
+  author: "@m_iho_w8cafe"
+maps_url: "https://www.google.com/maps/search/?api=1&query=元乃隅神社+山口県長門市"
+featured: false
+status: active
+added_at: 2026-11-14
+
+official:
+  website: "https://nanavi.jp/sightseeing/motonosumiinarijinja/"
+  website_label: 公式観光案内（長門市観光サイト ななび）
+
+highlights: [123基の赤い鳥居, 日本海を望む絶景, 龍宮の潮吹]
+
+related_posts:
+  captured_at: 2026-11-14
+  found_count: 40
+  items:
+    - { post_url: "https://www.instagram.com/p/DQ36vGNknWJ/", author: "@m_iho_w8cafe", posted_at: 2026-11-10, likes: 1200, note: "大きな朱い鳥居と鳥居の列、海を望む参拝の様子（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DamKuSFk2Q5/", author: "@cocolocala", posted_at: 2026-07-10, likes: 1800, note: "大きな朱い鳥居と海に向かう鳥居の列を巡る写真集" }
+    - { post_url: "https://www.instagram.com/p/DLR7xrrpaYu/", author: "@michiabacab", posted_at: 2025-06-24, likes: 1800, note: "白と青のバイクと赤い鳥居の階段を写した海岸沿いの写真" }
+    - { post_url: "https://www.instagram.com/p/DJGGRLdvRWq/", author: "@jtb_jp", posted_at: 2025-05-01, likes: 1700, note: "緑の斜面を下る鳥居の列を空から見渡す写真" }
+    - { post_url: "https://www.instagram.com/p/DK5vkDWzpzC/", author: "@kazuma_emoto", posted_at: 2025-06-15, likes: 590, note: "断崖に連なる100基以上の朱い鳥居と海の訪問記録" }
+    - { post_url: "https://www.instagram.com/p/DKooRYVsLHr/", author: "@visitjapanhk", posted_at: 2025-06-08, likes: 520, note: "日本政府観光局の香港向け公式アカウントによる鳥居と海の紹介" }
+    - { post_url: "https://www.instagram.com/p/DJWClZISusT/", author: "@energia.jp", posted_at: 2025-05-07, likes: 410, note: "晴れた日の大きな朱い鳥居と参拝者の様子" }
+    - { post_url: "https://www.instagram.com/p/DKQxbQgKm0W/", author: "@visitjapantw", posted_at: 2025-05-30, likes: 270, note: "日本政府観光局の台湾向け公式アカウントによる鳥居の絶景紹介" }
+    - { post_url: "https://www.instagram.com/reel/DQUFkMHEpWP/", author: "@yano_reiko", posted_at: 2025-10-27, likes: 270, note: "曇り空の下で海に向かって下る鳥居の列を映す動画" }
+
+notices:
+  - { date: "2026-11-14", text: "鳥居の修繕工事のため、現在は赤い鳥居をくぐることができません。工事は2027年春以降までかかる見込みです（長門市観光サイト ななび、2026年10月7日更新）。また2026年3月〜11月の土日祝日は一部参拝休止の日があります。訪問前に公式サイトでご確認ください。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-14
+  note: "住所は長門市観光サイト ななびで確認（油谷津黄498）。鳥居修繕工事と土日祝の一部参拝休止は同サイトの公式案内（2026-10-07更新）による。神社自体は参拝可能で閉鎖ではない"

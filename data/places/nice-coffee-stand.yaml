@@ -1,0 +1,40 @@
+slug: nice-coffee-stand
+name: Nice Coffee Stand
+kind: shop
+tags: [カフェ, コーヒースタンド, 朝カフェ]
+area: { prefecture: 広島県, label: 広島市中区・小町 }
+summary: 朝7時から開く小町のコーヒースタンド。ハートのラテアートとバスクチーズケーキがよく投稿されている。木を基調にした小さな店内で、クロワッサンやバナナブレッドなどのペストリーも並ぶ。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DfQZAiGkzBr/"
+  author: "@biro_chan"
+maps_url: "https://www.google.com/maps/search/?api=1&query=Nice+Coffee+Stand+広島市中区小町"
+featured: false
+status: active
+added_at: 2026-11-14
+
+official:
+  instagram: "@nicecoffeestand"
+  instagram_url: "https://www.instagram.com/nicecoffeestand/"
+
+highlights: [ハートのラテアートのカフェラテ, バスクチーズケーキ, クロワッサン, バナナブレッド]
+
+related_posts:
+  captured_at: 2026-11-14
+  found_count: 40
+  items:
+    - { post_url: "https://www.instagram.com/p/DfQZAiGkzBr/", author: "@biro_chan", posted_at: 2026-11-02, likes: 220, note: "カフェラテとバスクチーズケーキ、オレンジの看板と木の店内を紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DSo9EqVkgqb/", author: "@motokn68", posted_at: 2025-12-24, likes: 9300, note: "店内の木のベンチでマグカップを持つ静かな訪問の様子" }
+    - { post_url: "https://www.instagram.com/p/DbLRoTpJidm/", author: "@nicecoffeestand", posted_at: 2026-07-24, likes: 430, note: "オレンジ地に黒いロゴの公式ビジュアル" }
+    - { post_url: "https://www.instagram.com/p/DIYJP__PTWk/", author: "@ressentiment__cafe", posted_at: 2025-04-13, likes: 210, note: "ブラックコーヒーとラテアート、チーズケーキのカウンター写真" }
+    - { post_url: "https://www.instagram.com/p/Dc-vFOwI547/", author: "@cafegram31", posted_at: 2026-09-07, likes: 180, note: "オレンジの壁のバナーと小さな木のテーブルでの一杯" }
+    - { post_url: "https://www.instagram.com/p/DUfVranAJo2/", author: "@taku_sanpo", posted_at: 2026-02-08, likes: 170, note: "白い壁に掛かるポスターと裸電球の店内の一角" }
+    - { post_url: "https://www.instagram.com/p/DYHnGxoiLrt/", author: "@shinbrews", posted_at: 2026-05-09, likes: 130, note: "ポップアップツアーの一環として店員と店内を紹介" }
+    - { post_url: "https://www.instagram.com/p/DdkwwY1zw3W/", author: "@taku_sanpo", posted_at: 2026-09-22, likes: 130, note: "オレンジの布バナーと白い壁のミニマルな店内" }
+    - { post_url: "https://www.instagram.com/p/DG5LsJNzg4J/", author: "@taku_sanpo", posted_at: 2025-03-07, likes: 120, note: "カウンター近くの木製サインと店内の様子" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-14
+  note: "Googleマップの店舗情報（小町9-2 佐々木ビル1F、営業中）と2026-11-13の来店投稿で営業を確認"
