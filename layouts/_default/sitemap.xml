@@ -1,0 +1,23 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{ range .Data.Pages }}
+    {{ if not .Sitemap.Disable }}
+    {{ if not (strings.HasSuffix .RelPermalink "/search/") }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{ $lm := "" }}
+    {{ if .Params.added_at }}
+      {{ $lm = (.Params.added_at | time.AsTime).Format "2006-01-02" }}
+      {{ with .Params.related_posts }}{{ $c := (.captured_at | time.AsTime).Format "2006-01-02" }}{{ if gt $c $lm }}{{ $lm = $c }}{{ end }}{{ end }}
+      {{ with index .Params "_verification" }}{{ $c := (.checked_at | time.AsTime).Format "2006-01-02" }}{{ if gt $c $lm }}{{ $lm = $c }}{{ end }}{{ end }}
+    {{ else if .Params.captured_at }}
+      {{ $lm = (.Params.captured_at | time.AsTime).Format "2006-01-02" }}
+    {{ else if not .Lastmod.IsZero }}
+      {{ $lm = .Lastmod.Format "2006-01-02" }}
+    {{ end }}
+    {{ with $lm }}<lastmod>{{ . }}</lastmod>{{ end }}
+  </url>
+    {{ end }}
+    {{ end }}
+  {{ end }}
+</urlset>

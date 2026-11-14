@@ -1,0 +1,32 @@
+{{ if .IsHome }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" site.Title "url" site.Home.Permalink "inLanguage" "ja" "description" site.Params.description | jsonify | safeJS }}</script>
+{{ end }}
+{{ if .Params.kind }}
+{{ $p := .Params }}
+{{ $kindLabel := index site.Params.kindLabel $p.kind }}
+{{ $pref := $p.area.prefecture }}
+{{ $crumbs := slice
+  (dict "@type" "ListItem" "position" 1 "name" "ホーム" "item" site.Home.Permalink)
+  (dict "@type" "ListItem" "position" 2 "name" $pref "item" (printf "search/?pref=%s" $pref | absURL))
+  (dict "@type" "ListItem" "position" 3 "name" $kindLabel "item" (printf "search/?kind=%s" $p.kind | absURL))
+  (dict "@type" "ListItem" "position" 4 "name" $p.name "item" .Permalink) }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs | jsonify | safeJS }}</script>
+{{ $type := "LocalBusiness" }}
+{{ if eq $p.kind "spot" }}{{ $type = "TouristAttraction" }}{{ else if eq $p.kind "stay" }}{{ $type = "LodgingBusiness" }}{{ else if eq $p.kind "activity" }}{{ $type = "TouristAttraction" }}{{ else if eq $p.kind "event" }}{{ $type = "Event" }}{{ end }}
+{{ $addr := dict "@type" "PostalAddress" "addressRegion" $pref "addressLocality" (index (split $p.area.label "・") 0) "addressCountry" "JP" }}
+{{ $ent := dict "@context" "https://schema.org" "@type" $type "name" $p.name "description" $p.summary "url" .Permalink "address" $addr }}
+{{ with $p.official }}{{ $same := slice }}{{ with .instagram_url }}{{ $same = $same | append . }}{{ end }}{{ with .website }}{{ $same = $same | append . }}{{ end }}{{ if $same }}{{ $ent = merge $ent (dict "sameAs" $same) }}{{ end }}{{ end }}
+{{ with index $p "_verification" }}{{ $ent = merge $ent (dict "dateModified" ((.checked_at | time.AsTime).Format "2006-01-02")) }}{{ end }}
+{{ if eq $p.kind "event" }}{{ with $p.period }}{{ $ent = merge $ent (dict "startDate" ((.start | time.AsTime).Format "2006-01-02") "endDate" ((.end | time.AsTime).Format "2006-01-02") "eventStatus" "https://schema.org/EventScheduled" "location" (dict "@type" "Place" "name" $p.name "address" $addr)) }}{{ end }}{{ end }}
+<script type="application/ld+json">{{ $ent | jsonify | safeJS }}</script>
+{{ end }}
+{{ if and .Params.username .Params.popular_posts }}
+{{ $a := .Params }}
+{{ $crumbs := slice
+  (dict "@type" "ListItem" "position" 1 "name" "ホーム" "item" site.Home.Permalink)
+  (dict "@type" "ListItem" "position" 2 "name" "情報源アカウント一覧" "item" ("accounts/" | absURL))
+  (dict "@type" "ListItem" "position" 3 "name" (printf "%s（@%s）" $a.name $a.username) "item" .Permalink) }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs | jsonify | safeJS }}</script>
+{{ $person := dict "@type" "Person" "name" $a.name "alternateName" (printf "@%s" $a.username) "url" $a.url "sameAs" (slice $a.url) "description" $a.note }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ProfilePage" "dateModified" (($a.captured_at | time.AsTime).Format "2006-01-02") "mainEntity" $person | jsonify | safeJS }}</script>
+{{ end }}
