@@ -9,7 +9,7 @@ source:
   post_url: "https://www.instagram.com/p/DUg7wOGgZZI/"
   author: "@lejapass_chugoku"
 maps_url: "https://www.google.com/maps/search/?api=1&query=湯来ロッジ"
-featured: false
+featured: true
 status: active
 added_at: 2026-11-09
 
