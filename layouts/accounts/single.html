@@ -3,34 +3,142 @@
 <head>{{ partial "head.html" . }}</head>
 <body>
 {{ partial "header.html" . }}
-<main class="detail">
-  {{ partial "account-card.html" .Params }}
+{{ $a := .Params }}
+{{ $handle := printf "@%s" $a.username }}
+{{ $cited := slice }}
+{{ range $slug, $pl := hugo.Data.places }}
+  {{ $hit := eq $pl.source.author $handle }}
+  {{ if not $hit }}{{ range $pl.related_posts.items }}{{ if eq .author $handle }}{{ $hit = true }}{{ end }}{{ end }}{{ end }}
+  {{ if $hit }}{{ $cited = $cited | append $pl }}{{ end }}
+{{ end }}
 
-  {{ with .Params.popular_posts }}
-  <section class="detail-section embed-section">
-    <h3>人気の投稿</h3>
-    <p class="note">いいね数が確認できた投稿の中から、数の多い順に選んでいます（{{ .captured_at }} 取得）。このアカウントは多くの投稿でいいね数を公開していないため、対象は一部の投稿に限られます。</p>
-    <ol class="rec-list">
+<div class="crumb-bar">
+  <div class="crumb-inner">
+    <nav class="crumb" aria-label="パンくず">
+      <a href="{{ "" | relURL }}">ホーム</a>
+      <span class="crumb-sep">/</span>
+      <a href="{{ "accounts/" | relURL }}">情報源アカウント一覧</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">{{ $a.name }}（@{{ $a.username }}）</span>
+    </nav>
+    <div class="crumb-meta">
+      <span>情報源アカウント{{ if $a.verified }}（認証済み）{{ end }}</span>
+      <span class="crumb-verified">AI取得日: {{ replace (printf "%s" $a.captured_at) "-" "." }}</span>
+    </div>
+  </div>
+</div>
+
+<main class="detail">
+  <section class="acct-profile">
+    <div class="acct-head">
+      <div class="acct-id">
+        <div class="acct-avatar" aria-hidden="true"><span>{{ substr $a.username 0 1 | upper }}</span></div>
+        <span class="acct-handle">@{{ $a.username }}</span>
+      </div>
+      <div class="acct-main">
+        <h1 class="acct-name">{{ $a.name }}</h1>
+        <p class="acct-note">{{ $a.note }}</p>
+        <div class="acct-chips">
+          {{ range $a.areas }}<span class="acct-chip acct-chip--area">{{ partial "icon-pin.html" . }}{{ . }}</span>{{ end }}
+          {{ range $i, $g := $a.genres }}<span class="acct-chip acct-chip--{{ mod $i 5 }}">{{ $g }}</span>{{ end }}
+        </div>
+        <div class="acct-stats">
+          <div class="acct-stat">
+            <span class="acct-stat-label">フォロワー数</span>
+            <span class="acct-stat-num">{{ lang.FormatNumber 0 $a.followers }}<span class="acct-stat-unit">人</span></span>
+            {{ if ge $a.followers 10000 }}<span class="acct-stat-sub">{{ printf "%.1f" (div (float $a.followers) 10000) }}万人規模</span>{{ end }}
+          </div>
+          <div class="acct-stat">
+            <span class="acct-stat-label">投稿数</span>
+            <span class="acct-stat-num">{{ lang.FormatNumber 0 $a.posts }}<span class="acct-stat-unit">件</span></span>
+          </div>
+          <div class="acct-stat">
+            {{ if gt (len $cited) 0 }}
+            <span class="acct-stat-label">登場する掲載スポット</span>
+            <span class="acct-stat-num acct-stat-num--accent">{{ len $cited }}<span class="acct-stat-unit">件</span></span>
+            {{ else }}
+            <span class="acct-stat-label">データ取得日</span>
+            <span class="acct-stat-num acct-stat-num--date">{{ replace (printf "%s" $a.captured_at) "-" "." }}</span>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      <div class="acct-dock">
+        <a class="btn-detail btn-detail--instagram" href="{{ $a.url }}" rel="noopener" target="_blank">{{ partial "icon-instagram.html" . }}<span>Instagramで見る</span></a>
+        <button class="btn-detail btn-detail--share" id="share-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 16.1c-.8 0-1.5.3-2 .8l-7.1-4.1c0-.3.1-.5.1-.8s0-.5-.1-.8L16 7.1c.5.5 1.2.8 2 .8a3 3 0 1 0-3-3c0 .3 0 .5.1.8L8 9.7a3 3 0 1 0 0 4.6l7.1 4a3 3 0 1 0 2.9-2.2z"/></svg><span id="share-label">シェア</span></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="acct-policy">
+    <span class="acct-policy-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
+    <div>
+      <p class="acct-policy-title">情報掲載方針について</p>
+      <p class="acct-policy-text">当サイトではクリエイターの権利を尊重し、写真・動画の無断複製や再配布は行っていません。投稿はInstagram公式の埋め込みと外部リンクで紹介しています。フォロワー数・投稿数・いいね数は {{ $a.captured_at }} 時点のスナップショットです。最新の投稿はInstagramでご覧ください。</p>
+    </div>
+  </div>
+
+  {{ with $a.popular_posts }}
+  <section class="acct-section">
+    <div class="section-head">
+      <span class="section-dot" aria-hidden="true"></span>
+      <div>
+        <h2>人気の投稿ランキング</h2>
+        <p class="section-sub">いいね数が確認できた投稿の中から、数の多い順に選んでいます（{{ .captured_at }} 取得）。いいね数を公開していない投稿は対象外です。</p>
+      </div>
+    </div>
+    <div class="rank-grid">
       {{ range $i, $p := .items }}
-      <li>{{ add $i 1 }}位：{{ $p.note }}<br><span class="related-meta">いいね {{ $p.likes }} ・ {{ $p.posted_at }} ・ <a href="{{ $p.post_url }}" rel="noopener" target="_blank">Instagramで見る</a></span></li>
+      {{ $rank := add $i 1 }}
+      {{ $match := "" }}
+      {{ range $slug, $pl := hugo.Data.places }}
+        {{ if eq $pl.source.post_url $p.post_url }}{{ $match = $slug }}{{ end }}
+        {{ range $pl.related_posts.items }}{{ if eq .post_url $p.post_url }}{{ $match = $slug }}{{ end }}{{ end }}
       {{ end }}
-    </ol>
-    {{ with index .items 0 }}
-    <p class="related-meta">1位の投稿（埋め込み表示）</p>
-    <blockquote class="instagram-media" data-instgrm-permalink="{{ .post_url }}" data-instgrm-version="14">
-      <a href="{{ .post_url }}" rel="noopener" target="_blank">Instagramで投稿を見る</a>
-    </blockquote>
-    {{ end }}
+      <article class="rank-card">
+        <div class="rank-accent rank-accent--{{ $rank }}"></div>
+        <div class="rank-body">
+          <div class="rank-meta">
+            <span class="rank-pill rank-pill--{{ $rank }}">第{{ $rank }}位</span>
+            <span class="rank-likes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-10-10C.5 7 3 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19 4 21.5 7 20 11c-2 4.5-8 10-8 10z"/></svg>{{ lang.FormatNumber 0 $p.likes }}<span class="rank-likes-sep">・</span>{{ $p.posted_at }}</span>
+          </div>
+          <h3 class="rank-title">{{ $p.note }}</h3>
+          {{ if eq $i 0 }}
+          <blockquote class="instagram-media" data-instgrm-permalink="{{ $p.post_url }}" data-instgrm-version="14">
+            <a href="{{ $p.post_url }}" rel="noopener" target="_blank">Instagramで投稿を見る</a>
+          </blockquote>
+          {{ end }}
+          <div class="rank-actions">
+            <a class="rank-btn rank-btn--instagram" href="{{ $p.post_url }}" rel="noopener" target="_blank">Instagramで見る</a>
+            {{ with $match }}<a class="rank-btn rank-btn--place" href="{{ printf "places/%s/" . | relURL }}">紹介スポットを見る</a>{{ end }}
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
   </section>
   {{ end }}
 
-  <section class="detail-section">
-    <h3>このページの情報について</h3>
-    <p class="note">フォロワー数と投稿数は {{ .Params.captured_at }} 時点のスナップショットです。1位の投稿は Instagram 公式の埋め込みで表示しており、写真や動画をこのサイトに複製はしていません。</p>
-    <p><a href="{{ "accounts/" | relURL }}">← 情報源アカウント一覧へ</a></p>
+  {{ if gt (len $cited) 0 }}
+  <section class="acct-section">
+    <div class="section-head">
+      <span class="section-dot" aria-hidden="true"></span>
+      <div>
+        <h2>このアカウントが登場する掲載スポット</h2>
+        <p class="section-sub">出典・関連投稿としてこのアカウントの投稿を掲載しているスポットです。</p>
+      </div>
+    </div>
+    <div class="grid">
+      {{ range $cited }}{{ partial "place-card.html" . }}{{ end }}
+    </div>
   </section>
+  {{ end }}
+
+  <p class="detail-back"><a href="{{ "accounts/" | relURL }}">情報源アカウント一覧へ戻る</a></p>
 </main>
 {{ partial "footer.html" . }}
 <script async src="https://www.instagram.com/embed.js"></script>
+{{ $detailJs := resources.Get "js/detail.js" | resources.Fingerprint "sha256" }}
+<script src="{{ $detailJs.RelPermalink }}" defer></script>
 </body>
 </html>
