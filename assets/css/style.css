@@ -176,6 +176,8 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .area-chip .count { font-size: 10px; background: rgba(0, 0, 0, .22); padding: 1px 7px; border-radius: 999px; }
 .area-chip--soon { background: var(--surface); color: var(--muted); border: 1px solid var(--border); box-shadow: none; }
 .area-chip--soon .count { background: none; padding: 0; opacity: .65; }
+.hero-side { position: relative; }
+.hero-mascot { display: block; width: 168px; height: auto; margin: 0 auto -14px; position: relative; z-index: 1; }
 .hero-stats { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--shadow-md); }
 .hero-stats-head { display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 700; color: var(--heading); }
 .hero-stats-badge { font-size: 11px; font-weight: 700; background: var(--kind-spot-bg); color: var(--kind-spot); padding: 3px 9px; border-radius: 6px; }
@@ -192,6 +194,7 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .ai-banner a:hover { text-decoration: underline; }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
+  .hero-mascot { width: 140px; }
   .hero { padding: 28px 18px 8px; }
   .hero-title { font-size: 26px; }
   .ai-banner { flex-direction: column; align-items: flex-start; }

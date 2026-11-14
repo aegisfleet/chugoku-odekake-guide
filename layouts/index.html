@@ -39,13 +39,16 @@
         {{ end }}
       </div>
     </div>
-    <div class="hero-stats">
+    <div class="hero-side">
+      <img class="hero-mascot" src="{{ "images/mascot-hero.webp" | relURL }}" alt="ポちの中国地方おでかけガイドのマスコット" width="640" height="836" fetchpriority="high">
+      <div class="hero-stats">
       <div class="hero-stats-head"><span>キュレーション指標</span><span class="hero-stats-badge">更新中</span></div>
       <div class="hero-stats-grid">
         <div class="stat-box"><span class="stat-label">登録スポット</span><span class="stat-num">{{ len $places }}<span class="unit">件</span></span></div>
         <div class="stat-box"><span class="stat-label">開催中イベント</span><span class="stat-num stat-num--countdown">{{ len $ongoing }}<span class="unit">件</span></span></div>
       </div>
       <p class="hero-stats-note">掲載写真はすべて出典の元投稿へリンクしています（転載はしていません）。</p>
+      </div>
     </div>
   </div>
   <div class="ai-banner" id="ai-banner">
