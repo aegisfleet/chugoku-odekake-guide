@@ -6,18 +6,17 @@
 <main class="detail">
   {{ partial "account-card.html" .Params }}
 
-  <section class="detail-section">
-    <h3>プロフィール</h3>
-    <p class="note">プロフィール本体は Instagram でご覧ください。アイコンやアカウントのヘッダー情報は、下の「人気の投稿」の埋め込み内にも表示されます。</p>
-    <p class="actions"><a class="btn btn--instagram" href="{{ .Params.url }}" rel="noopener" target="_blank">Instagram でプロフィールを見る</a></p>
-  </section>
-
   {{ with .Params.popular_posts }}
   <section class="detail-section embed-section">
     <h3>人気の投稿</h3>
     <p class="note">いいね数が確認できた投稿の中から、数の多い順に選んでいます（{{ .captured_at }} 取得）。このアカウントは多くの投稿でいいね数を公開していないため、対象は一部の投稿に限られます。</p>
-    {{ range .items }}
-    <p class="related-meta">{{ .posted_at }} ・ いいね {{ .likes }} ・ {{ .note }}</p>
+    <ol class="rec-list">
+      {{ range $i, $p := .items }}
+      <li>{{ add $i 1 }}位：{{ $p.note }}<br><span class="related-meta">いいね {{ $p.likes }} ・ {{ $p.posted_at }} ・ <a href="{{ $p.post_url }}" rel="noopener" target="_blank">Instagramで見る</a></span></li>
+      {{ end }}
+    </ol>
+    {{ with index .items 0 }}
+    <p class="related-meta">1位の投稿（埋め込み表示）</p>
     <blockquote class="instagram-media" data-instgrm-permalink="{{ .post_url }}" data-instgrm-version="14">
       <a href="{{ .post_url }}" rel="noopener" target="_blank">Instagramで投稿を見る</a>
     </blockquote>
@@ -27,7 +26,7 @@
 
   <section class="detail-section">
     <h3>このページの情報について</h3>
-    <p class="note">フォロワー数と投稿数は {{ .Params.captured_at }} 時点のスナップショットです。プロフィールと投稿は Instagram 公式の埋め込みで表示しており、写真や動画をこのサイトに複製はしていません。</p>
+    <p class="note">フォロワー数と投稿数は {{ .Params.captured_at }} 時点のスナップショットです。1位の投稿は Instagram 公式の埋め込みで表示しており、写真や動画をこのサイトに複製はしていません。</p>
     <p><a href="{{ "accounts/" | relURL }}">← 情報源アカウント一覧へ</a></p>
   </section>
 </main>
