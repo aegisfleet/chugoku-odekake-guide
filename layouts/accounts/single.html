@@ -6,12 +6,10 @@
 <main class="detail">
   {{ partial "account-card.html" .Params }}
 
-  <section class="detail-section embed-section">
-    <h3>プロフィール（Instagram公式の埋め込み）</h3>
-    <blockquote class="instagram-media" data-instgrm-permalink="{{ .Params.url }}" data-instgrm-version="14">
-      <a href="{{ .Params.url }}" rel="noopener" target="_blank">Instagramでプロフィールを見る（@{{ .Params.username }}）</a>
-    </blockquote>
-    <p class="note">埋め込みが表示されない場合は、上のリンクからプロフィールを開いてください。</p>
+  <section class="detail-section">
+    <h3>プロフィール</h3>
+    <p class="note">プロフィール本体は Instagram でご覧ください。アイコンやアカウントのヘッダー情報は、下の「人気の投稿」の埋め込み内にも表示されます。</p>
+    <p class="actions"><a class="btn btn--instagram" href="{{ .Params.url }}" rel="noopener" target="_blank">Instagram でプロフィールを見る</a></p>
   </section>
 
   {{ with .Params.popular_posts }}
