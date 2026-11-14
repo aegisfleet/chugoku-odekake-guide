@@ -16,6 +16,15 @@
   </section>
   {{ end }}
 
+  {{ with .Params.maps_url }}
+  {{ $q := replaceRE "\\+" " " (replaceRE "^.*[?&]query=" "" .) }}
+  <section class="detail-section">
+    <h3>地図</h3>
+    <iframe class="map-embed" src="https://maps.google.com/maps?q={{ $q }}&z=16&output=embed" loading="lazy" title="{{ $.Params.name }}の地図" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p class="note">地図は Google マップの埋め込み表示です。住所・営業時間などの最新情報は <a href="{{ . }}" rel="noopener" target="_blank">Googleマップで開く</a> でご確認ください。</p>
+  </section>
+  {{ end }}
+
   {{ if eq .Params.source.platform "instagram" }}
   <section class="detail-section embed-section">
     <h3>出典投稿</h3>

@@ -19,7 +19,7 @@ source:
   platform: instagram              # instagram | threads
   post_url: "https://www.instagram.com/p/xxxx/"
   author: "@example"
-maps_url: "https://www.google.com/maps/search/?api=1&query=..."   # Googleマップ検索リンク
+maps_url: "https://www.google.com/maps/search/?api=1&query=..."   # Googleマップ検索リンク（詳細ページの地図埋め込みもこの query から生成する）
 featured: false                    # true のとき一覧で強調表示（意味だけ持ち、装飾はCSS側）
 status: active                     # active | needs_review | closed_suspected | removed
 added_at: 2026-11-13               # 追加日 (YYYY-MM-DD)
