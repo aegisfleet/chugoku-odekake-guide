@@ -413,7 +413,7 @@ h1, h2, h3 { letter-spacing: -.01em; }
 }
 
 /* ==== モバイルデザイン（デザイナーのモバイルモック準拠） ==== */
-.mobile-search-pill { display: none; }
+.header-search-icon { display: none; }
 .mobile-tools { display: none; }
 .tabbar { display: none; }
 .search-mobile-bar { display: none; }
@@ -463,14 +463,12 @@ h1, h2, h3 { letter-spacing: -.01em; }
 }
 
 @media (max-width: 720px) {
-  /* ヘッダー2行化: 検索ピルを行として追加し、パネル内の検索フォームは隠す */
-  .header-inner { flex-wrap: wrap; }
-  .mobile-search-pill { display: flex; flex-basis: 100%; align-items: center; gap: 8px; background: var(--surface-subtle); border: 1px solid var(--border); border-radius: 999px; padding: 9px 14px; color: var(--faint); font-size: 13px; text-decoration: none; margin-top: 2px; }
-  .mobile-search-pill svg { width: 17px; height: 17px; fill: #9d3e1a; flex-shrink: 0; }
-  .mobile-search-pill .pill-tune { margin-left: auto; fill: var(--muted); }
-  .mobile-search-pill span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  /* モバイルのヘッダー: ハンバーガーの左に検索アイコンだけを置き、パネル内の検索フォームは隠す */
+  .header-search-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; }
+  .header-search-icon svg { width: 21px; height: 21px; fill: var(--text); }
+  .header-search-icon:active { background: var(--surface-subtle); }
   .header-search { display: none; }
-  .search-mobile-bar { top: 100px; padding-left: 16px; padding-right: 16px; }
+  .search-mobile-bar { padding-left: 16px; padding-right: 16px; }
   /* ホームのモバイル検索導線 */
   .mobile-tools { display: block; max-width: 1100px; margin: 0 auto; padding: 14px 16px 0; }
   .mobile-search-row { display: flex; gap: 10px; align-items: stretch; }
