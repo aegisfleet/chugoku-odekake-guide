@@ -1,0 +1,42 @@
+slug: hikyaku
+name: 飛脚
+kind: shop
+tags: [古民家レストラン, おむすび, 合掌造り]
+area: { prefecture: 広島県, label: 安芸高田市・甲田町 }
+summary: 国道54号沿いに立つ合掌造りの旧ドライブイン「飛脚」。2013年の閉店後、クラウドファンディングなどの支援を受けて2026年秋に13年ぶりに復活した。看板メニューの「飛脚むすび」やおでんを提供し、マルシェなどのイベントも開かれる地域の交流拠点。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DerEu0opcZI/"
+  author: "@hikyaku.2026"
+maps_url: "https://www.google.com/maps/search/?api=1&query=飛脚+安芸高田市+甲田町"
+featured: false
+status: active
+added_at: 2026-11-14
+
+official:
+  instagram: "@hikyaku.2026"
+  instagram_url: "https://www.instagram.com/hikyaku.2026/"
+  website: "https://camp-fire.jp/projects/948066/view"
+  website_label: CAMPFIRE（復活プロジェクト）
+
+highlights: [看板メニューの飛脚むすび, 合掌造りの茅葺き屋根の建物, 囲炉裏の間とこたつ, 昔ながらの提灯が並ぶ店内, 冬はあったかおでん]
+
+related_posts:
+  captured_at: 2026-11-14
+  found_count: 43
+  items:
+    - { post_url: "https://www.instagram.com/p/DerEu0opcZI/", author: "@hikyaku.2026", posted_at: 2026-10-19, likes: 2064, note: "通常営業のメニュー決定を知らせるお店からの投稿（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DbVRQtMpjXk/", author: "@hikyaku.2026", posted_at: 2026-07-28, likes: 1722, note: "応援隊による片付け・掃除の様子をまとめた動画" }
+    - { post_url: "https://www.instagram.com/reel/DdwJG6fJe_r/", author: "@hikyaku.2026", posted_at: 2026-09-26, likes: 1720, note: "プレオープン初日のにぎわいを伝える動画" }
+    - { post_url: "https://www.instagram.com/reel/DZTzUDjpAsP/", author: "@hikyaku.2026", posted_at: 2026-06-07, likes: 1072, note: "初投稿から1か月の経過を報告する動画" }
+    - { post_url: "https://www.instagram.com/reel/Db8Nq3bJUUG/", author: "@hikyaku.2026", posted_at: 2026-08-12, likes: 666, note: "目指す飛脚の姿を紹介する動画" }
+    - { post_url: "https://www.instagram.com/reel/Dd8eKxsJlHQ/", author: "@hikyaku.2026", posted_at: 2026-10-01, likes: 629, note: "プレオープン2日間を終えての報告動画" }
+    - { post_url: "https://www.instagram.com/p/Debgi84pu-1/", author: "@hikyaku.2026", posted_at: 2026-10-13, likes: 602, note: "オープニングイベント終了を報告する投稿" }
+    - { post_url: "https://www.instagram.com/p/DejC_3YJe57/", author: "@hikyaku.2026", posted_at: 2026-10-16, likes: 543, note: "通常営業スタートを知らせる投稿" }
+    - { post_url: "https://www.instagram.com/reel/DeZNL-mTucC/", author: "@nihon.today", posted_at: 2026-10-12, likes: 330, note: "オープン当日の様子を伝えるメディアの投稿" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-14
+  note: "住所は公式プロフィール（安芸高田市甲田町下甲立468）とイベント告知ページ（ひろしま里山・チーム500）の記載が一致。中国新聞・広島テレビ等の報道で、旧ドライブイン飛脚が2026年10月に13年ぶりに再オープンしたことを確認。公式アカウントは2026-11-14も投稿しており営業中"
