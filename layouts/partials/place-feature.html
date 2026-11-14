@@ -1,0 +1,48 @@
+{{- /* イベント特集用の横長カード（トップのイベントセクション先頭のみ）。構造はテンプレート、見た目はCSS */ -}}
+{{- $today := (now.Format "2006-01-02") | time.AsTime }}
+{{- $isNew := false }}
+{{- if .added_at }}
+  {{- $age := div (sub $today.Unix ((.added_at | time.AsTime).Unix)) 86400 }}
+  {{- if and (ge $age 0) (lt $age 14) }}{{ $isNew = true }}{{ end }}
+{{- end }}
+{{- $evBadge := "" }}
+{{- $daysToStart := 0 }}
+{{- if and (eq .kind "event") .period }}
+  {{- $start := .period.start | time.AsTime }}
+  {{- $end := .period.end | time.AsTime }}
+  {{- if le $start $today }}
+    {{- if le (div (sub $end.Unix $today.Unix) 86400) 7 }}{{ $evBadge = "ending" }}{{ else }}{{ $evBadge = "live" }}{{ end }}
+  {{- else }}
+    {{- $evBadge = "soon" }}
+    {{- $daysToStart = div (sub $start.Unix $today.Unix) 86400 }}
+  {{- end }}
+{{- end }}
+<article class="feature-card" data-kind="{{ .kind }}">
+  <div class="feature-visual">
+    <div class="badges">
+      <span class="badge {{ index site.Params.kindClass .kind }}">{{ index site.Params.kindLabel .kind }}</span>
+      {{ if $isNew }}<span class="badge badge--new">New</span>{{ end }}
+      {{ if eq $evBadge "live" }}<span class="badge badge--live">開催中</span>{{ end }}
+      {{ if eq $evBadge "ending" }}<span class="badge badge--ending">まもなく終了</span>{{ end }}
+      {{ if eq $evBadge "soon" }}<span class="badge badge--soon">あと{{ $daysToStart }}日</span>{{ end }}
+    </div>
+    <div class="feature-visual-foot">
+      <div class="feature-visual-area">{{ .area.prefecture }} / {{ .area.label }}</div>
+      {{ if .period }}<div class="feature-visual-period">{{ .period.start }} 〜<br>{{ .period.end }}</div>{{ end }}
+    </div>
+  </div>
+  <div class="feature-body">
+    <div class="badges">
+      {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+      {{ if .notices }}<span class="tag tag--notice">お知らせあり</span>{{ end }}
+    </div>
+    <h3 class="place-name"><a href="{{ printf "places/%s/" .slug | relURL }}">{{ .name }}</a></h3>
+    <p class="area">{{ partial "icon-pin.html" . }}{{ .area.prefecture }} / {{ .area.label }}</p>
+    {{ if .period }}<p class="period">開催期間: {{ .period.start }} 〜 {{ .period.end }}</p>{{ end }}
+    <p class="summary">{{ .summary }}</p>
+    <div class="actions">
+      <a class="btn btn--instagram" href="{{ .source.post_url }}" rel="noopener" target="_blank">{{ partial "icon-instagram.html" . }}Instagramで見る <span class="btn-handle">{{ .source.author }}</span></a>
+      <a class="btn btn--maps" href="{{ .maps_url }}" rel="noopener" target="_blank">{{ partial "icon-pin.html" . }}Googleマップ</a>
+    </div>
+  </div>
+</article>

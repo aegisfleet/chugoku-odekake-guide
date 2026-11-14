@@ -22,12 +22,50 @@
 {{ $ongoing = sort $ongoing "period.end" "asc" }}
 {{ $upcoming = sort $upcoming "period.start" "asc" }}
 {{ $events := $ongoing | append $upcoming }}
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="hero-eyebrow">AIキュレーション × Instagram投稿の発掘</span>
+      <h1 class="hero-title">週末がもっと楽しみになる、<br><span class="hl">中国地方の魅力</span>をてのひらに。</h1>
+      <p class="hero-sub">広島を中心に鳥取・島根・岡山・山口の5県から、カフェ・ラーメン・観光スポット・温泉・イベントを厳選。出典はInstagramの投稿で、場所の確認はGoogleマップへ。写真は転載せず、元投稿へのリンクで紹介します。</p>
+      <div class="area-chips">
+        <span class="area-chips-label">エリア：</span>
+        {{ range slice "広島県" "岡山県" "山口県" "島根県" "鳥取県" }}
+          {{ $pref := . }}{{ $count := 0 }}
+          {{ range $places }}{{ if eq .area.prefecture $pref }}{{ $count = add $count 1 }}{{ end }}{{ end }}
+          {{ if gt $count 0 }}<span class="area-chip">{{ $pref }}<span class="count">{{ $count }}</span></span>
+          {{ else }}<span class="area-chip area-chip--soon">{{ $pref }}<span class="count">近日</span></span>{{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stats-head"><span>キュレーション指標</span><span class="hero-stats-badge">更新中</span></div>
+      <div class="hero-stats-grid">
+        <div class="stat-box"><span class="stat-label">登録スポット</span><span class="stat-num">{{ len $places }}<span class="unit">件</span></span></div>
+        <div class="stat-box"><span class="stat-label">開催中イベント</span><span class="stat-num stat-num--countdown">{{ len $ongoing }}<span class="unit">件</span></span></div>
+      </div>
+      <p class="hero-stats-note">掲載写真はすべて出典の元投稿へリンクしています（転載はしていません）。</p>
+    </div>
+  </div>
+  <div class="ai-banner">
+    <p>{{ site.Params.aiNote }}</p>
+    <a href="{{ "accounts/" | relURL }}">情報源について →</a>
+  </div>
+</section>
+
 {{ with $events }}
 <section class="home-section">
-  <h2 class="home-section-title">開催中・まもなく開催のイベント</h2>
-  <div class="grid grid--section">
-    {{ range . }}{{ partial "place-card.html" . }}{{ end }}
+  <div class="section-head">
+    <span class="section-bar section-bar--event"></span>
+    <div><h2>開催中・まもなく開催のイベント</h2><p class="section-sub">期間限定のフェスティバルやライトアップ情報</p></div>
   </div>
+  {{ range first 1 . }}{{ partial "place-feature.html" . }}{{ end }}
+  {{ if gt (len .) 1 }}
+  <div class="grid grid--section">
+    {{ range after 1 . }}{{ partial "place-card.html" . }}{{ end }}
+  </div>
+  {{ end }}
 </section>
 {{ end }}
 {{ $eventSlugs := slice }}
@@ -39,12 +77,21 @@
 {{ $featured = first 3 $featured }}
 {{ with $featured }}
 <section class="home-section">
-  <h2 class="home-section-title">今月のおすすめ</h2>
+  <div class="section-head">
+    <span class="section-bar"></span>
+    <div><h2>今月のおすすめ</h2><p class="section-sub">AIが今もっとも注目するスポット</p></div>
+  </div>
   <div class="grid grid--section">
     {{ range . }}{{ partial "place-card.html" . }}{{ end }}
   </div>
 </section>
 {{ end }}
+<section class="home-section">
+  <div class="section-head">
+    <span class="section-bar section-bar--grid"></span>
+    <div><h2>スポット＆イベント一覧</h2><p class="section-sub">中国地方のキュレーションアーカイブ（全{{ len $places }}件）</p></div>
+  </div>
+</section>
 <nav class="filters" aria-label="絞り込み">
   <button class="filter-btn is-active" data-filter-kind="all">すべて</button>
   {{ range $key, $label := site.Params.kindLabel }}
@@ -58,8 +105,19 @@
 </main>
 <p class="empty-note" id="empty-note" hidden>該当する情報はまだありません。</p>
 <section class="home-section">
-  <h2 class="home-section-title">情報源アカウント</h2>
-  <p class="summary">中国地方の情報を専門に発信しているアカウントを<a href="{{ "accounts/" | relURL }}">こちら</a>で紹介しています。</p>
+  <div class="section-head">
+    <span class="section-bar"></span>
+    <div><h2>情報源アカウント</h2><p class="section-sub">情報収集で参考にしている地域情報アカウント</p></div>
+  </div>
+  <div class="accounts-panel">
+    <span class="accounts-panel-eyebrow">CREDIT &amp; COMMUNITY</span>
+    <h3>中国地方の魅力をつむぐ、情報源アカウント</h3>
+    <p>このサイトは、地域のリアルな情報を発信しているアカウントの投稿をもとにキュレーションしています。掲載にあたって実在と活動状況を確認したアカウントを、専用ページで紹介しています。</p>
+    <div class="account-chips">
+      {{ range hugo.Data.accounts }}<span class="account-chip">@{{ .username }}</span>{{ end }}
+    </div>
+    <a class="cta-btn" href="{{ "accounts/" | relURL }}">情報源アカウント一覧を見る →</a>
+  </div>
 </section>
 {{ partial "footer.html" . }}
 <script src="{{ "js/filter.js" | relURL }}"></script>

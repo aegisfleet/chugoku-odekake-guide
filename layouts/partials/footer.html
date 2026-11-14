@@ -1,4 +1,24 @@
 <footer class="site-footer">
-  <p>{{ site.Title }} — 写真は転載せず、出典のInstagram投稿へのリンクで紹介しています。</p>
-  <p>掲載情報に誤りを見つけた場合は、出典投稿とGoogleマップでご確認ください。</p>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-brand">{{ site.Title }}</span><span class="footer-badge">AIキュレーション</span>
+        <p class="footer-desc">広島を中心に中国地方5県（鳥取・島根・岡山・広島・山口）のお店・観光・イベント・温泉・体験スポットを、Instagram投稿とGoogleマップ情報をもとにAIがキュレーションしてお届けする地域おでかけメディアです。</p>
+        <div class="footer-note-box">当サイトの写真およびテキストは転載せず、出典元のInstagram投稿へのリンク形式でご紹介しています。営業時間・定休日・開催日程などの最新情報は、各出典投稿およびGoogleマップにてご確認をお願いいたします。</div>
+      </div>
+      <div>
+        <p class="footer-nav-title">ナビゲーション</p>
+        <nav class="footer-nav">
+          <a href="{{ site.Home.RelPermalink }}">ホーム</a>
+          <a href="{{ "accounts/" | relURL }}">情報源アカウント一覧</a>
+        </nav>
+        <p class="footer-nav-title footer-nav-title--spaced">対象エリア</p>
+        <div class="footer-areas"><span>広島県</span><span>岡山県</span><span>山口県</span><span>島根県</span><span>鳥取県</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{ now.Year }} {{ site.Title }}</span>
+      <span>掲載情報に誤りを見つけた場合は、出典投稿とGoogleマップでご確認ください。</span>
+    </div>
+  </div>
 </footer>
