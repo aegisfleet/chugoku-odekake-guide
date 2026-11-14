@@ -148,3 +148,5 @@ a { color: var(--link); }
 
 /* フォーカスの見やすさ（テーマ共通） */
 :focus-visible { outline: 2px solid #e8a13a; outline-offset: 2px; }
+.site-nav { margin: 10px 0 0; font-size: 13px; }
+.site-nav a { color: var(--heading); font-weight: 600; }

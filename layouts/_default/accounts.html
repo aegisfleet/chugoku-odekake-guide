@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>{{ partial "head.html" . }}</head>
+<body>
+{{ partial "header.html" . }}
+<main>
+<section class="home-section">
+  <h1 class="home-section-title">情報源アカウント</h1>
+  <p class="summary">中国地方のおでかけ情報を専門に発信している公開アカウントを紹介します。このサイトの情報収集でも参考にしているアカウントで、掲載にあたって実在と活動状況を確認しています。</p>
+  <p class="summary">フォロワー数と投稿数は取得日時点のスナップショットです。最新の数字は各アカウントでご確認ください。</p>
+  <div class="grid grid--section">
+    {{ $accounts := slice }}
+    {{ range hugo.Data.accounts }}{{ $accounts = $accounts | append . }}{{ end }}
+    {{ range sort $accounts "followers" "desc" }}
+      {{ partial "account-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+</main>
+{{ partial "footer.html" . }}
+</body>
+</html>

@@ -90,3 +90,25 @@ _verification:                     # 任意・内部用（ただし checked_at �
   closed_check: not_closed
   checked_at: 2026-11-13
 ```
+
+## 情報源アカウント（data/accounts/）
+
+中国地方の情報を専門に発信する公開アカウントの一覧ページ（`/accounts/`）用のデータです。場所データとは別に、`data/accounts/<username>.yaml`（1件1ファイル）で管理します。
+
+```yaml
+username: hiroshima_nicegourme        # アカウント名（@なし）
+name: "ナイスグルメ | 広島グルメ＆広島観光"  # 表示名
+platform: instagram
+url: https://www.instagram.com/hiroshima_nicegourme/
+verified: true                          # 認証済みアカウントか
+areas: [広島県]                          # 主な対象エリア
+genres: [グルメ, 観光スポット]            # 得意ジャンル
+note: "自分の言葉での一言紹介"
+followers: 105129                       # 照合用スナップショット（揮発情報のため captured_at とセット）
+posts: 773
+captured_at: "2026-11-14"
+```
+
+- 掲載基準: 対象地域の情報を継続して発信している公開アカウントであること。追加時に実在と活動状況を確認する。
+- フォロワー数・投稿数はスナップショットとして取得日つきで表示する。月次運用で更新する。
+- 紹介文（note）はプロフィールの転載ではなく、自分の言葉で書く。
