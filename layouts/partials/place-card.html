@@ -22,8 +22,15 @@
     {{- $daysToStart = div (sub $start.Unix $today.Unix) 86400 }}
   {{- end }}
 {{- end }}
+{{- $likes := 0 }}
+{{- with .related_posts }}{{ range .items }}{{ $likes = add $likes (.likes | default 0) }}{{ end }}{{ end }}
 <article class="place-card{{ if .featured }} place-card--featured{{ end }}{{ if $ended }} place-card--ended{{ end }}"
          data-kind="{{ .kind }}" data-prefecture="{{ .area.prefecture }}"
+         data-area="{{ index (split .area.label "・") 0 }}" data-tags="|{{ delimit .tags "|" }}|"
+         data-added="{{ if .added_at }}{{ (.added_at | time.AsTime).Unix }}{{ end }}"
+         data-found="{{ .related_posts.found_count | default 0 }}" data-likes="{{ $likes }}"
+         data-start="{{ if .period }}{{ (.period.start | time.AsTime).Unix }}{{ end }}"
+         data-end="{{ if .period }}{{ (.period.end | time.AsTime).Unix }}{{ end }}"
          data-search="{{ printf "%s %s %s %s %s %s" .name .area.prefecture .area.label (index site.Params.kindLabel .kind) (delimit .tags " ") .summary | lower }}">
   <div class="badges">
     <span class="badge {{ index site.Params.kindClass .kind }}">{{ index site.Params.kindLabel .kind }}</span>

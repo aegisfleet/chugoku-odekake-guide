@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>{{ partial "head.html" . }}</head>
+<body>
+{{ partial "header.html" . }}
+{{ $places := slice }}
+{{ range hugo.Data.places }}{{ $places = $places | append . }}{{ end }}
+{{ $prefs := slice "広島県" "岡山県" "山口県" "島根県" "鳥取県" }}
+{{ $areaNames := slice }}
+{{ range $places }}{{ $seg := index (split .area.label "・") 0 }}{{ if not (in $areaNames $seg) }}{{ $areaNames = $areaNames | append $seg }}{{ end }}{{ end }}
+{{ $tagNames := slice }}
+{{ range $places }}{{ range .tags }}{{ if not (in $tagNames .) }}{{ $tagNames = $tagNames | append . }}{{ end }}{{ end }}{{ end }}
+{{ $tagStats := slice }}
+{{ range $tagNames }}
+  {{ $t := . }}{{ $c := 0 }}
+  {{ range $places }}{{ if in .tags $t }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+  {{ $tagStats = $tagStats | append (dict "name" $t "count" $c) }}
+{{ end }}
+{{ $tagStats = sort $tagStats "count" "desc" }}
+
+<section class="search-hero">
+  <div class="search-hero-inner">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="{{ site.Home.RelPermalink }}">ホーム</a><span class="breadcrumb-sep">›</span><span>検索結果一覧</span>
+    </nav>
+    <div class="search-hero-head">
+      <div>
+        <span class="search-eyebrow">Chugoku Discovery</span>
+        <h1>中国地方の魅力をみつける</h1>
+        <p>Instagramの出典投稿とGoogleマップ連携から、週末のおでかけ先をスマート検索</p>
+      </div>
+      <span class="ai-status"><span class="ai-status-dot"></span>AIキュレーション：毎日更新しています</span>
+    </div>
+    <div class="search-bar">
+      <div class="search-bar-input">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
+        <input type="text" id="search-input" placeholder="キーワード・スポット名・市町村（例: カフェ、ラーメン、イルミネーション）" aria-label="キーワード検索">
+        <button type="button" id="search-clear" title="入力をクリア" aria-label="入力をクリア">×</button>
+      </div>
+      <select id="search-pref" aria-label="都道府県で絞り込み">
+        <option value="all">中国5県すべて</option>
+        <option value="custom" hidden>カスタム選択中</option>
+        {{ range $prefs }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+      </select>
+      <button type="button" class="search-apply-btn" id="search-apply">再検索する</button>
+    </div>
+    <div class="trend-tags">
+      <span class="trend-label">人気キーワード:</span>
+      {{ range first 6 $tagStats }}<button type="button" class="trend-chip" data-term="{{ .name }}">#{{ .name }}</button>{{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="search-layout">
+  <aside class="search-side">
+    <div class="side-head"><span>絞り込み条件</span><button type="button" id="reset-filters">すべてリセット</button></div>
+    <div class="side-group">
+      <h4>対象エリア</h4>
+      <div class="pref-checks">
+        {{ range $prefs }}
+          {{ $pref := . }}{{ $c := 0 }}
+          {{ range $places }}{{ if eq .area.prefecture $pref }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+          <label class="pref-check"><input type="checkbox" data-pref="{{ $pref }}" checked><span>{{ $pref }}</span><span class="side-count">{{ $c }}</span></label>
+        {{ end }}
+      </div>
+      {{ with $areaNames }}
+      <div class="area-chips-filter">
+        {{ range sort . }}
+          {{ $seg := . }}{{ $c := 0 }}
+          {{ range $places }}{{ if eq (index (split .area.label "・") 0) $seg }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+          <button type="button" class="toggle-chip" data-area="{{ $seg }}">{{ $seg }}（{{ $c }}）</button>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="side-group">
+      <h4>カテゴリ</h4>
+      <div class="kind-radios">
+        <label class="kind-radio"><span><input type="radio" name="search-kind" data-kind="all" checked> すべて</span><span class="side-count">{{ len $places }}</span></label>
+        {{ range $key, $label := site.Params.kindLabel }}
+          {{ $c := 0 }}{{ range $places }}{{ if eq .kind $key }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+          <label class="kind-radio"><span><input type="radio" name="search-kind" data-kind="{{ $key }}"> {{ $label }}</span><span class="side-count kind-count--{{ $key }}">{{ $c }}</span></label>
+        {{ end }}
+      </div>
+    </div>
+    <div class="side-group">
+      <h4>開催時期（イベント）</h4>
+      <div class="timing-btns">
+        <button type="button" class="timing-btn is-active" data-timing="none">指定なし</button>
+        <button type="button" class="timing-btn" data-timing="today">今日</button>
+        <button type="button" class="timing-btn" data-timing="weekend">今週末</button>
+        <button type="button" class="timing-btn" data-timing="month">今月中</button>
+      </div>
+      <p class="side-note">開催時期を選ぶと、イベントだけが対象になります。</p>
+    </div>
+    <div class="side-group">
+      <h4>タグで絞り込み</h4>
+      <div class="tag-chips-filter">
+        {{ range $tagStats }}<button type="button" class="toggle-chip" data-tag="{{ .name }}">{{ .name }}（{{ .count }}）</button>{{ end }}
+      </div>
+    </div>
+  </aside>
+
+  <div class="search-results">
+    <div class="results-head">
+      <div class="results-title"><h2>検索結果</h2><span class="results-count" id="results-count"></span><span class="results-cond" id="results-cond"></span></div>
+      <div class="results-controls">
+        <select id="sort-select" aria-label="並び替え">
+          <option value="popular">おすすめ順（注目度）</option>
+          <option value="new">新着順</option>
+          <option value="ending">開催終了が近い順</option>
+          <option value="likes">反応数順</option>
+        </select>
+        <div class="view-toggle" role="group" aria-label="表示切替">
+          <button type="button" id="view-grid" class="is-active">グリッド</button>
+          <button type="button" id="view-list">リスト</button>
+        </div>
+      </div>
+    </div>
+    <div class="active-tokens" id="active-tokens"></div>
+    <div class="results-grid" id="search-grid">
+      {{ range sort $places "added_at" "desc" }}{{ partial "place-card.html" . }}{{ end }}
+    </div>
+    <p class="empty-note" id="search-empty" hidden>該当する情報はまだありません。条件を変えてお試しください。</p>
+    <p class="results-foot" id="results-foot"></p>
+  </div>
+</section>
+{{ partial "footer.html" . }}
+{{ $searchJs := resources.Get "js/search.js" | resources.Fingerprint "sha256" }}
+<script src="{{ $searchJs.RelPermalink }}"></script>
+</body>
+</html>

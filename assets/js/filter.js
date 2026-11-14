@@ -21,23 +21,16 @@ function bindGenreFilter() {
 }
 bindGenreFilter();
 
+// トップページの大ジャンル絞り込み（キーワード検索は専用ページ /search/ が担当）
 (function () {
   var grid = document.getElementById("places-grid");
   if (!grid) return;
-  var state = { kind: "all", q: "" };
-  var input = document.getElementById("header-search-input");
-  var form = document.getElementById("header-search");
-  var scrolled = false;
-
+  var kind = "all";
   function apply() {
-    var terms = state.q.split(/[\s　]+/).filter(Boolean);
     var visible = 0, total = 0;
     grid.querySelectorAll(".place-card").forEach(function (card) {
       total++;
-      var kindOk = state.kind === "all" || card.getAttribute("data-kind") === state.kind;
-      var text = card.getAttribute("data-search") || "";
-      var qOk = terms.every(function (t) { return text.indexOf(t) !== -1; });
-      var show = kindOk && qOk;
+      var show = kind === "all" || card.getAttribute("data-kind") === kind;
       card.style.display = show ? "" : "none";
       if (show) visible++;
     });
@@ -45,7 +38,7 @@ bindGenreFilter();
     if (note) note.hidden = visible !== 0;
     var count = document.getElementById("result-count");
     if (count) {
-      if (state.kind !== "all" || state.q) {
+      if (kind !== "all") {
         count.hidden = false;
         count.textContent = visible + "件を表示中（全" + total + "件）";
       } else {
@@ -53,35 +46,12 @@ bindGenreFilter();
       }
     }
   }
-
   document.querySelectorAll(".filter-btn[data-filter-kind]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       document.querySelectorAll(".filter-btn[data-filter-kind]").forEach(function (b) { b.classList.remove("is-active"); });
       btn.classList.add("is-active");
-      state.kind = btn.getAttribute("data-filter-kind");
+      kind = btn.getAttribute("data-filter-kind");
       apply();
     });
   });
-
-  if (input) {
-    var initial = new URLSearchParams(location.search).get("q");
-    if (initial) {
-      input.value = initial;
-      state.q = initial.toLowerCase().trim();
-    }
-    input.addEventListener("input", function () {
-      state.q = input.value.toLowerCase().trim();
-      apply();
-      if (state.q && !scrolled) {
-        grid.scrollIntoView({ behavior: "smooth", block: "start" });
-        scrolled = true;
-      }
-      if (!state.q) scrolled = false;
-    });
-  }
-  if (form) {
-    // トップページでは送信せず、その場で絞り込む（他ページでは通常送信され、トップへ ?q= で遷移する）
-    form.addEventListener("submit", function (e) { e.preventDefault(); apply(); });
-  }
-  apply();
 })();
