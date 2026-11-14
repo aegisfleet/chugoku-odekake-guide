@@ -23,7 +23,8 @@
   {{- end }}
 {{- end }}
 <article class="place-card{{ if .featured }} place-card--featured{{ end }}{{ if $ended }} place-card--ended{{ end }}"
-         data-kind="{{ .kind }}" data-prefecture="{{ .area.prefecture }}">
+         data-kind="{{ .kind }}" data-prefecture="{{ .area.prefecture }}"
+         data-search="{{ printf "%s %s %s %s %s %s" .name .area.prefecture .area.label (index site.Params.kindLabel .kind) (delimit .tags " ") .summary | lower }}">
   <div class="badges">
     <span class="badge {{ index site.Params.kindClass .kind }}">{{ index site.Params.kindLabel .kind }}</span>
     {{ if $isNew }}<span class="badge badge--new">New</span>{{ end }}

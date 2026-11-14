@@ -98,6 +98,7 @@
     <button class="filter-btn" data-filter-kind="{{ $key }}">{{ $label }}</button>
   {{ end }}
 </nav>
+<p class="result-count" id="result-count" aria-live="polite" hidden></p>
 <main class="grid" id="places-grid">
 {{ range sort $places "added_at" "desc" }}
   {{ partial "place-card.html" . }}
