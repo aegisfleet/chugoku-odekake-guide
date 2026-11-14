@@ -1,5 +1,5 @@
 <article class="place-card">
-  <h3 class="place-name"><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></h3>
+  <h3 class="place-name"><a href="{{ printf "accounts/%s/" .username | relURL }}">{{ .name }}</a></h3>
   <p class="area">@{{ .username }}{{ if .verified }}（認証済み）{{ end }}</p>
   <p class="summary">{{ .note }}</p>
   <p>{{ range .areas }}<span class="tag">{{ . }}</span> {{ end }}{{ range .genres }}<span class="tag">{{ . }}</span> {{ end }}</p>

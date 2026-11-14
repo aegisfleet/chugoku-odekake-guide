@@ -10,3 +10,14 @@
   }}
   {{ $.AddPage $page }}
 {{ end }}
+{{ range hugo.Data.accounts }}
+  {{ $content := dict "mediaType" "text/markdown" "value" "" }}
+  {{ $page := dict
+      "content" $content
+      "kind" "page"
+      "path" (printf "accounts/%s" .username)
+      "title" .name
+      "params" .
+  }}
+  {{ $.AddPage $page }}
+{{ end }}
