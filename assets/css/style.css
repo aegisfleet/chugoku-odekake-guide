@@ -205,7 +205,8 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .section-bar--grid { background: var(--secondary); }
 .section-head h2, .home-section-title { font-size: 22px; font-weight: 800; margin: 0; color: var(--heading); }
 .section-sub { font-size: 12px; color: var(--muted); margin: 3px 0 0; }
-.grid--section { padding: 12px 0 4px; }
+/* セクション内グリッドは .grid の横パディングを打ち消す（特異度を上げて確実に優先させる） */
+.grid.grid--section { padding: 12px 0 4px; }
 
 /* 絞り込み */
 .filters { max-width: 1100px; margin: 0 auto; padding: 12px 24px 0; display: flex; flex-wrap: wrap; gap: 8px; }
