@@ -19,6 +19,11 @@
       </nav>
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="テーマ（ライト／ダーク）を切り替える">テーマ: 自動</button>
     </div>
+    <a class="mobile-search-pill" href="{{ "search/" | relURL }}">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
+      <span>スポット・エリア・#ハッシュタグで検索</span>
+      <svg class="pill-tune" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+    </a>
   </div>
 </header>
 {{ $menuJs := resources.Get "js/menu.js" | resources.Fingerprint "sha256" }}

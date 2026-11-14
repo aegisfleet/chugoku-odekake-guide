@@ -144,6 +144,26 @@
     emptyEl.hidden = visible.length !== 0;
     renderTokens();
     syncURL();
+    syncSegs();
+    syncQuickTags();
+    var badge = document.getElementById("filter-badge");
+    if (badge) {
+      var n = (state.q ? 1 : 0) + (state.prefs.size !== PREFS.length ? 1 : 0) + state.areas.size +
+        (state.kind !== "all" ? 1 : 0) + state.tags.size + (state.timing !== "none" ? 1 : 0);
+      badge.hidden = n === 0;
+      badge.textContent = n;
+    }
+  }
+
+  function syncSegs() {
+    document.querySelectorAll("[data-seg-kind]").forEach(function (b) {
+      b.classList.toggle("is-active", b.getAttribute("data-seg-kind") === state.kind);
+    });
+  }
+  function syncQuickTags() {
+    document.querySelectorAll("[data-quick-tag]").forEach(function (b) {
+      b.classList.toggle("is-on", state.tags.has(b.getAttribute("data-quick-tag")));
+    });
   }
 
   function syncToggleChips() {
@@ -235,6 +255,34 @@
       document.querySelector(".search-results").scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+
+  // モバイル: カテゴリセグメント・クイックタグ・絞り込みボトムシート
+  document.querySelectorAll("[data-seg-kind]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      state.kind = b.getAttribute("data-seg-kind");
+      syncKindRadios(); apply();
+    });
+  });
+  document.querySelectorAll("[data-quick-tag]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var t = b.getAttribute("data-quick-tag");
+      if (state.tags.has(t)) state.tags.delete(t); else state.tags.add(t);
+      syncToggleChips(); apply();
+    });
+  });
+  var side = document.getElementById("filters");
+  var backdrop = document.getElementById("sheet-backdrop");
+  function openSheet() { if (side) side.classList.add("is-open"); if (backdrop) backdrop.hidden = false; }
+  function closeSheet() { if (side) side.classList.remove("is-open"); if (backdrop) backdrop.hidden = true; }
+  var openBtn = document.getElementById("open-filters");
+  if (openBtn) openBtn.addEventListener("click", openSheet);
+  var closeBtn = document.getElementById("sheet-close");
+  if (closeBtn) closeBtn.addEventListener("click", closeSheet);
+  var applyBtn = document.getElementById("sheet-apply");
+  if (applyBtn) applyBtn.addEventListener("click", closeSheet);
+  if (backdrop) backdrop.addEventListener("click", closeSheet);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeSheet(); });
+  if (location.hash === "#filters" && window.innerWidth <= 900) openSheet();
 
   apply();
 })();

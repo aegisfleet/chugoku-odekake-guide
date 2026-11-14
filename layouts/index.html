@@ -48,9 +48,47 @@
       <p class="hero-stats-note">掲載写真はすべて出典の元投稿へリンクしています（転載はしていません）。</p>
     </div>
   </div>
-  <div class="ai-banner">
-    <p>{{ site.Params.aiNote }}</p>
-    <a href="{{ "accounts/" | relURL }}">情報源について →</a>
+  <div class="ai-banner" id="ai-banner">
+    <div class="ai-banner-head">
+      <span class="ai-banner-title">AI厳選おでかけレコメンド</span><span class="ai-badge">毎日更新</span>
+      <button class="ai-note-toggle" id="ai-note-toggle" type="button" aria-expanded="false" aria-label="AIキュレーションについての説明を開閉する"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 8.6 12 13.2l4.6-4.6L18 10l-6 6-6-6z"/></svg></button>
+    </div>
+    <div class="ai-banner-body">
+      <p>{{ site.Params.aiNote }}</p>
+      <a href="{{ "accounts/" | relURL }}">情報源について →</a>
+    </div>
+  </div>
+</section>
+
+{{ $tagNames := slice }}
+{{ range $places }}{{ range .tags }}{{ if not (in $tagNames .) }}{{ $tagNames = $tagNames | append . }}{{ end }}{{ end }}{{ end }}
+{{ $tagStats := slice }}
+{{ range $tagNames }}
+  {{ $t := . }}{{ $c := 0 }}
+  {{ range $places }}{{ if in .tags $t }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+  {{ $tagStats = $tagStats | append (dict "name" $t "count" $c) }}
+{{ end }}
+{{ $tagStats = sort $tagStats "count" "desc" }}
+<section class="mobile-tools" aria-label="検索と絞り込み">
+  <div class="mobile-search-row">
+    <a class="mobile-search-trigger" href="{{ "search/" | relURL }}">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
+      <span>スポット・エリア・#カフェ を検索</span>
+    </a>
+    <a class="mobile-filter-btn" href="{{ "search/" | relURL }}#filters" aria-label="絞り込み条件を開く">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+    </a>
+  </div>
+  <div class="scroll-x quick-tags">
+    <span class="quick-tag quick-tag--hot">人気</span>
+    {{ range first 6 $tagStats }}<a class="quick-tag" href="{{ "search/" | relURL }}?tag={{ .name | urlquery }}">#{{ .name }}</a>{{ end }}
+  </div>
+  <div class="pref-tabs">
+    {{ range slice "広島県" "岡山県" "山口県" "島根県" "鳥取県" }}
+      {{ $pref := . }}{{ $count := 0 }}
+      {{ range $places }}{{ if eq .area.prefecture $pref }}{{ $count = add $count 1 }}{{ end }}{{ end }}
+      <a class="pref-tab{{ if eq $pref "広島県" }} is-active{{ end }}" href="{{ "search/" | relURL }}?pref={{ $pref | urlquery }}">{{ replace $pref "県" "" }}{{ if gt $count 0 }}<span class="count">{{ $count }}</span>{{ end }}</a>
+    {{ end }}
   </div>
 </section>
 
@@ -59,6 +97,7 @@
   <div class="section-head">
     <span class="section-bar section-bar--event"></span>
     <div><h2>開催中・まもなく開催のイベント</h2><p class="section-sub">期間限定のフェスティバルやライトアップ情報</p></div>
+    <a class="section-more" href="{{ "search/" | relURL }}?kind=event">すべて見る ›</a>
   </div>
   {{ range first 1 . }}{{ partial "place-feature.html" . }}{{ end }}
   {{ if gt (len .) 1 }}
@@ -80,6 +119,7 @@
   <div class="section-head">
     <span class="section-bar"></span>
     <div><h2>今月のおすすめ</h2><p class="section-sub">AIが今もっとも注目するスポット</p></div>
+    <span class="section-count">厳選 {{ len $featured }}件</span>
   </div>
   <div class="grid grid--section">
     {{ range . }}{{ partial "place-card.html" . }}{{ end }}

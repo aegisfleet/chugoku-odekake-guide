@@ -51,9 +51,30 @@
   </div>
 </section>
 
+<div class="search-mobile-bar">
+  <div class="mobile-bar-row">
+    <button type="button" class="open-filters-btn" id="open-filters">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+      絞り込み<span class="filter-badge" id="filter-badge" hidden>0</span>
+    </button>
+    <span class="mobile-bar-hint">条件はボタンから開くシートで変更できます</span>
+  </div>
+  <div class="scroll-x kind-segments">
+    <button type="button" class="seg seg--all is-active" data-seg-kind="all">すべて（{{ len $places }}）</button>
+    {{ range $key, $label := site.Params.kindLabel }}
+      {{ $c := 0 }}{{ range $places }}{{ if eq .kind $key }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+      <button type="button" class="seg seg--{{ $key }}" data-seg-kind="{{ $key }}">{{ $label }}（{{ $c }}）</button>
+    {{ end }}
+  </div>
+  <div class="scroll-x tag-quick">
+    {{ range first 6 $tagStats }}<button type="button" class="quick-tag-btn" data-quick-tag="{{ .name }}">#{{ .name }}</button>{{ end }}
+  </div>
+</div>
+<div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+
 <section class="search-layout">
-  <aside class="search-side">
-    <div class="side-head"><span>絞り込み条件</span><button type="button" id="reset-filters">すべてリセット</button></div>
+  <aside class="search-side" id="filters">
+    <div class="side-head"><span>絞り込み条件</span><span class="side-head-btns"><button type="button" id="reset-filters">すべてリセット</button><button type="button" id="sheet-close" aria-label="絞り込みを閉じる">×</button></span></div>
     <div class="side-group">
       <h4>対象エリア</h4>
       <div class="pref-checks">
@@ -99,6 +120,7 @@
         {{ range $tagStats }}<button type="button" class="toggle-chip" data-tag="{{ .name }}">{{ .name }}（{{ .count }}）</button>{{ end }}
       </div>
     </div>
+    <button type="button" class="sheet-apply" id="sheet-apply">この条件で見る</button>
   </aside>
 
   <div class="search-results">
