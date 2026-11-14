@@ -103,11 +103,6 @@
             <span class="rank-likes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-10-10C.5 7 3 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19 4 21.5 7 20 11c-2 4.5-8 10-8 10z"/></svg>{{ lang.FormatNumber 0 $p.likes }}<span class="rank-likes-sep">・</span>{{ $p.posted_at }}</span>
           </div>
           <h3 class="rank-title">{{ $p.note }}</h3>
-          {{ if eq $i 0 }}
-          <blockquote class="instagram-media" data-instgrm-permalink="{{ $p.post_url }}" data-instgrm-version="14">
-            <a href="{{ $p.post_url }}" rel="noopener" target="_blank">Instagramで投稿を見る</a>
-          </blockquote>
-          {{ end }}
           <div class="rank-actions">
             <a class="rank-btn rank-btn--instagram" href="{{ $p.post_url }}" rel="noopener" target="_blank">Instagramで見る</a>
             {{ with $match }}<a class="rank-btn rank-btn--place" href="{{ printf "places/%s/" . | relURL }}">紹介スポットを見る</a>{{ end }}
@@ -116,6 +111,14 @@
       </article>
       {{ end }}
     </div>
+    {{ with index .items 0 }}
+    <div class="rank-embed">
+      <p class="rank-embed-label">第1位の投稿（Instagram公式埋め込み）</p>
+      <blockquote class="instagram-media" data-instgrm-permalink="{{ .post_url }}" data-instgrm-version="14">
+        <a href="{{ .post_url }}" rel="noopener" target="_blank">Instagramで投稿を見る</a>
+      </blockquote>
+    </div>
+    {{ end }}
   </section>
   {{ end }}
 
