@@ -5,11 +5,18 @@
       <span class="brand-mark">{{ partial "icon-pin.html" . }}</span>
       <span><span class="brand-name">{{ site.Title }}</span><span class="brand-sub">広島・岡山・山口・島根・鳥取</span></span>
     </a>
-    <nav class="header-nav">
-      <a class="nav-pill{{ if .IsHome }} is-active{{ end }}" href="{{ site.Home.RelPermalink }}">ホーム</a>
-      <a class="nav-pill" href="{{ "accounts/" | relURL }}">情報源アカウント</a>
-    </nav>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="テーマ（ライト／ダーク）を切り替える">テーマ: 自動</button>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="header-actions" aria-label="メニューを開く">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </button>
+    <div class="header-actions" id="header-actions">
+      <nav class="header-nav">
+        <a class="nav-pill{{ if .IsHome }} is-active{{ end }}" href="{{ site.Home.RelPermalink }}">ホーム</a>
+        <a class="nav-pill" href="{{ "accounts/" | relURL }}">情報源アカウント</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="テーマ（ライト／ダーク）を切り替える">テーマ: 自動</button>
+    </div>
   </div>
 </header>
+{{ $menuJs := resources.Get "js/menu.js" | resources.Fingerprint "sha256" }}
+<script src="{{ $menuJs.RelPermalink }}"></script>
 {{ if not .IsHome }}<p class="ai-note ai-note--slim">{{ site.Params.aiNote }}</p>{{ end }}
