@@ -151,12 +151,12 @@
         </div>
         <div class="post-list">
           {{ range $items }}
-          <div class="post-row" data-cat="{{ if and $officialHandle (eq .author $officialHandle) }}official{{ else }}user{{ end }}">
+          <a class="post-row" href="{{ .post_url }}" rel="noopener" target="_blank" data-cat="{{ if and $officialHandle (eq .author $officialHandle) }}official{{ else }}user{{ end }}">
             <span class="post-date">{{ .posted_at }}</span>
             <span class="post-author">{{ .author }}{{ if and $officialHandle (eq .author $officialHandle) }}<span class="post-official">公式</span>{{ end }}</span>
-            <span class="post-note"><a href="{{ .post_url }}" rel="noopener" target="_blank">{{ .note }}</a>{{ if eq .post_url $p.source.post_url }}<span class="post-source">主要出典</span>{{ end }}</span>
+            <span class="post-note">{{ .note }}{{ if eq .post_url $p.source.post_url }}<span class="post-source">主要出典</span>{{ end }}</span>
             {{ with .likes }}<span class="post-likes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-10-10C.5 7 3 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19 4 21.5 7 20 11c-2 4.5-8 10-8 10z"/></svg>{{ . }}</span>{{ end }}
-          </div>
+          </a>
           {{ end }}
         </div>
       </section>

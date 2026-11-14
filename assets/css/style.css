@@ -363,13 +363,12 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .post-filter-btn { flex-shrink: 0; border: 1px solid var(--border); background: var(--surface); color: var(--muted); border-radius: 999px; padding: 7px 14px; font-size: 12.5px; font-weight: 600; cursor: pointer; font-family: inherit; }
 .post-filter-btn.is-active { background: var(--filter-active-bg); color: var(--filter-active-text); border-color: var(--filter-active-bg); }
 .post-list { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
-.post-row { display: flex; align-items: center; gap: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow-md); font-size: 13px; flex-wrap: wrap; }
+.post-row { display: flex; align-items: center; gap: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow-md); font-size: 13px; flex-wrap: wrap; text-decoration: none; color: inherit; transition: border-color .15s ease; }
+.post-row:hover { border-color: var(--primary); }
 .post-date { color: var(--faint); font-size: 12px; flex-shrink: 0; }
 .post-author { font-weight: 700; color: var(--heading); flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px; }
 .post-official { font-size: 10px; font-weight: 700; background: var(--kind-spot-bg); color: var(--kind-spot); padding: 2px 6px; border-radius: 5px; }
-.post-note { flex: 1; min-width: 180px; }
-.post-note a { color: var(--desc); text-decoration: none; }
-.post-note a:hover { color: var(--primary); text-decoration: underline; }
+.post-note { flex: 1; min-width: 180px; color: var(--desc); }
 .post-source { display: inline-block; font-size: 10.5px; font-weight: 700; background: var(--kind-shop-bg); color: var(--kind-shop); padding: 2px 7px; border-radius: 5px; margin-left: 8px; }
 .post-likes { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; color: var(--heading); flex-shrink: 0; }
 .post-likes svg { width: 14px; height: 14px; fill: #e04836; }
