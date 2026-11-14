@@ -3,112 +3,252 @@
 <head>{{ partial "head.html" . }}</head>
 <body>
 {{ partial "header.html" . }}
-<main class="detail">
-  {{ $ver := index .Params "_verification" }}
-  {{ partial "place-card.html" .Params }}
+{{ $p := .Params }}
+{{ $ver := index $p "_verification" }}
+{{ $kindLabel := index site.Params.kindLabel $p.kind }}
+{{ $kindClass := index site.Params.kindClass $p.kind }}
+{{ $today := (now.Format "2006-01-02") | time.AsTime }}
+{{ $ended := false }}
+{{ if and (eq $p.kind "event") $p.period }}{{ if $today.After ($p.period.end | time.AsTime) }}{{ $ended = true }}{{ end }}{{ end }}
+{{ $isNew := false }}
+{{ if $p.added_at }}{{ $age := div (sub $today.Unix (($p.added_at | time.AsTime).Unix)) 86400 }}{{ if and (ge $age 0) (lt $age 14) }}{{ $isNew = true }}{{ end }}{{ end }}
+{{ $evBadge := "" }}{{ $daysToStart := 0 }}
+{{ if and (eq $p.kind "event") $p.period (not $ended) }}
+  {{ $start := $p.period.start | time.AsTime }}{{ $end := $p.period.end | time.AsTime }}
+  {{ if le $start $today }}
+    {{ if le (div (sub $end.Unix $today.Unix) 86400) 7 }}{{ $evBadge = "ending" }}{{ else }}{{ $evBadge = "live" }}{{ end }}
+  {{ else }}{{ $evBadge = "soon" }}{{ $daysToStart = div (sub $start.Unix $today.Unix) 86400 }}{{ end }}
+{{ end }}
+{{ $sourceLikes := 0 }}
+{{ with $p.related_posts }}{{ range .items }}{{ if eq .post_url $p.source.post_url }}{{ $sourceLikes = .likes | default 0 }}{{ end }}{{ end }}{{ end }}
+{{ $officialHandle := "" }}{{ with $p.official }}{{ $officialHandle = .instagram | default "" }}{{ end }}
 
-  {{ with .Params.notices }}
-  <section class="detail-section notices">
-    <h3>お知らせ</h3>
+<div class="crumb-bar">
+  <div class="crumb-inner">
+    <nav class="crumbs" aria-label="パンくず">
+      <a href="{{ site.Home.RelPermalink }}">ホーム</a>
+      <span class="crumb-sep">/</span>
+      <a href="{{ printf "search/?pref=%s" $p.area.prefecture | relURL }}">{{ $p.area.prefecture }}</a>
+      <span class="crumb-sep">/</span>
+      <a href="{{ printf "search/?kind=%s" $p.kind | relURL }}">{{ $kindLabel }}</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">{{ $p.name }}</span>
+    </nav>
+    <div class="crumb-meta">
+      {{ with $ver }}<span>AI収集データ（最終確認: {{ replace (printf "%s" .checked_at) "-" "." }}）</span>{{ end }}
+      {{ if $p.official }}<span class="crumb-verified">公式情報リンク済</span>{{ end }}
+    </div>
+  </div>
+</div>
+
+<header class="detail-hero">
+  <div class="detail-hero-inner">
+    <div class="detail-ai-note">
+      <span class="detail-ai-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
+      <p><strong>AIキュレーション記事:</strong> このページの情報収集・記事作成はAIが行っています。営業時間・料金などの最新情報は、必ずリンク先のGoogleマップや公式情報でご確認ください。</p>
+      <span class="detail-ai-chip">{{ if eq $p.source.platform "instagram" }}Instagram出典準拠{{ else }}出典: {{ $p.source.platform }}{{ end }}</span>
+    </div>
+
+    <div class="badges detail-badges">
+      <span class="badge {{ $kindClass }}">{{ $kindLabel }}</span>
+      {{ if $isNew }}<span class="badge badge--new">New</span>{{ end }}
+      {{ if eq $evBadge "live" }}<span class="badge badge--live">開催中</span>{{ end }}
+      {{ if eq $evBadge "ending" }}<span class="badge badge--ending">まもなく終了</span>{{ end }}
+      {{ if eq $evBadge "soon" }}<span class="badge badge--soon">あと{{ $daysToStart }}日</span>{{ end }}
+      {{ if $ended }}<span class="badge badge--ended">終了</span>{{ end }}
+      {{ range $p.tags }}<span class="tag">{{ . }}</span>{{ end }}
+    </div>
+
+    <p class="detail-location">{{ partial "icon-pin.html" . }}{{ $p.area.prefecture }} / {{ $p.area.label }}</p>
+    <div class="detail-title-row">
+      <div class="detail-title-block">
+        <h1 class="detail-title">{{ $p.name }}</h1>
+        <p class="detail-summary">{{ $p.summary }}</p>
+        {{ if and (eq $p.kind "event") $p.period }}<p class="detail-period">開催期間: {{ $p.period.start }} 〜 {{ $p.period.end }}{{ if $ended }}（終了）{{ end }}</p>{{ end }}
+      </div>
+      {{ with $p.related_posts }}
+      <div class="detail-stats">
+        <div class="detail-stat">
+          <span class="detail-stat-label">出典投稿のいいね数</span>
+          <span class="detail-stat-num"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-10-10C.5 7 3 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19 4 21.5 7 20 11c-2 4.5-8 10-8 10z"/></svg>{{ $sourceLikes }}</span>
+        </div>
+        <div class="detail-stat-sep"></div>
+        <div class="detail-stat">
+          <span class="detail-stat-label">関連投稿の確認件数</span>
+          <span class="detail-stat-num detail-stat-num--plain">{{ .found_count }}件以上</span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="detail-actions">
+      <a class="btn-detail btn-detail--instagram" href="{{ $p.source.post_url }}" rel="noopener" target="_blank">{{ partial "icon-instagram.html" . }}<span>Instagramで見る</span><span class="btn-handle">{{ $p.source.author }}</span></a>
+      <a class="btn-detail btn-detail--maps" href="{{ $p.maps_url }}" rel="noopener" target="_blank">{{ partial "icon-pin.html" . }}<span>Googleマップで開く</span></a>
+      <button class="btn-detail btn-detail--share" id="share-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 16.1c-.8 0-1.5.3-2 .8l-7.1-4.1c0-.3.1-.5.1-.8s0-.5-.1-.8L16 7.1c.5.5 1.2.8 2 .8a3 3 0 1 0-3-3c0 .3 0 .5.1.8L8 9.7a3 3 0 1 0 0 4.6l7.1 4a3 3 0 1 0 2.9-2.2z"/></svg><span id="share-label">シェア</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="detail">
+  {{ with $p.notices }}
+  <section class="detail-notices">
+    <h2 class="detail-notices-title">お知らせ</h2>
     <ul>
       {{ range . }}<li><span class="related-meta">{{ .date }}</span>{{ .text }}</li>{{ end }}
     </ul>
   </section>
   {{ end }}
 
-  {{ with .Params.maps_url }}
-  {{ $q := replaceRE "\\+" " " (replaceRE "^.*[?&]query=" "" .) }}
-  <section class="detail-section">
-    <h3>地図</h3>
-    <iframe class="map-embed" src="https://maps.google.com/maps?q={{ $q }}&z=16&output=embed" loading="lazy" title="{{ $.Params.name }}の地図" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p class="note">地図は Google マップの埋め込み表示です。住所・営業時間などの最新情報は <a href="{{ . }}" rel="noopener" target="_blank">Googleマップで開く</a> でご確認ください。</p>
-  </section>
-  {{ end }}
-
-  {{ if eq .Params.source.platform "instagram" }}
-  <section class="detail-section embed-section">
-    <h3>出典投稿</h3>
-    <blockquote class="instagram-media" data-instgrm-permalink="{{ .Params.source.post_url }}" data-instgrm-version="14">
-      <a href="{{ .Params.source.post_url }}" rel="noopener" target="_blank">Instagramで投稿を見る（{{ .Params.source.author }}）</a>
-    </blockquote>
-    <p class="note">埋め込みが表示されない場合は、上のリンクから元投稿を開いてください。</p>
-  </section>
-  {{ end }}
-
-  {{ with .Params.official }}
-  <section class="detail-section">
-    <h3>公式情報</h3>
-    <ul>
-      {{ with .instagram }}<li>公式Instagram: <a href="{{ $.Params.official.instagram_url }}" rel="noopener" target="_blank">{{ . }}</a></li>{{ end }}
-      {{ with .website }}<li>{{ $.Params.official.website_label | default "公式サイト" }}: <a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></li>{{ end }}
-    </ul>
-    {{ with $ver }}<p class="note">基本情報は {{ .checked_at }} に確認しました。</p>{{ end }}
-  </section>
-  {{ end }}
-
-  {{ with .Params.highlights }}
-  <section class="detail-section">
-    <h3>よく紹介されるもの</h3>
-    <p class="highlights">{{ delimit . " / " }}</p>
-    <p class="note">関連投稿の内容から集計したものです。</p>
-  </section>
-  {{ end }}
-
-  {{ with .Params.related_posts }}
-  <section class="detail-section">
-    <h3>関連投稿（{{ .found_count }}件以上を確認）</h3>
-    <ul class="related-list">
-      {{ range .items }}
-      <li>
-        <span class="related-meta">{{ .posted_at }} / {{ .author }}{{ with .likes }} / ♥ {{ . }}{{ end }}</span>
-        <a href="{{ .post_url }}" rel="noopener" target="_blank">{{ .note }}</a>
-      </li>
+  <div class="detail-grid">
+    <div class="detail-main">
+      {{ with $p.highlights }}
+      <section class="detail-block">
+        <div class="detail-block-head">
+          <h2>注目ポイント・よく紹介されるもの</h2>
+          <span class="detail-block-chip">関連投稿から集計</span>
+        </div>
+        <p class="detail-block-lead">複数の訪問者・公式アカウントの投稿からAIが抽出・要約した代表的な特徴です。</p>
+        <div class="highlight-grid">
+          {{ range $i, $h := . }}
+          <div class="highlight-card">
+            <span class="highlight-icon highlight-icon--{{ mod $i 5 }}" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span>
+            <h3>{{ $h }}</h3>
+          </div>
+          {{ end }}
+        </div>
+      </section>
       {{ end }}
-    </ul>
-    <p class="note">関連投稿は {{ .captured_at }} に取得しました（いいね数も取得時点のものです）。写真は転載せず、各投稿へのリンクのみを掲載しています。</p>
-  </section>
-  {{ end }}
 
-  {{ $selfSlug := .Params.slug }}
-  {{ $ward := index (split .Params.area.label "・") 0 }}
-  {{ $sameArea := slice }}
-  {{ $sameKind := slice }}
-  {{ range hugo.Data.places }}
-    {{ if ne .slug $selfSlug }}
-      {{ if eq (index (split .area.label "・") 0) $ward }}{{ $sameArea = $sameArea | append . }}{{ end }}
-      {{ if eq .kind $.Params.kind }}{{ $sameKind = $sameKind | append . }}{{ end }}
-    {{ end }}
-  {{ end }}
-  {{ with $sameArea }}
-  <section class="detail-section">
-    <h3>同じエリアのおでかけ先</h3>
-    <ul class="rec-list">
-      {{ range first 3 . }}<li><a href="{{ printf "places/%s/" .slug | relURL }}">{{ .name }}</a><span class="related-meta">{{ .area.label }}</span></li>{{ end }}
-    </ul>
-  </section>
-  {{ end }}
-  {{ with $sameKind }}
-  <section class="detail-section">
-    <h3>同じジャンルのおすすめ</h3>
-    <ul class="rec-list">
-      {{ range first 3 . }}<li><a href="{{ printf "places/%s/" .slug | relURL }}">{{ .name }}</a><span class="related-meta">{{ .area.prefecture }} / {{ .area.label }}</span></li>{{ end }}
-    </ul>
-  </section>
-  {{ end }}
+      {{ if eq $p.source.platform "instagram" }}
+      <section class="detail-block">
+        <div class="detail-block-head">
+          <h2>出典Instagram投稿</h2>
+          <a class="detail-block-link" href="{{ $p.source.post_url }}" rel="noopener" target="_blank">元投稿を開く</a>
+        </div>
+        <div class="embed-frame">
+          <blockquote class="instagram-media" data-instgrm-permalink="{{ $p.source.post_url }}" data-instgrm-version="14">
+            <a href="{{ $p.source.post_url }}" rel="noopener" target="_blank">Instagramで投稿を見る（{{ $p.source.author }}）</a>
+          </blockquote>
+        </div>
+        <p class="note">埋め込みが表示されない場合は、上のリンクから元投稿を開いてください。写真は転載せず、公式の埋め込みとリンクで紹介しています。</p>
+      </section>
+      {{ end }}
 
-  <section class="source-note">
-    <h3>情報の出典と確認方法</h3>
-    <ul>
-      <li>主な出典: {{ .Params.source.platform }} の投稿（{{ .Params.source.author }}）— <a href="{{ .Params.source.post_url }}" rel="noopener" target="_blank">{{ .Params.source.post_url }}</a></li>
-      <li>場所の確認: <a href="{{ .Params.maps_url }}" rel="noopener" target="_blank">Googleマップで開く</a>（住所・営業時間はマップ側が最新です）</li>
-      <li>このページはAIが収集・作成しました（追加日: {{ .Params.added_at }}）。</li>
-      {{ with $ver }}<li>基本情報の最終確認: {{ .checked_at }}</li>{{ end }}
-      {{ with .Params.related_posts }}<li>関連投稿の取得: {{ .captured_at }}</li>{{ end }}
-    </ul>
-  </section>
-  <p><a href="{{ site.Home.RelPermalink }}">← 一覧へ戻る</a></p>
+      {{ with $p.related_posts }}
+      {{ $items := .items }}
+      {{ $officialCount := 0 }}{{ range $items }}{{ if and $officialHandle (eq .author $officialHandle) }}{{ $officialCount = add $officialCount 1 }}{{ end }}{{ end }}
+      {{ $userCount := sub (len $items) $officialCount }}
+      <section class="detail-block">
+        <div class="detail-block-head">
+          <h2>関連投稿・訪問記録（{{ .found_count }}件以上を確認）</h2>
+          <span class="detail-block-meta">取得日: {{ replace (printf "%s" .captured_at) "-" "." }}</span>
+        </div>
+        <p class="note">写真は直接転載せず、各投稿へのリンクのみを掲載しています。いいね数は取得時点のものです。</p>
+        <div class="post-filter" role="group" aria-label="関連投稿の絞り込み">
+          <button type="button" class="post-filter-btn is-active" data-filter="all">すべて（{{ len $items }}件表示）</button>
+          {{ if gt $officialCount 0 }}<button type="button" class="post-filter-btn" data-filter="official">公式 {{ $officialHandle }}（{{ $officialCount }}）</button>{{ end }}
+          {{ if gt $userCount 0 }}<button type="button" class="post-filter-btn" data-filter="user">ユーザー訪問記録（{{ $userCount }}）</button>{{ end }}
+        </div>
+        <div class="post-list">
+          {{ range $items }}
+          <div class="post-row" data-cat="{{ if and $officialHandle (eq .author $officialHandle) }}official{{ else }}user{{ end }}">
+            <span class="post-date">{{ .posted_at }}</span>
+            <span class="post-author">{{ .author }}{{ if and $officialHandle (eq .author $officialHandle) }}<span class="post-official">公式</span>{{ end }}</span>
+            <span class="post-note"><a href="{{ .post_url }}" rel="noopener" target="_blank">{{ .note }}</a>{{ if eq .post_url $p.source.post_url }}<span class="post-source">主要出典</span>{{ end }}</span>
+            {{ with .likes }}<span class="post-likes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-10-10C.5 7 3 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19 4 21.5 7 20 11c-2 4.5-8 10-8 10z"/></svg>{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+    </div>
+
+    <aside class="detail-side">
+      <section class="side-card">
+        <span class="side-card-bar" aria-hidden="true"></span>
+        <h2 class="side-card-title">基本情報</h2>
+        <dl class="side-dl">
+          <div>
+            <dt>所在地</dt>
+            <dd>{{ $p.area.prefecture }}{{ $p.area.label }}</dd>
+          </div>
+          {{ with $p.official }}
+          {{ with .instagram }}
+          <div>
+            <dt>公式Instagram</dt>
+            <dd><a href="{{ $p.official.instagram_url }}" rel="noopener" target="_blank">{{ . }}</a></dd>
+          </div>
+          {{ end }}
+          {{ with .website }}
+          <div>
+            <dt>{{ $p.official.website_label | default "公式サイト" }}</dt>
+            <dd><a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></dd>
+          </div>
+          {{ end }}
+          {{ end }}
+          {{ with $ver }}
+          <div>
+            <dt>基本情報の確認</dt>
+            <dd>{{ printf "%s" .checked_at }}にAIが公式情報と照合</dd>
+          </div>
+          {{ end }}
+        </dl>
+        <a class="btn-detail btn-detail--route" href="{{ $p.maps_url }}" rel="noopener" target="_blank">Googleマップでルートを調べる</a>
+      </section>
+
+      {{ with $p.maps_url }}
+      {{ $q := replaceRE "\\+" " " (replaceRE "^.*[?&]query=" "" .) }}
+      <section class="side-card side-card--map">
+        <div class="side-map-head">
+          <h2 class="side-card-title">アクセスマップ</h2>
+          <span>{{ $p.area.label }}周辺</span>
+        </div>
+        <iframe class="map-embed" src="https://maps.google.com/maps?q={{ $q }}&z=16&output=embed" loading="lazy" title="{{ $p.name }}の地図" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="note">地図はGoogleマップの埋め込み表示です。住所・営業時間などの最新情報はマップ側でご確認ください。</p>
+        <a class="side-map-link" href="{{ . }}" rel="noopener" target="_blank">フルスクリーンマップで開く</a>
+      </section>
+      {{ end }}
+
+      <section class="side-card">
+        <h2 class="side-card-title">情報の出典と確認方法</h2>
+        <ul class="provenance-list">
+          <li><strong>主な出典:</strong> {{ $p.source.platform }}の投稿（{{ $p.source.author }}）</li>
+          <li><strong>場所の確認:</strong> Googleマップの登録位置と公式情報を照合</li>
+          <li><strong>追加日:</strong> {{ printf "%s" $p.added_at }}（AIキュレーション）</li>
+          {{ with $p.related_posts }}<li><strong>関連投稿の取得:</strong> {{ printf "%s" .captured_at }}</li>{{ end }}
+          <li><strong>著作権保護:</strong> 画像は転載せず、公式埋め込みと直接リンクで紹介しています</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
 </main>
-{{ if eq .Params.source.platform "instagram" }}<script async src="https://www.instagram.com/embed.js"></script>{{ end }}
+
+{{ $selfSlug := $p.slug }}
+{{ $ward := index (split $p.area.label "・") 0 }}
+{{ $recs := slice }}
+{{ range hugo.Data.places }}{{ if and (ne .slug $selfSlug) (eq .kind $p.kind) }}{{ $recs = $recs | append . }}{{ end }}{{ end }}
+{{ if lt (len $recs) 3 }}{{ range hugo.Data.places }}{{ if and (ne .slug $selfSlug) (ne .kind $p.kind) (eq (index (split .area.label "・") 0) $ward) }}{{ $recs = $recs | append . }}{{ end }}{{ end }}{{ end }}
+{{ with $recs }}
+<section class="detail-recs">
+  <div class="detail-recs-inner">
+    <div class="detail-recs-head">
+      <div>
+        <p class="detail-recs-eyebrow">Discover more</p>
+        <h2>同じジャンルのおすすめスポット</h2>
+      </div>
+      <a class="detail-recs-more" href="{{ printf "search/?kind=%s" $p.kind | relURL }}">{{ $kindLabel }}一覧を見る</a>
+    </div>
+    <div class="detail-recs-grid">
+      {{ range first 3 . }}{{ partial "place-card.html" . }}{{ end }}
+    </div>
+    <p class="detail-back"><a href="{{ "search/" | relURL }}">一覧・検索結果へ戻る</a></p>
+  </div>
+</section>
+{{ end }}
+
+{{ if eq $p.source.platform "instagram" }}<script async src="https://www.instagram.com/embed.js"></script>{{ end }}
+{{ $detailJs := resources.Get "js/detail.js" | resources.Fingerprint "sha256" }}
+<script src="{{ $detailJs.RelPermalink }}" defer></script>
 {{ partial "footer.html" . }}
 </body>
 </html>
