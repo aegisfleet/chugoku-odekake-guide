@@ -8,7 +8,9 @@
   var KIND_LABEL = { shop: "お店", spot: "観光スポット", event: "イベント", stay: "温泉・宿泊", activity: "体験・おでかけ" };
   var TIMING_LABEL = { today: "今日", weekend: "今週末", month: "今月中" };
 
-  var state = { q: "", prefs: new Set(PREFS), areas: new Set(), kind: "all", tags: new Set(), timing: "none", sort: "popular" };
+  var state = { q: "", prefs: new Set(), areas: new Set(), kind: "all", tags: new Set(), timing: "none", sort: "popular" };
+  // 県フィルターは「チェックした県だけに絞る」。未選択（または全県チェック）＝全県が対象
+  function prefFiltered() { return state.prefs.size > 0 && state.prefs.size < PREFS.length; }
 
   var input = document.getElementById("search-input");
   var prefSelect = document.getElementById("search-pref");
@@ -38,7 +40,7 @@
   }
 
   function matches(card) {
-    if (!state.prefs.has(card.getAttribute("data-prefecture"))) return false;
+    if (state.prefs.size && !state.prefs.has(card.getAttribute("data-prefecture"))) return false;
     if (state.areas.size && !state.areas.has(card.getAttribute("data-area"))) return false;
     if (state.kind !== "all" && card.getAttribute("data-kind") !== state.kind) return false;
     if (state.tags.size) {
@@ -76,9 +78,9 @@
 
   function syncPrefControls() {
     document.querySelectorAll("[data-pref]").forEach(function (cb) { cb.checked = state.prefs.has(cb.getAttribute("data-pref")); });
-    if (state.prefs.size === PREFS.length) prefSelect.value = "all";
-    else if (state.prefs.size === 1) prefSelect.value = state.prefs.values().next().value;
-    else prefSelect.value = "custom";
+    if (state.prefs.size === 1) prefSelect.value = state.prefs.values().next().value;
+    else if (prefFiltered()) prefSelect.value = "custom";
+    else prefSelect.value = "all";
   }
 
   function addToken(label, onRemove) {
@@ -97,8 +99,8 @@
     var any = false;
     function mark() { if (!any) { var l = document.createElement("span"); l.className = "tokens-label"; l.textContent = "適用中："; tokensEl.appendChild(l); any = true; } }
     if (state.q) { mark(); addToken("キーワード「" + state.q + "」", function () { state.q = ""; input.value = ""; apply(); }); }
-    if (state.prefs.size !== PREFS.length) {
-      state.prefs.forEach(function (p) { mark(); addToken(p, function () { state.prefs.delete(p); if (!state.prefs.size) state.prefs = new Set(PREFS); syncPrefControls(); apply(); }); });
+    if (prefFiltered()) {
+      state.prefs.forEach(function (p) { mark(); addToken(p, function () { state.prefs.delete(p); syncPrefControls(); apply(); }); });
     }
     state.areas.forEach(function (a) { mark(); addToken(a, function () { state.areas.delete(a); syncToggleChips(); apply(); }); });
     if (state.kind !== "all") { mark(); addToken(KIND_LABEL[state.kind], function () { state.kind = "all"; syncKindRadios(); apply(); }); }
@@ -115,7 +117,7 @@
   function condText() {
     var parts = [];
     if (state.prefs.size === 1) parts.push(state.prefs.values().next().value);
-    else if (state.prefs.size !== PREFS.length) parts.push(state.prefs.size + "県");
+    else if (prefFiltered()) parts.push(state.prefs.size + "県");
     if (state.kind !== "all") parts.push(KIND_LABEL[state.kind]);
     if (state.q) parts.push("「" + state.q + "」");
     return parts.length ? "（" + parts.join(" / ") + "）" : "";
@@ -125,7 +127,7 @@
     var p = new URLSearchParams();
     if (state.q) p.set("q", state.q);
     if (state.kind !== "all") p.set("kind", state.kind);
-    if (state.prefs.size !== PREFS.length) p.set("pref", Array.from(state.prefs).join(","));
+    if (prefFiltered()) p.set("pref", Array.from(state.prefs).join(","));
     if (state.tags.size) p.set("tag", Array.from(state.tags).join(","));
     if (state.timing !== "none") p.set("timing", state.timing);
     var qs = p.toString();
@@ -148,7 +150,7 @@
     syncQuickTags();
     var badge = document.getElementById("filter-badge");
     if (badge) {
-      var n = (state.q ? 1 : 0) + (state.prefs.size !== PREFS.length ? 1 : 0) + state.areas.size +
+      var n = (state.q ? 1 : 0) + (prefFiltered() ? 1 : 0) + state.areas.size +
         (state.kind !== "all" ? 1 : 0) + state.tags.size + (state.timing !== "none" ? 1 : 0);
       badge.hidden = n === 0;
       badge.textContent = n;
@@ -182,7 +184,7 @@
   }
   function resetAll() {
     state.q = ""; input.value = "";
-    state.prefs = new Set(PREFS); state.areas.clear(); state.tags.clear();
+    state.prefs = new Set(); state.areas.clear(); state.tags.clear();
     state.kind = "all"; state.timing = "none";
     syncPrefControls(); syncToggleChips(); syncKindRadios(); syncTimingBtns();
     apply();
@@ -208,14 +210,13 @@
     document.querySelector(".search-results").scrollIntoView({ behavior: "smooth", block: "start" });
   });
   prefSelect.addEventListener("change", function () {
-    if (prefSelect.value === "all") state.prefs = new Set(PREFS);
+    if (prefSelect.value === "all") state.prefs = new Set();
     else if (prefSelect.value !== "custom") state.prefs = new Set([prefSelect.value]);
     syncPrefControls(); apply();
   });
   document.querySelectorAll("[data-pref]").forEach(function (cb) {
     cb.addEventListener("change", function () {
       if (cb.checked) state.prefs.add(cb.getAttribute("data-pref")); else state.prefs.delete(cb.getAttribute("data-pref"));
-      if (!state.prefs.size) state.prefs = new Set(PREFS);
       syncPrefControls(); apply();
     });
   });

@@ -77,11 +77,12 @@
     <div class="side-head"><span>絞り込み条件</span><span class="side-head-btns"><button type="button" id="reset-filters">すべてリセット</button><button type="button" id="sheet-close" aria-label="絞り込みを閉じる">×</button></span></div>
     <div class="side-group">
       <h4>対象エリア</h4>
+      <p class="side-hint">チェックした県だけに絞ります。未選択のときは全県が対象です。</p>
       <div class="pref-checks">
         {{ range $prefs }}
           {{ $pref := . }}{{ $c := 0 }}
           {{ range $places }}{{ if eq .area.prefecture $pref }}{{ $c = add $c 1 }}{{ end }}{{ end }}
-          <label class="pref-check"><input type="checkbox" data-pref="{{ $pref }}" checked><span>{{ $pref }}</span><span class="side-count">{{ $c }}</span></label>
+          <label class="pref-check"><input type="checkbox" data-pref="{{ $pref }}"><span>{{ $pref }}</span><span class="side-count">{{ $c }}</span></label>
         {{ end }}
       </div>
       {{ with $areaNames }}
