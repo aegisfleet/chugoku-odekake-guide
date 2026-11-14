@@ -1,15 +1,26 @@
-// トップページの大ジャンル絞り込み（クライアント側のみ・データは書き換えない）
-document.querySelectorAll(".filter-btn").forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    document.querySelectorAll(".filter-btn").forEach(function (b) { b.classList.remove("is-active"); });
-    btn.classList.add("is-active");
-    var kind = btn.getAttribute("data-filter-kind");
-    var visible = 0;
-    document.querySelectorAll("#places-grid .place-card").forEach(function (card) {
-      var show = kind === "all" || card.getAttribute("data-kind") === kind;
-      card.style.display = show ? "" : "none";
-      if (show) visible++;
+// 絞り込み（クライアント側のみ・データは書き換えない）
+// トップページ: 大ジャンル（ボタン data-filter-kind × カード data-kind）
+// アカウント一覧: ジャンル（ボタン data-filter-genre × カード data-genres、"|" 区切りの複数値）
+function bindFilter(attr, gridId, match) {
+  document.querySelectorAll(".filter-btn[" + attr + "]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      document.querySelectorAll(".filter-btn[" + attr + "]").forEach(function (b) { b.classList.remove("is-active"); });
+      btn.classList.add("is-active");
+      var value = btn.getAttribute(attr);
+      var visible = 0;
+      document.querySelectorAll("#" + gridId + " .place-card").forEach(function (card) {
+        var show = value === "all" || match(card, value);
+        card.style.display = show ? "" : "none";
+        if (show) visible++;
+      });
+      var note = document.getElementById("empty-note");
+      if (note) note.hidden = visible !== 0;
     });
-    document.getElementById("empty-note").hidden = visible !== 0;
   });
+}
+bindFilter("data-filter-kind", "places-grid", function (card, v) {
+  return card.getAttribute("data-kind") === v;
+});
+bindFilter("data-filter-genre", "accounts-grid", function (card, v) {
+  return (card.getAttribute("data-genres") || "").split("|").indexOf(v) !== -1;
 });
