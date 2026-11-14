@@ -501,4 +501,10 @@ h1, h2, h3 { letter-spacing: -.01em; }
   .tabbar-item svg { width: 22px; height: 22px; fill: currentColor; }
   .tabbar-item.is-active { color: var(--primary); font-weight: 700; }
   .site-footer { padding-bottom: 92px; }
+  /* 横余白をヘッダー・ヒーローと同じ16pxに統一（セクションだけ24pxで浮いて見えた） */
+  .home-section { padding-left: 16px; padding-right: 16px; }
+  .grid { padding-left: 16px; padding-right: 16px; }
+  .filters { padding-left: 16px; padding-right: 16px; }
+  .footer-inner { padding-left: 16px; padding-right: 16px; }
+  .accounts-panel { padding: 20px 18px; }
 }

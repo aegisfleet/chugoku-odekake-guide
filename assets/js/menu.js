@@ -28,31 +28,34 @@
       if (panel.classList.contains("is-open") && !panel.contains(e.target) && !btn.contains(e.target)) close();
     });
   }
-  // 下部タブバーの「メニュー」: 先頭へ戻ってヘッダーパネルを開閉する
-  var tabMenu = document.getElementById("tabbar-menu");
-  if (tabMenu) {
-    tabMenu.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      setTimeout(toggle, 250);
-    });
-  }
-  // 検索ページで kind=event のときは「イベント」タブをアクティブにする
-  if (/\/search\/?$/.test(location.pathname)) {
-    var kind = new URLSearchParams(location.search).get("kind");
-    var searchTab = document.querySelector('[data-tab="search"]');
-    var eventsTab = document.querySelector('[data-tab="events"]');
-    if (kind === "event" && searchTab && eventsTab) {
-      searchTab.classList.remove("is-active");
-      eventsTab.classList.add("is-active");
+  // タブバー・AIバナーなど、このスクリプトより後ろに定義される要素は DOMContentLoaded 後に配線する
+  document.addEventListener("DOMContentLoaded", function () {
+    // 下部タブバーの「メニュー」: 先頭へ戻ってヘッダーパネルを開閉する
+    var tabMenu = document.getElementById("tabbar-menu");
+    if (tabMenu) {
+      tabMenu.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(toggle, 250);
+      });
     }
-  }
-  // ホームのAI開示アコーディオン（モバイルのみ見た目に影響）
-  var aiToggle = document.getElementById("ai-note-toggle");
-  var aiBanner = document.getElementById("ai-banner");
-  if (aiToggle && aiBanner) {
-    aiToggle.addEventListener("click", function () {
-      var open = aiBanner.classList.toggle("is-open");
-      aiToggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-  }
+    // 検索ページで kind=event のときは「イベント」タブをアクティブにする
+    if (/\/search\/?$/.test(location.pathname)) {
+      var kind = new URLSearchParams(location.search).get("kind");
+      var searchTab = document.querySelector('[data-tab="search"]');
+      var eventsTab = document.querySelector('[data-tab="events"]');
+      if (kind === "event" && searchTab && eventsTab) {
+        searchTab.classList.remove("is-active");
+        eventsTab.classList.add("is-active");
+      }
+    }
+    // ホームのAI開示アコーディオン（モバイルのみ見た目に影響）
+    var aiToggle = document.getElementById("ai-note-toggle");
+    var aiBanner = document.getElementById("ai-banner");
+    if (aiToggle && aiBanner) {
+      aiToggle.addEventListener("click", function () {
+        var open = aiBanner.classList.toggle("is-open");
+        aiToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  });
 })();
