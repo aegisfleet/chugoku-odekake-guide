@@ -29,6 +29,7 @@
   --status-new: #e04836;
   --status-countdown: #8d43b3;
   --maps: #1a73e8;
+  --on-maps: #ffffff;
   --period: #7a4d99;
   --soon: #8d43b3;
   --filter-border: #eae3d9;
@@ -66,6 +67,7 @@
     --kind-stay: #93c2e8; --kind-stay-bg: rgba(45, 104, 152, .30);
     --kind-activity: #7fd0da; --kind-activity-bg: rgba(14, 120, 134, .30);
     --maps: #8ab4f8;
+    --on-maps: #171512;
     --period: #cfa8e8;
     --soon: #cfa8e8;
     --filter-border: #3d362a;
@@ -103,6 +105,7 @@
   --kind-stay: #93c2e8; --kind-stay-bg: rgba(45, 104, 152, .30);
   --kind-activity: #7fd0da; --kind-activity-bg: rgba(14, 120, 134, .30);
   --maps: #8ab4f8;
+  --on-maps: #171512;
   --period: #cfa8e8;
   --soon: #cfa8e8;
   --filter-border: #3d362a;
@@ -327,10 +330,10 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .btn-detail svg { width: 16px; height: 16px; fill: currentColor; }
 .btn-detail--instagram { background: linear-gradient(90deg, #c83c6d, #9d3e1a 55%, #e86339); color: #fff; border: none; }
 .btn-detail--instagram .btn-handle { background: rgba(255, 255, 255, .22); padding: 2px 8px; border-radius: 999px; font-size: 12px; }
-.btn-detail--maps { color: #1a73e8; }
-.btn-detail--maps svg { fill: #1a73e8; }
+.btn-detail--maps { color: var(--maps); }
+.btn-detail--maps svg { fill: var(--maps); }
 .btn-detail--share { color: var(--muted); }
-.btn-detail--route { width: 100%; justify-content: center; background: #1a73e8; color: #fff; border: none; margin-top: 4px; }
+.btn-detail--route { width: 100%; justify-content: center; background: var(--maps); color: var(--on-maps); border: none; margin-top: 4px; }
 
 .detail { max-width: 1100px; margin: 0 auto; padding: 4px 24px 0; }
 .detail-notices { background: var(--notice-bg); border: 1px solid #e8a13a; border-radius: 16px; padding: 16px 20px; margin-top: 20px; font-size: 14px; line-height: 1.8; }
@@ -386,7 +389,7 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .side-map-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
 .side-map-head span { font-size: 11.5px; color: var(--faint); }
 .side-card--map .note { font-size: 12px; color: var(--faint); line-height: 1.7; }
-.side-map-link { font-size: 13px; font-weight: 700; color: #1a73e8; text-decoration: none; }
+.side-map-link { font-size: 13px; font-weight: 700; color: var(--maps); text-decoration: none; }
 .map-embed { width: 100%; height: 224px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .provenance-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; font-size: 12.5px; line-height: 1.7; color: var(--muted); }
 .provenance-list strong { color: var(--heading); }
@@ -518,7 +521,7 @@ h1, h2, h3 { letter-spacing: -.01em; }
 @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr; } }
 
 /* フォーカスの見やすさ（テーマ共通） */
-:focus-visible { outline: 2px solid #e8a13a; outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 
 /* ==== 検索ページ /search/ ==== */
 .search-hero { background: var(--surface-subtle); border-bottom: 1px solid var(--border); }
@@ -536,7 +539,7 @@ h1, h2, h3 { letter-spacing: -.01em; }
 @keyframes status-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
 .search-bar { margin-top: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow-md); padding: 12px; display: flex; gap: 10px; align-items: stretch; flex-wrap: wrap; }
 .search-bar-input { flex: 1; min-width: 220px; display: flex; align-items: center; gap: 8px; background: var(--surface-subtle); border-radius: 12px; padding: 0 12px; }
-.search-bar-input svg { width: 20px; height: 20px; fill: #9d3e1a; flex-shrink: 0; }
+.search-bar-input svg { width: 20px; height: 20px; fill: var(--primary); flex-shrink: 0; }
 .search-bar-input input { flex: 1; border: 0; background: transparent; outline: none; font-size: 14px; font-family: inherit; color: var(--text); padding: 12px 0; min-width: 0; }
 #search-clear { border: 0; background: none; font-size: 18px; line-height: 1; color: var(--faint); cursor: pointer; padding: 4px; }
 #search-clear:hover { color: var(--text); }
@@ -636,7 +639,7 @@ h1, h2, h3 { letter-spacing: -.01em; }
   .mobile-bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
   .open-filters-btn { display: inline-flex; align-items: center; gap: 6px; background: #ffdbcf; color: #802a05; border: 0; padding: 10px 16px; border-radius: 999px; font-weight: 700; font-size: 13px; font-family: inherit; cursor: pointer; white-space: nowrap; flex-shrink: 0; }
   .mobile-bar-hint { min-width: 0; }
-  .open-filters-btn svg { width: 18px; height: 18px; fill: #9d3e1a; }
+  .open-filters-btn svg { width: 18px; height: 18px; fill: var(--primary); }
   .filter-badge { background: #e04836; color: #ffffff; min-width: 20px; height: 20px; border-radius: 999px; font-size: 11px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; padding: 0 5px; }
   .filter-badge[hidden] { display: none; }
   .mobile-bar-hint { font-size: 11px; color: var(--faint); }
@@ -672,7 +675,7 @@ h1, h2, h3 { letter-spacing: -.01em; }
   .mobile-tools { display: block; max-width: 1100px; margin: 0 auto; padding: 14px 16px 0; }
   .mobile-search-row { display: flex; gap: 10px; align-items: stretch; }
   .mobile-search-trigger { flex: 1; display: flex; align-items: center; gap: 9px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; box-shadow: var(--shadow-md); padding: 0 16px; min-height: 48px; color: var(--faint); font-size: 14px; text-decoration: none; }
-  .mobile-search-trigger svg { width: 21px; height: 21px; fill: #9d3e1a; flex-shrink: 0; }
+  .mobile-search-trigger svg { width: 21px; height: 21px; fill: var(--primary); flex-shrink: 0; }
   .mobile-search-trigger span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .mobile-filter-btn { width: 48px; height: 48px; flex-shrink: 0; border-radius: 50%; background: var(--surface-subtle); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
   .mobile-filter-btn svg { width: 20px; height: 20px; fill: var(--muted); }
