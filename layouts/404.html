@@ -5,8 +5,13 @@
 {{ partial "header.html" . }}
 <main class="detail">
   <h2>ページが見つかりませんでした</h2>
-  <p><a href="{{ site.Home.RelPermalink }}">トップページへ戻る</a></p>
+  <p>お探しのページは移動したか、削除された可能性があります。トップページから、または検索ページからお探しください。</p>
+  <p class="notfound-actions">
+    <a class="btn btn--primary" href="{{ site.Home.RelPermalink }}">トップページへ戻る</a>
+    <a class="btn btn--maps" href="{{ "search/" | relURL }}">探す・検索する</a>
+  </p>
 </main>
 {{ partial "footer.html" . }}
+{{ partial "tabbar.html" . }}
 </body>
 </html>

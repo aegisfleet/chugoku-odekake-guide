@@ -257,6 +257,11 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .btn--instagram { background: linear-gradient(90deg, #c83c6d, #e86339); color: #fff; box-shadow: var(--shadow-md); }
 .btn--instagram:hover { opacity: .94; }
 .btn-handle { background: rgba(0, 0, 0, .22); font-size: 11px; padding: 2px 8px; border-radius: 999px; }
+.btn--primary { background: #9d3e1a; color: #fff; box-shadow: var(--shadow-md); }
+.btn--primary:hover { opacity: .94; }
+.notfound-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+.place-card .btn--instagram { white-space: nowrap; }
+.place-card .btn-handle { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .btn--maps { background: var(--surface-subtle); color: var(--maps); border: 1px solid var(--border); }
 .btn--maps:hover { background: var(--surface); }
 
