@@ -8,9 +8,6 @@
     <a class="header-search-icon" href="{{ "search/" | relURL }}" aria-label="検索ページを開く">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
     </a>
-    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="header-actions" aria-label="メニューを開く">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </button>
     <div class="header-actions" id="header-actions">
       <nav class="header-nav">
         <a class="nav-pill{{ if .IsHome }} is-active{{ end }}" href="{{ site.Home.RelPermalink }}">ホーム</a>
@@ -19,8 +16,14 @@
       </nav>
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="テーマ（ライト／ダーク）を切り替える">テーマ: 自動</button>
     </div>
+    <a class="header-fav" href="{{ "favorites/" | relURL }}" aria-label="お気に入り一覧を開く">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-10-10C.5 7 3 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19 4 21.5 7 20 11c-2 4.5-8 10-8 10z"/></svg>
+      <span class="fav-count" data-fav-count hidden>0</span>
+    </a>
   </div>
 </header>
 {{ $menuJs := resources.Get "js/menu.js" | resources.Fingerprint "sha256" }}
 <script src="{{ $menuJs.RelPermalink }}"></script>
+{{ $favJs := resources.Get "js/favorites.js" | resources.Fingerprint "sha256" }}
+<script src="{{ $favJs.RelPermalink }}"></script>
 {{ if not .IsHome }}<p class="ai-note ai-note--slim">{{ site.Params.aiNote }}</p>{{ end }}

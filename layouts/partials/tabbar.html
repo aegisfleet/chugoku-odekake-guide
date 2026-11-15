@@ -12,7 +12,7 @@
   <a class="tabbar-item{{ if in .RelPermalink "/accounts/" }} is-active{{ end }}" href="{{ "accounts/" | relURL }}">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm7.4-6.9A4 4 0 0 1 17 11.8c1.9-.3 3-1.8 3-3.8a4 4 0 0 0-3.6-4.1zM9 13c-2.3 0-7 1.2-7 3.5V18h14v-1.5C16 14.2 11.3 13 9 13zm8.3-.7c-.2.8-.3 1.5-.3 2.2V18h5v-1.5c0-2-2.4-3.4-4.7-4.2z"/></svg><span>情報源</span>
   </a>
-  <button class="tabbar-item" id="tabbar-menu" type="button" aria-label="メニューを開く">
+  <button class="tabbar-item" id="tabbar-menu" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="header-actions">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg><span>メニュー</span>
   </button>
 </nav>

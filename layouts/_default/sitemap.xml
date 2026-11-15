@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{ range .Data.Pages }}
     {{ if not .Sitemap.Disable }}
-    {{ if not (strings.HasSuffix .RelPermalink "/search/") }}
+    {{ if not (or (strings.HasSuffix .RelPermalink "/search/") (strings.HasSuffix .RelPermalink "/favorites/")) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{ $lm := "" }}

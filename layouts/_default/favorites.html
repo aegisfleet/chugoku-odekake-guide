@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>{{ partial "head.html" . }}</head>
+<body>
+{{ partial "header.html" . }}
+{{ $places := slice }}
+{{ range hugo.Data.places }}{{ $places = $places | append . }}{{ end }}
+
+<section class="search-hero">
+  <div class="search-hero-inner">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="{{ site.Home.RelPermalink }}">ホーム</a><span class="breadcrumb-sep">›</span><span>お気に入り</span>
+    </nav>
+    <div class="search-hero-head">
+      <div>
+        <span class="search-eyebrow">Favorites</span>
+        <h1>お気に入り</h1>
+        <p>気になるスポットをこの端末に保存しておけます。お気に入りはお使いのブラウザ内に保存され、サーバーには送信されません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fav-main">
+  <p class="fav-count-text" id="fav-count-text"></p>
+  <div class="results-grid fav-grid" id="fav-grid">
+    {{ range sort $places "added_at" "desc" }}{{ partial "place-card.html" . }}{{ end }}
+  </div>
+  <div class="fav-empty" id="fav-empty" hidden>
+    <p class="fav-empty-title">まだお気に入りがありません</p>
+    <p>スポットのカードや詳細ページにあるハートのボタンから追加できます。</p>
+    <a class="btn btn--maps" href="{{ "search/" | relURL }}">スポットを探す</a>
+  </div>
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>

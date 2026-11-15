@@ -1,37 +1,42 @@
-// モバイル用ハンバーガーメニュー: ヘッダーのナビとテーマ切替を開閉パネルにまとめる（広い画面では常時表示で、この処理は見た目に影響しない）
-// あわせて下部タブバーの「メニュー」ボタン、検索ページでの「イベント」タブのアクティブ表示、ホームのAI開示アコーディオンも担当する
+// モバイル用メニュー: 下部タブバーの「メニュー」ボタンで、ヘッダーのナビとテーマ切替のパネルを開閉する
+// あわせて検索ページでの「イベント」タブのアクティブ表示、ホームのAI開示アコーディオンも担当する
 (function () {
-  var btn = document.getElementById("menu-toggle");
   var panel = document.getElementById("header-actions");
+  var tabMenu = null; // タブバーはこのスクリプトより後ろに定義されるため、DOMContentLoaded 後に確定する
+
+  function setTabState(open) {
+    if (!tabMenu) return;
+    tabMenu.setAttribute("aria-expanded", open ? "true" : "false");
+    tabMenu.setAttribute("aria-label", open ? "メニューを閉じる" : "メニューを開く");
+  }
   function close() {
     if (!panel) return;
     panel.classList.remove("is-open");
-    if (btn) {
-      btn.setAttribute("aria-expanded", "false");
-      btn.setAttribute("aria-label", "メニューを開く");
-    }
+    setTabState(false);
   }
   function toggle() {
     if (!panel) return false;
     var open = panel.classList.toggle("is-open");
-    if (btn) {
-      btn.setAttribute("aria-expanded", open ? "true" : "false");
-      btn.setAttribute("aria-label", open ? "メニューを閉じる" : "メニューを開く");
-    }
+    setTabState(open);
     return open;
   }
-  if (btn && panel) {
-    btn.addEventListener("click", toggle);
+
+  if (panel) {
     panel.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", close); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
     document.addEventListener("click", function (e) {
-      if (panel.classList.contains("is-open") && !panel.contains(e.target) && !btn.contains(e.target)) close();
+      if (!panel.classList.contains("is-open")) return;
+      if (panel.contains(e.target)) return;
+      // タブバーの「メニュー」ボタン自身のクリックは外側クリックとして扱わない
+      // （扱うと、閉じるための2回目のタップで閉じた直後に toggle が再表示してしまう）
+      if (e.target.closest && e.target.closest("#tabbar-menu")) return;
+      close();
     });
   }
-  // タブバー・AIバナーなど、このスクリプトより後ろに定義される要素は DOMContentLoaded 後に配線する
+
   document.addEventListener("DOMContentLoaded", function () {
     // 下部タブバーの「メニュー」: 先頭へ戻ってヘッダーパネルを開閉する
-    var tabMenu = document.getElementById("tabbar-menu");
+    tabMenu = document.getElementById("tabbar-menu");
     if (tabMenu) {
       tabMenu.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });

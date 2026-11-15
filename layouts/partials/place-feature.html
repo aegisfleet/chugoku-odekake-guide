@@ -42,6 +42,7 @@
     <p class="summary">{{ .summary }}</p>
     <div class="actions">
       <a class="btn btn--instagram" href="{{ .source.post_url }}" rel="noopener" target="_blank">{{ partial "icon-instagram.html" . }}Instagramで見る <span class="btn-handle">{{ .source.author }}</span></a>
+      <button class="btn btn--fav" type="button" data-fav-slug="{{ .slug }}" aria-pressed="false" aria-label="お気に入りに追加"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-10-10C.5 7 3 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19 4 21.5 7 20 11c-2 4.5-8 10-8 10z"/></svg><span>お気に入り</span></button>
       <a class="btn btn--maps" href="{{ .maps_url }}" rel="noopener" target="_blank">{{ partial "icon-pin.html" . }}Googleマップ</a>
     </div>
   </div>

@@ -85,6 +85,7 @@
       <a class="btn-detail btn-detail--instagram" href="{{ $p.source.post_url }}" rel="noopener" target="_blank">{{ partial "icon-instagram.html" . }}<span>Instagramで見る</span><span class="btn-handle">{{ $p.source.author }}</span></a>
       <a class="btn-detail btn-detail--maps" href="{{ $p.maps_url }}" rel="noopener" target="_blank">{{ partial "icon-pin.html" . }}<span>Googleマップで開く</span></a>
       <button class="btn-detail btn-detail--share" id="share-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 16.1c-.8 0-1.5.3-2 .8l-7.1-4.1c0-.3.1-.5.1-.8s0-.5-.1-.8L16 7.1c.5.5 1.2.8 2 .8a3 3 0 1 0-3-3c0 .3 0 .5.1.8L8 9.7a3 3 0 1 0 0 4.6l7.1 4a3 3 0 1 0 2.9-2.2z"/></svg><span id="share-label">シェア</span></button>
+      <button class="btn-detail btn-detail--fav" type="button" data-fav-slug="{{ $p.slug }}" aria-pressed="false" aria-label="お気に入りに追加"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-10-10C.5 7 3 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19 4 21.5 7 20 11c-2 4.5-8 10-8 10z"/></svg><span>お気に入り</span></button>
     </div>
   </div>
 </header>
