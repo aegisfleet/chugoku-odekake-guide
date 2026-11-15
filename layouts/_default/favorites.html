@@ -6,12 +6,12 @@
 {{ $places := slice }}
 {{ range hugo.Data.places }}{{ $places = $places | append . }}{{ end }}
 
-<section class="search-hero">
-  <div class="search-hero-inner">
+<section class="fav-hero">
+  <div class="fav-hero-inner">
     <nav class="breadcrumb" aria-label="パンくずリスト">
       <a href="{{ site.Home.RelPermalink }}">ホーム</a><span class="breadcrumb-sep">›</span><span>お気に入り</span>
     </nav>
-    <div class="search-hero-head">
+    <div class="fav-hero-head">
       <div>
         <span class="search-eyebrow">Favorites</span>
         <h1>お気に入り</h1>
