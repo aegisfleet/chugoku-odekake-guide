@@ -29,6 +29,11 @@
       <span class="hero-eyebrow">AIキュレーション × Instagram投稿の発掘</span>
       <h1 class="hero-title"><span class="phrase">週末がもっと楽しみになる、</span><br><span class="hl phrase">中国地方の魅力</span><span class="phrase">をてのひらに。</span></h1>
       <p class="hero-sub">広島を中心に鳥取・島根・岡山・山口の5県から、カフェ・ラーメン・観光スポット・温泉・イベントを厳選。出典はInstagramの投稿で、場所の確認はGoogleマップへ。写真は転載せず、元投稿へのリンクで紹介します。</p>
+      <form class="hero-search" role="search" action="{{ "search/" | relURL }}" method="get">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
+        <input type="search" name="q" placeholder="スポット・市町村・イベントを検索" aria-label="スポット・市町村・イベントを検索">
+        <button type="submit">検索</button>
+      </form>
       <div class="area-chips">
         <span class="area-chips-label">エリア：</span>
         {{ range slice "広島県" "岡山県" "山口県" "島根県" "鳥取県" }}
@@ -74,12 +79,9 @@
 {{ $tagStats = sort $tagStats "count" "desc" }}
 <section class="mobile-tools" aria-label="検索と絞り込み">
   <div class="mobile-search-row">
-    <a class="mobile-search-trigger" href="{{ "search/" | relURL }}">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
-      <span>スポット・エリア・#カフェ を検索</span>
-    </a>
-    <a class="mobile-filter-btn" href="{{ "search/" | relURL }}#filters" aria-label="絞り込み条件を開く">
+    <a class="mobile-filter-link" href="{{ "search/" | relURL }}#filters">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+      <span>絞り込み条件で探す</span>
     </a>
   </div>
   <div class="scroll-x quick-tags">

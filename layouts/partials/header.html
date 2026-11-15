@@ -12,12 +12,9 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </button>
     <div class="header-actions" id="header-actions">
-      <form class="header-search" id="header-search" role="search" action="{{ "search/" | relURL }}" method="get">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
-        <input type="search" name="q" id="header-search-input" placeholder="スポット・市町村・イベント検索" aria-label="スポット・市町村・イベント検索">
-      </form>
       <nav class="header-nav">
         <a class="nav-pill{{ if .IsHome }} is-active{{ end }}" href="{{ site.Home.RelPermalink }}">ホーム</a>
+        <a class="nav-pill{{ if eq .RelPermalink ("search/" | relURL) }} is-active{{ end }}" href="{{ "search/" | relURL }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>探す</a>
         <a class="nav-pill" href="{{ "accounts/" | relURL }}">情報源アカウント</a>
       </nav>
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="テーマ（ライト／ダーク）を切り替える">テーマ: 自動</button>
