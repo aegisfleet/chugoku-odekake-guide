@@ -5,7 +5,7 @@
 {{ partial "header.html" . }}
 {{ $places := slice }}
 {{ range hugo.Data.places }}{{ $places = $places | append . }}{{ end }}
-{{ $today := (now.Format "2006-01-02") | time.AsTime }}
+{{ $today := partial "jst-today.html" . }}
 {{ $windowEnd := $today.AddDate 0 0 60 }}
 {{ $ongoing := slice }}
 {{ $upcoming := slice }}

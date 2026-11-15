@@ -1,6 +1,6 @@
 {{- /* カードの構造はテンプレート側、見た目はCSS側。データ（YAML）は事実と意味だけを持つ */ -}}
 {{- /* 日付判定は日単位（timeZone=Asia/Tokyo）。終了は期間最終日の翌日から */ -}}
-{{- $today := (now.Format "2006-01-02") | time.AsTime }}
+{{- $today := partial "jst-today.html" . }}
 {{- $ended := false }}
 {{- if and (eq .kind "event") .period }}
   {{- if $today.After (.period.end | time.AsTime) }}{{ $ended = true }}{{ end }}

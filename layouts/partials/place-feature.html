@@ -1,5 +1,5 @@
 {{- /* イベント特集用の横長カード（トップのイベントセクション先頭のみ）。構造はテンプレート、見た目はCSS */ -}}
-{{- $today := (now.Format "2006-01-02") | time.AsTime }}
+{{- $today := partial "jst-today.html" . }}
 {{- $isNew := false }}
 {{- if .added_at }}
   {{- $age := div (sub $today.Unix ((.added_at | time.AsTime).Unix)) 86400 }}

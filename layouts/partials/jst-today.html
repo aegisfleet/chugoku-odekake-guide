@@ -1,0 +1,2 @@
+{{- /* 日本時間（JST）の今日0時を返す。Hugo の now は実行環境のタイムゾーンに従うため、GitHub Actions（UTC）の朝ビルドでは前日（UTC日付）になり「あとN日」が1日多く表示される。Unix時刻からの算術でJSTに固定する。 */ -}}
+{{- return ((sub (mul (div (add now.Unix 32400) 86400) 86400) 32400) | time.AsTime) -}}

@@ -7,7 +7,7 @@
 {{ $ver := index $p "_verification" }}
 {{ $kindLabel := index site.Params.kindLabel $p.kind }}
 {{ $kindClass := index site.Params.kindClass $p.kind }}
-{{ $today := (now.Format "2006-01-02") | time.AsTime }}
+{{ $today := partial "jst-today.html" . }}
 {{ $ended := false }}
 {{ if and (eq $p.kind "event") $p.period }}{{ if $today.After ($p.period.end | time.AsTime) }}{{ $ended = true }}{{ end }}{{ end }}
 {{ $isNew := false }}
