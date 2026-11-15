@@ -1,0 +1,42 @@
+slug: adachi-museum
+name: 足立美術館
+kind: spot
+tags: [美術館, 日本庭園, 日本画, 横山大観]
+area: { prefecture: 島根県, label: 安来市・古川町 }
+summary: 米国の日本庭園専門誌で23年連続日本一に選ばれた庭園を、館内の大きな窓越しに「生きた額絵」のように眺められる美術館。横山大観の作品を約120点収蔵し、日本画の名品と四季ごとに表情を変える庭園を楽しめる。JR安来駅からシャトルバスで約20分。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/Dd5UZpFjfWb/"
+  author: "@adachimuseum"
+maps_url: "https://www.google.com/maps/search/?api=1&query=足立美術館+安来市"
+featured: false
+status: active
+added_at: 2026-11-15
+
+official:
+  instagram: "@adachimuseum"
+  instagram_url: "https://www.instagram.com/adachimuseum/"
+  website: "https://www.adachi-museum.or.jp/"
+  website_label: 公式サイト
+
+highlights: [日本庭園日本一23年連続, 横山大観コレクション約120点, 窓越しに眺める「生きた額絵」, 四季の庭園, JR安来駅からのシャトルバス]
+
+related_posts:
+  captured_at: 2026-11-15
+  found_count: 9
+  items:
+    - { post_url: "https://www.instagram.com/p/Dd5UZpFjfWb/", author: "@adachimuseum", posted_at: 2026-09-30, likes: 560, note: "庭園のワイドショット1枚と閉館時刻の変更を知らせる公式投稿（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DaAdrH-FK48/", author: "@ai.su00", posted_at: 2026-06-25, note: "庭園と館内絵画の写真中心のカルーセル（いいね数は2.3Kと表示）。後半に近隣のレストランと道の駅も登場するが主役は足立美術館" }
+    - { post_url: "https://www.instagram.com/p/DGIO0VTBW21/", author: "@yamane_chika", posted_at: 2025-02-16, note: "秋の庭園と窓越しの眺めのカルーセル（いいね数は1.2Kと表示）" }
+    - { post_url: "https://www.instagram.com/p/DPXxeXpkcUw/", author: "@adachimuseum", posted_at: 2025-10-04, likes: 500, note: "曇り空の庭園写真1枚（公式）" }
+    - { post_url: "https://www.instagram.com/reel/DR13aq9kfpX/", author: "@kaji__masaki", posted_at: 2025-12-04, likes: 160, note: "池・鯉・紅葉の庭園リール" }
+    - { post_url: "https://www.instagram.com/p/DeApn76k7bi/", author: "@h2dezelf", posted_at: 2026-10-02, likes: 160, note: "大窓から庭園を眺める来館者の様子" }
+    - { post_url: "https://www.instagram.com/p/DP5EVBIEmYa/", author: "@kabi.chii.family", posted_at: 2025-10-17, likes: 130, note: "週末旅行の庭園写真カルーセル" }
+    - { post_url: "https://www.instagram.com/p/Dfdva33jDJf/", author: "@adachimuseum", posted_at: 2026-11-08, likes: 130, note: "再興第111回院展の告知ポスター（公式）" }
+    - { post_url: "https://www.instagram.com/reel/DJRqAVbz-Y5/", author: "@nami_123_nami", posted_at: 2025-05-05, likes: 120, note: "庭園と日本一の石碑のツアー動画" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-15
+  note: "Googleマップに place_id 1144481590614961 でピンあり（営業中）。住所は公式サイト・Wikipediaとも安来市古川町320で一致。公式サイトで年中無休を確認。新館のみ展示替えで休館日あり（直近は2026-11-16・17）だが庭園・本館・魯山人館は開館しており施設全体の閉館ではない"

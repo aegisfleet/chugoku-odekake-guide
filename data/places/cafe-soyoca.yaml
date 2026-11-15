@@ -1,0 +1,40 @@
+slug: cafe-soyoca
+name: cafe soyoca coffee & bake
+kind: shop
+tags: [カフェ, コーヒー, スコーン, 焼き菓子]
+area: { prefecture: 鳥取県, label: 鳥取市・富安 }
+summary: 2026年8月3日に鳥取市富安に開いた、コーヒーと焼き菓子のカフェ。スコーンなどの焼き菓子と季節のスイーツがよく投稿されている。木の温かみのある店内で、ゆっくりとコーヒーを楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DewQHlNRvOP/"
+  author: "@tottoriclub_912"
+maps_url: "https://www.google.com/maps/search/?api=1&query=cafe+soyoca+鳥取市富安1-121"
+featured: false
+status: active
+added_at: 2026-11-15
+
+official:
+  instagram: "@cafe_soyoca"
+  instagram_url: "https://www.instagram.com/cafe_soyoca/"
+
+highlights: [スコーン, 季節のスイーツ, コーヒー, 焼き菓子]
+
+related_posts:
+  captured_at: 2026-11-15
+  found_count: 11
+  items:
+    - { post_url: "https://www.instagram.com/reel/DewQHlNRvOP/", author: "@tottoriclub_912", posted_at: 2026-10-21, likes: 640, note: "開店の経緯と店内を紹介するプロモーション動画（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/Db6t_pehyDt/", author: "@tottori.gc_k3588", posted_at: 2026-08-11, likes: 430, note: "新店の料理と店内の雰囲気を巡る紹介動画" }
+    - { post_url: "https://www.instagram.com/p/Db-F57QkztA/", author: "@tottori.gc_k3588", posted_at: 2026-08-13, likes: 290, note: "オープン告知とスコーンなどの焼き菓子を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Def8Y6Wk7sg/", author: "@tottori.gc_k3588", posted_at: 2026-10-15, likes: 240, note: "季節限定のパンプキンプリンを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DbkgqdLmvSk/", author: "@kana_202504", posted_at: 2026-08-03, likes: 190, note: "グランドオープンの日の料理と店内を記録するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DciicVbgmDI/", author: "@food_tottori", posted_at: 2026-08-27, likes: 87, note: "アイスコーヒーと焼き菓子の静かな一枚" }
+    - { post_url: "https://www.instagram.com/p/DbiijjDoJaS/", author: "@cafe_soyoca", posted_at: 2026-08-02, likes: 79, note: "コーヒー豆の接写（公式）" }
+    - { post_url: "https://www.instagram.com/p/DcqvgWXTOBm/", author: "@toriten7308", posted_at: 2026-08-30, likes: 36, note: "レモンミントのドリンクとスコーン、外観の看板を並べたコラージュ" }
+    - { post_url: "https://www.instagram.com/p/DfBArJEE-Et/", author: "@memorial.log", posted_at: 2026-10-27, likes: 3, note: "ケーキとコーヒーの訪問記録" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-15
+  note: "Googleマップにピンあり（place_id 2326368458168949、営業中、住所は鳥取市富安1-121）。公式Instagram @cafe_soyoca の活動と2026-10-27の来店投稿で営業継続を確認。2026-08-03オープンの新店で同名の別店なし"

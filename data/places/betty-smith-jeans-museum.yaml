@@ -1,0 +1,42 @@
+slug: betty-smith-jeans-museum
+name: ベティスミス ジーンズミュージアム＆ヴィレッジ
+kind: activity
+tags: [ジーンズ作り体験, ミュージアム, 児島デニム, 工場見学]
+area: { prefecture: 岡山県, label: 倉敷市児島・下の町 }
+summary: 国産ジーンズ発祥の地・児島にある、日本最古のジーンズ工場に併設されたミュージアムと体験施設。貴重なヴィンテージジーンズや昔のミシンの展示でデニムの歴史に触れられ、窓越しに職人の縫製作業も見学できる。目玉は自分だけのオリジナルジーンズが作れる体験工房で、生地やボタン、リベット、レザーパッチを選んで職人の手ほどきで仕上げる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DE9shMuJEV5/"
+  author: "@anri.kumaki"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ベティスミス+ジーンズミュージアム+倉敷市児島下の町5-2-70"
+featured: false
+status: active
+added_at: 2026-11-15
+
+official:
+  instagram: "@bettysmith_official"
+  instagram_url: "https://www.instagram.com/bettysmith_official/"
+  website: "https://www.betty.co.jp/museum/"
+  website_label: 公式サイト
+
+highlights: [オリジナルジーンズ作り体験, 日本最古のジーンズ工場, ヴィンテージジーンズの展示, 職人の縫製見学, 児島デニムの歴史]
+
+related_posts:
+  captured_at: 2026-11-15
+  found_count: 24
+  items:
+    - { post_url: "https://www.instagram.com/p/DE9shMuJEV5/", author: "@anri.kumaki", posted_at: 2025-01-18, likes: 640, note: "看板やマスコット像、日本最古のジーンズ工場としての紹介を含む訪問記録（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DGrX6FfSeEk/", author: "@bettysmith_official", posted_at: 2025-03-02, likes: 260, note: "デニム地のひな人形の展示（公式）" }
+    - { post_url: "https://www.instagram.com/p/DJnlB8myN0g/", author: "@bettysmith_official", posted_at: 2025-05-14, likes: 170, note: "ジーンズミュージアムI の外観（公式）" }
+    - { post_url: "https://www.instagram.com/p/DNkzZakyHzk/", author: "@hiroyuki_matsumoto_1008ky", posted_at: 2025-08-20, likes: 140, note: "施設全体の写真ツアー（体験の看板・Betty's Store・マスコット像）" }
+    - { post_url: "https://www.instagram.com/p/DSby-zcgS51/", author: "@bettysmith_official", posted_at: 2025-12-19, likes: 130, note: "HAPPY BAG 2026 の告知（公式）" }
+    - { post_url: "https://www.instagram.com/p/DQgFFJHgTkS/", author: "@bettysmith_official", posted_at: 2025-11-01, likes: 94, note: "ジーンズ3型の紹介（公式）" }
+    - { post_url: "https://www.instagram.com/p/DDXCoGBSG4s/", author: "@youko.nomu", posted_at: 2024-12-09, likes: 73, note: "館内の案内看板と商品の訪問記録" }
+    - { post_url: "https://www.instagram.com/p/Dd3Ee3uCYIQ/", author: "@bettysmith_tokyo", posted_at: 2026-09-29, likes: 71, note: "館内のマスコット像と来館者の写真（写真自体は児島のミュージアム館内のもの）" }
+    - { post_url: "https://www.instagram.com/p/DJD8yJthKST/", author: "@show.miya", posted_at: 2025-04-30, likes: 48, note: "ジーンズ作り体験の工程を最初から最後まで記録" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-15
+  note: "Googleマップに「Betty Smith Jeans Museum 1」としてピンあり（place_id 673396178187545、営業中、評価4.4）。住所は公式・観光サイト複数で倉敷市児島下の町5-2-70と一致（マップ上の番地表記は5-1-56だが同一敷地内の建物で電話番号も一致）。公式Instagramは2025-12-19まで投稿を継続。ミュージアム＆ヴィレッジは児島のこの1か所のみで別支店との混同なし"

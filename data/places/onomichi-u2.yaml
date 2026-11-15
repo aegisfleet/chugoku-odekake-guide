@@ -1,0 +1,42 @@
+slug: onomichi-u2
+name: ONOMICHI U2
+kind: stay
+tags: [複合施設, サイクリング, カフェ, ホテル]
+area: { prefecture: 広島県, label: 尾道市・西御所町 }
+summary: しまなみ海道の本州側起点、尾道の海沿いに建つ元県営倉庫を改装した複合施設。自転車を部屋まで持ち込めるホテル「HOTEL CYCLE」を中心に、レストラン、カフェ、ベーカリー、サイクルショップなどが一つの建物に集まる。サイクリングの出発点としてだけでなく、海沿いの散策やカフェ利用でも訪れる人が多い。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DfDY8L_k8cX/"
+  author: "@1101yukorin"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ONOMICHI+U2+尾道市西御所町"
+featured: false
+status: active
+added_at: 2026-11-15
+
+official:
+  instagram: "@onomichi_u2"
+  instagram_url: "https://www.instagram.com/onomichi_u2/"
+  website: "https://onomichi-u2.com/"
+  website_label: 公式サイト
+
+highlights: [自転車を持ち込めるホテル HOTEL CYCLE, 海沿いの倉庫を改装した建物, Yard Caféとベーカリー, しまなみ海道の起点]
+
+related_posts:
+  captured_at: 2026-11-15
+  found_count: 30
+  items:
+    - { post_url: "https://www.instagram.com/p/DfDY8L_k8cX/", author: "@1101yukorin", posted_at: 2026-10-28, likes: 620, note: "施設内のカフェや海沿いの様子を巡る穏やかな紹介カルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DQwQZCsE_Tc/", author: "@snowdrop.endless", posted_at: 2025-11-07, likes: 280, note: "施設の案内板と外観を写した訪問記録" }
+    - { post_url: "https://www.instagram.com/p/DcnckyqAXfd/", author: "@keisuke.fujikawa", posted_at: 2026-08-29, likes: 270, note: "U2の看板の前でのロードバイクの写真" }
+    - { post_url: "https://www.instagram.com/p/DdJEn0oTKKI/", author: "@sho_zhi", posted_at: 2026-09-11, likes: 260, note: "木製デッキに置かれたロードバイクと倉庫の外観" }
+    - { post_url: "https://www.instagram.com/p/DCwm-MShYUc/", author: "@with_brompton", posted_at: 2024-11-24, likes: 240, note: "U2の看板と外観入口を写した訪問記録" }
+    - { post_url: "https://www.instagram.com/p/Dda_MriPQ0k/", author: "@onomichi_u2", posted_at: 2026-09-18, likes: 200, note: "施設で開かれる海辺のマルシェの告知ポスター（公式）" }
+    - { post_url: "https://www.instagram.com/p/DI8jRc0v52M/", author: "@saki__5_photo", posted_at: 2025-04-27, likes: 110, note: "施設内の通路と看板を巡る写真ツアー" }
+    - { post_url: "https://www.instagram.com/p/DNiNxBIxyvC/", author: "@akira.na", posted_at: 2025-08-19, likes: 100, note: "手描きの看板と施設外観を紹介する訪問記録" }
+    - { post_url: "https://www.instagram.com/reel/DFUawCkhOSp/", author: "@_______charme", posted_at: 2025-01-27, likes: 83, note: "尾道デートでU2のウッドデッキを巡る動画" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-15
+  note: "Google検索で place_id 605529674304455・営業中・評価4.5（285件のレビュー）を確認。住所は公式サイトとWikipediaとも尾道市西御所町5-11で一致。公式アカウント @onomichi_u2 の2026-09-18投稿で営業とイベント開催を確認"
