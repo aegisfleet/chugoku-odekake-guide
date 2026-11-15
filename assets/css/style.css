@@ -651,9 +651,11 @@ h1, h2, h3 { letter-spacing: -.01em; }
 @media (max-width: 900px) {
   /* 検索ページ: ヒーローを圧縮し、サイドバーをボトムシート化 */
   .search-hero .breadcrumb, .search-hero-head, .search-hero .trend-tags { display: none; }
+  /* モバイルでは中身が検索ボックスだけになるため、帯の背景色を消してページ背景にそろえる */
+  .search-hero { background: transparent; border-bottom: 0; }
   .search-hero-inner { padding: 14px 16px 16px; }
   .search-bar { margin-top: 0; }
-  .search-mobile-bar { display: block; max-width: 1100px; margin: 0 auto; padding: 14px 24px 0; position: sticky; top: 60px; z-index: 30; background: var(--bg); }
+  .search-mobile-bar { display: block; max-width: 1100px; margin: 0 auto; padding: 14px 24px 12px; position: sticky; top: 60px; z-index: 30; background: var(--bg); }
   .mobile-bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
   .open-filters-btn { display: inline-flex; align-items: center; gap: 6px; background: #ffdbcf; color: #802a05; border: 0; padding: 10px 16px; border-radius: 999px; font-weight: 700; font-size: 13px; font-family: inherit; cursor: pointer; white-space: nowrap; flex-shrink: 0; min-height: 40px; }
   .mobile-bar-hint { min-width: 0; }
