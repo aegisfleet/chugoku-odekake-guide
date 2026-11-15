@@ -688,7 +688,8 @@ h1, h2, h3 { letter-spacing: -.01em; }
   .header-search-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; margin-left: auto; }
   .header-search-icon svg { width: 21px; height: 21px; fill: var(--text); }
   .header-search-icon:active { background: var(--surface-subtle); }
-  .search-mobile-bar { padding-left: 16px; padding-right: 16px; }
+  .search-mobile-bar { padding-left: 16px; padding-right: 16px; top: 56px; }
+  /* sticky の top はヘッダー実高（57px）より 1px 内側にし、スクロール時に下のコンテンツが透ける隙間をなくす */
   /* ホームのモバイル検索導線 */
   .mobile-tools { display: block; max-width: 1100px; margin: 0 auto; padding: 14px 16px 0; }
   .mobile-search-row { display: flex; gap: 10px; align-items: stretch; }
