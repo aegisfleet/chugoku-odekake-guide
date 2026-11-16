@@ -148,7 +148,7 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .fav-count[hidden] { display: none; }
 .header-fav-text { display: none; }
 /* PC幅: お気に入りをテキスト付きピルにし、テーマ切替と位置を入れ替える（お気に入り→テーマの順） */
-@media (min-width: 901px) {
+@media (min-width: 721px) {
   .header-fav { order: 4; width: auto; padding: 0 14px; border-radius: 999px; gap: 6px; border: 1px solid var(--filter-border); background: var(--surface); }
   .theme-toggle { order: 5; }
   .header-fav:hover { background: var(--surface-subtle); }
@@ -156,12 +156,22 @@ h1, h2, h3 { letter-spacing: -.01em; }
   .header-fav .fav-count { top: -4px; right: -4px; }
 }
 /* 中間幅ではヘッダーを詰めて1行に収める */
-@media (max-width: 1150px) and (min-width: 901px) {
+@media (max-width: 1150px) and (min-width: 721px) {
   .header-inner { gap: 10px; padding: 10px 16px; }
-  .brand-name { font-size: 15px; }
+  .brand { min-width: 0; }
+  .brand-name { font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .nav-pill { padding: 7px 10px; }
   .theme-toggle { padding: 7px 10px; }
   .header-fav { padding: 0 10px; }
+}
+/* 721〜900px: デスクトップヘッダーが窮屈な帯域は追加で詰める */
+@media (max-width: 900px) and (min-width: 721px) {
+  .header-inner { gap: 8px; padding: 10px 12px; }
+  .brand-name { font-size: 14px; }
+  .nav-pill { padding: 7px 8px; font-size: 12px; }
+  .theme-toggle { padding: 7px 8px; font-size: 11px; }
+  .header-fav { padding: 0 8px; }
+  .header-fav-text { font-size: 12px; }
 }
 @media (max-width: 720px) {
   .header-inner { flex-wrap: nowrap; padding: 8px 16px; gap: 10px; }
