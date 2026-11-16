@@ -1,0 +1,40 @@
+slug: log-onomichi
+name: LOG（Lantern Onomichi Garden）
+kind: stay
+tags: [宿, カフェ, 建築, 庭園]
+area: { prefecture: 広島県, label: 尾道市・東土堂町 }
+summary: 1963年築の新道アパートをスタジオ・ムンバイが改修した、千光寺へ続く坂の途中の宿。客室は6室のみで、和紙に包まれた空間が特徴。宿泊者以外もカフェ＆バーやギャラリー、庭を楽しめる。宿泊は13歳以上のみで、車では行けず石段を上がる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DMd9zp7zYl8/"
+  author: "@m_s_m_m_y_2"
+maps_url: "https://www.google.com/maps/search/?api=1&query=LOG+尾道市東土堂町11-12"
+featured: false
+status: active
+added_at: 2026-11-16
+
+official:
+  website: "https://l-og.jp/"
+  website_label: 公式サイト
+
+highlights: [和紙に包まれた客室, "カフェ＆バー", 坂の途中の建築, 庭園]
+
+related_posts:
+  captured_at: 2026-11-16
+  found_count: 30
+  items:
+    - { post_url: "https://www.instagram.com/p/DMd9zp7zYl8/", author: "@m_s_m_m_y_2", posted_at: 2025-07-23, likes: 230, note: "宿の入口から客室までを巡るカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DeEg5n_EqPa/", author: "@tanimoto_seina", posted_at: 2026-10-04, likes: 1500, note: "LOGでの滞在と尾道・広島旅行の記録（前半7枚がLOG）" }
+    - { post_url: "https://www.instagram.com/p/Db60QgnD5ax/", author: "@_belk__", posted_at: 2026-08-11, likes: 640, note: "和紙の客室や窓辺のテーブルを巡るカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DNu9F5wZFlT/", author: "@life.adrian", posted_at: 2025-08-24, likes: 560, note: "建築と滞在の様子を語る動画" }
+    - { post_url: "https://www.instagram.com/p/Dah4L-uEqYy/", author: "@yuki____bori", posted_at: 2026-07-08, likes: 220, note: "宿の窓辺でくつろぐ様子のカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DRE3QF9kiFy/", author: "@mog.____", posted_at: 2025-11-15, likes: 86, note: "テラス席でのカフェの様子" }
+    - { post_url: "https://www.instagram.com/p/DSHdRdrkvWe/", author: "@gbrc_seinou", posted_at: 2025-12-11, likes: 73, note: "建築探訪としてLOGを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DX1is5jkikm/", author: "@non______pi", posted_at: 2026-05-02, likes: 50, note: "カフェの店内と料理を巡るカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DegYytTn6Zd/", author: "@yumi_keepswmng", posted_at: 2026-10-15, likes: 25, note: "建築とインテリアの写真エッセイ" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-16
+  note: "Googleのホテル一覧に掲載あり（住所は尾道市東土堂町11-12で公式サイトと一致）。公式サイト https://l-og.jp/ で営業中を確認。公式Instagramは確認できず未記載。2026-11-07の来店投稿でも営業継続を確認。宿泊は13歳以上のみ（公式サイト）"

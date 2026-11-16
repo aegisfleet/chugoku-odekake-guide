@@ -1,0 +1,36 @@
+slug: tsunoshima-ohashi
+name: 角島大橋
+kind: spot
+tags: [絶景, ドライブ, 海, 橋]
+area: { prefecture: 山口県, label: 下関市・豊北町 }
+summary: 本州と角島を結ぶ全長1,780mの海上橋。2000年に開通し、通行は無料。エメラルドグリーンの海に架かる姿はCMやドラマのロケ地としても知られる。橋を眺めるなら本州側の海士ヶ瀬公園や角島側の瀬崎陽の公園が定番で、強風時は通行止めになる場合がある。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DLM2DxuywC9/"
+  author: "@kyoko1903"
+maps_url: "https://www.google.com/maps/search/?api=1&query=角島大橋+下関市豊北町神田"
+featured: false
+status: active
+added_at: 2026-11-16
+
+highlights: ["全長1,780mの海上橋", エメラルドグリーンの海, 無料で渡れるドライブ, CM・ドラマのロケ地]
+
+related_posts:
+  captured_at: 2026-11-16
+  found_count: 33
+  items:
+    - { post_url: "https://www.instagram.com/reel/DLM2DxuywC9/", author: "@kyoko1903", posted_at: 2025-06-22, likes: 13000, note: "エメラルドグリーンの海に架かる橋を映す動画（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/Db3Ujw0FGjp/", author: "@mori.chiharu", posted_at: 2026-08-10, likes: 8800, note: "橋と角島の観光の様子を巡るカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DdgSZO1FPZr/", author: "@mori.chiharu", posted_at: 2026-09-20, likes: 6900, note: "山口旅行の記録（角島大橋が中心）" }
+    - { post_url: "https://www.instagram.com/reel/Dfbi_szTZk1/", author: "@sasaki_kotoko828", posted_at: 2026-11-07, likes: 3600, note: "角島への日帰り旅行の動画" }
+    - { post_url: "https://www.instagram.com/reel/DEsI-7Mvfe4/", author: "@aconowa358", posted_at: 2025-01-11, likes: 2400, note: "橋を高い視点から見渡す動画" }
+    - { post_url: "https://www.instagram.com/p/DcjtQnvjE0x/", author: "@jtb_jp", posted_at: 2026-08-28, likes: 570, note: "橋と海を望む一枚（JTB公式）" }
+    - { post_url: "https://www.instagram.com/p/DC4hlkKT9TE/", author: "@toshinsta_535", posted_at: 2024-11-27, likes: 490, note: "橋を見下ろす展望からの写真" }
+    - { post_url: "https://www.instagram.com/p/DOP89n8EZBE/", author: "@ducati_hypermotard821_japan", posted_at: 2025-09-06, likes: 250, note: "バイクと橋のツーリング写真" }
+    - { post_url: "https://www.instagram.com/reel/DFpZ8OzTQk7/", author: "@risa_photography._", posted_at: 2025-02-04, likes: 250, note: "橋を空から見渡す動画" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-16
+  note: "Googleマップに角島大橋展望台のピンあり（place_id 1394491937884361、営業中）。橋自体はNAVITIME・Wikipediaで所在地（下関市豊北町神田〜角島、全長1,780m、2000年開通）を確認。公式Instagram・公式サイトは特定できず未記載"

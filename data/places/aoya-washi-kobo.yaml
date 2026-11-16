@@ -1,0 +1,40 @@
+slug: aoya-washi-kobo
+name: あおや和紙工房
+kind: activity
+tags: [和紙, 体験, 工芸, ギャラリー]
+area: { prefecture: 鳥取県, label: 鳥取市・青谷町 }
+summary: 約1300年の歴史を持つ因州和紙の里・青谷にある工房。紙すき体験（要事前予約）で自分だけの和紙を作れるほか、展示ギャラリーや和紙の小物のショップ、併設のカフェもある。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DdvXCCvk6B3/"
+  author: "@aoya.washikobo"
+maps_url: "https://www.google.com/maps/search/?api=1&query=あおや和紙工房+鳥取市青谷町山根313"
+featured: false
+status: active
+added_at: 2026-11-16
+
+official:
+  instagram: "@aoya.washikobo"
+  instagram_url: "https://www.instagram.com/aoya.washikobo/"
+  website: "http://www.tbz.or.jp/aoya-washi/"
+  website_label: 公式サイト
+
+highlights: [紙すき体験, 因州和紙の歴史, 展示ギャラリー, 和紙の小物]
+
+related_posts:
+  captured_at: 2026-11-16
+  found_count: 10
+  items:
+    - { post_url: "https://www.instagram.com/p/DdvXCCvk6B3/", author: "@aoya.washikobo", posted_at: 2026-09-26, likes: 44, note: "紙すき体験の様子を写した公式のカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DOxJgHFkvum/", author: "@usamimi_gram", posted_at: 2025-09-19, likes: 82, note: "因州和紙の魅力を紹介する鳥取観光ガイドの投稿" }
+    - { post_url: "https://www.instagram.com/p/DeOg4OiDzhf/", author: "@aoya.washikobo", posted_at: 2026-10-04, likes: 39, note: "ギャラリーでの団体見学の様子（公式）" }
+    - { post_url: "https://www.instagram.com/p/DQ8s0hVkzBD/", author: "@aoya.center", posted_at: 2025-11-12, likes: 22, note: "ギャラリーの展示を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DThjIR9ATCr/", author: "@aoya.washikobo", posted_at: 2026-01-15, likes: 17, note: "子どもたちの和紙づくり体験の様子（公式）" }
+    - { post_url: "https://www.instagram.com/reel/DedZs2iuDqi/", author: "@aoya_highschool", posted_at: 2026-10-14, likes: 15, note: "高校の授業で和紙作りを体験する様子" }
+    - { post_url: "https://www.instagram.com/p/DH5gTi0BlUB/", author: "@aoya.washikobo", posted_at: 2025-04-01, likes: 2, note: "紙すきの手元の接写（公式）" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-16
+  note: "Googleマップにピンあり（place_id 570975034691052、営業中、住所は鳥取市青谷町山根313）。公式Instagram @aoya.washikobo の活動と2026-10-14の学校訪問投稿で営業継続を確認。紙すき体験は事前予約制（公式サイト）"

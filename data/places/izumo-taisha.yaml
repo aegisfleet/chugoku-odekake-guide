@@ -1,0 +1,40 @@
+slug: izumo-taisha
+name: 出雲大社
+kind: spot
+tags: [神社, 縁結び, 絶景, しめ縄]
+area: { prefecture: 島根県, label: 出雲市・大社町 }
+summary: 縁結びの神として知られる、日本を代表する大社。大国主大神を祀り、神楽殿に掲げられた大しめ縄は長さ約13m・重さ約5tの大きさ。旧暦10月の神在月には全国の神々が集まると伝えられ、参拝の作法は二礼四拍手一礼が特徴。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DOF5DkDEh-6/"
+  author: "@yo_ko1236"
+maps_url: "https://www.google.com/maps/search/?api=1&query=出雲大社+出雲市大社町杵築東195"
+featured: false
+status: active
+added_at: 2026-11-16
+
+official:
+  website: "https://www.izumooyashiro.or.jp/"
+  website_label: 公式サイト
+
+highlights: [日本一の大しめ縄, 神楽殿, 縁結び, 二礼四拍手一礼]
+
+related_posts:
+  captured_at: 2026-11-16
+  found_count: 43
+  items:
+    - { post_url: "https://www.instagram.com/p/DOF5DkDEh-6/", author: "@yo_ko1236", posted_at: 2025-09-02, likes: 7100, note: "神楽殿の大しめ縄と参拝の様子を巡るカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DWm8E9_E8JY/", author: "@bilingirl_chika", posted_at: 2026-04-02, likes: 1000, note: "境内の石段と桜を背景に撮る参拝の動画" }
+    - { post_url: "https://www.instagram.com/p/DfE9RaZkso2/", author: "@rakutentravel", posted_at: 2026-10-29, likes: 800, note: "神在月（11月9日〜12月8日）に合わせた参拝ガイドのカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DGZouCBPhUK/", author: "@ishizu0115daisuke", posted_at: 2025-02-23, likes: 760, note: "雪の日の神楽殿としめ縄を写した写真" }
+    - { post_url: "https://www.instagram.com/p/DcsM_nsDzMf/", author: "@tsuyoshi50", posted_at: 2026-08-31, likes: 680, note: "初めての参拝を記録するカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DGxVVmoTr5z/", author: "@ry.rai.rai", posted_at: 2025-03-04, likes: 600, note: "大鳥居から境内を巡る晴れた日の動画" }
+    - { post_url: "https://www.instagram.com/reel/DfHh4cmzjbM/", author: "@_sayu_t_", posted_at: 2026-10-30, likes: 380, note: "神楽殿の大しめ縄を間近で映す動画" }
+    - { post_url: "https://www.instagram.com/p/DbQc8BaMQt7/", author: "@akihiro71", posted_at: 2026-07-26, likes: 190, note: "大しめ縄を見上げる構図の一枚" }
+    - { post_url: "https://www.instagram.com/p/DQ8V70oEvE-/", author: "@sky_it_corporate", posted_at: 2025-11-12, likes: 77, note: "社員旅行で訪れた神楽殿の様子" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-16
+  note: "Googleマップにピンあり（place_id 1181891232369030、営業中、住所は出雲市大社町杵築東195）。公式サイトで確認。公式Instagramは確認できず未記載。神在月の期間（2026年は11月9日〜12月8日）は楽天トラベル公式の投稿で確認"

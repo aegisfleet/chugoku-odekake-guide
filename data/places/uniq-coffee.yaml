@@ -1,0 +1,40 @@
+slug: uniq-coffee
+name: UNIQ COFFEE
+kind: shop
+tags: [カフェ, コーヒー, スイーツ, パリ風]
+area: { prefecture: 岡山県, label: 岡山市南区・新保 }
+summary: 2026年7月11日に岡山市南区新保に開いたパリ風カフェ。国道2号沿いのガラス張りの明るい店内で、中庭を望みながらコーヒーとスイーツを楽しめる。とろけるモワルーショコラやティラミスがよく投稿されている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/Daz_td5vz7g/"
+  author: "@__i6cafegram__"
+maps_url: "https://www.google.com/maps/search/?api=1&query=UNIQ+COFFEE+岡山市南区新保1602-2"
+featured: false
+status: active
+added_at: 2026-11-16
+
+official:
+  instagram: "@uniqcoffee_"
+  instagram_url: "https://www.instagram.com/uniqcoffee_/"
+
+highlights: [とろけるモワルーショコラ, パリ風カフェ, 中庭のある明るい店内, ティラミス]
+
+related_posts:
+  captured_at: 2026-11-16
+  found_count: 18
+  items:
+    - { post_url: "https://www.instagram.com/reel/Daz_td5vz7g/", author: "@__i6cafegram__", posted_at: 2026-07-15, likes: 1900, note: "2026年7月オープンの新店を紹介する動画（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/Ded8PDUygY7/", author: "@mickey_okayama.gourmet", posted_at: 2026-10-14, likes: 1700, note: "店舗の外観と店内、住所を紹介する動画" }
+    - { post_url: "https://www.instagram.com/reel/DeoT8pCtFki/", author: "@chinami_okayama_trip", posted_at: 2026-10-18, likes: 1100, note: "国道2号沿いの新店を巡る動画" }
+    - { post_url: "https://www.instagram.com/p/Daz4UaAmeU7/", author: "@megurirure_okayama_", posted_at: 2026-07-15, likes: 440, note: "店内のテーブルとデザートのカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DelBlReH4QZ/", author: "@risa_foodgram", posted_at: 2026-10-17, likes: 360, note: "新保エリアの新店として紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DdQGkG_OCRs/", author: "@mutex_mutex", posted_at: 2026-09-14, likes: 310, note: "グランドオープンを告知する動画" }
+    - { post_url: "https://www.instagram.com/p/DauEfzNj3iI/", author: "@okayamaoimo", posted_at: 2026-07-13, likes: 240, note: "オープン直後の訪問記録カルーセル" }
+    - { post_url: "https://www.instagram.com/p/Da2NQ91j14I/", author: "@yuriiiiiii2443", posted_at: 2026-07-16, likes: 120, note: "パリ風カフェとして紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DbQX7piSiaJ/", author: "@uniqcoffee_", posted_at: 2026-07-26, likes: 75, note: "とろけるモワルーショコラを紹介する公式動画" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-16
+  note: "Googleマップにピンあり（place_id 1398068195504215、営業中）。住所は複数投稿が岡山市南区新保1602-2と明記（マップの表示は北区だが、新保は南区のため投稿側を採用）。2026-07-11グランドオープン、2026-10-28の公式投稿で営業継続を確認"
