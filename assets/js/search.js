@@ -149,6 +149,7 @@
     syncSegs();
     syncQuickTags();
     syncCardTags();
+    syncTrendChips();
     var badge = document.getElementById("filter-badge");
     if (badge) {
       var n = (state.q ? 1 : 0) + (prefFiltered() ? 1 : 0) + state.areas.size +
@@ -166,6 +167,11 @@
   function syncQuickTags() {
     document.querySelectorAll("[data-quick-tag]").forEach(function (b) {
       b.classList.toggle("is-on", state.tags.has(b.getAttribute("data-quick-tag")));
+    });
+  }
+  function syncTrendChips() {
+    document.querySelectorAll(".trend-chip").forEach(function (b) {
+      b.classList.toggle("is-on", state.tags.has(b.getAttribute("data-term")));
     });
   }
   function syncCardTags() {
@@ -258,7 +264,9 @@
   document.getElementById("reset-filters").addEventListener("click", resetAll);
   document.querySelectorAll(".trend-chip").forEach(function (b) {
     b.addEventListener("click", function () {
-      state.q = b.getAttribute("data-term").toLowerCase(); input.value = b.getAttribute("data-term"); apply();
+      var t = b.getAttribute("data-term");
+      if (state.tags.has(t)) state.tags.delete(t); else state.tags.add(t);
+      syncToggleChips(); apply();
       document.querySelector(".search-results").scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
