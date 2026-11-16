@@ -39,7 +39,7 @@
     {{ if eq $evBadge "live" }}<span class="badge badge--live">開催中</span>{{ end }}
     {{ if eq $evBadge "ending" }}<span class="badge badge--ending">まもなく終了</span>{{ end }}
     {{ if eq $evBadge "soon" }}<span class="badge badge--soon">あと{{ $daysToStart }}日</span>{{ end }}
-    {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+    {{ range .tags }}<a class="tag" data-card-tag="{{ . }}" href="{{ "search/" | relURL }}?tag={{ . | urlquery }}">{{ . }}</a>{{ end }}
     {{ if .notices }}<span class="tag tag--notice">お知らせあり</span>{{ end }}
   </div>
   <h2 class="place-name"><a href="{{ printf "places/%s/" .slug | relURL }}">{{ .name }}</a></h2>

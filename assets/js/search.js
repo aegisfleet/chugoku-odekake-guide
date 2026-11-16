@@ -148,6 +148,7 @@
     syncURL();
     syncSegs();
     syncQuickTags();
+    syncCardTags();
     var badge = document.getElementById("filter-badge");
     if (badge) {
       var n = (state.q ? 1 : 0) + (prefFiltered() ? 1 : 0) + state.areas.size +
@@ -165,6 +166,11 @@
   function syncQuickTags() {
     document.querySelectorAll("[data-quick-tag]").forEach(function (b) {
       b.classList.toggle("is-on", state.tags.has(b.getAttribute("data-quick-tag")));
+    });
+  }
+  function syncCardTags() {
+    document.querySelectorAll("[data-card-tag]").forEach(function (b) {
+      b.classList.toggle("is-on", state.tags.has(b.getAttribute("data-card-tag")));
     });
   }
 
@@ -267,6 +273,15 @@
   document.querySelectorAll("[data-quick-tag]").forEach(function (b) {
     b.addEventListener("click", function () {
       var t = b.getAttribute("data-quick-tag");
+      if (state.tags.has(t)) state.tags.delete(t); else state.tags.add(t);
+      syncToggleChips(); apply();
+    });
+  });
+  // カード上のタグ: 検索ページ内ではその場で絞り込みを切り替える（他ページでは通常のリンクとして検索ページへ）
+  document.querySelectorAll("[data-card-tag]").forEach(function (b) {
+    b.addEventListener("click", function (e) {
+      e.preventDefault();
+      var t = b.getAttribute("data-card-tag");
       if (state.tags.has(t)) state.tags.delete(t); else state.tags.add(t);
       syncToggleChips(); apply();
     });

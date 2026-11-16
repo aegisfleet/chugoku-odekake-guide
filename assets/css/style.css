@@ -252,6 +252,9 @@ a.area-chip:hover { background: #802a05; }
 .badge--ending { background: #c85c2e; color: #fff; }
 .badge--soon { background: var(--status-countdown); color: #fff; }
 .tag { display: inline-block; padding: 3px 8px; border-radius: 6px; font-size: 11px; background: var(--tag-bg); color: var(--tag-text); }
+a.tag { text-decoration: none; cursor: pointer; }
+a.tag:hover { background: var(--border); }
+.tag.is-on { background: #9d3e1a; color: #ffffff; font-weight: 600; }
 .tag--notice { background: var(--notice-tag-bg); color: var(--notice-tag-text); font-weight: 700; border-radius: 999px; }
 .place-name { margin: 12px 0 4px; font-size: 19px; font-weight: 800; }
 .place-name a { color: var(--heading); text-decoration: none; }
