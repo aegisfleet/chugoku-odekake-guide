@@ -178,6 +178,8 @@ h1, h2, h3 { letter-spacing: -.01em; }
 .area-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 18px; }
 .area-chips-label { font-size: 13px; font-weight: 600; color: var(--muted); }
 .area-chip { display: inline-flex; align-items: center; gap: 6px; background: #9d3e1a; color: #fff; font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 999px; box-shadow: var(--shadow-md); }
+a.area-chip { text-decoration: none; transition: background .2s ease; }
+a.area-chip:hover { background: #802a05; }
 .area-chip .count { font-size: 10px; background: rgba(0, 0, 0, .22); padding: 1px 7px; border-radius: 999px; }
 .area-chip--soon { background: var(--surface); color: var(--muted); border: 1px solid var(--border); box-shadow: none; }
 .area-chip--soon .count { background: none; padding: 0; opacity: .65; }
