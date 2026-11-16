@@ -3,7 +3,7 @@ name: ひろしまドリミネーション
 kind: event
 tags: [イルミネーション, 冬, 夜景]
 area: { prefecture: 広島県, label: 広島市中区・平和大通り }
-summary: 平和大通り一帯が光のオブジェで彩られる冬のイルミネーション。毎年11月中旬から年明けまで開催される。
+summary: 平和大通り一帯が光のオブジェで彩られる冬のイルミネーション。2026年度は12月4日から2027年1月24日まで開催される。
 # 公式サイト（dreamination.com）で確認した2026年度の開催期間
 period: { start: 2026-12-04, end: 2027-01-24 }
 source:
@@ -24,7 +24,7 @@ official:
 highlights: [平和大通りを彩る光のトンネルとアーチ, 電車・帆船・気球といった乗り物の光オブジェ, お城のような大型オブジェ, 公式フォトコンテスト「#ドリミフォト」]
 
 related_posts:
-  captured_at: 2026-11-13
+  captured_at: 2026-11-16
   found_count: 50
   items:
     - { post_url: "https://www.instagram.com/p/DDobuhBy9gU/", author: "@hiroshima_jpn", posted_at: 2024-12-16, likes: 1500, note: "広島県公式の投稿。王冠のような青と金の塔型オブジェと色とりどりの灯りの展示" }
@@ -40,5 +40,5 @@ related_posts:
 _verification:
   map_match: matched
   closed_check: not_closed
-  checked_at: 2026-11-13
-  note: "開催期間は公式サイト dreamination.com の2026年度案内（2026-12-04〜2027-01-24、点灯17:30〜22:30）で更新。公式アカウント名は「【公式】ひろしまドリミネーション」"
+  checked_at: 2026-11-16
+  note: "開催期間は公式サイト dreamination.com の2026年度案内（2026-12-04〜2027-01-24、点灯17:30〜22:30）で更新。公式アカウント名は「【公式】ひろしまドリミネーション」。2026-11-16に公式サイトで期間に変更がないことを再確認。summaryの「毎年11月中旬から」は2026年度の期間変更に合わなくなったため修正"

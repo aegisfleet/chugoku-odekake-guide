@@ -15,6 +15,7 @@ added_at: 2026-11-11
 
 notices:
   - { date: "2026-11-13", text: "天守は老朽化のため2026年3月22日に閉館しました。内部の見学はできませんが、天守の外観や二の丸の復元建物は見学できます（広島市公式サイトで確認）" }
+  - { date: "2026-11-16", text: "2026年12月18日〜2027年1月11日は「広島城 宵めぐり 2026」を開催。天守に初めてプロジェクションマッピングを投影します（17:30〜21:00、観覧無料、12月31日〜1月3日は休催）。主催・広島市の公式発表より" }
 
 official:
   instagram: "@hiroshima_castle"
@@ -25,7 +26,7 @@ official:
 highlights: [ライトアップされた天守とお堀の水鏡, お堀越しに見る五層の天守, 桜の季節の天守, 二の丸・三の丸の歴史スポット]
 
 related_posts:
-  captured_at: 2026-11-13
+  captured_at: 2026-11-16
   found_count: 58
   items:
     - { post_url: "https://www.instagram.com/reel/DeJaZGmAD-o/", author: "@visitjapanjp", posted_at: 2026-10-06, likes: 1401, note: "出典投稿。夕景の中、お堀に映る五層の天守と石垣、城内を巡る映像" }
@@ -41,5 +42,5 @@ related_posts:
 _verification:
   map_match: matched
   closed_check: not_closed
-  checked_at: 2026-11-13
-  note: "公式プロフィールの所在地（中区基町21）が登録情報と一致。天守の閉館（2026年3月22日・老朽化のため）は2026-11-13に広島市公式サイトで確認し、notices に掲示した。二の丸・外観は見学可能なため closed_check は not_closed のまま"
+  checked_at: 2026-11-16
+  note: "公式プロフィールの所在地（中区基町21）が登録情報と一致。天守の閉館（2026年3月22日・老朽化のため）は2026-11-13に広島市公式サイトで確認し、notices に掲示した。二の丸・外観は見学可能なため closed_check は not_closed のまま。2026-11-16に公式サイトで閉城の継続と二の丸の開館を確認。「広島城 宵めぐり 2026」（12/18〜1/11、天守への初のプロジェクションマッピング）は公式発表に基づき notices へ追加"
