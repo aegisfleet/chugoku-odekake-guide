@@ -1,0 +1,35 @@
+slug: rose-tsuyama
+name: ローズ
+kind: shop
+tags: [カフェ, パフェ, 老舗, バー]
+area: { prefecture: 岡山県, label: 津山市・京町 }
+summary: 津山市京町に1927年（昭和2年）から続く老舗のカフェ＆バー。皇太子時代の昭和天皇が行啓したこともある歴史ある空間で、昼は木曜から土曜のカフェ営業として季節のパフェや台湾カステラが親しまれ、夜はバーになる。来年で創業100周年。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DehVK8rj_5R/"
+  author: "@sakemayo"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ローズ+津山市京町28"
+featured: false
+status: active
+added_at: 2026-11-17
+
+official:
+  instagram: "@rosesince1927"
+  instagram_url: "https://www.instagram.com/rosesince1927/"
+
+highlights: [シャインマスカットのパフェ, 抹茶のパフェ, 台湾カステラ, ビスケットチーズケーキ]
+
+related_posts:
+  captured_at: 2026-11-17
+  found_count: 4
+  items:
+    - { post_url: "https://www.instagram.com/p/DUGyGT_E05V/", author: "@sakemayo", posted_at: 2026-01-29, likes: 180, note: "ROSE since 1927の店内とカフェの様子を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DR5F0krk5DG/", author: "@sakemayo", posted_at: 2025-12-05, likes: 160, note: "台湾カステラを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DSs6mqRk4ig/", author: "@sakemayo", posted_at: 2025-12-25, likes: 140, note: "再訪の様子を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DehVK8rj_5R/", author: "@sakemayo", posted_at: 2026-10-15, likes: 120, note: "シャインマスカットと抹茶のパフェを紹介するカルーセル（出典投稿）" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-17
+  note: "Googleマップにピンあり（岡山県津山市京町28、津山駅から徒歩6分、営業時間は公式プロフィールと一致：カフェ木〜土11-15時／バー月〜土19-23時）。公式Instagram（@rosesince1927）で1927年創業・来年100周年を確認し、2026-10-15の訪問投稿でも営業継続を確認。同名の別店ではなく単独店。ユーザー依頼（2026-11-17、津山市で1件）で追加"
