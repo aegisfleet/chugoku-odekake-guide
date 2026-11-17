@@ -1,0 +1,42 @@
+slug: cafe-mellow-tottori
+name: cafe mellow
+kind: shop
+tags: [カフェ, チーズケーキ, ラテアート, 川沿い]
+area: { prefecture: 鳥取県, label: 鳥取市・浜坂 }
+summary: 鳥取市浜坂の住宅街にある千代川沿いのカフェ。アンティーク雑貨に囲まれた温かみのある店内で、ブリュレチーズケーキやラテアートを楽しめる。2024年6月オープン。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DE2SaxwySY7/"
+  author: "@tottori.gc_k3588"
+maps_url: "https://www.google.com/maps/search/?api=1&query=cafe+mellow+鳥取市浜坂8-10-2"
+featured: false
+status: active
+added_at: 2026-11-17
+
+official:
+  instagram: "@cafemellow.tottori"
+  instagram_url: "https://www.instagram.com/cafemellow.tottori/"
+  website: "https://cafemellow.shop/"
+  website_label: 公式サイト
+
+highlights: [ブリュレチーズケーキ, ラテアート, アンティーク雑貨, 千代川沿いの景色]
+
+related_posts:
+  captured_at: 2026-11-17
+  found_count: 41
+  items:
+    - { post_url: "https://www.instagram.com/reel/DE2SaxwySY7/", author: "@tottori.gc_k3588", posted_at: 2025-01-15, likes: 140, note: "店内外を巡るツアーのリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DYMP6McjzUp/", author: "@cafemellow.tottori", posted_at: 2026-05-11, likes: 230, note: "店舗外観と看板の写真" }
+    - { post_url: "https://www.instagram.com/p/DYmIOBdjmkV/", author: "@cafemellow.tottori", posted_at: 2026-05-21, likes: 210, note: "コラボカップのドリンクの写真" }
+    - { post_url: "https://www.instagram.com/p/DdBNPUpjdEq/", author: "@cafemellow.tottori", posted_at: 2026-09-08, likes: 180, note: "店舗外観と木製看板の写真" }
+    - { post_url: "https://www.instagram.com/p/DbVINTUEZe1/", author: "@cafemellow.tottori", posted_at: 2026-07-28, likes: 140, note: "ブリュレチーズケーキの写真" }
+    - { post_url: "https://www.instagram.com/p/De1P4yqkohv/", author: "@cafemellow.tottori", posted_at: 2026-10-23, likes: 140, note: "焼き菓子の写真" }
+    - { post_url: "https://www.instagram.com/p/Dd3Z1F2Cahp/", author: "@cafemellow.tottori", posted_at: 2026-09-29, likes: 130, note: "ラテと栗のケーキの写真" }
+    - { post_url: "https://www.instagram.com/p/Da41LermqWZ/", author: "@cafemellow.tottori", posted_at: 2026-07-17, likes: 130, note: "アイスドリンクの写真" }
+    - { post_url: "https://www.instagram.com/p/DaXTwZQDs4O/", author: "@cafemellow.tottori", posted_at: 2026-07-04, likes: 120, note: "ひまわりの花束と店内の写真" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-17
+  note: "Googleマップにピンあり（place_id 1106227650324713、営業中）。住所は鳥取市浜坂8-10-2で公式サイト・地元メディアと一致。2024年6月オープン、2026-11-06の公式投稿で営業継続を確認"

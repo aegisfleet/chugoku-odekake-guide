@@ -1,0 +1,36 @@
+slug: matsue-castle
+name: 松江城
+kind: spot
+tags: [城, 国宝, 桜の名所]
+area: { prefecture: 島根県, label: 松江市・殿町 }
+summary: 全国に現存する12天守の一つで、天守は国宝に指定された松江のシンボル。宍道湖畔の亀田山に築かれた日本三大湖城の一つで、黒い天守からは湖と城下を一望できる。桜の名所としても知られ、春にはお城まつりが開かれる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DOZwvqTE9Wk/"
+  author: "@nagi_32_61"
+maps_url: "https://www.google.com/maps/search/?api=1&query=松江城+島根県松江市殿町1-5"
+featured: false
+status: active
+added_at: 2026-11-17
+
+official:
+  website: "https://www.matsue-castle.jp/"
+  website_label: 公式サイト
+
+highlights: [国宝の現存天守, 黒い天守（千鳥城）, 天守からの眺望, 桜の名所]
+
+related_posts:
+  captured_at: 2026-11-17
+  found_count: 5
+  items:
+    - { post_url: "https://www.instagram.com/p/DOZwvqTE9Wk/", author: "@nagi_32_61", posted_at: 2025-09-10, likes: 130, note: "天守と石垣、屋上からの眺望のカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DIKOkd6TEqX/", author: "@violinistryoma", posted_at: 2025-04-07, likes: 320, note: "桜の季節の天守前ステージでの演奏" }
+    - { post_url: "https://www.instagram.com/p/DDIxSpVza7d/", author: "@kazusky51", posted_at: 2024-12-04, likes: 170, note: "天守の正面と遠景のカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DDCKupSvFx1/", author: "@hanzo_singer", posted_at: 2024-12-01, likes: 110, note: "紅葉と天守、城下の眺望" }
+    - { post_url: "https://www.instagram.com/p/DRo9TsQE5cy/", author: "@unounounouni", posted_at: 2025-11-29, likes: 49, note: "紅葉の額縁越しの天守" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-17
+  note: "Googleマップにピンあり（place_id 1753732408768443、営業中）。住所は松江市殿町1-5で公式サイトと一致。天守の大規模保存修理は2027年度からの予定で、2026年11月時点では通常通り登閣できる"

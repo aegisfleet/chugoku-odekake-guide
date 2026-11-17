@@ -1,0 +1,39 @@
+slug: bagdad-cafe-shimonoseki
+name: BAGDAD CAFE
+kind: shop
+tags: [カフェ, 古民家カフェ, 夜カフェ, スイーツ]
+area: { prefecture: 山口県, label: 下関市・上田中町 }
+summary: 1999年創業、古民家を改装した下関のカフェ。木の温もりを感じる店内で自家製パンやパフェを楽しめ、夜11時まで営業する夜カフェとしても親しまれている。2階にはインテリアショップも併設する。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DY1keOZiX1N/"
+  author: "@__ann13a"
+maps_url: "https://www.google.com/maps/search/?api=1&query=BAGDAD+CAFE+山口県下関市上田中町2-17-25"
+featured: false
+status: active
+added_at: 2026-11-17
+
+official:
+  instagram: "@bagdad_cafe_shimonoseki"
+  instagram_url: "https://www.instagram.com/bagdad_cafe_shimonoseki/"
+
+highlights: [古民家を改装した店内, 自家製パン, パフェ, 夜11時までの夜カフェ, 2階のインテリアショップ]
+
+related_posts:
+  captured_at: 2026-11-17
+  found_count: 9
+  items:
+    - { post_url: "https://www.instagram.com/p/DY1keOZiX1N/", author: "@__ann13a", posted_at: 2026-05-27, likes: 260, note: "古民家の外観と店内を巡る訪問カルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DdGc441RXEO/", author: "@bagdad_cafe_shimonoseki", posted_at: 2026-09-10, likes: 110, note: "27周年記念バッジの写真" }
+    - { post_url: "https://www.instagram.com/p/DRRkQ5zkbXi/", author: "@bagdad_cafe_shimonoseki", posted_at: 2025-11-20, likes: 77, note: "パンと珈琲のイベント告知" }
+    - { post_url: "https://www.instagram.com/p/DfOJMEuk47X/", author: "@bagdad_cafe_shimonoseki", posted_at: 2026-11-02, likes: 73, note: "パンと珈琲のイベント告知（12月開催分）" }
+    - { post_url: "https://www.instagram.com/p/DQjj1iTky56/", author: "@atelier149", posted_at: 2025-11-02, likes: 68, note: "パンと珈琲のイベント告知チラシ" }
+    - { post_url: "https://www.instagram.com/p/Db-5jI-SeCj/", author: "@daichang55", posted_at: 2026-08-13, likes: 36, note: "レコード発売イベントのポスター" }
+    - { post_url: "https://www.instagram.com/p/DDHZE_Nz-IO/", author: "@willplan_mk", posted_at: 2024-12-03, likes: 13, note: "アイスコーヒーと店内のカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/De9Br84PjJu/", author: "@noriko222311", posted_at: 2026-10-26, likes: 5, note: "店内ツアーのリール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-17
+  note: "Googleマップにピンあり（place_id 601968934701666、営業中）。住所は下関市上田中町2-17-25でマピオン・NAVITIMEと一致。公式Instagramの2026-11-02投稿で営業継続を確認。found_countの9件目（@tetsuya_amのリール）は反応数が未確認のため一覧には含めていない"

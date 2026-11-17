@@ -1,0 +1,40 @@
+slug: retio-coffee-okayama
+name: RETIO COFFEE
+kind: shop
+tags: [カフェ, コーヒー, アサイーボウル, 作業カフェ]
+area: { prefecture: 岡山県, label: 岡山市北区・錦町 }
+summary: 岡山駅から徒歩7分のジム併設カフェ。スペシャルティコーヒーとアサイーボウルが看板で、無料Wi-Fiとコンセントを備えた明るい店内は作業にも向く。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DQoEazVkwW9/"
+  author: "@retio_yamamoto"
+maps_url: "https://www.google.com/maps/search/?api=1&query=RETIO+COFFEE+岡山市北区錦町6-17"
+featured: false
+status: active
+added_at: 2026-11-17
+
+official:
+  instagram: "@retio_coffee"
+  instagram_url: "https://www.instagram.com/retio_coffee/"
+
+highlights: [スペシャルティコーヒー, アサイーボウル, ジム併設カフェ, Wi-Fiとコンセント完備]
+
+related_posts:
+  captured_at: 2026-11-17
+  found_count: 17
+  items:
+    - { post_url: "https://www.instagram.com/p/DQoEazVkwW9/", author: "@retio_yamamoto", posted_at: 2025-11-04, likes: 170, note: "店先でコーヒーを楽しむ様子の写真（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/Dbkx4L4zJ-M/", author: "@retio_coffee", posted_at: 2026-08-03, likes: 88, note: "岡山駅からの道案内のリール" }
+    - { post_url: "https://www.instagram.com/p/DRjLSYviRbi/", author: "@ramen_cheesecake", posted_at: 2025-11-27, likes: 87, note: "ブランドカップのコーヒーの写真" }
+    - { post_url: "https://www.instagram.com/reel/DV59xbskwKz/", author: "@retio_coffee", posted_at: 2026-03-15, likes: 70, note: "岡山駅からの徒歩ルート案内のリール" }
+    - { post_url: "https://www.instagram.com/reel/DZ95FVbz9q4/", author: "@retio_coffee", posted_at: 2026-06-24, likes: 62, note: "カウンターでの接客のリール" }
+    - { post_url: "https://www.instagram.com/reel/DaK0xrCT2tE/", author: "@retio_coffee", posted_at: 2026-06-29, likes: 54, note: "店内での様子を収めたリール" }
+    - { post_url: "https://www.instagram.com/reel/DYbw6c2z0HT/", author: "@retio_coffee", posted_at: 2026-05-17, likes: 46, note: "メニューを紹介するリール" }
+    - { post_url: "https://www.instagram.com/p/DP-MR8REobb/", author: "@totaldesigncenter", posted_at: 2025-10-19, likes: 44, note: "ブランドカップを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Dc56jqrj1RW/", author: "@coffee_adamsparachute", posted_at: 2026-09-05, likes: 40, note: "店内とドリンク、外観の訪問カルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-17
+  note: "Googleマップにピンあり（place_id 1392233329414883、営業中）。住所は岡山市北区錦町6-17 アウルスタイル錦町2 1Fで複数投稿と一致。東岡山店とは別店舗のため、錦町店の投稿のみを採用"
