@@ -569,7 +569,7 @@ a.tag { text-decoration: none; cursor: pointer; }
 :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 
 /* ==== 検索ページ /search/ ==== */
-.search-hero { background: var(--surface-subtle); border-bottom: 1px solid var(--border); }
+.search-hero { background: transparent; border-bottom: 1px solid var(--border); }
 .search-hero-inner { max-width: 1100px; margin: 0 auto; padding: 22px 24px 26px; }
 .breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
 .breadcrumb a { color: var(--muted); text-decoration: none; }
