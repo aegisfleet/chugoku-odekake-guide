@@ -338,7 +338,7 @@ a.tag { text-decoration: none; cursor: pointer; }
 .cta-btn:hover { background: #bd5630; }
 
 /* 詳細ページ（2026-11-14 デザインモック準拠で再構成） */
-.crumb-bar { background: var(--surface-subtle); }
+.crumb-bar { background: transparent; border-bottom: 1px solid var(--border); }
 .crumb-inner { max-width: 1100px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; }
 .crumbs { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
 .crumbs a { color: var(--muted); text-decoration: none; }
@@ -348,7 +348,7 @@ a.tag { text-decoration: none; cursor: pointer; }
 .crumb-meta { display: flex; gap: 16px; font-size: 12px; color: var(--muted); }
 .crumb-verified { color: var(--kind-spot); font-weight: 600; }
 
-.detail-hero { background: linear-gradient(180deg, var(--surface-subtle), var(--bg)); position: relative; overflow: hidden; }
+.detail-hero { position: relative; overflow: hidden; }
 .detail-hero::before, .detail-hero::after { content: ""; position: absolute; border-radius: 50%; filter: blur(60px); pointer-events: none; }
 .detail-hero::before { width: 380px; height: 380px; right: 40px; top: -120px; background: rgba(157, 62, 26, .07); }
 .detail-hero::after { width: 320px; height: 320px; left: -80px; top: 45%; background: rgba(200, 92, 46, .06); }
@@ -438,7 +438,7 @@ a.tag { text-decoration: none; cursor: pointer; }
 .provenance-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; font-size: 12.5px; line-height: 1.7; color: var(--muted); }
 .provenance-list strong { color: var(--heading); }
 
-.detail-recs { background: var(--surface-subtle); margin-top: 56px; padding: 44px 0 8px; }
+.detail-recs { border-top: 1px solid var(--border); margin-top: 56px; padding: 44px 0 8px; }
 .detail-recs-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 .detail-recs-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .detail-recs-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); margin: 0 0 4px; }
