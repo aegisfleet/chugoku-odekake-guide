@@ -294,6 +294,15 @@
       syncToggleChips(); apply();
     });
   });
+  // カード上のカテゴリ: 検索ページ内ではその場でカテゴリ絞り込みを切り替える（再クリックで解除。他ページでは通常のリンクとして検索ページへ）
+  document.querySelectorAll("[data-card-kind]").forEach(function (b) {
+    b.addEventListener("click", function (e) {
+      e.preventDefault();
+      var k = b.getAttribute("data-card-kind");
+      state.kind = state.kind === k ? "all" : k;
+      syncSegs(); syncKindRadios(); apply();
+    });
+  });
   var side = document.getElementById("filters");
   var backdrop = document.getElementById("sheet-backdrop");
   function openSheet() { if (side) side.classList.add("is-open"); if (backdrop) backdrop.hidden = false; }

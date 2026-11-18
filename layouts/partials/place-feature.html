@@ -20,7 +20,7 @@
 <article class="feature-card" data-kind="{{ .kind }}">
   <div class="feature-visual">
     <div class="badges">
-      <span class="badge {{ index site.Params.kindClass .kind }}">{{ index site.Params.kindLabel .kind }}</span>
+      <a class="badge {{ index site.Params.kindClass .kind }}" data-card-kind="{{ .kind }}" href="{{ "search/" | relURL }}?kind={{ .kind }}">{{ index site.Params.kindLabel .kind }}</a>
       {{ if $isNew }}<span class="badge badge--new">New</span>{{ end }}
       {{ if eq $evBadge "live" }}<span class="badge badge--live">開催中</span>{{ end }}
       {{ if eq $evBadge "ending" }}<span class="badge badge--ending">まもなく終了</span>{{ end }}

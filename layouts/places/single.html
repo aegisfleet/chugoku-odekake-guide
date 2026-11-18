@@ -46,7 +46,7 @@
   <div class="detail-hero-inner">
 
     <div class="badges detail-badges">
-      <span class="badge {{ $kindClass }}">{{ $kindLabel }}</span>
+      <a class="badge {{ $kindClass }}" href="{{ "search/" | relURL }}?kind={{ $p.kind }}">{{ $kindLabel }}</a>
       {{ if $isNew }}<span class="badge badge--new">New</span>{{ end }}
       {{ if eq $evBadge "live" }}<span class="badge badge--live">開催中</span>{{ end }}
       {{ if eq $evBadge "ending" }}<span class="badge badge--ending">まもなく終了</span>{{ end }}
