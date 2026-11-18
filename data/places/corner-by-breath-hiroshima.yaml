@@ -1,0 +1,42 @@
+slug: corner-by-breath-hiroshima
+name: CORNER by BREATH HIROSHIMA
+kind: shop
+tags: [コーヒースタンド, スペシャルティコーヒー, テイクアウト]
+area: { prefecture: 広島県, label: 広島市中区・上八丁堀 }
+summary: 広島市段原のロースタリーBREATH HIROSHIMAの3号店で、2025年4月に上八丁堀にオープンした2坪のコーヒースタンド。テイクアウト専門で、県立美術館や広島城にも近い街中の一角で、段原で経験を積んだバリスタが淹れるスペシャルティコーヒーを楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DJCMHXUhc78/"
+  author: "@breath_hiroshima"
+maps_url: "https://www.google.com/maps/search/?api=1&query=CORNER+by+BREATH+HIROSHIMA+広島市中区上八丁堀4-1"
+featured: false
+status: active
+added_at: 2026-11-18
+
+official:
+  instagram: "@corner_by_breathhiroshima"
+  instagram_url: "https://www.instagram.com/corner_by_breathhiroshima/"
+  website: "https://www.breath-hiroshima.com/"
+  website_label: 公式サイト
+
+highlights: [スペシャルティコーヒー, テイクアウト専門, ラテアート, 2坪のスタンド]
+
+related_posts:
+  captured_at: 2026-11-18
+  found_count: 17
+  items:
+    - { post_url: "https://www.instagram.com/p/DJCMHXUhc78/", author: "@breath_hiroshima", posted_at: 2025-04-29, likes: 1251, note: "オープン告知の投稿（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DXlDELaCdp7/", author: "@breath_hiroshima", posted_at: 2026-04-26, likes: 280, note: "オープン1周年を伝える公式カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DcQSz8bD-28/", author: "@hazime.katou", posted_at: 2026-08-20, likes: 170, note: "バリスタの仕事ぶりを追った訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DJAwJIHSNAa/", author: "@dadadaico", posted_at: 2025-04-29, likes: 150, note: "オープン当日の店構えを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DYIn2dGkihD/", author: "@ma_sa7348", posted_at: 2026-05-09, likes: 81, note: "ラテアートとクッキーを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DYk_AsHEq4y/", author: "@mamekichi_mameo", posted_at: 2026-05-20, likes: 62, note: "壁を背景にしたアイスコーヒーのカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DLuIHNthHmD/", author: "@ninaite_design", posted_at: 2025-07-05, likes: 60, note: "店内のサービスカウンターを紹介する写真" }
+    - { post_url: "https://www.instagram.com/p/DQaTH8fkzhu/", author: "@ninaite_design", posted_at: 2025-10-29, likes: 53, note: "外観とメニュー壁を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DU1h1B2EwK-/", author: "@haruki0_9", posted_at: 2026-02-16, likes: 45, note: "紙コップを手にした訪問カルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-18
+  note: "Googleマップにピンあり（place_id 1288221223174600、営業中）。住所は広島市中区上八丁堀4-1で公式アカウントの告知と一致。段原のPOINT・SPACEとは別店舗で、出典投稿のキャプションがCORNERの開店告知であることを確認。2026-04-26の公式投稿で1周年を迎え営業継続を確認"

@@ -1,0 +1,40 @@
+slug: itsukushima-shrine
+name: 厳島神社
+kind: spot
+tags: [神社, 世界遺産, 大鳥居]
+area: { prefecture: 広島県, label: 廿日市市・宮島町 }
+summary: 海上に浮かぶ朱塗りの大鳥居と社殿で知られる、宮島のシンボル。1996年にユネスコ世界遺産に登録された安芸国一宮で、干潮時には大鳥居のそばまで歩いて近づける。朱塗りの回廊や宝物館とあわせてめぐりたい。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DKJ-W3Tz_ld/"
+  author: "@asahitasaki"
+maps_url: "https://www.google.com/maps/search/?api=1&query=厳島神社+廿日市市宮島町1-1"
+featured: false
+status: active
+added_at: 2026-11-18
+
+official:
+  website: "http://www.itsukushimajinja.jp/index.html"
+  website_label: 公式サイト
+
+highlights: [海に浮かぶ大鳥居, 朱塗りの社殿, 世界遺産, 干潮時の参道]
+
+related_posts:
+  captured_at: 2026-11-18
+  found_count: 15
+  items:
+    - { post_url: "https://www.instagram.com/p/DNDBd3cTsJ3/", author: "@yoshimura_eriko", posted_at: 2025-08-07, likes: 17000, note: "厳島神社を中心とした宮島散策のカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DOgQpmckulm/", author: "@masa__nakamura", posted_at: 2025-09-12, likes: 2000, note: "干潮の大鳥居と社殿をめぐるカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DKJ-W3Tz_ld/", author: "@asahitasaki", posted_at: 2025-05-27, likes: 860, note: "大鳥居と社殿、宮島グルメをめぐるカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/Dds-EY6lOPB/", author: "@togistagram", posted_at: 2026-09-25, likes: 260, note: "宮島・厳島神社を訪れた広島旅行初日のカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DYUgnrcMZwh/", author: "@a.osamu50", posted_at: 2026-05-14, likes: 170, note: "晴天の厳島神社をめぐるツアー動画" }
+    - { post_url: "https://www.instagram.com/p/DKOWAwbhzcs/", author: "@sky_it_corporate", posted_at: 2025-05-29, likes: 65, note: "干潮の大鳥居と社殿のカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DFIRVnoTk4-/", author: "@ashitaka28118", posted_at: 2025-01-22, likes: 36, note: "子どもたちと訪れた厳島神社の家族動画" }
+    - { post_url: "https://www.instagram.com/reel/DFdzjNxzAmm/", author: "@harumi_nam", posted_at: 2025-01-30, likes: 35, note: "フェリーで渡り厳島神社をめぐる家族動画" }
+    - { post_url: "https://www.instagram.com/reel/Dfl74tMSNXp/", author: "@sasurai11", posted_at: 2026-11-11, likes: 10, note: "朱塗りの回廊と大鳥居を歩く一人称動画" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-18
+  note: "Googleマップにピンあり（place_id 24567132722901775）。住所は廿日市市宮島町1-1で公式サイトと一致。Google Placesのデータ上はis_temporarily_closed=trueと出るが、2026-11-11の訪問リールをはじめ直近の訪問投稿が複数あり公式サイトも通常運営のため、データ側の誤りと判断"

@@ -1,0 +1,42 @@
+slug: shimane-art-museum
+name: 島根県立美術館
+kind: spot
+tags: [美術館, 夕日, 宍道湖]
+area: { prefecture: 島根県, label: 松江市・袖師町 }
+summary: 宍道湖畔に建つ1999年開館の美術館。水との調和をテーマにしたガラス張りの建築で、屋上展望テラスから眺める宍道湖の夕日は「日本の夕陽百選」に選ばれている。北斎の版画コレクションや企画展も見どころで、湖畔の芝生に並ぶ「宍道湖うさぎ」の像も人気。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DQ1W31hj-T8/"
+  author: "@atrey__32"
+maps_url: "https://www.google.com/maps/search/?api=1&query=島根県立美術館+松江市袖師町1-5"
+featured: false
+status: active
+added_at: 2026-11-18
+
+official:
+  instagram: "@shimane_art_museum"
+  instagram_url: "https://www.instagram.com/shimane_art_museum/"
+  website: "https://www.shimane-art-museum.jp/"
+  website_label: 公式サイト
+
+highlights: [宍道湖の夕日, 宍道湖うさぎ, 北斎コレクション, 企画展]
+
+related_posts:
+  captured_at: 2026-11-18
+  found_count: 21
+  items:
+    - { post_url: "https://www.instagram.com/p/DFaKCu1PftO/", author: "@nao_new.avenue", posted_at: 2025-01-29, likes: 170, note: "夕日に染まる美術館の外観と宍道湖の写真" }
+    - { post_url: "https://www.instagram.com/p/DK16It2PpgF/", author: "@chiaki_windys", posted_at: 2025-06-13, likes: 160, note: "企画展と宍道湖周辺の散策をめぐるカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DE66jzgT1qG/", author: "@tomosasara", posted_at: 2025-01-17, likes: 130, note: "湖畔の公園とうさぎの像をめぐるリール" }
+    - { post_url: "https://www.instagram.com/p/DCvHqLQBm_a/", author: "@shimane_art_museum", posted_at: 2024-11-24, likes: 79, note: "公式アカウントによる美術館外観と湖畔の写真" }
+    - { post_url: "https://www.instagram.com/p/DJVSYElSXVM/", author: "@crear_taka", posted_at: 2025-05-07, likes: 71, note: "企画展の会場と作品を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DeZKq19D-Na/", author: "@loophouse101", posted_at: 2026-10-12, likes: 61, note: "ギャラリーの企画展チラシを紹介する投稿" }
+    - { post_url: "https://www.instagram.com/p/DQ1W31hj-T8/", author: "@atrey__32", posted_at: 2025-11-09, likes: 58, note: "夕日の宍道湖と美術館を空から見たカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DZwNEyEJpS5/", author: "@satorusupernova", posted_at: 2026-06-19, likes: 52, note: "企画展の展示室を紹介する写真" }
+    - { post_url: "https://www.instagram.com/p/DRJwKVzEVMo/", author: "@kazuki1990_10", posted_at: 2025-11-17, likes: 33, note: "県展の会場看板を紹介する写真" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-18
+  note: "Googleマップにピンあり（place_id 652146672531725、営業中）。住所は松江市袖師町1-5で公式サイトと一致。2026-11-09の訪問投稿でも開館を確認"

@@ -1,0 +1,42 @@
+slug: akiyoshidai
+name: 秋吉台
+kind: spot
+tags: [カルスト, 絶景, ジオパーク]
+area: { prefecture: 山口県, label: 美祢市・秋芳町 }
+summary: 日本最大のカルスト台地で、日本三大カルストの一つ。白い石灰岩が点在する草原の丘陵が広がり、展望台からは360度のパノラマが楽しめる。地下には秋芳洞をはじめとする鍾乳洞が広がり、2026年には「Mine秋吉台」として世界ジオパークに認定された。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DbRc6vFzcQl/"
+  author: "@amateras.yuu"
+maps_url: "https://www.google.com/maps/search/?api=1&query=秋吉台+美祢市秋芳町秋吉"
+featured: false
+status: active
+added_at: 2026-11-18
+
+official:
+  instagram: "@mineakiyoshidaigeopark"
+  instagram_url: "https://www.instagram.com/mineakiyoshidaigeopark/"
+  website: "https://karusuto.com"
+  website_label: 公式サイト
+
+highlights: [日本三大カルスト, 石灰岩の丘陵, カルスト展望台, ハイキング]
+
+related_posts:
+  captured_at: 2026-11-18
+  found_count: 10
+  items:
+    - { post_url: "https://www.instagram.com/p/DC_wPR-vHY7/", author: "@keisuke_tsuboi0916", posted_at: 2024-11-30, likes: 710, note: "秋吉台とジオパークセンターKarstarをめぐるカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DbRc6vFzcQl/", author: "@amateras.yuu", posted_at: 2026-07-26, likes: 120, note: "緑の丘陵と石灰岩を写した風景写真（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DbkN9v5Pxjv/", author: "@mineakiyoshidaigeopark", posted_at: 2026-08-03, likes: 89, note: "カルスト展望台の建物を紹介する公式投稿" }
+    - { post_url: "https://www.instagram.com/reel/DYbYRe8PHUY/", author: "@gekitora1972", posted_at: 2026-05-17, likes: 78, note: "秋吉台の風景を集めたモンタージュ動画" }
+    - { post_url: "https://www.instagram.com/p/DVsIZyvk4FZ/", author: "@ocean_yo_ko", posted_at: 2026-03-10, likes: 46, note: "カルスト台地を歩くカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DRRweL-EtUu/", author: "@asuka.gpstaff", posted_at: 2025-11-20, likes: 30, note: "秋吉台を歩く一人称の旅動画" }
+    - { post_url: "https://www.instagram.com/reel/DTU_JaOEvy8/", author: "@mayutabi_travel", posted_at: 2026-01-10, likes: 28, note: "日の出の秋吉台を写した動画" }
+    - { post_url: "https://www.instagram.com/p/Dd6TekNpNZK/", author: "@kitri3186", posted_at: 2026-09-30, likes: 9, note: "秋吉台の風景写真" }
+    - { post_url: "https://www.instagram.com/reel/DeghvndAbLQ/", author: "@grandpa_sensei", posted_at: 2026-10-15, likes: 2, note: "秋吉台の石碑とカルストをめぐる動画" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-18
+  note: "Googleマップにピンあり（place_id 565188025385375、営業中）。住所は美祢市秋芳町秋吉で公式サイトと一致"

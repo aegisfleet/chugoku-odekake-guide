@@ -1,0 +1,40 @@
+slug: tottori-sand-dunes
+name: 鳥取砂丘
+kind: spot
+tags: [砂丘, 絶景, ラクダ]
+area: { prefecture: 鳥取県, label: 鳥取市・福部町 }
+summary: 日本最大級の海岸砂丘で、国の天然記念物にも指定される鳥取のシンボル。風がつくる砂の稜線「馬の背」は標高約46mの展望スポットで、見晴らしの丘からは日本海まで一望できる。ラクダ乗りや砂のアート体験も楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DYcHrJjiFYC/"
+  author: "@journey.withnami"
+maps_url: "https://www.google.com/maps/search/?api=1&query=鳥取砂丘+鳥取市福部町湯山"
+featured: false
+status: active
+added_at: 2026-11-18
+
+official:
+  website: "https://www.pref.tottori.lg.jp/sakyujimusho/"
+  website_label: 公式サイト
+
+highlights: [馬の背, ラクダ乗り, 砂のアート体験, 見晴らしの丘]
+
+related_posts:
+  captured_at: 2026-11-18
+  found_count: 12
+  items:
+    - { post_url: "https://www.instagram.com/reel/DIX3AATJvYE/", author: "@h.minami1116", posted_at: 2025-04-13, likes: 680, note: "砂丘道路をバイクで走るPOV動画" }
+    - { post_url: "https://www.instagram.com/p/DdmQZSySw6j/", author: "@kazuyochannel", posted_at: 2026-09-22, likes: 540, note: "砂丘の稜線と海を背景にした写真" }
+    - { post_url: "https://www.instagram.com/reel/DYcHrJjiFYC/", author: "@journey.withnami", posted_at: 2026-05-17, likes: 380, note: "ラクダ乗りと見どころ3選を紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/Dd00GKpMZ7s/", author: "@horiki_04300514", posted_at: 2026-09-28, likes: 300, note: "馬の背の登頂に挑む少年のリール" }
+    - { post_url: "https://www.instagram.com/p/DR4HXb_jeEt/", author: "@visitjapanhk", posted_at: 2025-12-05, likes: 240, note: "砂丘の風景を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DeWMbuRkYa1/", author: "@mee.hitsujichan", posted_at: 2026-10-11, likes: 230, note: "砂のアート作りとラクダをめぐるカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DPOsMGOAaKD/", author: "@keishiro9", posted_at: 2025-09-30, likes: 110, note: "砂丘に立つ人物を写したリール" }
+    - { post_url: "https://www.instagram.com/p/DEMX_Tsv7M_/", author: "@shin.inaba.gallery", posted_at: 2024-12-30, likes: 61, note: "ライトアップされた砂丘の階段の写真" }
+    - { post_url: "https://www.instagram.com/reel/DfdNFGvypiD/", author: "@anne.ykg", posted_at: 2026-11-07, likes: 42, note: "空から見た砂丘と海岸を紹介するリール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-18
+  note: "Googleマップにピンあり（place_id 1078135732907461、営業中）。住所は鳥取市福部町湯山で鳥取県の公式ページと一致"
