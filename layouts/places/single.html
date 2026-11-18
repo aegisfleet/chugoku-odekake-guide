@@ -37,17 +37,13 @@
     <div class="crumb-meta">
       {{ with $ver }}<span>AI収集データ（最終確認: {{ replace (printf "%s" .checked_at) "-" "." }}）</span>{{ end }}
       {{ if $p.official }}<span class="crumb-verified">公式情報リンク済</span>{{ end }}
+      <span>{{ if eq $p.source.platform "instagram" }}Instagram出典準拠{{ else }}出典: {{ $p.source.platform }}{{ end }}</span>
     </div>
   </div>
 </div>
 
 <header class="detail-hero">
   <div class="detail-hero-inner">
-    <div class="detail-ai-note">
-      <span class="detail-ai-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
-      <p><strong>AIキュレーション記事:</strong> このページの情報収集・記事作成はAIが行っています。営業時間・料金などの最新情報は、必ずリンク先のGoogleマップや公式情報でご確認ください。</p>
-      <span class="detail-ai-chip">{{ if eq $p.source.platform "instagram" }}Instagram出典準拠{{ else }}出典: {{ $p.source.platform }}{{ end }}</span>
-    </div>
 
     <div class="badges detail-badges">
       <span class="badge {{ $kindClass }}">{{ $kindLabel }}</span>
