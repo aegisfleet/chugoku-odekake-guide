@@ -1,0 +1,37 @@
+slug: cafe-space-kuhaku-tottori
+name: cafe space 空白
+kind: shop
+tags: [カフェ, オムライス, 昼カフェ]
+area: { prefecture: 鳥取県, label: 鳥取市・弥生町 }
+summary: 2026年6月1日にサニーバル（Sunny Side Bar）の昼営業としてオープンしたカフェ。オムライスやお弁当を楽しめる、日常に余白を添える居場所のような店。ビストロ25とのコラボ営業も行っている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DZqo611CPq5/"
+  author: "@tottorizumu"
+maps_url: "https://www.google.com/maps/search/?api=1&query=cafe+space+空白+鳥取市弥生町302-2"
+featured: false
+status: active
+added_at: 2026-11-19
+
+official:
+  instagram: "@cafespace_kuhaku_"
+  instagram_url: "https://www.instagram.com/cafespace_kuhaku_/"
+
+highlights: [オムライス, お弁当, ビストロ25とのコラボ, 昼営業のカフェ]
+
+related_posts:
+  captured_at: 2026-11-19
+  found_count: 6
+  items:
+    - { post_url: "https://www.instagram.com/p/DZqo611CPq5/", author: "@tottorizumu", posted_at: 2026-06-17, likes: 570, note: "オープン当初の店内とメニューを紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DbFt-1zAbgI/", author: "@tottori_trip_", posted_at: 2026-07-29, likes: 310, note: "オムライスを中心にオープンを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DeWA4MDn-K_/", author: "@tottorinoto", posted_at: 2026-10-11, likes: 110, note: "サニーバルの昼営業としてのカフェを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DZ3ZLPgzzvg/", author: "@estudiotaku", posted_at: 2026-06-21, likes: 110, note: "オープン直後の店内を紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/DeNYdEfhgSo/", author: "@cafespace_kuhaku_", posted_at: 2026-10-08, likes: 68, note: "ビストロ25とのコラボ営業を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/p/DY4PhP2MzT1/", author: "@cafespace_kuhaku_", posted_at: 2026-05-28, likes: 15, note: "オープン前のフライヤーを紹介する公式投稿" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-19
+  note: "店舗はSunny Side Bar（鳥取市弥生町302-2）の昼営業で、同住所のGoogleマップのピンあり（place_id 970652491358330、営業中）。とっとりずむの開店記事と複数投稿で2026-06-01オープンと昼営業の形態を確認"

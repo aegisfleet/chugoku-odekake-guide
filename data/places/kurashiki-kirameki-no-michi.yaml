@@ -1,0 +1,43 @@
+slug: kurashiki-kirameki-no-michi
+name: くらしき きらめきのみち
+kind: event
+tags: [イルミネーション, 冬のイベント, 無料]
+area: { prefecture: 岡山県, label: 倉敷市・倉敷駅周辺 }
+summary: 倉敷みらい公園をメイン会場に、JR倉敷駅周辺の5会場を約15万球のLEDでつなぐ冬のイルミネーション。2026年のテーマは「あなたと 奏でる 光のみち」で、初日には点灯式ときらめきナイトマーケットも開かれた。点灯は17時から21時まで。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/Deq-GmnT_FY/"
+  author: "@chiri_cafe_gram"
+maps_url: "https://www.google.com/maps/search/?api=1&query=倉敷みらい公園+倉敷市寿町12-1"
+featured: false
+status: active
+added_at: 2026-11-19
+period: { start: 2026-10-31, end: 2027-01-31 }
+
+official:
+  instagram: "@kurashiki_kirameki"
+  instagram_url: "https://www.instagram.com/kurashiki_kirameki/"
+  website: "https://www.city.kurashiki.okayama.jp/cityinfo/city-plan/1006487/1006515/1006516/1027074.html"
+  website_label: 公式サイト（倉敷市）
+
+highlights: ["約15万球のLED", "倉敷みらい公園を中心に駅周辺5会場", "きらめきナイトマーケット", "入場無料"]
+
+related_posts:
+  captured_at: 2026-11-19
+  found_count: 14
+  items:
+    - { post_url: "https://www.instagram.com/reel/Dfnoxr7yl0S/", author: "@haru_film.jp", posted_at: 2026-11-11, likes: 3856, note: "倉敷みらい公園の運河沿いの光の回廊を巡るリール" }
+    - { post_url: "https://www.instagram.com/reel/Deq-GmnT_FY/", author: "@chiri_cafe_gram", posted_at: 2026-10-19, likes: 1870, note: "倉敷駅周辺のイルミネーションを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DDZaNJayuMM/", author: "@kurashiki_sodachi", posted_at: 2024-12-10, likes: 320, note: "2024年の倉敷駅周辺のイルミネーションを伝えるカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DSo_Hv9kgR9/", author: "@okayamapref_japan", posted_at: 2025-12-24, likes: 230, note: "昨シーズンの運河沿いのイルミネーションを写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/De26GG5iiFH/", author: "@ario_kurashiki", posted_at: 2026-10-24, likes: 120, note: "イベントの告知フライヤーを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DfvPlghTPHb/", author: "@okayama20260701", posted_at: 2026-11-14, likes: 120, note: "倉敷みらい公園のイルミネーションを紹介するリール" }
+    - { post_url: "https://www.instagram.com/p/DfNzvXGiZYr/", author: "@okayama.kodomo", posted_at: 2026-11-01, likes: 110, note: "イベントポスターを紹介する投稿" }
+    - { post_url: "https://www.instagram.com/p/DfcsCwGhC6Y/", author: "@salmon_ryou", posted_at: 2026-11-07, likes: 98, note: "運河沿いのライトアップを写した投稿" }
+    - { post_url: "https://www.instagram.com/reel/DfmOwXxSVWQ/", author: "@kurashiki_kirameki", posted_at: 2026-11-11, likes: 26, note: "運河に浮かぶ光の玉を映した公式リール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-19
+  note: "Googleマップに倉敷みらい公園のピンあり（place_id 1720447718311850、営業中）。期間2026-10-31〜2027-01-31と約15万球は倉敷市公式ページで確認。出典リールの内容と会場・期間が一致"

@@ -1,0 +1,40 @@
+slug: authentic-cafe-matsue
+name: AUTHENTIC cafe
+kind: shop
+tags: [カフェ, 韓国風カフェ, スイーツ]
+area: { prefecture: 島根県, label: 松江市・玉湯町 }
+summary: 玉造温泉に近い、韓国風のおしゃれなカフェ。白いタイルと観葉植物の明るい店内で、ストロベリータルトなどのスイーツやラテアートを楽しめる。夜カフェの営業も行っている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DEzQrTZTKDb/"
+  author: "@mimi746521"
+maps_url: "https://www.google.com/maps/search/?api=1&query=AUTHENTIC+cafe+松江市玉湯町布志名637-87"
+featured: false
+status: active
+added_at: 2026-11-19
+
+official:
+  instagram: "@authentic_cafe2023"
+  instagram_url: "https://www.instagram.com/authentic_cafe2023/"
+
+highlights: [韓国風カフェ, ストロベリータルト, ラテアート, 夜カフェ]
+
+related_posts:
+  captured_at: 2026-11-19
+  found_count: 11
+  items:
+    - { post_url: "https://www.instagram.com/p/DWYnxSXkSg2/", author: "@ackey0303", posted_at: 2026-03-27, likes: 210, note: "アイスコーヒーとスイーツを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DEzQrTZTKDb/", author: "@mimi746521", posted_at: 2025-01-14, likes: 120, note: "ラテアートとストロベリードリンクを紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DYp_iTsE1qG/", author: "@you_.cafe", posted_at: 2026-05-22, likes: 96, note: "キャラメルフランとアイスコーヒーを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DXCDH1vibcI/", author: "@chie3.tamami", posted_at: 2026-04-12, likes: 62, note: "名物のストロベリータルトを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DZhQclkplJM/", author: "@authentic_cafe2023", posted_at: 2026-06-13, likes: 43, note: "夜カフェの開催を告知する公式投稿" }
+    - { post_url: "https://www.instagram.com/p/DZcJQiTP0zo/", author: "@amokt_93", posted_at: 2026-06-11, likes: 42, note: "メロンのタルトを紹介する投稿" }
+    - { post_url: "https://www.instagram.com/p/DWY5cHHicBk/", author: "@authentic_cafe2023", posted_at: 2026-03-27, likes: 28, note: "コーヒーカップを写した公式投稿" }
+    - { post_url: "https://www.instagram.com/p/DVOJigcCcI3/", author: "@authentic_cafe2023", posted_at: 2026-02-26, likes: 27, note: "コーヒーマグを写した公式投稿" }
+    - { post_url: "https://www.instagram.com/p/DYlYtevpZAY/", author: "@cafe_restrant_myfavorite", posted_at: 2026-05-21, likes: 14, note: "窓際の席でストロベリータルトを楽しむ投稿" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-19
+  note: "Googleマップにピンあり（place_id 460684719690730、営業中）。住所は松江市玉湯町布志名637-87 STAND 2Fで公式アカウント・複数投稿と一致"

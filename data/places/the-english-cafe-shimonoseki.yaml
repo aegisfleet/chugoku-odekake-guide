@@ -1,0 +1,36 @@
+slug: the-english-cafe-shimonoseki
+name: The English Cafe
+kind: shop
+tags: [カフェ, 陶芸, 英国風]
+area: { prefecture: 山口県, label: 下関市・長府 }
+summary: 2025年9月に長府にオープンしたイングリッシュカフェ。イギリス出身の店主が作るアップルパイやマフィン、イングリッシュティーが楽しめ、イギリス陶芸園に併設され陶芸のレッスンも行っている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DR9BuqpDRw6/"
+  author: "@_burugourmet"
+maps_url: "https://www.google.com/maps/search/?api=1&query=The+English+Cafe+下関市長府川端2-1-11"
+featured: false
+status: active
+added_at: 2026-11-19
+
+official:
+  instagram: "@theenglishcafeandpottery"
+  instagram_url: "https://www.instagram.com/theenglishcafeandpottery/"
+  website: "https://theenglishpottery.co/"
+  website_label: 公式サイト
+
+highlights: [スコーン, アップルパイ, マフィン, 陶芸体験]
+
+related_posts:
+  captured_at: 2026-11-19
+  found_count: 3
+  items:
+    - { post_url: "https://www.instagram.com/reel/DR9BuqpDRw6/", author: "@_burugourmet", posted_at: 2025-12-07, likes: 2300, note: "英国風の建物と店内を紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DQdXaslgZWx/", author: "@theenglishcafeandpottery", posted_at: 2025-10-31, likes: 73, note: "地図で場所を案内する公式投稿" }
+    - { post_url: "https://www.instagram.com/p/DQv2gwokvq9/", author: "@yamaguchi.trip", posted_at: 2025-11-07, likes: 14, note: "陶芸園の器とカフェを紹介するカルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-19
+  note: "Googleマップにピンあり（place_id 612304240411399、営業中）。住所は下関市長府川端2-1-11で公式サイト・出典投稿と一致。旧下関英国領事館のtearoom Lizとは別店舗。出典投稿のいいね数は検索結果の表示（2.3K）による"

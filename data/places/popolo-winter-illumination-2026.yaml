@@ -1,0 +1,46 @@
+slug: popolo-winter-illumination-2026
+name: ポポロ 冬の祭り ウィンターイルミネーション2026
+kind: event
+tags: [イルミネーション, 冬のイベント, 無料]
+area: { prefecture: 広島県, label: 三原市・宮浦 }
+summary: 三原市芸術文化センターポポロの芝生広場や中庭を、瀬戸内海をイメージした青い光を中心に約12万球のLEDが彩る冬のイルミネーション。楽器のオブジェやシャボン玉の演出もあり、観覧は無料。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DfhQYWCE-ZX/"
+  author: "@osamu.77.0621"
+maps_url: "https://www.google.com/maps/search/?api=1&query=三原市芸術文化センターポポロ+三原市宮浦2-1-1"
+featured: false
+status: active
+added_at: 2026-11-19
+period: { start: 2026-11-07, end: 2026-12-28 }
+
+official:
+  instagram: "@popolo_mihara"
+  instagram_url: "https://www.instagram.com/popolo_mihara/"
+  website: "https://mihara-caf.jp/"
+  website_label: 公式サイト
+
+highlights: ["約12万球のLED", "瀬戸内海をイメージした青い光の海", "楽器のオブジェ", "シャボン玉の演出", "観覧無料"]
+
+notices:
+  - { date: "2026-11-19", text: "12月10日（木）は休館日のためイルミネーションは点灯しません（旅やか広島 2026-11-11掲載で確認）" }
+
+related_posts:
+  captured_at: 2026-11-19
+  found_count: 25
+  items:
+    - { post_url: "https://www.instagram.com/p/DfhQYWCE-ZX/", author: "@osamu.77.0621", posted_at: 2026-11-09, likes: 150, note: "芝生広場の青い光の海を写したカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DDJN3h4Sn1n/", author: "@okkin_1003", posted_at: 2024-12-04, likes: 140, note: "2024年のイルミネーションを伝えるカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DSmhgZjEW66/", author: "@tomoyo_13", posted_at: 2025-12-23, likes: 140, note: "2025年のイルミネーションを巡るカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DEoziVaJ46b/", author: "@popolo_mihara", posted_at: 2025-01-10, likes: 99, note: "公式アカウントによる2025年のイルミネーションの様子" }
+    - { post_url: "https://www.instagram.com/reel/DQ85NLOE-BO/", author: "@mari_itsu", posted_at: 2025-11-12, likes: 65, note: "館内のクリスマスツリーとイルミネーションを巡るリール" }
+    - { post_url: "https://www.instagram.com/p/DSPfqm2k4Wl/", author: "@with300f1", posted_at: 2025-12-14, likes: 51, note: "イルミネーション巡りを記録したカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DS0FYsmD5O-/", author: "@yu.mi.n", posted_at: 2025-12-28, likes: 33, note: "最終日のイルミネーションを写したリール" }
+    - { post_url: "https://www.instagram.com/p/DSaAmHYkpdq/", author: "@chienerori", posted_at: 2025-12-18, likes: 24, note: "イルミネーションの看板と青い光の壁を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Dfmb5HpGD_l/", author: "@fukuyamabingo", posted_at: 2026-11-11, likes: 19, note: "楽器の光のオブジェを紹介するカルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-19
+  note: "会場は三原市芸術文化センターポポロ（宮浦2-1-1）。期間2026-11-07〜2026-12-28と点灯時間は旅やか広島（2026-11-11掲載）など複数ソースで確認。Googleマップは住所でのピン表示（マピオンニュースのGoogleマップリンク）と施設公式サイトで所在地を確認"
