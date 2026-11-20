@@ -1,0 +1,41 @@
+slug: tentoumi-shibukawa
+name: てんとうみ 渋川海岸グランピング
+kind: stay
+tags: [グランピング, サウナ, 海]
+area: { prefecture: 岡山県, label: 玉野市・渋川 }
+summary: 渋川海岸まで徒歩0分の海辺のグランピング。瀬戸内海を望むベルテントに泊まり、手ぶらBBQや海を眺めるバレルサウナ、浜辺での朝食ピクニックを楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DewFwD0BKTo/"
+  author: "@marugoto_okayama"
+maps_url: "https://www.google.com/maps/search/?api=1&query=てんとうみ+玉野市渋川2-4-8"
+featured: false
+status: active
+added_at: 2026-11-20
+
+official:
+  instagram: "@ten_to_umi"
+  instagram_url: "https://www.instagram.com/ten_to_umi/"
+  website: "https://10103.site/"
+  website_label: 公式サイト
+
+highlights: [瀬戸内海を望むベルテント, 海を眺めるバレルサウナ, 手ぶらで楽しめるBBQ, 浜辺での朝食ピクニック, 海辺のカフェ＆バー]
+
+related_posts:
+  captured_at: 2026-11-20
+  found_count: 8
+  items:
+    - { post_url: "https://www.instagram.com/reel/DewFwD0BKTo/", author: "@marugoto_okayama", posted_at: 2026-10-21, likes: 870, note: "サウナやBBQや朝食ピクニックを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DeW01FKktXG/", author: "@sayaka.k_0608", posted_at: 2026-10-11, likes: 53, note: "家族でのグランピング滞在を記録したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Daw4No9k7qo/", author: "@hoidacraft2025", posted_at: 2026-07-14, likes: 37, note: "海辺のテントサイトを写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DcZtfG4T4hi/", author: "@ten_to_umi", posted_at: 2026-08-23, likes: 14, note: "公式: 海辺のベルテントを写した写真" }
+    - { post_url: "https://www.instagram.com/p/DaoQPtoTwTQ/", author: "@ten_to_umi", posted_at: 2026-07-10, likes: 10, note: "公式: デッキから望む瀬戸内海の写真" }
+    - { post_url: "https://www.instagram.com/p/DatbpngT0lc/", author: "@ten_to_umi", posted_at: 2026-07-12, likes: 6, note: "公式: テント内の様子を写した写真" }
+    - { post_url: "https://www.instagram.com/p/DbFeR2nxsQ5/", author: "@ten_to_umi", posted_at: 2026-07-22, likes: 5, note: "公式: 夕暮れの海を写した写真" }
+    - { post_url: "https://www.instagram.com/reel/DfpXC5LSFqv/", author: "@okayama_k_papa", posted_at: 2026-11-12, likes: 1, note: "施設を紹介するリール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-20
+  note: "所在地は玉野市渋川2-4-8。公式プロフィールの住所・座標と公式予約サイトのGoogleマップ埋め込み、楽天トラベルの掲載で確認。2022年8月オープンで営業中"

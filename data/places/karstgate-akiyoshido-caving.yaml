@@ -1,0 +1,42 @@
+slug: karstgate-akiyoshido-caving
+name: KarstGate 秋芳洞ケイビングツアー
+kind: activity
+tags: [ケイビング, 洞窟, 体験]
+area: { prefecture: 山口県, label: 美祢市・秋芳町 }
+summary: 秋吉台のアクティビティ拠点「KarstGate」から出発する、秋芳洞の一般非公開エリアを探検するガイド付きケイビングツアー。ヘルメットとヘッドライトを装備し、地底湖まで進むコースもある。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DeLNKudCcFk/"
+  author: "@karstgate"
+maps_url: "https://www.google.com/maps/search/?api=1&query=KarstGate+秋吉台"
+featured: false
+status: active
+added_at: 2026-11-20
+
+official:
+  instagram: "@karstgate"
+  instagram_url: "https://www.instagram.com/karstgate/"
+  website: "https://karstgate.karusuto.com/"
+  website_label: 公式サイト
+
+highlights: [秋芳洞の未公開エリアを探検, ヘルメットとヘッドライトを装備して進む洞窟探検, 地底湖「琴ヶ淵」までのロングコース]
+
+related_posts:
+  captured_at: 2026-11-20
+  found_count: 15
+  items:
+    - { post_url: "https://www.instagram.com/reel/DcNn8VWJdqW/", author: "@yamaguchi.karst.akiyoshi", posted_at: 2026-08-19, likes: 79, note: "洞窟内の青い水を写したリール" }
+    - { post_url: "https://www.instagram.com/p/Dc-AZwFCa9e/", author: "@karstgate", posted_at: 2026-09-07, likes: 66, note: "公式: 未公開エリアのツアーを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DfG68UHIelD/", author: "@yasu_n_9954", posted_at: 2026-10-30, likes: 63, note: "秋芳洞と秋吉台を巡るカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Ddu12GHE8AF/", author: "@karstgate", posted_at: 2026-09-26, likes: 60, note: "公式: 未公開エリアのケイビングツアーの様子" }
+    - { post_url: "https://www.instagram.com/p/DdNf5DHiXA7/", author: "@karstgate", posted_at: 2026-09-13, likes: 59, note: "公式: ケイビングツアーの様子を伝えるカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DeLNKudCcFk/", author: "@karstgate", posted_at: 2026-10-07, likes: 51, note: "ケイビングツアーを紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DcAHyCNiZSx/", author: "@karstgate", posted_at: 2026-08-14, likes: 50, note: "公式: ツアーの様子を伝えるカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Deqeaeekaij/", author: "@karstgate", posted_at: 2026-10-19, likes: 48, note: "公式: 洞窟探検の様子を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DeV7b0mkaKY/", author: "@karstgate", posted_at: 2026-10-11, likes: 39, note: "公式: 秋芳洞エレベーター口からのツアーの様子" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-20
+  note: "拠点はMine秋吉台アクティビティセンター KarstGate（秋芳町秋吉11237-883）。Googleマップのピン（place_id 1031829263066004、営業中）と2025-03-28開業、ツアーの実施を報道・公式投稿で確認。秋吉台（spot）とは別件のアクティビティとして登録"

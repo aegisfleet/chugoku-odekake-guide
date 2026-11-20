@@ -1,0 +1,40 @@
+slug: yaoya-cafe-rooot-matsue
+name: 八百屋カフェ rooot
+kind: shop
+tags: [カフェ, 野菜, ランチ]
+area: { prefecture: 島根県, label: 松江市・白潟本町 }
+summary: 松江市中心部の複合施設「しらかたBASE」にある、八百屋とカフェが一体になった店。地元農家から届く野菜を使ったランチを味わえ、店頭では野菜の量り売りも行っている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/Detzghfp2Tp/"
+  author: "@yuu_shimane"
+maps_url: "https://www.google.com/maps/search/?api=1&query=八百屋カフェ+rooot"
+featured: false
+status: active
+added_at: 2026-11-20
+
+official:
+  instagram: "@okadashoooten_matsue"
+  instagram_url: "https://www.instagram.com/okadashoooten_matsue/"
+
+highlights: [地元野菜たっぷりのランチ, 野菜の量り売り, 豆乳アイスクリーム, 松江で焙煎されたコーヒー豆]
+
+related_posts:
+  captured_at: 2026-11-20
+  found_count: 12
+  items:
+    - { post_url: "https://www.instagram.com/reel/Detzghfp2Tp/", author: "@yuu_shimane", posted_at: 2026-10-20, likes: 300, note: "ランチセットを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/Df23WdjEwaz/", author: "@mi320mi903", posted_at: 2026-11-17, likes: 83, note: "カフェを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DfWQqzDR8p1/", author: "@okadashoooten_matsue", posted_at: 2026-11-05, likes: 23, note: "公式: 八百屋とスナックのイベント告知" }
+    - { post_url: "https://www.instagram.com/p/Dc5LbSFEskp/", author: "@okadashoooten_matsue", posted_at: 2026-09-05, likes: 22, note: "公式: スパゲッティなどのメニューを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DfCo99Wknzh/", author: "@ichiroshiraishi", posted_at: 2026-10-28, likes: 22, note: "八百屋ランチを写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DcSlNyJktr8/", author: "@okadashoooten_matsue", posted_at: 2026-08-21, likes: 17, note: "公式: 八百屋とスナックのチラシ" }
+    - { post_url: "https://www.instagram.com/p/DeTyqdhEhzT/", author: "@okadashoooten_matsue", posted_at: 2026-10-10, likes: 17, note: "公式: スナック営業の告知フライヤー" }
+    - { post_url: "https://www.instagram.com/reel/Dfb1dsjhbPS/", author: "@luv.shimane", posted_at: 2026-11-07, likes: 16, note: "野菜カフェとしての店を紹介するリール" }
+    - { post_url: "https://www.instagram.com/p/Dd6Gj_XkvfN/", author: "@okadashoooten_matsue", posted_at: 2026-09-30, likes: 16, note: "公式: 10月の営業カレンダー" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-20
+  note: "住所は松江市白潟本町42 しらかたBASE 1F。Googleマップのピン（place_id 1166144424871250、営業中）と2024-11-26オープン・営業継続を報道と公式投稿で確認"

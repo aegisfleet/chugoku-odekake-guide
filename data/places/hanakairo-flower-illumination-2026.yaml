@@ -1,0 +1,46 @@
+slug: hanakairo-flower-illumination-2026
+name: とっとり花回廊 フラワーイルミネーション 2026
+kind: event
+tags: [イルミネーション, 冬のイベント, 花]
+area: { prefecture: 鳥取県, label: 南部町・鶴田 }
+summary: 日本最大級のフラワーパーク・とっとり花回廊の冬のイルミネーション。2026年のテーマは「WA」で、約100万球のLEDが園内を彩る。竹あかりや和傘の演出、期間中の土日祝などに打ち上がる冬花火も楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DfqoKYtyb7p/"
+  author: "@nippon1chome"
+maps_url: "https://www.google.com/maps/search/?api=1&query=とっとり花回廊"
+featured: false
+status: active
+added_at: 2026-11-20
+period: { start: 2026-11-14, end: 2027-01-11 }
+
+official:
+  instagram: "@tottorihanakairou_official"
+  instagram_url: "https://www.instagram.com/tottorihanakairou_official/"
+  website: "https://www.tottorihanakairou.or.jp/schedule/event/501/"
+  website_label: 公式サイト
+
+highlights: ["約100万球のLED", "2026年のテーマは「WA」", "竹あかりと和傘の演出", "冬花火（土日祝など）", "フラワートレイン"]
+
+notices:
+  - { date: "2026-11-20", text: "12月1日・8日・15日・31日と2027年1月5日は休園日です（公式サイトで確認）" }
+
+related_posts:
+  captured_at: 2026-11-20
+  found_count: 30
+  items:
+    - { post_url: "https://www.instagram.com/reel/DfqoKYtyb7p/", author: "@nippon1chome", posted_at: 2026-11-12, likes: 1250, note: "イルミネーションの見どころを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DfpM-sbSV3K/", author: "@nippon1chome", posted_at: 2026-11-12, likes: 740, note: "シャボン玉ショーとイルミネーションのリール" }
+    - { post_url: "https://www.instagram.com/reel/DfrQogXNkkc/", author: "@tottori_trip_", posted_at: 2026-11-13, likes: 730, note: "100万球のイルミネーションを紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/DfroIt_yODX/", author: "@nippon1chome", posted_at: 2026-11-13, likes: 520, note: "光のトンネルなどを巡るリール" }
+    - { post_url: "https://www.instagram.com/p/Dfit1aVjwTS/", author: "@tottorihanakairou_official", posted_at: 2026-11-10, likes: 360, note: "公式: イルミネーションの告知フライヤー" }
+    - { post_url: "https://www.instagram.com/reel/DftPoYwJW01/", author: "@poyo_tottoriol", posted_at: 2026-11-14, likes: 350, note: "イルミネーションを巡る一人称視点のリール" }
+    - { post_url: "https://www.instagram.com/reel/DftytsgBBC7/", author: "@yoshiyuki__0624", posted_at: 2026-11-14, likes: 300, note: "夜のイルミネーションを巡るカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/Dfsok9ETkRo/", author: "@estudiotaku", posted_at: 2026-11-13, likes: 260, note: "イルミネーションの園内を歩くリール" }
+    - { post_url: "https://www.instagram.com/p/Df3vtJAFBx7/", author: "@tottorihanakairou_official", posted_at: 2026-11-18, likes: 250, note: "公式: 冬のイルミネーションを紹介するカルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-20
+  note: "会場はとっとり花回廊（南部町鶴田110）。期間2026-11-14〜2027-01-11・点灯17:30〜21:00・約100万球は公式サイトとTSKなど複数ソースで確認。出典投稿のキャプションにも期間・料金の記載あり"
