@@ -1,0 +1,40 @@
+slug: calma-coffee-roasters
+name: Calma Coffee Roasters
+kind: shop
+tags: [カフェ, コーヒー, ロースタリー]
+area: { prefecture: 岡山県, label: 倉敷市・児島味野 }
+summary: 2025年3月に倉敷・児島のジーンズストリート近くに開いたコーヒーロースター。屋号の「calma」はラテン語で「凪」を意味し、瀬戸内海の穏やかさをイメージした店づくり。自家焙煎のコーヒーを味わえる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DJ3tbitzCMI/"
+  author: "@goodcoffeeme"
+maps_url: "https://www.google.com/maps/search/?api=1&query=Calma+Coffee+Roasters+倉敷市"
+featured: false
+status: active
+added_at: 2026-11-21
+
+official:
+  instagram: "@calmacoffeeroasters"
+  instagram_url: "https://www.instagram.com/calmacoffeeroasters/"
+
+highlights: [自家焙煎のスペシャルティコーヒー, ジーンズストリート近くの小さなロースタリー, 「凪」をイメージした店づくり]
+
+related_posts:
+  captured_at: 2026-11-21
+  found_count: 15
+  items:
+    - { post_url: "https://www.instagram.com/p/DJ3tbitzCMI/", author: "@goodcoffeeme", posted_at: 2025-05-20, likes: 330, note: "店主の想いと店の成り立ちを紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/Dec95aIE5cn/", author: "@maiyan220", posted_at: 2026-10-13, likes: 160, note: "店内とコーヒーを写した訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DJ33fW1SwKf/", author: "@shirakabeno_official", posted_at: 2025-05-20, likes: 140, note: "ジーンズストリートにあるおしゃれなコーヒースタンドの紹介リール" }
+    - { post_url: "https://www.instagram.com/p/DU21oxxkqBz/", author: "@nao_kuishinbou", posted_at: 2026-02-17, likes: 140, note: "児島味野の店舗の様子を伝えるカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DJ3xy6pvb5Q/", author: "@daichi_photo_", posted_at: 2025-05-20, likes: 130, note: "バリスタと店内の様子を写した訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DUXaZifkSYx/", author: "@ta727__lapin", posted_at: 2026-02-05, likes: 110, note: "ロゴ入りの紙カップと店内の様子を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DTcfoC6kXwb/", author: "@causdex.coffee_okayama", posted_at: 2026-01-13, likes: 71, note: "味野2-2-90の店舗を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DJeLrp4yIF-/", author: "@grm_4040", posted_at: 2025-05-10, likes: 69, note: "倉敷の店舗の様子を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DH-vzutS_3I/", author: "@maki_tamago", posted_at: 2025-04-03, likes: 53, note: "店舗外観と店内の様子を写した訪問カルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-21
+  note: "住所は倉敷市児島味野2-2-90（出典投稿のキャプションとGoogleマップのピン place_id 2434943886901083、営業中）。2025年3月オープン"

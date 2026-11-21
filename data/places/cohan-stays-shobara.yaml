@@ -1,0 +1,41 @@
+slug: cohan-stays-shobara
+name: cohan stays SHOBARA
+kind: stay
+tags: [グランピング, ドームテント, 愛犬同伴]
+area: { prefecture: 広島県, label: 庄原市・三日市町 }
+summary: 国営備北丘陵公園の中にある湖畔のグランピング施設。7棟のドームテントは全天候型で、個別のシャワー・バスタブ・トイレ付き。地元食材のBBQや愛犬と泊まれるドッグ専用ドームもある。2026年10月31日〜2027年1月11日は園内で備北イルミが開催されている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DTErfJfAYJc/"
+  author: "@ta1010da"
+maps_url: "https://www.google.com/maps/search/?api=1&query=湖畔ステイズ庄原+庄原市"
+featured: false
+status: active
+added_at: 2026-11-21
+
+official:
+  instagram: "@cohan_stays"
+  instagram_url: "https://www.instagram.com/cohan_stays/"
+  website: "https://www.glamping-hiroshima.com/"
+  website_label: 公式サイト
+
+highlights: [湖畔に並ぶ7棟のドームテント, 地元食材のグランピングBBQ, 愛犬と泊まれるドッグ専用ドーム]
+
+related_posts:
+  captured_at: 2026-11-21
+  found_count: 19
+  items:
+    - { post_url: "https://www.instagram.com/p/DD_kCguyurZ/", author: "@cohan_stays", posted_at: 2024-12-25, likes: 477, note: "公式: 家族向け無料宿泊キャンペーンの案内" }
+    - { post_url: "https://www.instagram.com/p/DQyv32OD6Po/", author: "@y_uk_o2925", posted_at: 2025-11-08, likes: 250, note: "愛犬マリンとのドーム滞在とピザ作りの様子" }
+    - { post_url: "https://www.instagram.com/p/DTErfJfAYJc/", author: "@ta1010da", posted_at: 2026-01-04, likes: 246, note: "家族での滞在と地元食材のBBQを紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DGfxgBIS1LR/", author: "@hiroshima_wanko_", posted_at: 2025-02-25, likes: 240, note: "愛犬と泊まれるドームを紹介するリール" }
+    - { post_url: "https://www.instagram.com/p/DJ6R7hop6pz/", author: "@nonnoko0204", posted_at: 2025-05-21, likes: 120, note: "子連れ家族の滞在記、手ぶらで楽しめる施設の紹介" }
+    - { post_url: "https://www.instagram.com/p/DLbq9T4BJC9/", author: "@cohan_stays", posted_at: 2025-06-28, likes: 95, note: "公式: 子ども用プールの貸し出し開始の案内" }
+    - { post_url: "https://www.instagram.com/p/DIKyKrqykTh/", author: "@cohan_stays", posted_at: 2025-04-08, likes: 92, note: "公式: 開業3周年記念プランの案内" }
+    - { post_url: "https://www.instagram.com/p/DTLQjUXD8Ru/", author: "@at_lovesky", posted_at: 2026-01-06, likes: 16, note: "夜のドーム外観" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-21
+  note: "国営備北丘陵公園内の施設で、住所は庄原市三日市町4-10（公園と同じ住所）。Google Travelのホテルページと公式サイトで所在地を確認。施設専用のGoogleマップのピンは未取得だが、公園のピン（place_id 571470804762592、営業中）と同住所のため掲載。2022年3月オープン、7棟。出典投稿はPR表記のある家族インフルエンサーの滞在記"

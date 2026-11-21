@@ -1,0 +1,42 @@
+slug: the-coffee-blanks-izumo
+name: THE COFFEE BLANKS
+kind: shop
+tags: [カフェ, コーヒー, スペシャルティコーヒー]
+area: { prefecture: 島根県, label: 出雲市・大社町 }
+summary: スペシャルティコーヒーのロースターカフェ。2025年7月に出雲大社の近くへ移転し、神門通りから馬場通りに入った場所に店を構える。朝7時から開いているので、参拝前のモーニングにも立ち寄れる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DOqeL0gj2zA/"
+  author: "@mori.629"
+maps_url: "https://www.google.com/maps/search/?api=1&query=THE+COFFEE+BLANKS+出雲市"
+featured: false
+status: active
+added_at: 2026-11-21
+
+official:
+  instagram: "@blanks_izumo"
+  instagram_url: "https://www.instagram.com/blanks_izumo/"
+  website: "http://blanks-izumo.com/"
+  website_label: 公式サイト
+
+highlights: [スペシャルティコーヒー, 朝7時からのモーニング, 出雲大社の近くに移転したロースターカフェ]
+
+related_posts:
+  captured_at: 2026-11-21
+  found_count: 24
+  items:
+    - { post_url: "https://www.instagram.com/p/DOqeL0gj2zA/", author: "@mori.629", posted_at: 2025-09-16, likes: 173, note: "移転後の店舗を紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DQ8NS7nkzN7/", author: "@___cafe.record", posted_at: 2025-11-12, likes: 150, note: "店内の様子とドリンクを写した訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/Dd3cqfwiZ78/", author: "@k.i_______stagram", posted_at: 2026-09-29, likes: 150, note: "一人で訪れた日の店内の様子をまとめたカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DNkpmqSv7Na/", author: "@blanks_izumo", posted_at: 2025-08-20, likes: 110, note: "公式: ロースタリーの様子を紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/DNzfByJZJSY/", author: "@blanks_izumo", posted_at: 2025-08-26, likes: 71, note: "公式: 店内の雰囲気を伝えるリール" }
+    - { post_url: "https://www.instagram.com/p/DZC4dqbmGt3/", author: "@bose_sato", posted_at: 2026-06-01, likes: 65, note: "出雲旅行で立ち寄った開店まもない店舗の紹介" }
+    - { post_url: "https://www.instagram.com/reel/Dfg3cSMyX2X/", author: "@tuckey703", posted_at: 2026-11-09, likes: 53, note: "コーヒーと朝食、スイーツを紹介する訪問リール" }
+    - { post_url: "https://www.instagram.com/p/DNLGvjEBUrr/", author: "@____019.o", posted_at: 2025-08-10, likes: 43, note: "店内の雰囲気を写した訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DTsMNiZiQRx/", author: "@megurichiko", posted_at: 2026-01-19, likes: 42, note: "参道沿いの店舗外観から始まる訪問カルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-21
+  note: "2025-07-01に島根医大前（塩冶神前）から出雲大社近くの大社町杵築南783-3へ移転（出典投稿のキャプションと公式サイト・Googleマップのピン place_id 1171246938050965、営業中で確認）。マピオン／NAVITIMEの塩冶神前2-6-12は移転前の旧住所のため不採用"

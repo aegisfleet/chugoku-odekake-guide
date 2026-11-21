@@ -1,0 +1,42 @@
+slug: kaikyo-yume-tower
+name: 海峡ゆめタワー
+kind: spot
+tags: [展望台, 夜景, 関門海峡]
+area: { prefecture: 山口県, label: 下関市・豊前田町 }
+summary: 関門海峡を見渡す高さ153mのタワー。最上階のガラス張りの展望室からは関門海峡と下関の街並みを360度見渡せ、夜はライトアップされた夜景と観覧車の明かりが楽しめる。恋人の聖地にも選ばれている。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DImuYnjTDWI/"
+  author: "@1101yukorin"
+maps_url: "https://www.google.com/maps/search/?api=1&query=海峡ゆめタワー+下関市"
+featured: false
+status: active
+added_at: 2026-11-21
+
+official:
+  instagram: "@kaikyoyumetower"
+  instagram_url: "https://www.instagram.com/kaikyoyumetower/"
+  website: "http://www.yumetower.jp/"
+  website_label: 公式サイト
+
+highlights: [153mの展望室から関門海峡を一望, ガラス張りの展望室と夜のライトアップ, 恋人の聖地に選定]
+
+related_posts:
+  captured_at: 2026-11-21
+  found_count: 11
+  items:
+    - { post_url: "https://www.instagram.com/p/DImuYnjTDWI/", author: "@1101yukorin", posted_at: 2025-04-18, likes: 1214, note: "対岸の展望台から望むタワーと観覧車の夜景（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DM6Dlqyzyva/", author: "@miharusinyama", posted_at: 2025-08-03, likes: 470, note: "タワー足元の海峡ゆめ広場を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DPQK69Ak9-r/", author: "@nightscape.labs", posted_at: 2025-10-01, likes: 350, note: "球形の展望室が光るタワーの夜景" }
+    - { post_url: "https://www.instagram.com/p/DTTnDvzE8u2/", author: "@toko3318", posted_at: 2026-01-09, likes: 260, note: "タワーから望む花火と関門橋、観覧車の夜景" }
+    - { post_url: "https://www.instagram.com/p/DPTKDoOESVq/", author: "@hebotaroudesu", posted_at: 2025-10-02, likes: 180, note: "星空の下で光る展望タワーの夜景" }
+    - { post_url: "https://www.instagram.com/reel/DJBwasAyem3/", author: "@drone.shot.bee.frog", posted_at: 2025-04-29, likes: 110, note: "ドローンで撮った夜のタワーの空撮リール" }
+    - { post_url: "https://www.instagram.com/reel/Deqp5mIqs24/", author: "@shimonoseki.kanko", posted_at: 2026-10-19, likes: 88, note: "公式: 展望室と恋人の聖地を紹介する下関観光のリール" }
+    - { post_url: "https://www.instagram.com/p/DIY2ZeIvhDn/", author: "@sa_yurin_lar47", posted_at: 2025-04-13, likes: 74, note: "昼のタワー訪問をまとめたカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DDZhiE3Pmqc/", author: "@junjun_tio", posted_at: 2024-12-10, likes: 66, note: "金色に光るタワーの夜景" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-21
+  note: "住所は下関市豊前田町3-3-1（公式サイト・Googleマップのピン place_id 2282200161972708、営業中）。出典投稿は対岸の和布刈第二展望台から撮ったタワーと観覧車の夜景で、タワーが主役"

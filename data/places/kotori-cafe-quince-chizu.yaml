@@ -1,0 +1,45 @@
+slug: kotori-cafe-quince-chizu
+name: 小鳥のcafe Quince
+kind: shop
+tags: [カフェ, 森カフェ, スイーツ]
+area: { prefecture: 鳥取県, label: 智頭町・芦津 }
+summary: 芦津渓谷の森の中、山里料理みたき園の敷地内にある木造のカフェ。智頭杉のオブジェや本が並ぶ店内で、湧水で淹れた水出しコーヒーや手作りケーキを味わえる。冬季は休業するため、訪れるのは4月から11月が目安。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DT2O54VAcS2/"
+  author: "@tottori_trip_"
+maps_url: "https://www.google.com/maps/search/?api=1&query=小鳥のcafe+Quince+智頭町"
+featured: false
+status: active
+added_at: 2026-11-21
+
+official:
+  instagram: "@quince_mitakien"
+  instagram_url: "https://www.instagram.com/quince_mitakien/"
+  website: "https://ashidumitakien.jp/"
+  website_label: 公式サイト（みたき園）
+
+highlights: [芦津渓谷の森の中の木造カフェ, 湧水で淹れた水出しコーヒー, 手作りケーキと智頭杉の店内]
+
+related_posts:
+  captured_at: 2026-11-21
+  found_count: 45
+  items:
+    - { post_url: "https://www.instagram.com/reel/DT2O54VAcS2/", author: "@tottori_trip_", posted_at: 2026-01-23, likes: 973, note: "芦津渓谷の隠れ家カフェを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DMcXaVzxgAI/", author: "@insta_tottori", posted_at: 2025-07-23, likes: 750, note: "森の中のカフェの様子を写した訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/Da7d5LKz68A/", author: "@inaba_fu_fu", posted_at: 2026-07-18, likes: 710, note: "山奥の隠れ家カフェを訪ねるリール" }
+    - { post_url: "https://www.instagram.com/reel/DIgDTtGpicm/", author: "@tottori_trip_", posted_at: 2025-04-16, likes: 550, note: "渓谷沿いのカフェを訪ねるリール" }
+    - { post_url: "https://www.instagram.com/reel/DPYVvtXEdMo/", author: "@katurayukio", posted_at: 2025-10-04, likes: 290, note: "みたき園の敷地内のカフェを巡るリール" }
+    - { post_url: "https://www.instagram.com/p/DRjbxrjD-ZR/", author: "@jun_yasu22", posted_at: 2025-11-27, likes: 200, note: "秋の森の中のカフェを訪ねたカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DDMcY8LBp7_/", author: "@quince_mitakien", posted_at: 2024-12-05, likes: 180, note: "公式: 紅葉の森の中のカフェの外観" }
+    - { post_url: "https://www.instagram.com/p/DGHYgsShvEz/", author: "@quince_mitakien", posted_at: 2025-02-16, likes: 170, note: "公式: カフェの案内カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DIYP_I2BKaC/", author: "@oishi_tottori", posted_at: 2025-04-13, likes: 150, note: "森の中の屋外カフェ体験を紹介するカルーセル" }
+
+notices:
+  - { date: "2026-11-21", text: "例年12月上旬頃から翌年3月末まで冬季休業のため、冬期は訪問前に公式Instagramで営業日を確認してください（鳥取・島根のWEBマガジン na-na、2026年11月19日更新の記事による）。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-21
+  note: "みたき園の敷地内（智頭町芦津707）のカフェ。Googleマップのピン（place_id 2072232142972255、営業中）と公式Instagramで営業継続を確認。例年の冬季休業（12月上旬頃〜翌年3月末）をnoticesに記載"
