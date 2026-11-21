@@ -423,7 +423,7 @@ a.tag { text-decoration: none; cursor: pointer; }
 .post-likes { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; color: var(--heading); flex-shrink: 0; }
 .post-likes svg { width: 14px; height: 14px; fill: #e04836; }
 
-.detail-side { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 24px; margin-top: 16px; }
+.detail-side { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 84px; margin-top: 16px; }
 .side-card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 20px; box-shadow: var(--shadow-md); position: relative; overflow: hidden; font-size: 13.5px; }
 .side-card-bar { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #9d3e1a, #c85c2e); }
 .side-card-title { font-size: 16px; font-weight: 800; margin: 0 0 12px; color: var(--heading); }
@@ -637,6 +637,8 @@ a.tag { text-decoration: none; cursor: pointer; }
 .timing-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .timing-btn { background: var(--surface-subtle); border: 1px solid var(--border); border-radius: 8px; padding: 8px; font-size: 13px; font-family: inherit; cursor: pointer; color: var(--muted); min-height: 40px; }
 .timing-btn.is-active { background: var(--text); color: var(--bg); font-weight: 700; border-color: var(--text); }
+.hide-ended-check { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text); background: var(--surface-subtle); padding: 8px 10px; border-radius: 8px; margin-top: 8px; cursor: pointer; }
+.hide-ended-check input { accent-color: #9d3e1a; }
 .side-note { font-size: 11px; color: var(--faint); margin: 8px 0 0; line-height: 1.6; }
 .side-foot { display: none; }
 .results-head { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 18px; box-shadow: var(--shadow-md); }
@@ -658,10 +660,11 @@ a.tag { text-decoration: none; cursor: pointer; }
 .token-clear-all { border: 0; background: none; color: var(--primary); font-size: 12px; font-weight: 700; font-family: inherit; cursor: pointer; }
 .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 16px; }
 .results-grid--list { grid-template-columns: 1fr; }
-.results-more-wrap { text-align: center; margin-top: 22px; }
+.results-more-wrap, .home-more-wrap { text-align: center; margin-top: 22px; }
+.home-more-wrap { max-width: 1100px; margin: 4px auto 12px; padding: 0 24px; }
 .results-more-wrap[hidden] { display: none; }
-.results-more-btn { background: var(--surface); border: 1px solid var(--border); color: var(--heading); font-size: 13.5px; font-weight: 700; font-family: inherit; padding: 11px 28px; border-radius: 999px; cursor: pointer; box-shadow: var(--shadow-md); transition: border-color .15s ease, color .15s ease; }
-.results-more-btn:hover { border-color: var(--primary); color: var(--primary); }
+.results-more-btn, .home-more-btn { display: inline-flex; align-items: center; justify-content: center; background: var(--surface); border: 1px solid var(--border); color: var(--heading); font-size: 13.5px; font-weight: 700; font-family: inherit; padding: 11px 28px; border-radius: 999px; cursor: pointer; text-decoration: none; box-shadow: var(--shadow-md); transition: border-color .15s ease, color .15s ease; }
+.results-more-btn:hover, .home-more-btn:hover { border-color: var(--primary); color: var(--primary); }
 .results-foot { font-size: 12px; color: var(--muted); margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px; }
 @media (max-width: 1020px) { .results-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 900px) {
@@ -767,6 +770,7 @@ a.tag { text-decoration: none; cursor: pointer; }
   .home-section { padding-left: 16px; padding-right: 16px; }
   .grid { padding-left: 16px; padding-right: 16px; }
   .filters { padding-left: 16px; padding-right: 16px; }
+  .home-more-wrap { padding-left: 16px; padding-right: 16px; }
   .footer-inner { padding-left: 16px; padding-right: 16px; }
   .accounts-panel { padding: 20px 18px; }
 }
@@ -778,11 +782,17 @@ a.tag { text-decoration: none; cursor: pointer; }
 .fav-hero h1 { font-size: 26px; font-weight: 800; margin: 4px 0; letter-spacing: -.01em; }
 .fav-hero-head p { font-size: 13px; color: var(--muted); margin: 0; max-width: 640px; line-height: 1.8; }
 @media (max-width: 720px) { .fav-hero-inner { padding: 16px 16px 18px; } .fav-hero h1 { font-size: 22px; } }
-.fav-main { max-width: 1100px; margin: 0 auto; padding: 4px 24px 48px; }
-.fav-count-text { font-size: 13px; font-weight: 700; color: var(--muted); min-height: 1.2em; margin: 10px 0 0; }
+.fav-main { max-width: 1100px; margin: 0 auto; padding: 14px 24px 48px; }
+.fav-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 12px 18px; box-shadow: var(--shadow-md); }
+.fav-toolbar[hidden] { display: none; }
+.fav-count-text { font-size: 14px; font-weight: 800; color: var(--heading); margin: 0; }
+.fav-controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.fav-controls select { background: var(--surface-subtle); border: 1px solid var(--border); border-radius: 10px; padding: 0 10px; font-size: 13px; font-family: inherit; color: var(--text); min-height: 38px; }
+.fav-clear-btn { border: 1px solid var(--border); background: var(--surface); color: var(--primary); font-size: 12.5px; font-weight: 700; font-family: inherit; padding: 0 14px; border-radius: 10px; min-height: 38px; cursor: pointer; }
+.fav-clear-btn:hover { background: var(--surface-subtle); }
 .fav-grid { visibility: hidden; }
 .fav-grid.is-ready { visibility: visible; }
 .fav-empty { text-align: center; padding: 44px 16px; color: var(--muted); font-size: 14px; line-height: 1.9; }
 .fav-empty-title { font-size: 16px; font-weight: 800; color: var(--heading); margin-bottom: 6px; }
 .fav-empty .btn { margin-top: 14px; }
-@media (max-width: 720px) { .fav-main { padding: 4px 16px 40px; } }
+@media (max-width: 720px) { .fav-main { padding: 12px 16px 40px; } }

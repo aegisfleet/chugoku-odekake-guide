@@ -3,8 +3,6 @@
 <head>{{ partial "head.html" . }}</head>
 <body>
 {{ partial "header.html" . }}
-{{ $places := slice }}
-{{ range hugo.Data.places }}{{ $places = $places | append . }}{{ end }}
 
 <section class="fav-hero">
   <div class="fav-hero-inner">
@@ -22,10 +20,28 @@
 </section>
 
 <section class="fav-main">
-  <p class="fav-count-text" id="fav-count-text"></p>
-  <div class="results-grid fav-grid" id="fav-grid">
-    {{ range sort $places "added_at" "desc" }}{{ partial "place-card.html" . }}{{ end }}
+  <div class="fav-toolbar" id="fav-toolbar" hidden>
+    <p class="fav-count-text" id="fav-count-text"></p>
+    <div class="fav-controls">
+      <select id="fav-pref-filter" aria-label="都道府県で絞り込み">
+        <option value="all">すべての県</option>
+        <option value="広島県">広島県</option>
+        <option value="岡山県">岡山県</option>
+        <option value="山口県">山口県</option>
+        <option value="島根県">島根県</option>
+        <option value="鳥取県">鳥取県</option>
+      </select>
+      <select id="fav-kind-filter" aria-label="カテゴリで絞り込み">
+        <option value="all">すべてのカテゴリ</option>
+        {{ range $key, $label := site.Params.kindLabel }}
+          <option value="{{ $key }}">{{ $label }}</option>
+        {{ end }}
+      </select>
+      <button type="button" class="fav-clear-btn" id="fav-clear-all">すべてクリア</button>
+    </div>
   </div>
+  <div class="results-grid fav-grid" id="fav-grid" data-index-url="{{ "index.json" | relURL }}" data-search-url="{{ "search/" | relURL }}"></div>
+  <p class="empty-note" id="fav-filter-empty" hidden>この条件に一致するお気に入りはありません。</p>
   <div class="fav-empty" id="fav-empty" hidden>
     <p class="fav-empty-title">まだお気に入りがありません</p>
     <p>スポットのカードや詳細ページにあるハートのボタンから追加できます。</p>

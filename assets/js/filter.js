@@ -25,6 +25,8 @@ bindGenreFilter();
 (function () {
   var grid = document.getElementById("places-grid");
   if (!grid) return;
+  var moreLink = document.getElementById("home-more-link");
+  var baseSearchHref = moreLink ? moreLink.getAttribute("href") : "";
   var kind = "all";
   function apply() {
     var visible = 0, total = 0;
@@ -40,10 +42,13 @@ bindGenreFilter();
     if (count) {
       if (kind !== "all") {
         count.hidden = false;
-        count.textContent = visible + "件を表示中（全" + total + "件）";
+        count.textContent = "新着" + total + "件中 " + visible + "件を表示中";
       } else {
         count.hidden = true;
       }
+    }
+    if (moreLink && baseSearchHref) {
+      moreLink.setAttribute("href", kind === "all" ? baseSearchHref : baseSearchHref + "?kind=" + encodeURIComponent(kind));
     }
   }
   document.querySelectorAll(".filter-btn[data-filter-kind]").forEach(function (btn) {

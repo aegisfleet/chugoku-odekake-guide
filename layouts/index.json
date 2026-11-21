@@ -1,5 +1,7 @@
 {{- $places := slice }}
-{{- range hugo.Data.places }}
+{{- range sort hugo.Data.places "added_at" "desc" }}
+  {{- $period := dict }}
+  {{- with .period }}{{ $period = dict "start" .start "end" .end }}{{ end }}
   {{- $places = $places | append (dict
       "slug" .slug
       "name" .name
@@ -9,9 +11,14 @@
       "area" .area.label
       "summary" .summary
       "instagram_url" .source.post_url
+      "author" .source.author
       "maps_url" .maps_url
       "url" (printf "places/%s/" .slug | absURL)
+      "rel_url" (printf "places/%s/" .slug | relURL)
       "added_at" .added_at
+      "featured" (.featured | default false)
+      "has_notices" (gt (len (.notices | default slice)) 0)
+      "period" $period
   ) }}
 {{- end }}
 {{- $places | jsonify }}

@@ -52,7 +52,7 @@
       {{ if eq $evBadge "ending" }}<span class="badge badge--ending">まもなく終了</span>{{ end }}
       {{ if eq $evBadge "soon" }}<span class="badge badge--soon">あと{{ $daysToStart }}日</span>{{ end }}
       {{ if $ended }}<span class="badge badge--ended">終了</span>{{ end }}
-      {{ range $p.tags }}<span class="tag">{{ . }}</span>{{ end }}
+      {{ range $p.tags }}<a class="tag" href="{{ "search/" | relURL }}?tag={{ . | urlquery }}">{{ . }}</a>{{ end }}
     </div>
 
     <p class="detail-location">{{ partial "icon-pin.html" . }}{{ $p.area.prefecture }} / {{ $p.area.label }}</p>
@@ -222,25 +222,67 @@
 </main>
 
 {{ $selfSlug := $p.slug }}
+{{ $selfPref := $p.area.prefecture }}
+{{ $selfKind := $p.kind }}
 {{ $ward := index (split $p.area.label "・") 0 }}
+{{ $allPlaces := slice }}
+{{ range hugo.Data.places }}{{ $allPlaces = $allPlaces | append . }}{{ end }}
+{{ $allPlaces = sort $allPlaces "added_at" "desc" }}
 {{ $recs := slice }}
-{{ range hugo.Data.places }}{{ if and (ne .slug $selfSlug) (eq .kind $p.kind) }}{{ $recs = $recs | append . }}{{ end }}{{ end }}
-{{ if lt (len $recs) 3 }}{{ range hugo.Data.places }}{{ if and (ne .slug $selfSlug) (ne .kind $p.kind) (eq (index (split .area.label "・") 0) $ward) }}{{ $recs = $recs | append . }}{{ end }}{{ end }}{{ end }}
+{{ $recSlugs := slice $selfSlug }}
+{{/* 1. 同エリア × 同ジャンル */}}
+{{ range $allPlaces }}
+  {{ if and (not (in $recSlugs .slug)) (eq (index (split .area.label "・") 0) $ward) (eq .kind $selfKind) }}
+    {{ $recs = $recs | append . }}{{ $recSlugs = $recSlugs | append .slug }}
+  {{ end }}
+{{ end }}
+{{/* 2. 同エリア（他ジャンル） */}}
+{{ if lt (len $recs) 3 }}
+  {{ range $allPlaces }}
+    {{ if and (not (in $recSlugs .slug)) (eq (index (split .area.label "・") 0) $ward) }}
+      {{ $recs = $recs | append . }}{{ $recSlugs = $recSlugs | append .slug }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{/* 3. 同県 × 同ジャンル */}}
+{{ if lt (len $recs) 3 }}
+  {{ range $allPlaces }}
+    {{ if and (not (in $recSlugs .slug)) (eq .area.prefecture $selfPref) (eq .kind $selfKind) }}
+      {{ $recs = $recs | append . }}{{ $recSlugs = $recSlugs | append .slug }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{/* 4. 同県（他ジャンル） */}}
+{{ if lt (len $recs) 3 }}
+  {{ range $allPlaces }}
+    {{ if and (not (in $recSlugs .slug)) (eq .area.prefecture $selfPref) }}
+      {{ $recs = $recs | append . }}{{ $recSlugs = $recSlugs | append .slug }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{/* 5. 同ジャンル（他県） */}}
+{{ if lt (len $recs) 3 }}
+  {{ range $allPlaces }}
+    {{ if and (not (in $recSlugs .slug)) (eq .kind $selfKind) }}
+      {{ $recs = $recs | append . }}{{ $recSlugs = $recSlugs | append .slug }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 {{ with $recs }}
 <section class="detail-recs">
   <div class="detail-recs-inner">
     <div class="detail-recs-head">
       <div>
         <p class="detail-recs-eyebrow">Discover more</p>
-        <h2>同じジャンルのおすすめスポット</h2>
+        <h2>周辺・関連のおすすめスポット</h2>
       </div>
-      <a class="detail-recs-more" href="{{ printf "search/?kind=%s" $p.kind | relURL }}">{{ $kindLabel }}一覧を見る</a>
+      <a class="detail-recs-more" href="{{ printf "search/?pref=%s" ($selfPref | urlquery) | relURL }}">{{ $selfPref }}のスポット一覧を見る</a>
     </div>
     <div class="detail-recs-grid">
       {{ range first 3 . }}{{ partial "place-card.html" . }}{{ end }}
     </div>
     {{ partial "ad-unit.html" "5243681175" }}
-    <p class="detail-back"><a href="{{ "search/" | relURL }}">一覧・検索結果へ戻る</a></p>
+    <p class="detail-back"><a id="detail-back-link" href="{{ "search/" | relURL }}">一覧・検索結果へ戻る</a></p>
   </div>
 </section>
 {{ end }}

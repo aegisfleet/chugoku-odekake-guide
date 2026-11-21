@@ -134,7 +134,8 @@
 <section class="home-section">
   <div class="section-head">
     <span class="section-bar section-bar--grid"></span>
-    <div><h2>スポット＆イベント一覧</h2><p class="section-sub">中国地方のキュレーションアーカイブ（全{{ len $places }}件）</p></div>
+    <div><h2>新着スポット＆イベント</h2><p class="section-sub">中国地方のキュレーションアーカイブ（最新15件 / 全{{ len $places }}件）</p></div>
+    <a class="section-more" href="{{ "search/" | relURL }}">すべて見る ›</a>
   </div>
 </section>
 <nav class="filters" aria-label="絞り込み">
@@ -145,11 +146,14 @@
 </nav>
 <p class="result-count" id="result-count" aria-live="polite" hidden></p>
 <main class="grid" id="places-grid">
-{{ range sort $places "added_at" "desc" }}
+{{ range first 15 (sort $places "added_at" "desc") }}
   {{ partial "place-card.html" . }}
 {{ end }}
 </main>
 <p class="empty-note" id="empty-note" hidden>該当する情報はまだありません。</p>
+<div class="home-more-wrap">
+  <a class="home-more-btn" id="home-more-link" href="{{ "search/" | relURL }}">すべてのスポットを検索・絞り込む（全{{ len $places }}件） →</a>
+</div>
 <div class="ad-wrap">{{ partial "ad-unit.html" "9785561411" }}</div>
 <section class="home-section">
   <div class="section-head">

@@ -19,6 +19,7 @@
     kind: "all",
     tags: new Set(),
     timing: "none",
+    hideEnded: false,
     sort: "popular",
     limit: PAGE_SIZE,
     tagsExpanded: false,
@@ -39,11 +40,16 @@
     });
   }
 
+  function startOfDay(d) { var x = new Date(d); x.setHours(0, 0, 0, 0); return x.getTime(); }
+  var todayStartMs = startOfDay(new Date());
+
   // カード属性を事前キャッシュして高速化
   var cardMeta = new Map();
   cards.forEach(function (c) {
     var tagStr = c.getAttribute("data-tags") || "";
     var tagList = tagStr.split("|").filter(Boolean);
+    var endSec = parseInt(c.getAttribute("data-end") || "", 10);
+    var isEnded = c.classList.contains("place-card--ended") || (!isNaN(endSec) && (endSec * 1000 + 86400000 - 1) < todayStartMs);
     cardMeta.set(c, {
       pref: c.getAttribute("data-prefecture") || "",
       area: c.getAttribute("data-area") || "",
@@ -52,7 +58,8 @@
       tagSet: new Set(tagList),
       search: normalizeText(c.getAttribute("data-search") || ""),
       start: parseInt(c.getAttribute("data-start") || "", 10),
-      end: parseInt(c.getAttribute("data-end") || "", 10),
+      end: endSec,
+      ended: isEnded,
       found: parseInt(c.getAttribute("data-found") || "0", 10),
       added: parseInt(c.getAttribute("data-added") || "0", 10),
       likes: parseInt(c.getAttribute("data-likes") || "0", 10)
@@ -63,6 +70,7 @@
   var clearBtn = document.getElementById("search-clear");
   var prefSelect = document.getElementById("search-pref");
   var sortSelect = document.getElementById("sort-select");
+  var hideEndedCb = document.getElementById("hide-ended");
   var countEl = document.getElementById("results-count");
   var condEl = document.getElementById("results-cond");
   var tokensEl = document.getElementById("active-tokens");
@@ -75,7 +83,6 @@
   var areaLabelEl = document.getElementById("area-filter-label");
   var applyBtn = document.getElementById("sheet-apply");
 
-  function startOfDay(d) { var x = new Date(d); x.setHours(0, 0, 0, 0); return x.getTime(); }
   function timingWindow(kind) {
     var now = new Date();
     var today = startOfDay(now);
@@ -101,6 +108,7 @@
     if (skipDimension !== "pref" && prefFiltered() && !state.prefs.has(m.pref)) return false;
     if (skipDimension !== "area" && state.areas.size && !state.areas.has(m.area)) return false;
     if (skipDimension !== "kind" && state.kind !== "all" && m.kind !== state.kind) return false;
+    if (state.hideEnded && m.ended) return false;
     if (state.tags.size) {
       var ok = true;
       state.tags.forEach(function (t) { if (!m.tagSet.has(t)) ok = false; });
@@ -130,7 +138,13 @@
       popular: function (c) { return -cardMeta.get(c).found; },
       new: function (c) { return -cardMeta.get(c).added; },
       likes: function (c) { return -cardMeta.get(c).likes; },
-      ending: function (c) { var e = cardMeta.get(c).end; return isNaN(e) ? Infinity : e; }
+      // 開催終了が近い順: 開催中・開催予定を終了日の昇順で先頭に並べ、期間なしスポット→終了済みイベントの順で後ろに回す
+      ending: function (c) {
+        var m = cardMeta.get(c);
+        if (isNaN(m.end)) return 1e15;
+        if (m.ended) return 2e15 - m.end;
+        return m.end;
+      }
     }[state.sort] || function (c) { return -cardMeta.get(c).found; };
     return list.map(function (c, i) { return [c, i]; })
       .sort(function (a, b) { var d = val(a[0]) - val(b[0]); return d !== 0 ? d : a[1] - b[1]; })
@@ -324,6 +338,7 @@
     if (state.kind !== "all") { mark(); addToken(KIND_LABEL[state.kind], function () { state.kind = "all"; syncKindRadios(); state.limit = PAGE_SIZE; apply(); }); }
     state.tags.forEach(function (t) { mark(); addToken("#" + t, function () { state.tags.delete(t); syncToggleChips(); state.limit = PAGE_SIZE; apply(); }); });
     if (state.timing !== "none") { mark(); addToken("開催時期：" + TIMING_LABEL[state.timing], function () { state.timing = "none"; syncTimingBtns(); state.limit = PAGE_SIZE; apply(); }); }
+    if (state.hideEnded) { mark(); addToken("終了イベントを除外", function () { state.hideEnded = false; syncHideEnded(); state.limit = PAGE_SIZE; apply(); }); }
     if (any) {
       var clear = document.createElement("button");
       clear.type = "button"; clear.className = "token-clear-all"; clear.textContent = "条件をクリア";
@@ -350,6 +365,7 @@
     if (state.areas.size) p.set("area", Array.from(state.areas).join(","));
     if (state.tags.size) p.set("tag", Array.from(state.tags).join(","));
     if (state.timing !== "none") p.set("timing", state.timing);
+    if (state.hideEnded) p.set("hide_ended", "1");
     if (state.sort !== "popular") p.set("sort", state.sort);
     var qs = p.toString();
     history.replaceState(null, "", location.pathname + (qs ? "?" + qs : ""));
@@ -393,7 +409,8 @@
     var badge = document.getElementById("filter-badge");
     if (badge) {
       var n = (state.q ? 1 : 0) + (prefFiltered() ? 1 : 0) + state.areas.size +
-        (state.kind !== "all" ? 1 : 0) + state.tags.size + (state.timing !== "none" ? 1 : 0);
+        (state.kind !== "all" ? 1 : 0) + state.tags.size + (state.timing !== "none" ? 1 : 0) +
+        (state.hideEnded ? 1 : 0);
       badge.hidden = n === 0;
       badge.textContent = n;
     }
@@ -434,12 +451,15 @@
   function syncTimingBtns() {
     document.querySelectorAll(".timing-btn").forEach(function (b) { b.classList.toggle("is-active", b.getAttribute("data-timing") === state.timing); });
   }
+  function syncHideEnded() {
+    if (hideEndedCb) hideEndedCb.checked = state.hideEnded;
+  }
   function resetAll() {
     state.q = ""; input.value = "";
     state.prefs = new Set(); state.areas.clear(); state.tags.clear();
-    state.kind = "all"; state.timing = "none";
+    state.kind = "all"; state.timing = "none"; state.hideEnded = false;
     state.limit = PAGE_SIZE;
-    syncClearBtn(); syncPrefControls(); syncToggleChips(); syncKindRadios(); syncTimingBtns();
+    syncClearBtn(); syncPrefControls(); syncToggleChips(); syncKindRadios(); syncTimingBtns(); syncHideEnded();
     apply();
   }
 
@@ -459,10 +479,13 @@
     state.timing = params.get("timing");
     if (state.kind !== "all" && state.kind !== "event") state.kind = "event";
   }
+  if (params.get("hide_ended") === "1") {
+    state.hideEnded = true;
+  }
   if (params.get("sort") && SORT_VALID[params.get("sort")]) {
     state.sort = params.get("sort");
   }
-  syncClearBtn(); syncPrefControls(); syncSortControl(); syncToggleChips(); syncKindRadios(); syncTimingBtns();
+  syncClearBtn(); syncPrefControls(); syncSortControl(); syncToggleChips(); syncKindRadios(); syncTimingBtns(); syncHideEnded();
 
   // イベント（IME変換中スキップ + デバウンス150ms）
   var isComposing = false;
@@ -561,6 +584,13 @@
       apply();
     });
   });
+  if (hideEndedCb) {
+    hideEndedCb.addEventListener("change", function () {
+      state.hideEnded = hideEndedCb.checked;
+      state.limit = PAGE_SIZE;
+      apply();
+    });
+  }
   if (sortSelect) {
     sortSelect.addEventListener("change", function (e) { state.sort = e.target.value; apply(); });
   }

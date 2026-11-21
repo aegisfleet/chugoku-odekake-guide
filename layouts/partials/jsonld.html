@@ -1,5 +1,7 @@
 {{ if .IsHome }}
-<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" site.Title "url" site.Home.Permalink "inLanguage" "ja" "description" site.Params.description | jsonify | safeJS }}</script>
+{{ $searchTarget := printf "%s?q={search_term_string}" ("search/" | absURL) }}
+{{ $searchAction := dict "@type" "SearchAction" "target" (dict "@type" "EntryPoint" "urlTemplate" $searchTarget) "query-input" "required name=search_term_string" }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" site.Title "url" site.Home.Permalink "inLanguage" "ja" "description" site.Params.description "potentialAction" $searchAction | jsonify | safeJS }}</script>
 {{ end }}
 {{ if .Params.kind }}
 {{ $p := .Params }}
