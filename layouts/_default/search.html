@@ -6,8 +6,18 @@
 {{ $places := slice }}
 {{ range hugo.Data.places }}{{ $places = $places | append . }}{{ end }}
 {{ $prefs := slice "広島県" "岡山県" "山口県" "島根県" "鳥取県" }}
-{{ $areaNames := slice }}
-{{ range $places }}{{ $seg := index (split .area.label "・") 0 }}{{ if not (in $areaNames $seg) }}{{ $areaNames = $areaNames | append $seg }}{{ end }}{{ end }}
+{{ $areaList := slice }}
+{{ $seenAreas := slice }}
+{{ range $places }}
+  {{ $seg := index (split .area.label "・") 0 }}
+  {{ if not (in $seenAreas $seg) }}
+    {{ $seenAreas = $seenAreas | append $seg }}
+    {{ $c := 0 }}
+    {{ range $places }}{{ if eq (index (split .area.label "・") 0) $seg }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+    {{ $areaList = $areaList | append (dict "name" $seg "pref" .area.prefecture "count" $c) }}
+  {{ end }}
+{{ end }}
+{{ $areaList = sort $areaList "count" "desc" }}
 {{ $tagNames := slice }}
 {{ range $places }}{{ range .tags }}{{ if not (in $tagNames .) }}{{ $tagNames = $tagNames | append . }}{{ end }}{{ end }}{{ end }}
 {{ $tagStats := slice }}
@@ -35,7 +45,7 @@
       <div class="search-bar-input">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
         <input type="text" id="search-input" placeholder="キーワード・スポット名・市町村（例: カフェ、ラーメン、イルミネーション）" aria-label="キーワード検索">
-        <button type="button" id="search-clear" title="入力をクリア" aria-label="入力をクリア">×</button>
+        <button type="button" id="search-clear" title="入力をクリア" aria-label="入力をクリア" hidden>×</button>
       </div>
       <select id="search-pref" aria-label="都道府県で絞り込み">
         <option value="all">中国5県すべて</option>
@@ -52,19 +62,18 @@
 </section>
 
 <div class="search-mobile-bar">
-  <div class="mobile-bar-row">
+  <div class="mobile-bar-sticky">
     <button type="button" class="open-filters-btn" id="open-filters">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
       絞り込み<span class="filter-badge" id="filter-badge" hidden>0</span>
     </button>
-    <span class="mobile-bar-hint">条件はボタンから開くシートで変更できます</span>
-  </div>
-  <div class="scroll-x kind-segments">
-    <button type="button" class="seg seg--all is-active" data-seg-kind="all">すべて（{{ len $places }}）</button>
-    {{ range $key, $label := site.Params.kindLabel }}
-      {{ $c := 0 }}{{ range $places }}{{ if eq .kind $key }}{{ $c = add $c 1 }}{{ end }}{{ end }}
-      <button type="button" class="seg seg--{{ $key }}" data-seg-kind="{{ $key }}">{{ $label }}（{{ $c }}）</button>
-    {{ end }}
+    <div class="scroll-x kind-segments">
+      <button type="button" class="seg seg--all is-active" data-seg-kind="all">すべて（<span class="seg-count" data-seg-count="all">{{ len $places }}</span>）</button>
+      {{ range $key, $label := site.Params.kindLabel }}
+        {{ $c := 0 }}{{ range $places }}{{ if eq .kind $key }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+        <button type="button" class="seg seg--{{ $key }}" data-seg-kind="{{ $key }}">{{ $label }}（<span class="seg-count" data-seg-count="{{ $key }}">{{ $c }}</span>）</button>
+      {{ end }}
+    </div>
   </div>
   <div class="scroll-x tag-quick">
     {{ range first 6 $tagStats }}<button type="button" class="quick-tag-btn" data-quick-tag="{{ .name }}">#{{ .name }}</button>{{ end }}
@@ -75,53 +84,66 @@
 <section class="search-layout">
   <aside class="search-side" id="filters">
     <div class="side-head"><span>絞り込み条件</span><span class="side-head-btns"><button type="button" id="reset-filters">すべてリセット</button><button type="button" id="sheet-close" aria-label="絞り込みを閉じる">×</button></span></div>
-    <div class="side-group">
-      <h4>対象エリア</h4>
-      <p class="side-hint">チェックした県だけに絞ります。未選択のときは全県が対象です。</p>
-      <div class="pref-checks">
-        {{ range $prefs }}
-          {{ $pref := . }}{{ $c := 0 }}
-          {{ range $places }}{{ if eq .area.prefecture $pref }}{{ $c = add $c 1 }}{{ end }}{{ end }}
-          <label class="pref-check"><input type="checkbox" data-pref="{{ $pref }}"><span>{{ $pref }}</span><span class="side-count">{{ $c }}</span></label>
+    <div class="side-body">
+      <div class="side-group">
+        <h4>対象エリア</h4>
+        <p class="side-hint">チェックした県だけに絞ります。未選択のときは全県が対象です。</p>
+        <div class="pref-checks">
+          {{ range $prefs }}
+            {{ $pref := . }}{{ $c := 0 }}
+            {{ range $places }}{{ if eq .area.prefecture $pref }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+            <label class="pref-check"><input type="checkbox" data-pref="{{ $pref }}"><span>{{ $pref }}</span><span class="side-count" data-pref-count="{{ $pref }}">{{ $c }}</span></label>
+          {{ end }}
+        </div>
+        {{ with $areaList }}
+        <div class="area-filter-block">
+          <div class="area-filter-head">
+            <span class="area-filter-label" id="area-filter-label">市・区で絞り込む</span>
+            <button type="button" class="side-more-btn" id="area-more-btn" hidden></button>
+          </div>
+          <div class="area-chips-filter" id="area-chips-filter">
+            {{ range $i, $a := . }}
+              <button type="button" class="toggle-chip" data-area="{{ $a.name }}" data-area-pref="{{ $a.pref }}" data-area-rank="{{ $i }}">{{ $a.name }}（<span class="chip-count">{{ $a.count }}</span>）</button>
+            {{ end }}
+          </div>
+        </div>
         {{ end }}
       </div>
-      {{ with $areaNames }}
-      <div class="area-chips-filter">
-        {{ range sort . }}
-          {{ $seg := . }}{{ $c := 0 }}
-          {{ range $places }}{{ if eq (index (split .area.label "・") 0) $seg }}{{ $c = add $c 1 }}{{ end }}{{ end }}
-          <button type="button" class="toggle-chip" data-area="{{ $seg }}">{{ $seg }}（{{ $c }}）</button>
-        {{ end }}
+      <div class="side-group">
+        <h4>カテゴリ</h4>
+        <div class="kind-radios">
+          <label class="kind-radio"><span><input type="radio" name="search-kind" data-kind="all" checked> すべて</span><span class="side-count" data-kind-count="all">{{ len $places }}</span></label>
+          {{ range $key, $label := site.Params.kindLabel }}
+            {{ $c := 0 }}{{ range $places }}{{ if eq .kind $key }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+            <label class="kind-radio"><span><input type="radio" name="search-kind" data-kind="{{ $key }}"> {{ $label }}</span><span class="side-count kind-count--{{ $key }}" data-kind-count="{{ $key }}">{{ $c }}</span></label>
+          {{ end }}
+        </div>
       </div>
-      {{ end }}
-    </div>
-    <div class="side-group">
-      <h4>カテゴリ</h4>
-      <div class="kind-radios">
-        <label class="kind-radio"><span><input type="radio" name="search-kind" data-kind="all" checked> すべて</span><span class="side-count">{{ len $places }}</span></label>
-        {{ range $key, $label := site.Params.kindLabel }}
-          {{ $c := 0 }}{{ range $places }}{{ if eq .kind $key }}{{ $c = add $c 1 }}{{ end }}{{ end }}
-          <label class="kind-radio"><span><input type="radio" name="search-kind" data-kind="{{ $key }}"> {{ $label }}</span><span class="side-count kind-count--{{ $key }}">{{ $c }}</span></label>
-        {{ end }}
+      <div class="side-group">
+        <h4>開催時期（イベント）</h4>
+        <div class="timing-btns">
+          <button type="button" class="timing-btn is-active" data-timing="none">指定なし</button>
+          <button type="button" class="timing-btn" data-timing="today">今日</button>
+          <button type="button" class="timing-btn" data-timing="weekend">今週末</button>
+          <button type="button" class="timing-btn" data-timing="month">今月中</button>
+        </div>
+        <p class="side-note">開催時期を選ぶと、自動的にイベントへ切り替わります。</p>
       </div>
-    </div>
-    <div class="side-group">
-      <h4>開催時期（イベント）</h4>
-      <div class="timing-btns">
-        <button type="button" class="timing-btn is-active" data-timing="none">指定なし</button>
-        <button type="button" class="timing-btn" data-timing="today">今日</button>
-        <button type="button" class="timing-btn" data-timing="weekend">今週末</button>
-        <button type="button" class="timing-btn" data-timing="month">今月中</button>
-      </div>
-      <p class="side-note">開催時期を選ぶと、イベントだけが対象になります。</p>
-    </div>
-    <div class="side-group">
-      <h4>タグで絞り込み</h4>
-      <div class="tag-chips-filter">
-        {{ range $tagStats }}<button type="button" class="toggle-chip" data-tag="{{ .name }}">{{ .name }}（{{ .count }}）</button>{{ end }}
+      <div class="side-group">
+        <div class="side-group-head">
+          <h4>タグで絞り込み</h4>
+          {{ if gt (len $tagStats) 12 }}
+          <button type="button" class="side-more-btn" id="tag-more-btn" data-total="{{ len $tagStats }}">すべてのタグ（+{{ sub (len $tagStats) 12 }}）</button>
+          {{ end }}
+        </div>
+        <div class="tag-chips-filter" id="tag-chips-filter">
+          {{ range $i, $t := $tagStats }}<button type="button" class="toggle-chip{{ if ge $i 12 }} is-collapsed-tag{{ end }}" data-tag="{{ $t.name }}" data-tag-rank="{{ $i }}">{{ $t.name }}（<span class="chip-count">{{ $t.count }}</span>）</button>{{ end }}
+        </div>
       </div>
     </div>
-    <button type="button" class="sheet-apply" id="sheet-apply">この条件で見る</button>
+    <div class="side-foot">
+      <button type="button" class="sheet-apply" id="sheet-apply">この条件で見る</button>
+    </div>
   </aside>
 
   <div class="search-results">
@@ -145,6 +167,9 @@
       {{ range sort $places "added_at" "desc" }}{{ partial "place-card.html" . }}{{ end }}
     </div>
     <p class="empty-note" id="search-empty" hidden>該当する情報はまだありません。条件を変えてお試しください。</p>
+    <div class="results-more-wrap" id="results-more-wrap" hidden>
+      <button type="button" class="results-more-btn" id="results-more-btn">もっと見る</button>
+    </div>
     <p class="results-foot" id="results-foot"></p>
     {{ partial "ad-unit.html" "9785561411" }}
   </div>
