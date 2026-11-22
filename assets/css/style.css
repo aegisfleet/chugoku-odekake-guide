@@ -120,6 +120,7 @@
 :root[data-theme="light"] { color-scheme: light; }
 
 * { box-sizing: border-box; }
+html, body { overflow-x: clip; }
 body { font-family: "Plus Jakarta Sans", "Hiragino Sans", "Noto Sans JP", sans-serif; margin: 0; background: var(--bg); color: var(--text); }
 a { color: var(--link); }
 h1, h2, h3 { letter-spacing: -.01em; }
