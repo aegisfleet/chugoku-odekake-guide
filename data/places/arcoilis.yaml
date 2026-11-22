@@ -1,0 +1,42 @@
+slug: arcoilis
+name: アルコイリス
+kind: shop
+tags: [カフェ, シフォンケーキ, 焼き菓子, テイクアウト]
+area: { prefecture: 広島県, label: 広島市安佐南区・緑井 }
+summary: 広島市安佐南区緑井のシフォンケーキ専門店。店名はスペイン語で「虹」の意味。県北の養鶏農家の卵を使い、膨張剤や保存料を使わずに焼くシフォンケーキは40種類以上の中から日替わりで並び、一番人気は手作りカスタードを生地に練り込んだフレンチカスタード。アンティーク家具に囲まれた店内でイートインもでき、ほぼ全品テイクアウトできる。JR緑井駅から徒歩約3分。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DfeGNqBRUhU/"
+  author: "@arcoilis.cafe"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ARCOILIS+アルコイリス+広島市安佐南区緑井4-24-1"
+featured: false
+status: active
+added_at: 2026-11-22
+
+official:
+  instagram: "@arcoilis.cafe"
+  instagram_url: "https://www.instagram.com/arcoilis.cafe/"
+  website: "https://arcoilis.stores.jp/"
+  website_label: "公式サイト"
+
+highlights: [フレンチカスタード, シフォンホイップ, 米粉クッキー, 日替わりシフォンケーキ, ハンドドリップコーヒー]
+
+related_posts:
+  captured_at: 2026-11-22
+  found_count: 11
+  items:
+    - { post_url: "https://www.instagram.com/reel/DfeGNqBRUhU/", author: "@arcoilis.cafe", posted_at: 2026-11-08, likes: 562, note: "その日のシフォンのラインナップを紹介する公式リール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DOXruPMALRi/", author: "@arcoilis.cafe", posted_at: 2025-09-09, likes: 90, note: "お店の様子を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DOAd9crgBle/", author: "@arcoilis.cafe", posted_at: 2025-08-31, likes: 90, note: "お店の様子を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DP75aevAPDR/", author: "@arcoilis.cafe", posted_at: 2025-10-18, likes: 87, note: "お店の様子を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/Dcpx4fSRZ0p/", author: "@arcoilis.cafe", posted_at: 2026-08-30, likes: 80, note: "お店の様子を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DfeYY_yoQxy/", author: "@yuki_gourmet_hiroshima", posted_at: 2026-11-08, likes: 62, note: "訪問の様子を紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/DSeiE4UES3i/", author: "@arcoilis.cafe", posted_at: 2025-12-20, likes: 61, note: "お店の様子を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DFzmkhfyMAz/", author: "@hiroshima_.rion", posted_at: 2025-02-08, likes: 56, note: "訪問の様子を紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/Dc7soJzRdwm/", author: "@arcoilis.cafe", posted_at: 2026-09-06, likes: 53, note: "お店の様子を紹介する公式リール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-22
+  note: "Googleマップにピンあり（広島市安佐南区緑井4-24-1、評価4.2・レビュー65件、営業中）。公式サイト（STORES）と公式Instagramの住所・定休日（月・木）が一致。公式Instagramの2026-11-07のリールで営業継続を確認。緑井駅から徒歩約3分の単独店。ユーザー依頼（2026-11-22、Instagramリール指定）で追加"
