@@ -1,0 +1,43 @@
+slug: crunch-cafe-izumo
+name: crunch cafe
+kind: shop
+tags: [カフェ, 珈琲専門店, 深煎り, グリルサンド, 出雲大社]
+area: { prefecture: 島根県, label: 出雲市・大社町 }
+summary: 出雲大社の神門通りから少し入った場所にある深煎り珈琲専門店。2025年2月にオープンし、グリルサンドと深煎りコーヒーが看板。クッキーを選んで作るクッキーアイスも人気。カウンター4席と奥のテーブル席10席の小さな店内で、夜は予約制の営業もある。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DF4HnCnyfce/"
+  author: "@adaken3"
+maps_url: "https://www.google.com/maps/search/?api=1&query=crunch+cafe+出雲大社"
+featured: false
+status: active
+added_at: 2026-11-22
+
+official:
+  instagram: "@_crunchcafe_"
+  instagram_url: "https://www.instagram.com/_crunchcafe_/"
+
+highlights: [深煎りコーヒー, グリルサンド, クッキーアイス]
+
+related_posts:
+  captured_at: 2026-11-22
+  found_count: 27
+  items:
+    - { post_url: "https://www.instagram.com/p/DF4HnCnyfce/", author: "@adaken3", posted_at: 2025-02-09, likes: 5, note: "オープン直後の来訪者による外観とコーヒー・焼き菓子の紹介（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DHddIaxJcrv/", author: "@_crunchcafe_", posted_at: 2025-03-21, likes: 57, note: "公式: 夜の外観と看板、のれん" }
+    - { post_url: "https://www.instagram.com/p/DOR4cLLE4Cs/", author: "@_crunchcafe_", posted_at: 2025-09-06, likes: 54, note: "公式: アイスコーヒーとミルク・ゼリー入りドリンク" }
+    - { post_url: "https://www.instagram.com/p/DbM0vHFJut3/", author: "@_crunchcafe_", posted_at: 2026-07-25, likes: 54, note: "公式: 6通りの組み合わせで作るクッキーアイス" }
+    - { post_url: "https://www.instagram.com/p/DIv3DcyJRro/", author: "@_crunchcafe_", posted_at: 2025-04-22, likes: 53, note: "公式: レモン添えのアイスコーヒーと店頭ののぼり" }
+    - { post_url: "https://www.instagram.com/p/DWTj_wZiRK_/", author: "@_crunchcafe_", posted_at: 2025-03-25, likes: 51, note: "公式: コーヒーバッグ2種" }
+    - { post_url: "https://www.instagram.com/p/DFmWREPzelO/", author: "@_crunchcafe_", posted_at: 2025-02-03, likes: 49, note: "公式: ブラックコーヒーとグリルサンド" }
+    - { post_url: "https://www.instagram.com/reel/DIEKaChpk4b/", author: "@_crunchcafe_", posted_at: 2025-04-05, likes: 48, note: "公式: ミルクを注ぐアイスコーヒー" }
+    - { post_url: "https://www.instagram.com/p/DPYm_k0CeqM/", author: "@_crunchcafe_", posted_at: 2025-10-04, likes: 46, note: "公式: フォームのせドリンク" }
+
+notices:
+  - { date: "2026-11-22", text: "定休日は不定休のため、訪問前に公式Instagramの営業カレンダーで確認してください（na-na.mediaの取材記事と公式アカウントの営業カレンダー投稿による）。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-22
+  note: "Googleマップのピン（place_id 1908819583110992、営業中）と住所（出雲市大社町杵築南872-2）を確認。公式アカウントが2026年10月・11月の営業カレンダーを投稿しており営業継続を確認。夜営業は前日までの予約必須。出典投稿の反応は小さいが、公式アカウントの投稿を中心に関連投稿27件を確認"

@@ -1,0 +1,40 @@
+slug: haruni-kurashiki
+name: HARUNI
+kind: shop
+tags: [カフェ, ケーキ, タルト, 紅茶, コーヒー]
+area: { prefecture: 岡山県, label: 倉敷市・新田 }
+summary: 2号線沿いのニトリの反対側、バイパスから少し入った裏手の道にある白壁の紅茶・コーヒー・ケーキの店。2017年オープン。ソファ席やテーブル席、一人用の席があり、一人でもゆったり過ごせる。本日のケーキやタルト、スコーンとラテアートのカフェラテが人気。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DHX8oqayEnP/"
+  author: "@risa_foodgram"
+maps_url: "https://www.google.com/maps/search/?api=1&query=HARUNI+倉敷市新田"
+featured: false
+status: active
+added_at: 2026-11-22
+
+official:
+  instagram: "@haruni_teacoffeecake"
+  instagram_url: "https://instagram.com/haruni_teacoffeecake"
+
+highlights: [本日のケーキとタルト, ラテアートのカフェラテ, 白壁の外観とゆったりした席]
+
+related_posts:
+  captured_at: 2026-11-22
+  found_count: 17
+  items:
+    - { post_url: "https://www.instagram.com/p/DZ6IlDGk545/", author: "@nyan.fumi", posted_at: 2026-06-23, likes: 340, note: "窓辺の席と本日のケーキを写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DON5rjdklUc/", author: "@okayama_gourmet", posted_at: 2025-09-05, likes: 260, note: "ラテアートとスコーンを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DIQkfGKBuws/", author: "@cafelab83", posted_at: 2025-04-10, likes: 180, note: "苺タルトとアイスティーを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DHX8oqayEnP/", author: "@risa_foodgram", posted_at: 2025-03-19, likes: 162, note: "ケーキとラテアートを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DFE2b0mP7_w/", author: "@pepe_sanae", posted_at: 2025-01-21, likes: 150, note: "ラテアートとケーキを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DLEr8QxSOtu/", author: "@100cafe", posted_at: 2025-06-19, likes: 140, note: "白い建物の外観と木のテーブル席を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DJf5C2VBdtz/", author: "@cafelab83", posted_at: 2025-05-11, likes: 130, note: "焼きタルト2種とクリームを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DFSQbS3hh4l/", author: "@cafelab83", posted_at: 2025-01-26, likes: 87, note: "ケーキ2種とコーヒーを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DILC-1PBalb/", author: "@cafelab83", posted_at: 2025-04-08, likes: 79, note: "フルーツタルトと花を紹介するカルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-22
+  note: "Googleマップのピン（place_id 1770470993736319、営業中）と住所（倉敷市新田2943-1）を確認。営業は火・水・木のみで、出典投稿キャプションとplacesの曜日表示が一致。価格は投稿時点のもの"

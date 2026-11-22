@@ -1,0 +1,46 @@
+slug: tokiwa-fantasia-2026
+name: TOKIWAファンタジア2026
+kind: event
+tags: [イルミネーション, 冬, 夜, 家族, 遊園地]
+area: { prefecture: 山口県, label: 宇部市・ときわ公園 }
+summary: ときわ公園の遊園地で開かれる19回目のイルミネーション。約24万個のLEDで彩られ、今年のテーマは「アミューズメント・イルミネーション」。ルーレットを回すと色が変わるツリーや三方向に広がる光のトンネル、園児のイラストによるランタンのタワーなど、遊べる仕掛けと写真スポットが多い。同時開催の「TOKIWAナイトミュージアム2026」も楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/Df4IsxQBHLm/"
+  author: "@moto.i_31"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ときわ遊園地+宇部市"
+featured: false
+status: active
+added_at: 2026-11-22
+period: { start: 2026-11-22, end: 2027-01-11 }
+
+official:
+  instagram: "@tokiwafantasia_2026"
+  instagram_url: "https://www.instagram.com/tokiwafantasia_2026/"
+  website: "https://tokiwa-fantasia.jp/"
+  website_label: 公式サイト
+
+highlights: [約24万個のLED, 色が変わるツリーの仕掛け, 三方向に広がる光のトンネル]
+
+related_posts:
+  captured_at: 2026-11-22
+  found_count: 48
+  items:
+    - { post_url: "https://www.instagram.com/reel/Df4IsxQBHLm/", author: "@moto.i_31", posted_at: 2026-11-18, likes: 800, note: "夜の園内を巡るリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/Df4Y5PXBNQB/", author: "@yamaneminami", posted_at: 2026-11-18, likes: 670, note: "夜の園内を巡るツアー動画" }
+    - { post_url: "https://www.instagram.com/reel/Df4JRMuhqDj/", author: "@yamaguchi_navi", posted_at: 2026-11-18, likes: 550, note: "ファンタジアとナイトミュージアムを紹介する動画" }
+    - { post_url: "https://www.instagram.com/reel/Df9SLmYMcKK/", author: "@yamaguchi_tokotoko", posted_at: 2026-11-20, likes: 460, note: "19回目の開催と山口トップクラスの規模をうたう動画" }
+    - { post_url: "https://www.instagram.com/reel/Df7JaEwyp_i/", author: "@kanetou_nozomi", posted_at: 2026-11-19, likes: 390, note: "公式アンバサダー本人のリール" }
+    - { post_url: "https://www.instagram.com/p/Df6B9MZE2N2/", author: "@yamaguchi.charm.guide", posted_at: 2026-11-19, likes: 340, note: "日程と見どころを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Df64bjcgRy9/", author: "@yamaneminami", posted_at: 2026-11-19, likes: 290, note: "夜の園内の様子を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Df6Dsd2H6zn/", author: "@ube_kanko", posted_at: 2026-11-19, likes: 260, note: "宇部観光コンベンション協会の紹介カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/Df9N-DazUqh/", author: "@yamaguchi_spot", posted_at: 2026-11-20, likes: 240, note: "女性が光の演出を巡る動画" }
+
+notices:
+  - { date: "2026-11-22", text: "12月31日・1月1日は休演です（宇部市プレスリリースによる）。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-22
+  note: "Googleマップのときわ遊園地のピン（place_id 467541616126899、営業中）と住所（宇部市則貞3-4-1）を確認。期間2026-11-22〜2027-01-11は宇部市プレスリリースで確認。ナイトミュージアムは開催日が金・土・日・祝と12月24日のみでファンタジアと異なるため、主役はファンタジアに絞った。期間を「2027年1月5日まで」とする投稿は公式発表と食い違うため関連投稿から除外"

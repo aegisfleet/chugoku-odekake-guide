@@ -1,0 +1,34 @@
+username: hiroshima_tuko
+name: "つこたび🍋 広島No.1のおでかけ情報"
+platform: instagram
+url: https://www.instagram.com/hiroshima_tuko/
+verified: true
+areas:
+  - 広島県
+  - 島根県
+  - 岡山県
+  - 山口県
+genres:
+  - グルメ
+  - 観光スポット
+  - 宿泊
+  - イベント
+note: "広島を中心に中国地方のおでかけ・グルメ・宿泊情報を発信する広島の地域情報アカウント。ホテルとグルメとスポットを組み合わせた紹介が中心。"
+followers: 72382
+posts: 456
+captured_at: "2026-11-22"
+popular_posts:
+  captured_at: "2026-11-22"
+  items:
+    - post_url: https://www.instagram.com/reel/Des7K8DPGxK/
+      likes: 11960
+      posted_at: "2026-10-19"
+      note: "呉のピザ店とセブン-イレブンのコラボ商品を紹介するリール"
+    - post_url: https://www.instagram.com/reel/DejDjWmRwOA/
+      likes: 4189
+      posted_at: "2026-10-16"
+      note: "福山のドッグカフェを紹介するリール"
+    - post_url: https://www.instagram.com/reel/DfHGoTFxGwt/
+      likes: 1715
+      posted_at: "2026-10-30"
+      note: "白木街道沿いのパン屋を紹介するリール"

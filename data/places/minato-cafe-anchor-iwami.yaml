@@ -1,0 +1,36 @@
+slug: minato-cafe-anchor-iwami
+name: 港カフェ アンカー
+kind: shop
+tags: [カフェ, ハンバーガー, ホタルイカ, 浦富海岸, 遊覧船]
+area: { prefecture: 鳥取県, label: 岩美町・浦富海岸 }
+summary: 浦富海岸の遊覧船乗り場の隣にある海辺のカフェ。看板は黒いバンズのホタルイカバーガーで、鳥取砂丘らっきょうのタルタルソースを合わせる。岩美の海の色をイメージした「岩美ブルーサイダー」や地元精肉店とコラボしたミンチカツバーガー、海老のビスクもある。遊覧船の待ち時間にも利用できる立地。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DJtMdeqxXWV/"
+  author: "@insta_tottori"
+maps_url: "https://www.google.com/maps/search/?api=1&query=港カフェ+アンカー+岩美町"
+featured: false
+status: active
+added_at: 2026-11-22
+
+official:
+  website: "https://minatocafe.com/"
+  website_label: 公式サイト
+
+highlights: [黒いバンズのホタルイカバーガー, 岩美ブルーサイダー, ミンチカツバーガー]
+
+related_posts:
+  captured_at: 2026-11-22
+  found_count: 5
+  items:
+    - { post_url: "https://www.instagram.com/p/DJtMdeqxXWV/", author: "@insta_tottori", posted_at: 2025-05-16, likes: 440, note: "岩美ブルーサイダーを紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DWBLjx6EVkO/", author: "@insta_tottori", posted_at: 2026-03-18, likes: 340, note: "新メニュー「麒麟のまちスペシャルセット」を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DcBFTU3E7G1/", author: "@tottori.gc_k3588", posted_at: 2026-08-14, likes: 130, note: "らっきょうタルタルチーズトーストを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DMSJdw0Bft3/", author: "@tani_tottori_gourmet", posted_at: 2025-07-19, likes: 72, note: "ホタルイカバーガーと岩美ブルーサイダーを紹介する動画" }
+    - { post_url: "https://www.instagram.com/p/DeVpOVHEpJf/", author: "@soup_tsk8", posted_at: 2026-10-10, likes: 37, note: "ホタルイカバーガーとエビのビスクを紹介するカルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-22
+  note: "Googleマップのピン（place_id 470894331996117、営業中）と住所（岩美町大谷2182）を確認。2026-03-18の投稿の3枚目には宮城県松島の別店舗の写真が混ざっている可能性があるため、紹介文では外観に触れていない。冬季休業の情報は未確認"

@@ -1,0 +1,37 @@
+slug: shukkeien-momiji-matsuri-2026
+name: 縮景園もみじまつり
+kind: event
+tags: [紅葉, ライトアップ, 日本庭園, 夜]
+area: { prefecture: 広島県, label: 広島市中区・上幟町 }
+summary: 広島市中心部の池泉回遊式の大名庭園で開かれる紅葉まつり。モミジやケヤキなど約140本が色づき、池の水面に映る紅葉が見どころ。夜はライトアップされ、和風カフェ「にわかふぇ」も出店する。11月28日・29日はキッチンカーの「おにわまつり」も開かれる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/Df7DalwR3NO/"
+  author: "@hiroshima_pref_art_museum"
+maps_url: "https://www.google.com/maps/search/?api=1&query=縮景園+広島市"
+featured: false
+status: active
+added_at: 2026-11-22
+period: { start: 2026-11-20, end: 2026-11-29 }
+
+official:
+  instagram: "@hiroshima_pref_art_museum"
+  instagram_url: "https://www.instagram.com/hiroshima_pref_art_museum/"
+  website: "https://shukkeien.jp/"
+  website_label: 公式サイト
+
+highlights: [池の水面に映る紅葉, 約140本のモミジとケヤキ, 和風カフェ「にわかふぇ」]
+
+related_posts:
+  captured_at: 2026-11-22
+  found_count: 3
+  items:
+    - { post_url: "https://www.instagram.com/p/Df7DalwR3NO/", author: "@hiroshima_pref_art_museum", posted_at: 2026-11-19, likes: 590, note: "紅葉ライトアップの開幕を伝える公式の告知カルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/Df9osHlHxyG/", author: "@hiroshima_pref_art_museum", posted_at: 2026-11-20, likes: 110, note: "英文併記のライトアップ告知カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DfzF7KSgWBH/", author: "@hiroshimapacifichotel", posted_at: 2026-11-16, likes: 6, note: "ホテルからの紅葉まつり告知" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-22
+  note: "Googleマップの縮景園のピン（place_id 624484222230911、営業中）と公式情報で住所が一致。期間2026-11-20〜2026-11-29とライトアップは施設公式Instagramと広テレNEWS・EventBankで確認。会期が11月29日までと短いため、掲載日時点での訪問を促す趣旨で掲載"

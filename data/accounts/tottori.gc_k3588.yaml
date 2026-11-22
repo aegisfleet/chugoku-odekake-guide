@@ -9,12 +9,16 @@ genres:
   - グルメ
   - カフェ
 note: "鳥取の地元民おすすめの飲食店を、新店から穴場・名店まで紹介する鳥取グルメのアカウント。ときどき兵庫北部や岡山北部のグルメも扱う。"
-followers: 10122
-posts: 2372
-captured_at: "2026-11-19"
+followers: 10144
+posts: 2373
+captured_at: "2026-11-22"
 popular_posts:
-  captured_at: "2026-11-17"
+  captured_at: "2026-11-22"
   items:
+    - post_url: https://www.instagram.com/reel/Dd56DvezXDE/
+      likes: 634
+      posted_at: "2026-09-30"
+      note: "米子市東福原に新規オープンしたサンドイッチ店を紹介するリール"
     - post_url: https://www.instagram.com/reel/DfRo8phzHul/
       likes: 428
       posted_at: "2026-11-03"
@@ -23,7 +27,3 @@ popular_posts:
       likes: 425
       posted_at: "2026-11-05"
       note: "鳥取駅周辺の新店サウナのプレオープンを紹介するリール"
-    - post_url: https://www.instagram.com/p/DfUCCVok4II/
-      likes: 356
-      posted_at: "2026-11-04"
-      note: "兵庫・香美町のラーメン店を紹介する投稿"
