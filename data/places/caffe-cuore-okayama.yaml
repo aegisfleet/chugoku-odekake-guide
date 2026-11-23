@@ -1,0 +1,42 @@
+slug: caffe-cuore-okayama
+name: 自然料理とワイン CUORE
+kind: shop
+tags: [イタリアン, 自然料理, ワイン, おまかせコース, 記念日]
+area: { prefecture: 岡山県, label: 岡山市北区・平和町 }
+summary: 西川緑道公園沿い、パークサイド3階にある完全予約制のイタリアン。農家直送のオーガニック野菜や地元の食材を使ったおまかせコースに、イタリアワインのペアリングを合わせる。大きな窓から緑道の木々を望む席で、誕生日や記念日の食事にも選ばれている。2025年3月に南区から平和町へ移転。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DcN0Tj7BMrL/"
+  author: "@food_okayama"
+maps_url: "https://www.google.com/maps/search/?api=1&query=自然料理とワイン+CUORE+岡山市北区平和町7-2"
+featured: false
+status: active
+added_at: 2026-11-23
+
+official:
+  instagram: "@cuore0301"
+  instagram_url: "https://www.instagram.com/cuore0301/"
+  website: "https://kita-okayama.mypl.net/shop/00000361869/"
+  website_label: まいぷれ
+
+highlights: [おまかせコースとイタリアワインのペアリング, 地元食材の前菜と手作りパスタ, 西川緑道公園を望む窓際の席]
+
+related_posts:
+  captured_at: 2026-11-23
+  found_count: 35
+  items:
+    - { post_url: "https://www.instagram.com/reel/DcN0Tj7BMrL/", author: "@food_okayama", posted_at: 2026-08-19, likes: 680, note: "おまかせコースとワインペアリングを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DRtVr8CE6Df/", author: "@mari.s.w.11", posted_at: 2025-12-01, likes: 420, note: "ステーキとイカスミパスタ、誕生日の乾杯を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DfdLj6TyXBM/", author: "@okayamafood77", posted_at: 2026-11-07, likes: 320, note: "ディナーコースを紹介する夜のリール" }
+    - { post_url: "https://www.instagram.com/p/DHIg9_4Sj0J/", author: "@anjuchan0611", posted_at: 2025-03-13, likes: 250, note: "前菜・パスタ2種・メイン・デザートのフルコースのカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DFH7PxnS1Ah/", author: "@cuore0301", posted_at: 2025-01-22, likes: 210, note: "公式: 平和町への移転を告知する画像" }
+    - { post_url: "https://www.instagram.com/p/DJbNKlpS6kJ/", author: "@anjuchan0611", posted_at: 2025-05-09, likes: 190, note: "前菜・パスタ3種・魚と肉・パンナコッタのカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DZHj4jelECx/", author: "@tjokayama", posted_at: 2026-06-03, likes: 150, note: "ラムチョップと魚料理、店内の様子を写したカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DfQLO2jE41w/", author: "@k25075445", posted_at: 2026-11-02, likes: 100, note: "ディナーコースと誕生日デザートのカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DJyybeDygEE/", author: "@misak0335", posted_at: 2025-05-18, likes: 100, note: "地元食材のコースと誕生日プレートのリール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-23
+  note: "Googleマップのピン（place_id 856422787306379、営業中）と住所（岡山市北区平和町7-2 パークサイド3階）を確認。完全予約制（前日までの予約必須）で、ランチ・ディナーともおまかせコースのみ。2025年3月に南区から平和町へ移転しており、移転前の住所が載る古い情報源と取り違えないこと"

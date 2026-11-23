@@ -1,0 +1,38 @@
+slug: nonohana-cafe-kitahiroshima
+name: 野の花カフェ
+kind: shop
+tags: [カフェ, ランチ, 地元野菜, 森の中, テラス席]
+area: { prefecture: 広島県, label: 北広島町・都志見 }
+summary: 龍頭山のふもと、森に囲まれた木造の隠れ家カフェ。地元の旬野菜をたっぷり使ったランチは小鉢の多い和の定食で、木のデッキ席から木々を眺めながらゆっくり過ごせる。シフォンケーキなどの手作りスイーツも人気。金・土のみの営業で、ランチは予約が必須。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DMfPWBJTyxn/"
+  author: "@munipan_cafelife"
+maps_url: "https://www.google.com/maps/search/?api=1&query=野の花カフェ+北広島町都志見"
+featured: false
+status: active
+added_at: 2026-11-23
+
+highlights: [地元野菜たっぷりのランチ定食, 木のデッキ席と森の眺め, 手作りシフォンケーキ]
+
+related_posts:
+  captured_at: 2026-11-23
+  found_count: 8
+  items:
+    - { post_url: "https://www.instagram.com/reel/DMfPWBJTyxn/", author: "@munipan_cafelife", posted_at: 2025-07-24, likes: 520, note: "森の中の隠れ家ランチとシフォンケーキのリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DHnfddez03_/", author: "@munipan_cafelife", posted_at: 2025-03-25, likes: 630, note: "龍頭山のふもとの木造カフェと手作り料理を紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/DJq5IQKv--M/", author: "@hiroshima_tuko", posted_at: 2025-05-15, likes: 510, note: "トトロの石像とテラス席、コーヒーとケーキのリール" }
+    - { post_url: "https://www.instagram.com/reel/DRZJnKWEnxV/", author: "@yurpon", posted_at: 2025-11-23, likes: 210, note: "紅葉の林道と野菜たっぷりランチのリール" }
+    - { post_url: "https://www.instagram.com/p/DNt3fIYZpzp/", author: "@_96_02gvk_", posted_at: 2025-08-23, likes: 54, note: "ランチ定食と店内・入口のカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DNF6h0hzkty/", author: "@ayumi_nosu", posted_at: 2025-08-08, likes: 45, note: "ランチ定食と木造の店内のリール" }
+    - { post_url: "https://www.instagram.com/p/DKTGFjbzDQh/", author: "@kiezou8888", posted_at: 2025-05-31, likes: 31, note: "ランチ定食と庭の石像のカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DRoY-WSk88o/", author: "@gurumemama0907", posted_at: 2025-11-29, likes: 24, note: "ランチの看板と冬期休業の案内を写したリール" }
+
+notices:
+  - { date: "2026-11-23", text: "店頭の看板（2025-11-29の来訪投稿に写る）には11月30日〜5月5日の休業案内があり、例年冬季は長期休業があります。訪問前に最新の営業情報をご確認ください。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-23
+  note: "Googleマップのピン（place_id 1006547060994399、営業中）と住所（北広島町都志見733-99）を確認。金・土のみ営業（10:30〜15:00）でランチ予約必須。同名の別施設「野の花館」（広島市安佐北区）とは別物。出典キャプションの住所「10733-99」は誤記の疑いがあり、正しくは733-99"

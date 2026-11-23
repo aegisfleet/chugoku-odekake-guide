@@ -1,0 +1,37 @@
+slug: nagato-yumoto-noel-2026
+name: 長門湯本ノエル2026
+kind: event
+tags: [イルミネーション, クリスマス, 温泉街]
+area: { prefecture: 山口県, label: 長門市・湯本温泉 }
+summary: 約600年の歴史をもつ長門湯本温泉の温泉街で開かれるクリスマスイベント。恩湯広場に立つ高さ6メートルの本物のもみの木のツリーを中心に、期間中毎晩、日没から22時まで光の演出が行われる。週末の夜は宿や店で生演奏があり、土曜の夜には焚き火も。ポップアップストアや屋台・キッチンカーも並び、湯あがりの散策が楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/Dftca_JH_Bl/"
+  author: "@seiya__0202"
+maps_url: "https://www.google.com/maps/search/?api=1&query=長門湯本温泉+恩湯広場"
+featured: false
+status: active
+added_at: 2026-11-23
+period: { start: 2026-12-04, end: 2026-12-25 }
+
+official:
+  instagram: "@yumoto.mirai"
+  instagram_url: "https://www.instagram.com/yumoto.mirai/"
+  website: "https://yumotoonsen.com/noel/"
+  website_label: 公式サイト
+
+highlights: [高さ6メートルの本物のもみの木のツリー, 毎晩の光の演出（日没〜22:00）, 週末の夜の生演奏, 毎週土曜の焚き火, ポップアップストアと屋台・キッチンカー]
+
+related_posts:
+  captured_at: 2026-11-23
+  found_count: 6
+  items:
+    - { post_url: "https://www.instagram.com/p/Dftca_JH_Bl/", author: "@seiya__0202", posted_at: 2026-11-14, likes: 190, note: "告知ポスターと温泉街マップのカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/Dfj2ziHhz8m/", author: "@yumoto.mirai", posted_at: 2026-11-10, likes: 250, note: "公式: ツリー・出演者・ポップアップ・屋台を紹介する告知リール" }
+    - { post_url: "https://www.instagram.com/p/DfwntUbgQKf/", author: "@chiibuta_trip", posted_at: 2026-11-15, likes: 59, note: "告知フライヤーのカルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-23
+  note: "開催は2026-12-04からで、調査日（2026-11-23）時点では開催前。期間2026-12-04〜2026-12-25は公式サイトと長門市観光サイトで確認済み。2025年版は「うたあかりノエル」という別名称だったため、関連投稿の選別では2025年版を除外。found_count 6件にはFacebookの告知2件を含む。Googleマップのピン（長門湯本温泉、place_id 713752024069149、営業中）と住所（深川湯本2265）を確認"

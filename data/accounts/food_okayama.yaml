@@ -1,0 +1,29 @@
+username: food_okayama
+name: "オカヤマフード／岡山グルメ"
+platform: instagram
+url: https://www.instagram.com/food_okayama/
+verified: true
+areas:
+  - 岡山県
+genres:
+  - グルメ
+  - カフェ
+note: "岡山のグルメ情報を発信する岡山グルメ専門のアカウント。カフェや飲食店の紹介を継続的に投稿する。"
+followers: 101602
+posts: 2321
+captured_at: "2026-11-23"
+popular_posts:
+  captured_at: "2026-11-23"
+  items:
+    - post_url: https://www.instagram.com/reel/DMKbG2HS6aw/
+      likes: 983
+      posted_at: "2025-07-16"
+      note: "津山のサーモン専門店を紹介するリール"
+    - post_url: https://www.instagram.com/reel/DN5JOtBj0VL/
+      likes: 949
+      posted_at: "2025-08-28"
+      note: "岡山駅近くの隠れ家お好み焼き店を紹介するリール"
+    - post_url: https://www.instagram.com/p/DOk6yo5k93t/
+      likes: 926
+      posted_at: "2025-09-14"
+      note: "岡山駅近くの居酒屋の料理を紹介するカルーセル"

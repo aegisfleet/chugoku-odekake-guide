@@ -1,0 +1,40 @@
+slug: shokudo-pub-ahiru-tottori
+name: "食堂&PUB あひる"
+kind: shop
+tags: [食堂, パブ, 鳥取牛丼, ランチ]
+area: { prefecture: 鳥取県, label: 鳥取市・今町 }
+summary: 鳥取駅から徒歩約5分の角地、ゲストハウス「Y Pub&Hostel」の1階にある食堂＆パブ。看板の鳥取牛丼は鳥取牛をフライパンで香ばしく焼き上げた一杯で、酒津の塩さば定食や肉ニラうどんなど地元食材のメニューも並ぶ。昼はランチ、夜はお酒とおつまみを楽しめ、店内の卓球台やアヒルのマスコットが旅人と地元の人の交流を生む、気軽な立ち寄りスポット。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DYTF4kYkkmT/"
+  author: "@tottorizumu"
+maps_url: "https://www.google.com/maps/search/?api=1&query=食堂%26PUB+あひる"
+featured: false
+status: active
+added_at: 2026-11-23
+
+official:
+  instagram: "@ahiru.tottori"
+  instagram_url: "https://www.instagram.com/ahiru.tottori/"
+
+highlights: [鳥取牛丼, 酒津の塩さば定食, 肉ニラうどん]
+
+related_posts:
+  captured_at: 2026-11-23
+  found_count: 15
+  items:
+    - { post_url: "https://www.instagram.com/p/DYTF4kYkkmT/", author: "@tottorizumu", posted_at: 2026-05-14, likes: 550, note: "鳥取牛丼や塩さば定食など看板メニューを紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DfouUIDgN8u/", author: "@tottori_tabesyo", posted_at: 2026-11-12, likes: 310, note: "店内の動画ツアーと牛丼・塩さば定食の紹介" }
+    - { post_url: "https://www.instagram.com/p/DfowdEwnTIN/", author: "@tottori_tabesyo", posted_at: 2026-11-12, likes: 140, note: "牛丼と塩さば定食の実食レポート" }
+    - { post_url: "https://www.instagram.com/p/DXY9lOPEeZM/", author: "@tottori_tabesyo", posted_at: 2026-04-21, likes: 130, note: "開業直後の訪問レポートとメニュー・店内の紹介" }
+    - { post_url: "https://www.instagram.com/p/DXg591GE_yv/", author: "@masa_camera_tottori", posted_at: 2026-04-24, likes: 96, note: "牛丼と味噌汁、店の外観を紹介する投稿" }
+    - { post_url: "https://www.instagram.com/p/DfoCkqymqWh/", author: "@shokuparatottori2023", posted_at: 2026-11-12, likes: 60, note: "牛丼と塩さば定食を紹介する県公式の投稿" }
+    - { post_url: "https://www.instagram.com/p/DcoIbdNASSu/", author: "@charm_tottori", posted_at: 2026-08-29, likes: 52, note: "牛丼とメニュー、店内の様子を紹介する投稿" }
+    - { post_url: "https://www.instagram.com/p/DfpBGGjkx7a/", author: "@tottori_sand_art", posted_at: 2026-11-12, likes: 46, note: "店内とメニュー、卓球台を紹介する投稿" }
+    - { post_url: "https://www.instagram.com/p/DZM3R0gAS0p/", author: "@ncn_pitto", posted_at: 2026-06-05, likes: 17, note: "牛丼と店内・外観を紹介する投稿" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-23
+  note: "Googleマップのピン（place_id 1523836476047809、営業中）と住所（鳥取市今町2-201「Y Pub&Hostel」1F）を確認。2026-04-19オープン。Instagramの場所タグにはホステル側の「Y Pub and Hostel」が付く投稿もあるが、店舗自体のピンを別途確認済み。営業時間はTORiTABEではランチ11:00〜14:00／14:00〜21:00、Instagramの場所情報では11:00〜21:00通しと表記が分かれるためサイト側では保持しない"

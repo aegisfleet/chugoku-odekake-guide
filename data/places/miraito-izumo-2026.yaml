@@ -1,0 +1,38 @@
+slug: miraito-izumo-2026
+name: "ミライトいずも2026 〜REALIFE〜"
+kind: event
+tags: [イルミネーション, 冬, 無料]
+area: { prefecture: 島根県, label: 出雲市・今市町 }
+summary: 出雲市役所南側のだんだん広場を大型ツリーや光のトンネルアーチ、動物のオブジェで彩る冬のイルミネーション。2026年のテーマは「REALIFE」。出雲商工会議所青年部や地元高校生らが手がけ、17時から22時まで点灯する。観覧無料で、出雲市駅から歩いて行ける冬の夜のお出かけスポット。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DgCbwopyBKc/"
+  author: "@shimane__family_guide"
+maps_url: "https://www.google.com/maps/search/?api=1&query=出雲だんだん広場"
+featured: false
+status: active
+added_at: 2026-11-23
+period: { start: 2026-11-21, end: 2027-01-22 }
+
+official:
+  instagram: "@milight_izumo"
+  instagram_url: "https://www.instagram.com/milight_izumo/"
+  website: "https://www.kankou-shimane.com/events/31428"
+  website_label: しまね観光ナビ
+
+highlights: [大型ツリー, 光のトンネルアーチ, 動物のオブジェ]
+
+related_posts:
+  captured_at: 2026-11-23
+  found_count: 4
+  items:
+    - { post_url: "https://www.instagram.com/reel/DgCbwopyBKc/", author: "@shimane__family_guide", posted_at: 2026-11-22, likes: 7, note: "光のアーチや動物のオブジェを巡る動画ツアー（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DgAp8b4S9oR/", author: "@milight_izumo", posted_at: 2026-11-22, likes: 9, note: "公式: 子どもたちがイルミネーションを眺める様子" }
+    - { post_url: "https://www.instagram.com/p/DgArGwgyj42/", author: "@milight_izumo", posted_at: 2026-11-22, likes: 2, note: "公式: イルミネーションの様子" }
+    - { post_url: "https://www.threads.com/@stroll_work/post/Df4bnN-jEN3", author: "@stroll_work", posted_at: 2026-11-18, note: "イルミネーションの開催を紹介する投稿（Threads、いいね数は未確認）" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-23
+  note: "期間2026-11-21〜2027-01-22・17:00〜22:00・観覧無料をしまね観光ナビで確認。会場は出雲市役所南側のだんだん広場（place_id 2256220957872436）。点灯式は11/21 18:30、通常点灯は11/22から。出典の反応数は7いいねと小さい（開催2日後のため第三者投稿がまだ少ない）。2025年版の投稿が検索で多数ヒットするため年度の取り違えに注意"
