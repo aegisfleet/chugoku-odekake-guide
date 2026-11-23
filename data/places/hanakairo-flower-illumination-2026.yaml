@@ -9,7 +9,7 @@ source:
   post_url: "https://www.instagram.com/reel/DfqoKYtyb7p/"
   author: "@nippon1chome"
 maps_url: "https://www.google.com/maps/search/?api=1&query=とっとり花回廊"
-featured: false
+featured: true
 status: active
 added_at: 2026-11-20
 period: { start: 2026-11-14, end: 2027-01-11 }

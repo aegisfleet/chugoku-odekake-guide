@@ -9,7 +9,7 @@ source:
   post_url: "https://www.instagram.com/p/DfhQYWCE-ZX/"
   author: "@osamu.77.0621"
 maps_url: "https://www.google.com/maps/search/?api=1&query=三原市芸術文化センターポポロ+三原市宮浦2-1-1"
-featured: false
+featured: true
 status: active
 added_at: 2026-11-19
 period: { start: 2026-11-07, end: 2026-12-28 }

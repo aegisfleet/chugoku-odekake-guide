@@ -9,7 +9,7 @@ source:
   post_url: "https://www.instagram.com/reel/Df4IsxQBHLm/"
   author: "@moto.i_31"
 maps_url: "https://www.google.com/maps/search/?api=1&query=ときわ遊園地+宇部市"
-featured: false
+featured: true
 status: active
 added_at: 2026-11-22
 period: { start: 2026-11-22, end: 2027-01-11 }

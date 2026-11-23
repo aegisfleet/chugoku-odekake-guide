@@ -9,7 +9,7 @@ source:
   post_url: "https://www.instagram.com/reel/DVIoXj1E7VP/"
   author: "@akokichi_mii_18"
 maps_url: "https://www.google.com/maps/search/?api=1&query=らぁ麺+Penguin+広島市中区大手町"
-featured: true
+featured: false
 status: active
 added_at: 2026-11-12
 
@@ -22,7 +22,7 @@ official:
 highlights: [特製地鶏醤油の全部のせ, 特製魚介塩らぁ麺, 自家製の太麺とワンタン, つけ麺や貝・トマトなど頻繁に変わる限定メニュー]
 
 related_posts:
-  captured_at: 2026-11-13
+  captured_at: 2026-11-23
   found_count: 47
   items:
     - { post_url: "https://www.instagram.com/reel/DVIoXj1E7VP/", author: "@akokichi_mii_18", posted_at: 2026-02-24, likes: 2300, note: "特製地鶏醤油と特製魚介塩の全部のせ、行列と青い外観も紹介するリール（出典投稿）" }
@@ -38,5 +38,5 @@ related_posts:
 _verification:
   map_match: matched
   closed_check: not_closed
-  checked_at: 2026-11-13
-  note: "公式プロフィールの住所（中区大手町五丁目16-1）が登録情報と一致"
+  checked_at: 2026-11-23
+  note: "公式IG @hiroshima_penguin は現存し2026-11-17に営業日・営業時間変更のお知らせ、11-21に夜営業告知を投稿（変更の詳細は今回未確認）。Instagram店舗情報は営業中（火曜定休）。2026-11-13以降の新規関連投稿を少なくとも12件確認したが最大150いいねで上位9件の入替なし。found_countは総数未確認のため47で据え置き。2026-11-23再確認"
