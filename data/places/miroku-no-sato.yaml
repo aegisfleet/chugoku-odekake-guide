@@ -1,0 +1,42 @@
+slug: miroku-no-sato
+name: みろくの里
+kind: activity
+tags: [遊園地, テーマパーク, イルミネーション, 家族向け]
+area: { prefecture: 広島県, label: 福山市・藤江町 }
+summary: 福山市の瀬戸内海を望む高台にある遊園地。観覧車やゴーカート、実物大の恐竜が動くダイナソーパークなどのアトラクションに加え、昭和の街並みを再現した「いつか来た道」エリアがある。冬はウィンターイルミネーション「キラメキノセカイ」（2026年は11月8日〜2027年1月11日）で夜まで営業し、打上花火の日もある。福山駅から直行バスあり。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DfWImDMznrZ/"
+  author: "@_my1mrmr"
+maps_url: "https://www.google.com/maps/search/?api=1&query=みろくの里+福山市藤江町638-1"
+featured: false
+status: active
+added_at: 2026-11-23
+
+official:
+  instagram: "@mirokunosato.official"
+  instagram_url: "https://www.instagram.com/mirokunosato.official/"
+  website: "https://mirokunosato.com/"
+  website_label: "公式サイト"
+
+highlights: [大観覧車, いつか来た道, ダイナソーパーク, ゴーカート, ウィンターイルミネーション]
+
+related_posts:
+  captured_at: 2026-11-23
+  found_count: 49
+  items:
+    - { post_url: "https://www.instagram.com/reel/DfWImDMznrZ/", author: "@_my1mrmr", posted_at: 2026-11-04, likes: 1200, note: "白上フブキコラボイベント「フブキングダムの里」でのコスプレ訪問リール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DJOW-zeyF9t/", author: "@iamihsahakatiam", posted_at: 2025-05-04, likes: 660, note: "訪問投稿" }
+    - { post_url: "https://www.instagram.com/reel/DbSl8j6RSeM/", author: "@ittabi_plus_chushikoku", posted_at: 2026-07-27, likes: 510, note: "園内の様子を紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/DCrFM9ZSvTg/", author: "@kento_ono", posted_at: 2024-11-22, likes: 400, note: "訪問リール" }
+    - { post_url: "https://www.instagram.com/p/DDo_ES1yyFA/", author: "@tsubame_kotsu", posted_at: 2024-12-16, likes: 380, note: "訪問投稿" }
+    - { post_url: "https://www.instagram.com/reel/DM4NrVBRFvM/", author: "@czechonorepublic", posted_at: 2025-08-03, likes: 250, note: "訪問リール" }
+    - { post_url: "https://www.instagram.com/reel/DTIi6lNE0-k/", author: "@hiroshimajake.jp", posted_at: 2026-01-05, likes: 180, note: "訪問リール" }
+    - { post_url: "https://www.instagram.com/p/DVap9RvEaHU/", author: "@mirokunosato.official", posted_at: 2026-03-03, likes: 170, note: "公式投稿" }
+    - { post_url: "https://www.instagram.com/p/DDUUe8vSxgk/", author: "@choco_toko", posted_at: 2024-12-08, likes: 110, note: "訪問投稿" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-23
+  note: "Googleマップ掲載を確認（福山市藤江町638-1）。公式サイトは2026-11-07更新で本日の営業時間（10:00〜21:00、ウィンターイルミネーション開催中）を掲載し営業中。出典リールは白上フブキ×みろくの里コラボの訪問投稿で、公式サイトも2026-11-04に同コラボのグッズ販売を告知しており整合。ユーザー依頼（2026-11-23、Instagramリール指定）で追加"
