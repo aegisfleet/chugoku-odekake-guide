@@ -23,8 +23,8 @@
 {{ with $p.related_posts }}{{ range .items }}{{ if eq .post_url $p.source.post_url }}{{ $sourceLikes = .likes | default 0 }}{{ end }}{{ end }}{{ end }}
 {{ $officialHandle := "" }}{{ with $p.official }}{{ $officialHandle = .instagram | default "" }}{{ end }}
 
-<div class="crumb-bar" google-side-rail-overlap="false">
-  <div class="crumb-inner">
+<div class="crumb-bar">
+  <div class="crumb-inner" google-side-rail-overlap="false">
     <nav class="crumbs" aria-label="パンくず">
       <a href="{{ site.Home.RelPermalink }}">ホーム</a>
       <span class="crumb-sep">/</span>
@@ -42,8 +42,8 @@
   </div>
 </div>
 
-<header class="detail-hero" google-side-rail-overlap="false">
-  <div class="detail-hero-inner">
+<header class="detail-hero">
+  <div class="detail-hero-inner" google-side-rail-overlap="false">
 
     <div class="badges detail-badges">
       <a class="badge {{ $kindClass }}" href="{{ "search/" | relURL }}?kind={{ $p.kind }}">{{ $kindLabel }}</a>
@@ -269,8 +269,8 @@
   {{ end }}
 {{ end }}
 {{ with $recs }}
-<section class="detail-recs" google-side-rail-overlap="false">
-  <div class="detail-recs-inner">
+<section class="detail-recs">
+  <div class="detail-recs-inner" google-side-rail-overlap="false">
     <div class="detail-recs-head">
       <div>
         <p class="detail-recs-eyebrow">Discover more</p>
