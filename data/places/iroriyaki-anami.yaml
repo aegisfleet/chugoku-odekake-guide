@@ -1,0 +1,42 @@
+slug: iroriyaki-anami
+name: 囲炉裏焼きあなみ
+kind: shop
+tags: [和食, 囲炉裏焼き, 郷土料理, ミシュラン掲載]
+area: { prefecture: 岡山県, label: 津山市・阿波 }
+summary: 津山市阿波（あば村）の山あいに佇む、完全予約制の囲炉裏焼きレストラン。朝採れの川魚あまごや五平餅を囲炉裏の炭火で焼き、手作りの豆富や地元の米・野菜など、地産地消のコースを味わえる。ミシュランガイド岡山2021ではミシュランプレートに掲載された。同じ建物には1日1組限定の一棟貸し「囲炉裏の宿あなみ」もあり、宿泊者は夜にレストランを貸し切りで利用できる。予約は電話のみ。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DIcQWbPTe6B/"
+  author: "@okayamafood77"
+maps_url: "https://www.google.com/maps/search/?api=1&query=囲炉裏焼きあなみ+津山市阿波1170"
+featured: false
+status: active
+added_at: 2026-11-24
+
+official:
+  instagram: "@anami_irori"
+  instagram_url: "https://www.instagram.com/anami_irori/"
+  website: "https://anami-aba.com/"
+  website_label: "公式サイト"
+
+highlights: [あまごの塩焼き, 五平餅, 手作り豆富, ミシュランプレート, 囲炉裏の宿あなみ]
+
+related_posts:
+  captured_at: 2026-11-24
+  found_count: 36
+  items:
+    - { post_url: "https://www.instagram.com/reel/DIcQWbPTe6B/", author: "@okayamafood77", posted_at: 2025-04-14, likes: 320, note: "訪問リール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DSI6kc-E5sX/", author: "@anami_irori", posted_at: 2025-12-11, likes: 140, note: "公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DVNttKbinFL/", author: "@tsuyamakan", posted_at: 2026-02-26, likes: 130, note: "津山観光公式のリール" }
+    - { post_url: "https://www.instagram.com/reel/DaIAW36CUmR/", author: "@anami_irori", posted_at: 2026-06-28, likes: 120, note: "公式リール" }
+    - { post_url: "https://www.instagram.com/p/Df4c7MhI2sU/", author: "@guren_guren_", posted_at: 2026-11-18, likes: 110, note: "訪問投稿" }
+    - { post_url: "https://www.instagram.com/p/DRPE772EeH_/", author: "@okayama_gurme_2mst1", posted_at: 2025-11-19, likes: 90, note: "訪問投稿" }
+    - { post_url: "https://www.instagram.com/reel/DSupz-7EXNQ/", author: "@anami_irori", posted_at: 2025-12-26, likes: 90, note: "公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DXpzl2wk67R/", author: "@anami_irori", posted_at: 2026-04-27, likes: 84, note: "公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DRUOirvkdDz/", author: "@okayama_gurme_2mst1", posted_at: 2025-11-21, likes: 83, note: "訪問リール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-24
+  note: "Googleマップにピンあり（津山市阿波1170、評価4.5・レビュー176件、営業中）。公式サイトで通年営業・完全予約制（電話のみ）の案内と2027年2月までの予約受付を確認。ザランタンあば村公式サイトの周辺観光ページでも食事処として掲載。レストランと宿（囲炉裏の宿あなみ）は同一建物・同一公式アカウントのため、代表としてレストランで登録し宿は紹介文に併記。ユーザー依頼（2026-11-24、公式Instagram指定）で追加"
