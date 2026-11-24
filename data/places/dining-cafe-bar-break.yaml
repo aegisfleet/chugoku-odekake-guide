@@ -1,0 +1,38 @@
+slug: dining-cafe-bar-break
+name: "Dining & Cafe Bar Break"
+kind: shop
+tags: [韓国料理, カフェバー, ランチ]
+area: { prefecture: 鳥取県, label: 鳥取市・弥生町 }
+summary: 鳥取駅から徒歩約10分の韓国カフェバー。昼はヤンニョムチキンなどの韓国ランチ、夜はネオンが映える空間で韓国料理とお酒が楽しめる。2025年10月オープンの新店で、2026年11月にはチーズたっぷりのUFOチキンが登場した。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DeCEySkTvGN/"
+  author: "@tottori.gc_k3588"
+maps_url: "https://www.google.com/maps/search/?api=1&query=Dining%26Cafe+Bar+Break"
+featured: false
+status: active
+added_at: 2026-11-24
+
+official:
+  instagram: "@b10re7ak"
+  instagram_url: "https://www.instagram.com/b10re7ak/"
+
+highlights: [ヤンニョムチキンなどの選べるチキンランチ, 自家製ヨーグルトアイス, 韓国風ワッフル, UFOチキン, ネオンが映える店内]
+
+related_posts:
+  captured_at: 2026-11-24
+  found_count: 8
+  items:
+    - { post_url: "https://www.instagram.com/reel/DeCEySkTvGN/", author: "@tottori.gc_k3588", posted_at: 2026-10-03, likes: 190, note: "1周年キャンペーンの韓国ランチ紹介（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DeIjx_RP8yQ/", author: "@b10re7ak", posted_at: 2026-10-06, likes: 19, note: "1周年記念フライヤー" }
+    - { post_url: "https://www.instagram.com/p/DYYhreZCTXe/", author: "@b10re7ak", posted_at: 2026-05-16, likes: 18, note: "テイクアウト開始の告知" }
+    - { post_url: "https://www.instagram.com/reel/DfwokCusZzA/", author: "@b10re7ak", posted_at: 2026-11-15, likes: 16, note: "UFOチキン販売開始の告知" }
+    - { post_url: "https://www.instagram.com/p/DVRfrpbEzVU/", author: "@412_31tt", posted_at: 2026-02-27, likes: 10, note: "ネオン看板と韓国料理の紹介カルーセル" }
+    - { post_url: "https://www.threads.com/@saninmachi/post/De87z-rGbeQ", author: "@saninmachi", posted_at: 2026-10-26, likes: 3, note: "ヨーグルトアイスと韓国風ワッフルの紹介" }
+    - { post_url: "https://www.instagram.com/reel/DXV34xQDhmM/", author: "@anata_no_mati_no_keijiban", posted_at: 2026-04-20, note: "ネオン空間と韓国料理の紹介リール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-24
+  note: "Googleマップのピン（place_id 1936613986924160、営業中）と住所（鳥取市弥生町302-1 弥生ビル1F）を確認。2025年10月オープン。公式の2026-11-15投稿でUFOチキン販売開始を確認し営業継続を確認。1周年キャンペーン（2026-10-01〜10-17）は終了済みのため summary には入れていない。210いいねの @tottori.gc_k3588 投稿（2025-12-28）は今回URL未確認のため related_posts には含めていない"

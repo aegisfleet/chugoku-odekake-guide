@@ -1,0 +1,43 @@
+slug: yushien-garden
+name: 由志園
+kind: spot
+tags: [日本庭園, 紅葉ライトアップ, 牡丹]
+area: { prefecture: 島根県, label: 松江市・八束町 }
+summary: 大根島にある池泉回遊式の日本庭園。牡丹と高麗人蔘の里として知られ、秋は紅葉ライトアップで池に映るモミジと和傘の灯りが楽しめる。2026年は11月7日から12月6日に「光の日本庭園 ジパング 2026」を開催中。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DfyXLNTyLzd/"
+  author: "@haru_film.jp"
+maps_url: "https://www.google.com/maps/search/?api=1&query=由志園+松江市"
+featured: false
+status: active
+added_at: 2026-11-24
+
+official:
+  instagram: "@yuushien_official"
+  instagram_url: "https://www.instagram.com/yuushien_official/"
+  website: "https://www.yuushien.com/"
+  website_label: 公式サイト
+
+highlights: [紅葉ライトアップ, 和傘の回廊, 池への紅葉のリフレクション, プロジェクションマッピング, 牡丹と高麗人蔘の庭園]
+
+related_posts:
+  captured_at: 2026-11-24
+  found_count: 32
+  items:
+    - { post_url: "https://www.instagram.com/reel/DfyXLNTyLzd/", author: "@haru_film.jp", posted_at: 2026-11-16, likes: 1030, note: "2026年の紅葉ライトアップ開催中の夜間訪問リール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DRCDDfokjh8/", author: "@tuna_hiroshima", posted_at: 2025-11-14, likes: 490, note: "ライトアップを歩く一人称視点の夜間訪問動画" }
+    - { post_url: "https://www.instagram.com/p/DdYghHuAZvx/", author: "@yuushien_official", posted_at: 2026-09-17, likes: 440, note: "施設公式の彼岸花の庭園写真" }
+    - { post_url: "https://www.instagram.com/p/DC_u1nXP7GI/", author: "@hide.01.07", posted_at: 2024-11-30, likes: 420, note: "和傘が並ぶ回廊のライトアップ" }
+    - { post_url: "https://www.instagram.com/p/DSmk75cj3WR/", author: "@mrlonely783", posted_at: 2025-12-23, likes: 130, note: "池に映るイルミネーションと赤い造形物" }
+    - { post_url: "https://www.instagram.com/p/DESBlyIPFuA/", author: "@nao_biju_m", posted_at: 2025-01-01, likes: 120, note: "光るチューブの庭園インスタレーション" }
+    - { post_url: "https://www.instagram.com/reel/DDuPMzeT4Bt/", author: "@milkyway_cat2021", posted_at: 2024-12-18, likes: 98, note: "ライトアップを巡る夜間動画" }
+    - { post_url: "https://www.instagram.com/p/Dfeh_5VE5jC/", author: "@mei.187", posted_at: 2026-11-08, likes: 95, note: "2026年ライトアップ初日の夜景3枚" }
+    - { post_url: "https://www.instagram.com/reel/DSkfLISkoQj/", author: "@ma_sa0331_2", posted_at: 2025-12-22, likes: 84, note: "夜の庭園を巡る動画" }
+    - { post_url: "https://www.instagram.com/p/DDgfxPqzt0M/", author: "@reikomatsumura8832", posted_at: 2024-12-13, likes: 82, note: "ライトアップを含む庭園8枚組" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-24
+  note: "Googleマップのピン（place_id 1249286232142923、営業中）と住所（松江市八束町波入1260-2）を確認。マピオン・公式サイト・places の3者で一致。紅葉ライトアップの期間（2026-11-07〜12-06）と夜間入園料・点灯時間は出典キャプションと公式サイトで一致。関連投稿の2件目は公式の彼岸花投稿でライトアップではない。関連投稿の5件目は新年の挨拶付きだが主役は園内のライトアップ"

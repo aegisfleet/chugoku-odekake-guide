@@ -1,0 +1,41 @@
+slug: kintaikyo-bridge
+name: 錦帯橋
+kind: spot
+tags: [日本三名橋, 紅葉, 木造アーチ橋]
+area: { prefecture: 山口県, label: 岩国市・錦帯橋周辺 }
+summary: 錦川に架かる五連の木造アーチ橋。1673年創建の日本三名橋で、11月中旬から下旬の紅葉の見頃には赤く色づいたモミジ越しの橋がひときわ美しい。渡った先の吉香公園・紅葉谷公園とあわせて巡るのが定番。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DfvT2icINSc/"
+  author: "@jp.travelers.pic"
+maps_url: "https://www.google.com/maps/search/?api=1&query=錦帯橋+岩国市"
+featured: false
+status: active
+added_at: 2026-11-24
+
+official:
+  website: "http://kintaikyo.iwakuni-city.net/"
+  website_label: 公式サイト
+
+highlights: [五連の木造アーチ橋, 日本三名橋, 紅葉と橋の景色, 錦川の清流, 岩国城とセットの眺め]
+
+related_posts:
+  captured_at: 2026-11-24
+  found_count: 20
+  items:
+    - { post_url: "https://www.instagram.com/reel/DSADirbEpFs/", author: "@decomp_3104", posted_at: 2025-12-08, likes: 520, note: "夕日に照らされた紅葉越しの錦帯橋" }
+    - { post_url: "https://www.instagram.com/p/DRisVmSjyQi/", author: "@3i._.saisons", posted_at: 2025-11-27, likes: 480, note: "夕焼けの橋の上で着物の人物が立つ一枚" }
+    - { post_url: "https://www.instagram.com/reel/DF4E3WCvKpk/", author: "@mamiqej", posted_at: 2025-02-10, likes: 420, note: "錦川と橋をめぐる風景動画" }
+    - { post_url: "https://www.instagram.com/p/DfvT2icINSc/", author: "@jp.travelers.pic", posted_at: 2026-11-14, likes: 203, note: "紅葉に彩られた橋を紹介するカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/Df4TlzWnywX/", author: "@umamon.tikaku_iwakuni", posted_at: 2026-11-18, likes: 120, note: "紅葉に囲まれた橋の5枚組" }
+    - { post_url: "https://www.instagram.com/p/Dbyon5jTnjt/", author: "@amateras.yuu", posted_at: 2026-08-08, likes: 110, note: "夏の青空の下の橋とソフトクリーム" }
+    - { post_url: "https://www.instagram.com/p/DRdF7w4k2D3/", author: "@yuto_kobe", posted_at: 2025-11-24, likes: 100, note: "紅葉の額縁越しの橋" }
+    - { post_url: "https://www.instagram.com/p/Df4DYywklAZ/", author: "@ishiningyo", posted_at: 2026-11-18, likes: 57, note: "錦帯橋周辺の秋景色18枚組" }
+    - { post_url: "https://www.instagram.com/p/DR4a2gQEWVB/", author: "@yamaguchi_spectacular_scenery", posted_at: 2025-12-05, likes: 50, note: "紅葉越しの橋" }
+    - { post_url: "https://www.instagram.com/p/DLbhwJSyGfe/", author: "@akupon3", posted_at: 2025-06-28, likes: 48, note: "夏の昼間の橋と岩国城" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-24
+  note: "Googleマップのピン（place_id 794472421708714、営業中）と住所（岩国市横山2丁目1）を確認。評価4.5。出典キャプションに「過去Pic」との断りあり（写真自体は過去撮影分。投稿日は2026-11-14で紅葉見頃の解説付き）。関連投稿の4件目は岩国城の写真を1枚含む"

@@ -1,0 +1,47 @@
+slug: bihoku-illumi-2026-2027
+name: ウインターイルミネーション 2026-2027 備北イルミ
+kind: event
+tags: [イルミネーション, クリスマス]
+area: { prefecture: 広島県, label: 庄原市・国営備北丘陵公園 }
+summary: 中国地方最大級の冬のイルミネーション。2026-2027シーズンは「FANTASY GARDEN」をテーマに約80万球の光が園内3エリアを花の庭に変え、高さ15mのシンギングツリーや新エリアのプロジェクションマッピングが見どころ。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DfMqD0Gn76b/"
+  author: "@kaho__nakano"
+maps_url: "https://www.google.com/maps/search/?api=1&query=国営備北丘陵公園"
+featured: false
+status: active
+added_at: 2026-11-24
+period: { start: 2026-10-31, end: 2027-01-11 }
+
+official:
+  instagram: "@bihokupark"
+  instagram_url: "https://www.instagram.com/bihokupark/"
+  website: "https://www.bihokupark.jp/"
+  website_label: 公式サイト
+
+highlights: [過去最多の約80万球のイルミネーション, 高さ15mにリニューアルしたスターライト・シンギングツリー, 新エリア「ルミナ フローラ〜花々の舞う庭〜」, ひばの里の和のイルミネーション, 土曜日の花火とのコラボ]
+
+notices:
+  - { date: "2026-11-24", text: "期間中の休園日は11月30日・12月7日・14日・21日・31日・1月1日・4日。11月24日は休園日のため訪問時は公式サイトの開催カレンダーで確認を" }
+
+related_posts:
+  captured_at: 2026-11-24
+  found_count: 50
+  items:
+    - { post_url: "https://www.instagram.com/p/De6V0hGmvPe/", author: "@bihokupark", posted_at: 2026-10-25, likes: 735, note: "期間と休園日と料金を網羅した公式告知カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DfMqD0Gn76b/", author: "@kaho__nakano", posted_at: 2026-11-01, likes: 477, note: "テレビ派の点灯中継で訪れた訪問投稿（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/Df4PmPdvBIw/", author: "@bihokupark", posted_at: 2026-11-18, likes: 340, note: "FANTASY GARDENの各エリアを巡る公式リール" }
+    - { post_url: "https://www.instagram.com/p/Df9YDFJSmXG/", author: "@bihokupark", posted_at: 2026-11-20, likes: 310, note: "花火コラボの夜の公式カルーセル" }
+    - { post_url: "https://www.instagram.com/p/De9InI1E6tw/", author: "@haruki_kubo", posted_at: 2026-10-26, likes: 293, note: "11月14日の園内ライブ出演告知" }
+    - { post_url: "https://www.instagram.com/p/DfbXuXdn8am/", author: "@bihokupark", posted_at: 2026-11-07, likes: 230, note: "ルミナ フローラの公式カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DfWuzz3E9ZQ/", author: "@hfm.jp", posted_at: 2026-11-05, likes: 170, note: "クリスマスツリーデコバトルの告知" }
+    - { post_url: "https://www.instagram.com/p/Df1rDoYGtVU/", author: "@bihokupark", posted_at: 2026-11-17, likes: 160, note: "11月の開催カレンダー告知" }
+    - { post_url: "https://www.instagram.com/p/DfMdzPUIKbr/", author: "@cohan_stays", posted_at: 2026-11-01, likes: 92, note: "園内の宿泊施設によるイルミネーション紹介" }
+    - { post_url: "https://www.instagram.com/reel/DfZZ1j5pxNM/", author: "@hirokun457", posted_at: 2026-11-06, likes: 91, note: "ルミナ フローラの床面プロジェクションを撮った訪問リール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-24
+  note: "Googleマップのピン（place_id 571470804762592、営業中）と住所（庄原市三日市町4-10）を確認。期間2026-10-31〜2027-01-11は公園公式Instagramの2026-10-25告知とDive! Hiroshimaとウェザーニュースで確認。点灯時間は10〜12月17:30〜21:00、1月17:45〜21:00。検索結果に混ざった相模湖イルミネーションの投稿1件は除外。備北オートビレッジの投稿は園内別施設からの告知のため上位には含めていない"

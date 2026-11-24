@@ -1,0 +1,42 @@
+slug: zarantan-abamura
+name: ザランタンあば村
+kind: stay
+tags: [グランピング, 渓流釣り, サウナ, 温泉]
+area: { prefecture: 岡山県, label: 津山市・阿波 }
+summary: 津山市阿波の山あいにあるグランピング施設。渓流釣りやテントサウナ、野菜収穫、焚き火など自然体験が充実し、宿泊者は近くのあば温泉を無料で利用できる。2021年オープンの「田舎暮らしリゾート」。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DIV-T2lymmz/"
+  author: "@harepapa_okayama"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ザランタンあば村"
+featured: false
+status: active
+added_at: 2026-11-24
+
+official:
+  instagram: "@thelantown.abamura"
+  instagram_url: "https://www.instagram.com/thelantown.abamura/"
+  website: "https://glampicks.jp/glamping/g21263/official/"
+  website_label: 公式サイト
+
+highlights: [渓流釣り, テントサウナ, 地元食材のBBQ, あば温泉の無料利用, 野菜収穫, 焚き火]
+
+related_posts:
+  captured_at: 2026-11-24
+  found_count: 13
+  items:
+    - { post_url: "https://www.instagram.com/reel/DIV-T2lymmz/", author: "@harepapa_okayama", posted_at: 2025-04-12, likes: 660, note: "家族でのバンガロー滞在記（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DPtBPJwErG1/", author: "@maririn_mama_odekake", posted_at: 2025-10-12, likes: 210, note: "子連れ滞在の紹介カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DOYZ79Vk6sS/", author: "@nontabi_oosaka", posted_at: 2025-09-09, likes: 160, note: "渓流釣りとサウナと焚き火の体験記" }
+    - { post_url: "https://www.instagram.com/reel/DD9IbS5zSdr/", author: "@y__.sauna", posted_at: 2024-12-24, likes: 65, note: "雪のグランピングとテントサウナ" }
+    - { post_url: "https://www.instagram.com/reel/DMjMYMUT_PN/", author: "@kento.esp", posted_at: 2025-07-26, likes: 44, note: "家族滞在の映像記録" }
+    - { post_url: "https://www.instagram.com/p/DcIxeo6IwxC/", author: "@thelantown.abamura", posted_at: 2026-08-17, likes: 32, note: "秋のアクティビティ7種の案内" }
+    - { post_url: "https://www.instagram.com/p/DFDGO65Px2-/", author: "@peitabi0831", posted_at: 2025-01-20, likes: 24, note: "テントとサウナと朝食の滞在記" }
+    - { post_url: "https://www.instagram.com/reel/Df9SOMJzesJ/", author: "@thelantown.abamura", posted_at: 2026-11-20, likes: 22, note: "温泉付きグランピングの紹介" }
+    - { post_url: "https://www.instagram.com/reel/DfWFE5uOMvz/", author: "@mana_undou.be", posted_at: 2026-11-05, likes: 19, note: "静かな滞在の様子" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-24
+  note: "Googleマップのピン（place_id 3065926806875464、営業中）と住所（津山市阿波3108-4）を確認。公式サイト・岡山県観光ガイド・places の住所が一致。2026-11-05の訪問者投稿と2026-11-20の公式投稿で営業継続を確認。公式の2026-05-08投稿で河川工事のため渓流釣り・魚のつかみ取りが一部日程で利用できない可能性を告知している。2026-09-26の公式投稿では渓流釣りを通常通り案内しているが最新状況は公式への確認が望ましい"
