@@ -55,7 +55,8 @@
       {{ range $p.tags }}<a class="tag" href="{{ "search/" | relURL }}?tag={{ . | urlquery }}">{{ . }}</a>{{ end }}
     </div>
 
-    <p class="detail-location">{{ partial "icon-pin.html" . }}{{ $p.area.prefecture }} / {{ $p.area.label }}</p>
+    {{ $wardTop := index (split $p.area.label "・") 0 }}
+    <p class="detail-location">{{ partial "icon-pin.html" . }}{{ $p.area.prefecture }} / <a href="{{ printf "search/?pref=%s&area=%s" ($p.area.prefecture | urlquery) ($wardTop | urlquery) | relURL }}">{{ $p.area.label }}</a></p>
     <div class="detail-title-row">
       <div class="detail-title-block">
         <h1 class="detail-title">{{ $p.name }}</h1>
@@ -276,7 +277,11 @@
         <p class="detail-recs-eyebrow">Discover more</p>
         <h2>周辺・関連のおすすめスポット</h2>
       </div>
-      <a class="detail-recs-more" href="{{ printf "search/?pref=%s" ($selfPref | urlquery) | relURL }}">{{ $selfPref }}のスポット一覧を見る</a>
+      {{ $wardTotal := 0 }}{{ range $allPlaces }}{{ if eq (index (split .area.label "・") 0) $ward }}{{ $wardTotal = add $wardTotal 1 }}{{ end }}{{ end }}
+      <div class="detail-recs-links">
+        {{ if ge $wardTotal 2 }}<a class="detail-recs-more" href="{{ printf "search/?pref=%s&area=%s" ($selfPref | urlquery) ($ward | urlquery) | relURL }}">{{ $ward }}のスポットをすべて見る</a>{{ end }}
+        <a class="detail-recs-more" href="{{ printf "search/?pref=%s" ($selfPref | urlquery) | relURL }}">{{ $selfPref }}のスポット一覧を見る</a>
+      </div>
     </div>
     <div class="detail-recs-grid">
       {{ range first 3 . }}{{ partial "place-card.html" . }}{{ end }}
