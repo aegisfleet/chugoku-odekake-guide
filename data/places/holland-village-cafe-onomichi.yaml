@@ -1,0 +1,36 @@
+slug: holland-village-cafe-onomichi
+name: Holland Village Cafe Onomichi（ホーランドビレッジカフェ尾道）
+kind: shop
+tags: [カフェ, オーガニック, 無添加]
+area: { prefecture: 広島県, label: 尾道市・西久保町 }
+summary: 築120年の古民家を改装した、尾道の丘の上のオーガニックカフェ。尾道近郊のオーガニック野菜を中心に、世界各地の料理を無添加で再構築したランチやスイーツが楽しめる。木の温もりを残したモダンな店内と、庭を望む席が落ち着いた時間を演出する。2026年3月にオープンした。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/Dfqmmz-vMfo/"
+  author: "@hollandvillage_namina"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ホーランドビレッジカフェ尾道"
+featured: false
+status: active
+added_at: 2026-11-25
+
+official:
+  instagram: "@hollandvillagecafe_onomichi"
+  instagram_url: "https://www.instagram.com/hollandvillagecafe_onomichi/"
+  website: "https://hvco.stores.jp/"
+  website_label: 公式サイト
+
+highlights: [築120年の古民家を改装した店内, 尾道近郊のオーガニック野菜, 牧草牛のハンバーグ, ラムのビリヤニ, トマトパスタ]
+
+related_posts:
+  captured_at: 2026-11-25
+  found_count: 3
+  items:
+    - { post_url: "https://www.instagram.com/p/DYnY09GkzxE/", author: "@harajin.onojin", posted_at: 2026-05-21, likes: 430, note: "ハンバーグやビリヤニ、キャロットケーキなど料理と店内を11枚で紹介" }
+    - { post_url: "https://www.instagram.com/reel/Dfqmmz-vMfo/", author: "@hollandvillage_namina", posted_at: 2026-11-13, likes: 32, note: "丘の上の隠れ家カフェとしてサラダとパスタ、アイスを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DfeYqdpnVkc/", author: "@hollandvillagecafe_onomichi", posted_at: 2026-11-08, likes: 21, note: "11月の営業カレンダーを知らせる公式投稿" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-25
+  note: "Googleマップのピン（place_id 990751937267276、営業中）と住所（尾道市西久保町27-2）をplaces CLIで確認。2026年3月5日オープン（地元メディア・foods-chの記事で確認）。公式Instagram @hollandvillagecafe_onomichi が2026-11-08に11月の営業カレンダーを投稿しており営業中。既存のLOG（log-onomichi）とは名称・住所が異なる別施設であることを確認"

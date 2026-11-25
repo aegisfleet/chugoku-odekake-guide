@@ -1,0 +1,43 @@
+slug: nishikawa-illumi-2026
+name: 西川イルミ2026
+kind: event
+tags: [イルミネーション, クリスマス]
+area: { prefecture: 岡山県, label: 岡山市北区・西川緑道公園 }
+summary: 岡山市中心部の西川緑道公園を約15万球のLEDが彩る冬のイルミネーション。2026年は公園開設50周年の特別版で、高さ4mのウッドツリーや水上テラスの「LOVE」フォトスポット、旧西川橋交番へのプロジェクションが見どころ。岡山駅から歩いて行ける、入場無料の夜の散歩道。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DfyT8rvoVgX/"
+  author: "@wonderland_of_satoshi"
+maps_url: "https://www.google.com/maps/search/?api=1&query=西川緑道公園"
+featured: false
+status: active
+added_at: 2026-11-25
+period: { start: 2026-11-06, end: 2027-01-03 }
+
+official:
+  instagram: "@nishigawa_haremachi_info"
+  instagram_url: "https://www.instagram.com/nishigawa_haremachi_info/"
+  website: "https://www.city.okayama.jp/kankou/0000007220.html"
+  website_label: 岡山市公式サイト
+
+highlights: [約15万球のLEDが約550mの区間を彩る, 高さ4mのウッドツリー, 水上テラスの「LOVE」フォトスポット, 旧西川橋交番へのプロジェクションと足元の光のイラスト, 開設50周年を祝う限定パネルと子どもたちの絵のツリー, シャボン玉パフォーマンス]
+
+related_posts:
+  captured_at: 2026-11-25
+  found_count: 18
+  items:
+    - { post_url: "https://www.instagram.com/reel/DfZsdt0toIM/", author: "@omame.odekake", posted_at: 2026-11-06, likes: 2717, note: "青い光の水辺とウッドツリーを巡る岡山ママのリール" }
+    - { post_url: "https://www.instagram.com/reel/DfrRRUOyBYr/", author: "@haru_film.jp", posted_at: 2026-11-13, likes: 1186, note: "青の世界をうたう幻想的な夜景リール" }
+    - { post_url: "https://www.instagram.com/reel/DfdSytGy9vq/", author: "@okayama_kibimaru", posted_at: 2026-11-07, likes: 753, note: "約15万球と50周年企画を紹介する子連れおでかけリール" }
+    - { post_url: "https://www.instagram.com/p/Dfau9Wqh-tR/", author: "@kubrider", posted_at: 2026-11-06, likes: 372, note: "初日のシャボン玉パフォーマンスを撮った1枚" }
+    - { post_url: "https://www.instagram.com/p/DfyT8rvoVgX/", author: "@wonderland_of_satoshi", posted_at: 2026-11-16, likes: 266, note: "水上テラスのLOVEフォトスポットを巡る20枚カルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/Dfv7eXXIAaK/", author: "@wonderland_of_satoshi", posted_at: 2026-11-15, likes: 244, note: "50周年パネルや旧交番の投影を巡る20枚カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DfW6c0rhujw/", author: "@seisei8282", posted_at: 2026-11-05, likes: 190, note: "開幕前日の夜景を先取りしたリール" }
+    - { post_url: "https://www.instagram.com/p/DfZwk9ckgmf/", author: "@sugimoto_7198", posted_at: 2026-11-06, likes: 168, note: "初日の見どころを7枚で巡るカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DfmcP96yRJ3/", author: "@hikaridon_2828", posted_at: 2026-11-11, likes: 97, note: "青い光の水面とウッドツリーを撮った夜景リール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-25
+  note: "Googleマップのピン（place_id 1164573254968998、西川緑道公園、営業中）と住所（岡山市北区田町1-10、〒700-0825）を確認。期間2026-11-06〜2027-01-03と点灯時間17:00〜22:00は岡山市公式ページ・岡山県観光WEB・FNN／OHK・ウェザーニュースで確認。まとめ投稿（4会場紹介の@sumicco_3otoku、5件紹介の@asoview）と県外イルミ（香川・北陸・薩摩）の投稿は関連投稿から除外。kubriderの投稿はキャプションに「シャボン玉パフォーマンス 西川緑道公園 2026.11.6」と明記されており採用"

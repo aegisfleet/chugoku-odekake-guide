@@ -1,0 +1,45 @@
+slug: daisen-makiba-milk-village
+name: 大山まきば みるくの里
+kind: spot
+tags: [牧場, ソフトクリーム, 白バラ牛乳, 大山, ファミリー]
+area: { prefecture: 鳥取県, label: 伯耆町・大山の麓 }
+summary: 大山の麓に広がる牧場の中のミルクをテーマにした観光施設。地元で親しまれる白バラ牛乳の世界観でまとめられた館内には公式ショップやレストラン、テイクアウト専門店があり、名物のソフトクリームや大山の食材を使った料理が楽しめる。屋外には牛乳パック型のフォトスポットがあり、放牧地の向こうに大山を望む。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DZjyNIgBeJg/"
+  author: "@tottori_trip_"
+maps_url: "https://www.google.com/maps/search/?api=1&query=大山まきば+みるくの里"
+featured: false
+status: active
+added_at: 2026-11-25
+
+official:
+  instagram: "@daisen.milknosato"
+  instagram_url: "https://www.instagram.com/daisen.milknosato/"
+  website: "https://dainyu.or.jp/village-of-milk/"
+  website_label: 公式サイト
+
+highlights: [白バラ牛乳のソフトクリーム, 牛乳パック型のフォトスポット, 白バラブランドの公式ショップ, テイクアウト専門店「DAISEN MILK」, 牧場の向こうに望む大山]
+
+notices:
+  - { date: "2026-11-25", text: "12月から3月上旬は冬季休業の予定。訪問前に公式サイトで営業カレンダーを確認すること" }
+
+related_posts:
+  captured_at: 2026-11-25
+  found_count: 31
+  items:
+    - { post_url: "https://www.instagram.com/reel/DZjyNIgBeJg/", author: "@tottori_trip_", posted_at: 2026-06-14, likes: 2100, note: "リニューアル後の施設を紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DXZNNy_iS79/", author: "@bike.ojisan", posted_at: 2026-04-21, likes: 1700, note: "リニューアルオープン直後の訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DY4O_OFgdLX/", author: "@yamane_chika", posted_at: 2026-05-28, likes: 1500, note: "牛乳パック型フォトスポットでの訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DbMRfXBhlkS/", author: "@iemoto7", posted_at: 2026-07-24, likes: 1400, note: "ソフトクリームとオムライスを紹介するリール" }
+    - { post_url: "https://www.instagram.com/p/DYT97E1iRD7/", author: "@daisen.milknosato", posted_at: 2026-05-14, likes: 1100, note: "大山まきば祭の公式告知フライヤー" }
+    - { post_url: "https://www.instagram.com/reel/DYb4-hjx5WF/", author: "@yukaritanaka220", posted_at: 2026-05-17, likes: 880, note: "館内を巡るリニューアル紹介リール" }
+    - { post_url: "https://www.instagram.com/p/DNjfOXiTVhy/", author: "@mimikiki427", posted_at: 2025-08-19, likes: 540, note: "大山を背景にした訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DYV_R2gjB_V/", author: "@tj_lazuda", posted_at: 2026-05-15, likes: 470, note: "大山ライスを紹介する訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/Dc2oa1hEZhK/", author: "@okamekamekameokamenatto", posted_at: 2026-09-04, likes: 430, note: "鳥取・島根旅の写真まとめカルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-25
+  note: "Googleマップのピン（place_id 614355260124885、閉店でないこと）と住所（伯耆町小林水無原2-11、郵便番号689-4101）をplaces CLIで確認。2026年4月18日のリニューアルオープンはBSS山陰放送・日本海テレビ・公式Instagramで確認。2026年10月12日の訪問記事でも営業中。冬季休業（12月〜3月上旬）はTORiTABEと訪問記事で確認しnoticesに記載"

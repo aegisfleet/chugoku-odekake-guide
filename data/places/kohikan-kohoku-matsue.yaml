@@ -1,0 +1,35 @@
+slug: kohikan-kohoku-matsue
+name: 珈琲館 湖北店
+kind: shop
+tags: [カフェ, 喫茶店, 宍道湖, モーニング, レトロ]
+area: { prefecture: 島根県, label: 松江市・宍道湖北岸 }
+summary: 宍道湖の北岸、国道沿いに建つツタの絡まる洋館風の喫茶店。アーチ窓の席からは湖面が目の前に広がり、朝の光の中でゆっくり過ごせる。自家焙煎のコーヒーをサイフォンで淹れ、パンにグラタンを詰めて焼いたシシリアンセットやクラブハウスサンドなどの軽食もそろう。地元の老舗が営む店で、全国チェーンの同名店とは別のお店。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DYZMvtiy1QO/"
+  author: "@nana.media0330"
+maps_url: "https://www.google.com/maps/search/?api=1&query=珈琲館+湖北店+松江市"
+featured: false
+status: active
+added_at: 2026-11-25
+
+highlights: [宍道湖を望む窓辺の席, ツタの絡まる洋館風の外観, サイフォンで淹れる自家焙煎コーヒー, パンにグラタンを詰めたシシリアンセット, 朝から楽しめるモーニング]
+
+related_posts:
+  captured_at: 2026-11-25
+  found_count: 10
+  items:
+    - { post_url: "https://www.instagram.com/reel/DYZMvtiy1QO/", author: "@nana.media0330", posted_at: 2026-05-16, likes: 5200, note: "湖畔の席での食事を紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DDQXqemTxmp/", author: "@maiko.mama", posted_at: 2024-12-06, likes: 650, note: "湖を眺めながらの食事を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DTW1-wqkaDN/", author: "@yoshiecoffee", posted_at: 2026-01-11, likes: 63, note: "レンガ造りの外観と店内を紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/Ddn6ib1v9WQ/", author: "@luv.shimane", posted_at: 2026-09-23, likes: 52, note: "湖畔の席での食事を紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/DXRnfZGp_hI/", author: "@yucac.co", posted_at: 2026-04-18, likes: 43, note: "赤レンガのレトロな喫茶店として紹介するリール" }
+    - { post_url: "https://www.instagram.com/reel/DSguq73Ezok/", author: "@out_sense_image", posted_at: 2025-12-21, likes: 17, note: "窓からの湖の眺めとコーヒーを撮ったリール" }
+    - { post_url: "https://www.instagram.com/p/DSWnFWikYSb/", author: "@0_ma.cha.m50", posted_at: 2025-12-17, likes: 4, note: "雨の日の朝の訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DIt6IkMyaIw/", author: "@by.b.y.b", posted_at: 2025-04-21, likes: 3, note: "湖畔の席での訪問カルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-25
+  note: "Googleマップのピン（place_id 1000575443972451、名称「珈琲館」、松江市、閉店でないこと）をplaces CLIで確認。座標（北緯35.4701、東経133.0289）は宍道湖北岸の浜佐田町付近と一致。住所（松江市浜佐田町1044-1）はまっぷるウェブで確認。全国チェーンの珈琲館とは別会社（地元の有限会社珈琲館）の店舗で、千葉県我孫子市との混同にも注意。2025-12-21の訪問投稿でも営業継続を確認"
