@@ -1,0 +1,42 @@
+slug: hotel-nishinagato-resort
+name: ホテル西長門リゾート
+kind: stay
+tags: [ホテル, リゾートホテル, 海が見える宿, 温泉]
+area: { prefecture: 山口県, label: 下関市・豊北町 }
+summary: 角島大橋のたもとに建つ海辺のリゾートホテル。窓いっぱいに海が広がる客室と、海を眺めながら入れる露天風呂、刺身や海の幸が並ぶ朝食ビュッフェが魅力。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DgE_5TDqfiw/"
+  author: "@i8.nishinihon"
+maps_url: "https://www.google.com/maps/search/?api=1&query=ホテル西長門リゾート+下関市豊北町神田2045"
+featured: false
+status: active
+added_at: 2026-11-26
+
+official:
+  instagram: "@nishinagatoresort_official"
+  instagram_url: "https://www.instagram.com/nishinagatoresort_official/"
+  website: "https://www.kgh.ne.jp/10/"
+  website_label: 公式サイト
+
+highlights: [海が見える朝食ビュッフェ, 海が見える露天風呂, 角島大橋を望む客室, プライベートビーチ, プール]
+
+related_posts:
+  captured_at: 2026-11-26
+  found_count: 25
+  items:
+    - { post_url: "https://www.instagram.com/reel/DgE_5TDqfiw/", author: "@i8.nishinihon", posted_at: 2026-11-23, likes: 101, note: "角島大橋のたもとの海辺ホテルを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DDodUCNTTLl/", author: "@growth.yoshie", posted_at: 2024-12-16, likes: 2600, note: "エビ・カニ食べ放題フェアを紹介するリール（フェアは2025年2月に終了）" }
+    - { post_url: "https://www.instagram.com/reel/DJJMaYezIen/", author: "@riri.odekake.trip", posted_at: 2026-05-02, likes: 2000, note: "宿泊紹介リール" }
+    - { post_url: "https://www.instagram.com/reel/DF7T0iiyiLh/", author: "@sayaka__travelog", posted_at: 2025-02-11, likes: 1200, note: "宿泊紹介リール" }
+    - { post_url: "https://www.instagram.com/reel/DTm5CjTE4Nf/", author: "@yamaguchi_.guide", posted_at: 2026-01-17, likes: 310, note: "宿泊紹介リール" }
+    - { post_url: "https://www.instagram.com/reel/DZzj42exitS/", author: "@moto.i_31", posted_at: 2026-06-20, likes: 180, note: "宿泊紹介リール" }
+    - { post_url: "https://www.instagram.com/reel/DUc3pbYkXVO/", author: "@yamaguchi_tabestagram", posted_at: 2026-02-07, likes: 130, note: "宿泊紹介リール" }
+    - { post_url: "https://www.instagram.com/p/DdOWeXnEzyY/", author: "@nishinagatoresort_official", posted_at: 2026-09-13, likes: 110, note: "客室タイプの紹介カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DXoc3Q-gSuE/", author: "@atsushi.4649", posted_at: 2026-04-27, likes: 42, note: "家族での滞在・ビュッフェ紹介" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-26
+  note: "Googleマップのピン（place_id 1700926967303332、名称「Hotel Nishi-Nagato Resort」、下関市豊北町大字神田2045、閉店でないこと）をplaces CLIで確認。住所は出典リールのキャプション・マピオン・下関観光コンベンション協会で一致。出典リールのいいね数はプール記載の67から101に増加（2026-11-26の直接確認値）。"

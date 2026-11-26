@@ -1,0 +1,37 @@
+slug: cafe-tsukiakari
+name: カフェ月灯り
+kind: shop
+tags: [カフェ, 古民家カフェ, パフェ, スイーツ]
+area: { prefecture: 山口県, label: 山口市・朝田 }
+summary: 山口市朝田の古民家を生かしたカフェ。季節のフルーツを使ったパフェや酵素ジュース、体に優しいスイーツが人気で、月に1、2回は夜カフェも開かれる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DgKGRiDBhXe/"
+  author: "@yamaguchi_mikke"
+maps_url: "https://www.google.com/maps/search/?api=1&query=カフェ月灯り+山口市朝田1077-3"
+featured: false
+status: active
+added_at: 2026-11-26
+
+official:
+  instagram: "@cafe_tsukiakari"
+  instagram_url: "https://www.instagram.com/cafe_tsukiakari/"
+
+highlights: [季節のフルーツパフェ, 酵素ジュース, ヴィーガンドーナツ, チョコレートテリーヌ, 夜カフェ]
+
+related_posts:
+  captured_at: 2026-11-26
+  found_count: 6
+  items:
+    - { post_url: "https://www.instagram.com/reel/DgKGRiDBhXe/", author: "@yamaguchi_mikke", posted_at: 2026-11-25, likes: 64, note: "季節のパフェを紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DK75gVjTRUF/", author: "@yamaguchiwaxtusyoi", posted_at: 2025-06-15, likes: 370, note: "住所・メニュー付きの12枚紹介カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DC0LtBITrtr/", author: "@cafemoca117", posted_at: 2024-11-26, likes: 210, note: "和風パフェと酵素ジュース、駅からの地図付き" }
+    - { post_url: "https://www.instagram.com/reel/DHgeG5fhQ_r/", author: "@eri.cafe_yamaguchi", posted_at: 2025-03-22, likes: 150, note: "いちごパフェとストロベリースムージーのリール" }
+    - { post_url: "https://www.instagram.com/p/DO2w7HyiZFB/", author: "@zyorumona999", posted_at: 2025-09-21, likes: 62, note: "いちじくのパフェと紅茶チーズケーキ、場所タグ付き" }
+    - { post_url: "https://www.instagram.com/p/DMcNkVbSasi/", author: "@kuraponta", posted_at: 2025-07-23, likes: 3, note: "料理写真のみの小規模投稿" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-26
+  note: "Googleマップのピン（place_id 949294349520226、名称「カフェ月灯り」、山口市朝田1077-3、閉店でないこと）をplaces CLIで確認。住所は訪問投稿・hamoni.jpと一致。同名の別店「古民家caffe 庵心月」「月と灯り」とは別店で、関連投稿の選別では除外した。夜カフェは月1、2回のみ（公式bioより）。"

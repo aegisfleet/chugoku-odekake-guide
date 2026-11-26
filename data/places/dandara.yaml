@@ -1,0 +1,39 @@
+slug: dandara
+name: Dandara
+kind: shop
+tags: [ビストロ, フレンチ, ディナー]
+area: { prefecture: 鳥取県, label: 境港市・相生町 }
+summary: 境港出身のシェフが東京とハワイでの15年の修業を経て地元に戻り、2026年9月に開いた気軽なビストロ。境港の魚介や自家製のハム・フォカッチャを使った小皿料理と予約制のコースが楽しめる、夜だけの店。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/Dd-tOjRzIvU/"
+  author: "@tottorimagazine"
+maps_url: "https://www.google.com/maps/search/?api=1&query=DANDARA+境港市相生町127"
+featured: false
+status: active
+added_at: 2026-11-26
+
+official:
+  instagram: "@dandara19911111"
+  instagram_url: "https://www.instagram.com/dandara19911111/"
+  website: "https://dandara-sakaiminato.com/"
+  website_label: 公式サイト
+
+highlights: [特製ブイヤベース, 自家製ハム・ベーコン, 自家製フォカッチャ, ローストビーフ, 魚のカルパッチョ]
+
+related_posts:
+  captured_at: 2026-11-26
+  found_count: 11
+  items:
+    - { post_url: "https://www.instagram.com/reel/Dd3WFZiODmH/", author: "@tani_tottori_gourmet", posted_at: 2026-09-29, likes: 790, note: "ブイヤベースやローストビーフなど料理の数々を紹介する訪問リール" }
+    - { post_url: "https://www.instagram.com/reel/Dd-tOjRzIvU/", author: "@tottorimagazine", posted_at: 2026-10-02, likes: 560, note: "オープン直後の店内と料理を紹介するリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DbFgQIWR8NN/", author: "@black_frog_", posted_at: 2026-07-22, likes: 150, note: "店のロゴデザインを紹介する投稿（開店前）" }
+    - { post_url: "https://www.instagram.com/reel/DdOpjXJy5Vd/", author: "@dandara19911111", posted_at: 2026-09-13, likes: 87, note: "プレオープンとグランドオープンを知らせる公式リール" }
+    - { post_url: "https://www.instagram.com/p/DbFe-07GmRr/", author: "@dandara19911111", posted_at: 2026-07-22, likes: 84, note: "夕景とロゴを紹介する開店前のカルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DcVrrusyTJH/", author: "@dandara19911111", posted_at: 2026-08-22, likes: 60, note: "自家製ブルーベリージャム作りを紹介する公式リール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-26
+  note: "Googleマップのピンは place_id が未取得だが、短縮リンク https://maps.app.goo.gl/SfhGnLnjgyb25JDX9 がGoogleマップの場所ページ「/place/DANDARA/」（CID 0x35565539afff9e2d:0x7cde63794a9bcb8a、/g/11zxq72rs0）に解決することと、Google Travelの周辺施設一覧に「DANDARA フランス料理店」として掲載されていることでピンの存在を確認（2026-11-26に短縮リンクの解決を直接確認）。住所は公式サイト・りびえーる記事・公式Instagramの3者で相生町127と一致。明石市の同名店「海と大地のおだいどこ だんだら」とは別店。公式アカウントの最新投稿は2026-11-10で営業継続を確認。"

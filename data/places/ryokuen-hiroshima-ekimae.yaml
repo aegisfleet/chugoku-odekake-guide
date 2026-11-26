@@ -1,0 +1,46 @@
+slug: ryokuen-hiroshima-ekimae
+name: 緑煙 広島駅前店
+kind: shop
+tags: [シーシャ, 夜カフェ, カフェ, バー]
+area: { prefecture: 広島県, label: 広島市南区・猿猴橋町 }
+summary: 広島駅から徒歩5分のシーシャカフェ＆バー。昼13時から夜23時まで開き、シーシャはもちろんスイーツや食事も楽しめる夜カフェ。Wi-Fiと全席コンセント完備で、作業や待ち合わせにも使いやすい一軒。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DVx7SVlj7tE/"
+  author: "@hiroshima_lunchsan"
+maps_url: "https://www.google.com/maps/search/?api=1&query=緑煙+広島駅前店"
+featured: false
+status: active
+added_at: 2026-11-26
+
+official:
+  instagram: "@shisha.ryokuen_ekimae"
+  instagram_url: "https://www.instagram.com/shisha.ryokuen_ekimae/"
+  website: "https://ryokuen-hiroshima.com/"
+  website_label: 公式サイト（本店と共通）
+
+highlights: [シーシャ, 夜カフェのスイーツ, デミグラスオムライスなどのフード, Wi-Fi・全席コンセント完備, 広島駅徒歩5分・カープロード沿い]
+
+related_posts:
+  captured_at: 2026-11-26
+  found_count: 10
+  items:
+    - { post_url: "https://www.instagram.com/reel/DVx7SVlj7tE/", author: "@hiroshima_lunchsan", posted_at: 2026-03-12, likes: 2641, note: "店名・住所・営業時間を掲げたオープン紹介リール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DXq1xOARgWv/", author: "@suirenhanabi", posted_at: 2026-04-28, likes: 450, note: "店名を掲げてシーシャとご褒美ごはんを紹介する訪問リール" }
+    - { post_url: "https://www.instagram.com/reel/DamiBgtTOs1/", author: "@shisha.ryokuen_ekimae", posted_at: 2026-07-09, likes: 103, note: "店内の雰囲気を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DaNDJy8zqST/", author: "@shisha.ryokuen_ekimae", posted_at: 2026-06-30, likes: 88, note: "店内の雰囲気を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DbK10XETsgL/", author: "@shisha.ryokuen_ekimae", posted_at: 2026-07-24, likes: 83, note: "店内の雰囲気を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/Da82Qu9z8Pb/", author: "@shisha.ryokuen_ekimae", posted_at: 2026-07-18, likes: 66, note: "店内の雰囲気を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DbU5ZGnTa9u/", author: "@shisha.ryokuen_ekimae", posted_at: 2026-07-27, likes: 58, note: "店内の雰囲気を紹介する公式リール" }
+    - { post_url: "https://www.instagram.com/reel/Da1_ECyxNgG/", author: "@shisha.ryokuen_ekimae", posted_at: 2026-07-15, likes: 53, note: "カープ勝利時のパスタ2倍キャンペーンを伝える公式リール" }
+    - { post_url: "https://www.instagram.com/reel/DcsDC8HTwPd/", author: "@shisha.ryokuen_ekimae", posted_at: 2026-08-30, likes: 44, note: "赤字を公表し繁盛祈願を始めるシリーズ初回の公式リール" }
+    - { post_url: "https://www.instagram.com/p/Dev3JRjH3Kl/", author: "@yu10cafe", posted_at: 2026-10-21, note: "住所を掲げた直近の訪問投稿" }
+
+notices:
+  - { date: "2026-11-26", text: "公式アカウントが2026年8月30日〜9月6日に「毎月100万円赤字のお店が毎日お参りしたら繁盛するのか」シリーズを投稿し、経営難を公表している。閉店ではなく、訪問前に公式アカウントでの確認を推奨する。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-26
+  note: "ピンは検索結果のplace情報ページ（ya80101.gorp.jp）で place_id 1502897250924972 を発見し、places details で住所・電話・営業時間をマピオン／ぐるなびと照合して確定。胡町本店は別エントリ（place_id 895864289895805、住所 胡町2-11 宏和52ビル3F、営業19:00〜翌5:00）で、住所・営業時間・電話番号が異なり支店の取り違えはない。出典リールのキャプションが店名・住所・営業時間を明記。公式サイトの11月限定メニューは本店時間帯（17時〜翌5時）の内容で、駅前店の11月営業の直接証拠にはならない。駅前店の営業継続の最新証拠は2026-10-21の訪問投稿（@yu10cafe）とPlacesのOPEN表示。公式アカウントの最新投稿は2026-09-28で約2か月更新なし。"

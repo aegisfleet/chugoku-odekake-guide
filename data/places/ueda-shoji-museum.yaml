@@ -1,0 +1,45 @@
+slug: ueda-shoji-museum
+name: 植田正治写真美術館
+kind: spot
+tags: [美術館, 写真, 建築]
+area: { prefecture: 鳥取県, label: 伯耆町・須村 }
+summary: 世界的な写真家・植田正治の作品約1万2000点を収蔵する個人美術館。建築家・高松伸が設計したコンクリートの建物と、大山を映す水面や「逆さ大山」を望む仕掛けが見どころで、館内では植田の代表作にならった演出写真も楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DNpQ_vVx1Dn/"
+  author: "@chuyi_77"
+maps_url: "https://www.google.com/maps/search/?api=1&query=植田正治写真美術館+伯耆町須村353-3"
+featured: false
+status: active
+added_at: 2026-11-26
+
+official:
+  instagram: "@shoji_ueda_museumofphotography"
+  instagram_url: "https://www.instagram.com/shoji_ueda_museumofphotography/"
+  website: "https://www.houki-town.jp/ueda/"
+  website_label: 公式サイト
+
+highlights: [浮遊するボウラー帽の演出写真, 逆さ大山を望む水の庭, 高松伸設計のコンクリート建築, 植田正治の代表作の数々]
+
+related_posts:
+  captured_at: 2026-11-26
+  found_count: 44
+  items:
+    - { post_url: "https://www.instagram.com/p/DNpQ_vVx1Dn/", author: "@chuyi_77", posted_at: 2025-08-22, likes: 1400, note: "植田の作風をまねて傘と帽子でポーズを取る訪問カルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DfWqODbH5Vp/", author: "@artanuki", posted_at: 2026-11-05, likes: 290, note: "企画展と館内・大山の展望を紹介する訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DMkbQ0ZyOod/", author: "@kanji595", posted_at: 2025-07-26, likes: 230, note: "浮遊する帽子の演出写真を撮る訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DSRb5jvAYsi/", author: "@andamaonan", posted_at: 2025-12-15, likes: 170, note: "田園の中に立つ白い建物の外観写真" }
+    - { post_url: "https://www.instagram.com/p/DJOtunXT7Bi/", author: "@chocozai", posted_at: 2025-05-04, likes: 86, note: "館名看板と企画展ポスターの訪問写真" }
+    - { post_url: "https://www.instagram.com/p/DgAI9HWhIkd/", author: "@penguin_highway15", posted_at: 2026-11-22, likes: 74, note: "窓辺の椅子とコンクリートの館内を撮る写真" }
+    - { post_url: "https://www.instagram.com/p/DP9Ce-nkdNF/", author: "@yu_mal_rau", posted_at: 2025-10-18, likes: 65, note: "夕日に照らされた建物の外観写真" }
+    - { post_url: "https://www.instagram.com/p/DNRUQKJz3Fp/", author: "@morimoto_hiroyuki", posted_at: 2025-08-13, likes: 64, note: "雨の窓と植田の写真集を撮る訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DDPUHojBbwb/", author: "@koinadaisen", posted_at: 2024-12-06, likes: 54, note: "地元写真家の展示を鑑賞する訪問カルーセル" }
+
+notices:
+  - { date: "2026-11-26", text: "毎年12月11日〜2月28日は冬期休館（前年は2025-12-11〜2026-02-28休館・2026-03-01再開と公式発表。NAVITIMEの施設情報にも休業日として12/11〜2/28を記載）。2026-2027年の休館日の公式発表は未確認のため、訪問前に公式サイトでの確認が必要。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-26
+  note: "Googleマップのピン（place_id 2350116295164776、住所 須村353-3、営業中）をplaces CLIで確認。住所は公式サイト・NAVITIME・Wikipediaで一致。2026年8月の一時休館を経て、2026年9月12日に再開館し企画展『植田正治 まなざしの輝き』（2026-09-12〜12-10）を開催中（公式アカウント2026-09-16投稿で確認）。asoviewのリール（160いいね）は3件まとめ投稿のため出典には使わず、関連投稿にも含めていない。"
