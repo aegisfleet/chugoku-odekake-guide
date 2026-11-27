@@ -1,0 +1,43 @@
+slug: daisen-riding-center
+name: 大山乗馬センター
+kind: activity
+tags: [乗馬, 乗馬体験, カフェ]
+area: { prefecture: 鳥取県, label: 大山町・赤松 }
+summary: 大山のふもとにある乗馬センター。引退した競走馬を中心に多くの馬が暮らし、2歳から参加できる引き馬や森の中のトレッキング、エサやり体験ができる。併設のカフェレストラン「Piaffe」では馬を眺めながら食事も楽しめる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DTScAsTjflS/"
+  author: "@tottori_mitsuki_mama"
+maps_url: "https://www.google.com/maps/search/?api=1&query=大山乗馬センター+大山町赤松2459-130"
+featured: false
+status: active
+added_at: 2026-11-27
+
+official:
+  instagram: "@daisen_johba"
+  instagram_url: "https://www.instagram.com/daisen_johba/"
+  website: "http://www.daisen.net/uma/"
+  website_label: 公式サイト
+
+highlights: [2歳から乗れる引き馬・乗馬体験, 森の中のトレッキングコース, エサやりだけのふれあい体験, 併設カフェレストラン「Piaffe」]
+
+related_posts:
+  captured_at: 2026-11-27
+  found_count: 46
+  items:
+    - { post_url: "https://www.instagram.com/reel/DTScAsTjflS/", author: "@tottori_mitsuki_mama", posted_at: 2026-01-09, likes: 122, note: "2歳から乗れる乗馬体験を紹介する家族訪問リール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DTuSSLZkuw9/", author: "@daisen_johba", posted_at: 2026-01-20, likes: 520, note: "厩舎前での集合写真（公式）" }
+    - { post_url: "https://www.instagram.com/reel/DcQmoj4BQgV/", author: "@tottoriiko_ch", posted_at: 2026-08-20, likes: 240, note: "森のトレイルライドと併設カフェを紹介する訪問リール" }
+    - { post_url: "https://www.instagram.com/p/DLG12oLyS_D/", author: "@turiborikaiei", posted_at: 2025-06-20, likes: 200, note: "乗馬と食事を楽しむ日帰りカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DQYxVdUkn-3/", author: "@yonagokanko.navi", posted_at: 2025-10-29, likes: 170, note: "乗馬・厩舎・カフェ・蹄鉄クラフトを紹介する19枚カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DR8y9viklun/", author: "@trape_de_carottes4344", posted_at: 2025-12-07, likes: 94, note: "厩舎でのふれあいとトレイルライドの一日カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DVVljV8j7kk/", author: "@hotaru6048", posted_at: 2026-03-01, likes: 86, note: "引退競走馬とのふれあいを巡る訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DNnJIA7xYej/", author: "@aloha_kodomo_clinic", posted_at: 2025-08-21, likes: 73, note: "親子で一緒に馬に乗る体験の写真" }
+    - { post_url: "https://www.instagram.com/reel/DHiy5eUBY4s/", author: "@tottori_mitsuki_mama", posted_at: 2025-03-23, likes: 63, note: "米子から30分の乗馬センター訪問リール" }
+    - { post_url: "https://www.instagram.com/p/DTpxxClAX4a/", author: "@coto_4.29", posted_at: 2026-01-18, likes: 56, note: "幼児が馬に乗る体験の写真" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-27
+  note: "Googleマップのピン（place_id 573004014308901、住所 大山町赤松2459-130、評価4.6、営業時間9:00〜17:00・水曜定休）をplaces CLIで2026-11-27に再確認。住所・営業時間は出典投稿のキャプションと一致。opening_statusは調査時刻21:40時点でCLOSEDだったが営業時間外のためで、is_permanently_closed／is_temporarily_closedはfalse。公式アカウントの2025-12-29投稿で年末年始の営業案内があり営業中。asoviewのリール（160いいね）は複数スポットを紹介するまとめ投稿のため出典・関連投稿とも対象外。"

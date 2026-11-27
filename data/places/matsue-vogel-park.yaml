@@ -1,0 +1,41 @@
+slug: matsue-vogel-park
+name: 松江フォーゲルパーク
+kind: spot
+tags: [花と鳥のテーマパーク, 全天候型, ファミリー]
+area: { prefecture: 島根県, label: 松江市・大垣町 }
+summary: 宍道湖北岸の丘陵にある、花と鳥の全天候型テーマパーク。1万株以上の花が咲く温室と90種以上の鳥が暮らすエイビアリーがあり、オオハシやハシビロコウへの餌やり、ペンギンのお散歩、フクロウショーなど鳥と間近にふれあえる。雨の日でも楽しめ、展望台からは宍道湖を一望できる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DE9O-UbRQ7r/"
+  author: "@oshaberi_nii"
+maps_url: "https://www.google.com/maps/search/?api=1&query=松江フォーゲルパーク+松江市"
+featured: false
+status: active
+added_at: 2026-11-27
+
+official:
+  website: "https://www.ichibata.co.jp/vogelpark/"
+  website_label: 公式サイト
+
+highlights: [ふれあい温室での鳥への餌やり, ハシビロコウ「フドウ」, ペンギンのお散歩, フクロウショー, ベゴニアの温室, くにびき展望台からの宍道湖の眺め]
+
+related_posts:
+  captured_at: 2026-11-27
+  found_count: 33
+  items:
+    - { post_url: "https://www.instagram.com/p/DGwlfYwhKr4/", author: "@shimanekko_kankou", posted_at: 2025-03-04, likes: 2200, note: "しまねっこが園内の温室や鳥たちと戯れる公式マスコットの散策カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DNZkQrih-aA/", author: "@dinosaurs_of_the_world", posted_at: 2025-08-16, likes: 1800, note: "しまねっこが温室でソフトクリームと小鳥と戯れるリール" }
+    - { post_url: "https://www.instagram.com/p/DSUU7jeEQZh/", author: "@___yu.144", posted_at: 2025-12-16, likes: 1600, note: "クリスマスイルミネーションの光のトンネルと雪だるまの夜景カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DE9O-UbRQ7r/", author: "@oshaberi_nii", posted_at: 2025-01-18, likes: 660, note: "出典投稿。ふれあい温室でオオハシに餌やり、フクロウショーとハシビロコウを巡る訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DNp-Q_Uz0QB/", author: "@f.atsush1", posted_at: 2025-08-22, likes: 180, note: "家族で鳥とふれあい、猛禽を腕に乗せる夏の訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DFh4fA7ChsI/", author: "@look_at_matsue", posted_at: 2025-02-01, likes: 140, note: "松江観光協会公式のペンギンとベゴニア温室の紹介カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/De1Iidjha9F/", author: "@hiroshima_sachan", posted_at: 2026-10-23, likes: 79, note: "広島からの家族旅行で鳥とのふれあいを楽しむ訪問リール" }
+    - { post_url: "https://www.instagram.com/reel/DDcCMz2yADa/", author: "@xxmanachalxx", posted_at: 2024-12-11, likes: 49, note: "冬の園内を巡る旅行vlog（ペンギンのクリスマス行進ほか）" }
+    - { post_url: "https://www.instagram.com/reel/DHA3Okhv_xv/", author: "@flower_mashiro", posted_at: 2025-03-10, likes: 40, note: "家族で花の温室と鳥のショーを楽しむ訪問リール" }
+    - { post_url: "https://www.instagram.com/p/DI06zQWhCng/", author: "@kids_spot_matsue_ichimama", posted_at: 2025-04-24, likes: 39, note: "ゴールデンウィーク向けの園内見どころガイド17枚" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-27
+  note: "Googleマップのピン（place_id 1373205790236904、営業中、9:00〜17:30）と住所（松江市大垣町52）をWikipedia・マピオン・JR・公式サイトで一致確認。placesの座標とWikipediaの座標も一致。2026-10-23・10-25・11-03・11-08の訪問投稿で営業継続を確認。出典投稿は日本旅行「赤い風船」のPR表記（#PR）付きの訪問カルーセルで、主役はフォーゲルパーク単独。公式Instagramは @matsuevogelpark が存在するが投稿0件のため未確認として記載せず、公式サイトのみ記載。"

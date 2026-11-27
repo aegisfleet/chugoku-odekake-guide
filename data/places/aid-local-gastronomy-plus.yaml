@@ -1,0 +1,43 @@
+slug: aid-local-gastronomy-plus
+name: aid Local Gastronomy+
+kind: shop
+tags: [レストラン, 古民家, オムカレー]
+area: { prefecture: 山口県, label: 山口市・佐山 }
+summary: 築100年の古民家を改修した予約制の小さなレストラン。自社農園で育てた150種以上の野菜やハーブを主役に、看板のオムカレーや朝採れ野菜を10種以上使ったサラダ、自家製ハーブドリンクを提供する。週末限定・2部制の営業。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DetZbhRx9Oa/"
+  author: "@tryangle1983"
+maps_url: "https://www.google.com/maps/search/?api=1&query=aid+Local+Gastronomy%2B+山口市佐山渚2229"
+featured: false
+status: active
+added_at: 2026-11-27
+
+official:
+  instagram: "@mitsuwa_yamaguchi"
+  instagram_url: "https://www.instagram.com/mitsuwa_yamaguchi/"
+
+highlights: [看板のオムカレー, 朝採れ野菜10種以上のサラダ, 自家農園ハーブのオリジナルドリンク, 築100年の古民家をDIYで改修した空間]
+
+related_posts:
+  captured_at: 2026-11-27
+  found_count: 10
+  items:
+    - { post_url: "https://www.instagram.com/reel/DetZbhRx9Oa/", author: "@tryangle1983", posted_at: 2026-10-20, likes: 293, note: "古民家の外観とオムカレーを紹介する取材リール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DY_2Fd4Ti-8/", author: "@moon2yn", posted_at: 2026-05-31, likes: 490, note: "オープン直後の店内と料理を紹介する訪問リール" }
+    - { post_url: "https://www.instagram.com/p/DdupGQvgYuF/", author: "@sachi_elt.mine", posted_at: 2026-09-25, likes: 110, note: "ドリンクと料理を味わう訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DgFShYXu_LN/", author: "@mitsuwa_yamaguchi", posted_at: 2026-11-23, likes: 86, note: "12月の営業日と物販のお知らせ（公式）" }
+    - { post_url: "https://www.instagram.com/p/DeYlGRYH7yB/", author: "@mitsuwa_yamaguchi", posted_at: 2026-10-11, likes: 66, note: "トライアングル掲載の報告（公式）" }
+    - { post_url: "https://www.instagram.com/p/DY_15PMkxxJ/", author: "@moon2yn", posted_at: 2026-05-31, likes: 56, note: "オムカレーとサラダの料理写真カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DdQlKmNH2fK/", author: "@mitsuwa_yamaguchi", posted_at: 2026-09-14, likes: 44, note: "オム野菜カレーの料理写真（公式）" }
+    - { post_url: "https://www.instagram.com/p/DeBJNv9ny9q/", author: "@mitsuwa_yamaguchi", posted_at: 2026-10-02, likes: 41, note: "烏骨鶏オムカレーの紹介（公式）" }
+    - { post_url: "https://www.instagram.com/p/Dd5rn18n3g_/", author: "@mitsuwa_yamaguchi", posted_at: 2026-09-29, likes: 33, note: "10月の営業日のお知らせ（公式）" }
+
+notices:
+  - { date: "2026-11-27", text: "予約制・2部制（11:30〜／13:00〜）で営業日は不定期。週末限定の営業で、2026年12月の営業日は12月13日（日）のみと公式アカウントが2026-11-23に発表。訪問前に公式Instagramでの確認が必要。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-27
+  note: "Googleマップのピン（place_id 2962131344146550、名称 aid エイド、住所 山口市佐山渚2229、閉店表示なし）をplaces CLIで2026-11-27に再確認。住所は出典投稿のキャプション・公式アカウントと一致。公式アカウントの2026-11-23投稿で12月の営業日を案内しており営業中。@shingetsu.iori（古民家caffe 庵心月）の投稿は別店のため関連投稿から除外。"

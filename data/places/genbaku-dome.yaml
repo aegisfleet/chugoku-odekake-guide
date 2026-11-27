@@ -1,0 +1,42 @@
+slug: genbaku-dome
+name: 原爆ドーム
+kind: spot
+tags: [世界遺産, 平和記念碑, 史跡]
+area: { prefecture: 広島県, label: 広島市中区・大手町 }
+summary: 1945年8月6日の原子爆弾投下で被爆した旧広島県産業奨励館の残骸を、惨禍を伝える記念碑として保存した場所。1996年にユネスコ世界遺産に登録され、平和記念公園のシンボルとして国内外から多くの人が訪れる。元安川のほとりに佇む鉄骨のドームとレンガの壁が、被爆当時の姿を今に伝える。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DM_4ZhDy_oC/"
+  author: "@shockeye_official"
+maps_url: "https://www.google.com/maps/search/?api=1&query=原爆ドーム+広島市中区大手町1-10"
+featured: false
+status: active
+added_at: 2026-11-27
+
+official:
+  instagram: "@hiroshima_city_official"
+  instagram_url: "https://www.instagram.com/hiroshima_city_official/"
+  website: "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026919/1020911.html"
+  website_label: 公式サイト
+
+highlights: [1996年にユネスコ世界遺産に登録, 旧広島県産業奨励館の被爆建物, 平和記念公園のシンボル, 爆心地から約160メートル]
+
+related_posts:
+  captured_at: 2026-11-27
+  found_count: 42
+  items:
+    - { post_url: "https://www.instagram.com/p/DM_4ZhDy_oC/", author: "@shockeye_official", posted_at: 2025-08-06, likes: 31317, note: "原爆の日によせたドーム3枚のカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DPSgLQoAf1s/", author: "@kiina_kiyoshi_hikawa", posted_at: 2025-10-02, likes: 25000, note: "平和記念公園をめぐるカルーセル。原爆ドームの説明板と全景が中心" }
+    - { post_url: "https://www.instagram.com/p/DM_e2I5T4z1/", author: "@ruru_dambara.official", posted_at: 2025-08-06, likes: 8600, note: "ドーム、爆心地の碑、おりづるタワーをめぐる3枚のカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DNAotmcSpwv/", author: "@konoha_tsukamoto", posted_at: 2025-08-06, likes: 5912, note: "ドームの昼と夜、資料館の折り鶴を収めた3枚のカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Dbsh2e0T3Uc/", author: "@koji.morisaki77", posted_at: 2026-08-06, likes: 1642, note: "青空の下の原爆ドームを正面から撮った1枚" }
+    - { post_url: "https://www.instagram.com/p/DGSYtkJMPwS/", author: "@hiroshima_city_official", posted_at: 2025-02-20, likes: 1413, note: "雪の夜にライトアップされた原爆ドーム（広島市公式）" }
+    - { post_url: "https://www.instagram.com/p/DbspoEgS-0o/", author: "@spurmagazine", posted_at: 2026-08-06, likes: 1348, note: "バラ園越しに見る昼の原爆ドーム" }
+    - { post_url: "https://www.instagram.com/p/DbsYN0VzUy1/", author: "@kazuma_emoto", posted_at: 2026-08-06, likes: 748, note: "川沿いの遊歩道から見た昼の原爆ドーム" }
+    - { post_url: "https://www.instagram.com/p/DKHPFMJvei6/", author: "@seguchi_24", posted_at: 2025-05-26, likes: 660, note: "ドームと原爆の子の像をめぐる5枚のカルーセル" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-27
+  note: "Googleマップにピンあり（place_id 611463083912029、名称「原爆ドーム」、住所は中区大手町1-10で広島市公式ページと一致）。Placesの閉店フラグは両方falseで、2026-11-25・11-23・11-07の訪問投稿もあり営業（公開）継続を確認。出典投稿のCLI表示 created_at は 2025-08-05 20:16:24（UTC）で、JSTでは8月6日。関連投稿のうち @kiina_kiyoshi_hikawa の25,000と @seguchi_24 の660は、CLIではいいね数が返ってこない（非公開設定）ため検索結果の表示値。公式Instagramは施設専用ではなく管理主体である広島市の公式アカウントを記載。"

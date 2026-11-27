@@ -1,0 +1,40 @@
+slug: okayama-korakuen
+name: 岡山後楽園
+kind: spot
+tags: [日本庭園, 日本三名園, 観光名所]
+area: { prefecture: 岡山県, label: 岡山市北区・後楽園 }
+summary: 日本三名園の一つに数えられる、江戸時代初期に岡山藩主・池田綱政が作庭を命じた大名庭園。約13万平方メートルの広大な園内に池や築山、茶室が配され、旭川の対岸にそびえる岡山城を借景に眺められる。季節の夜間特別開園「幻想庭園」ではライトアップされた幻想的な姿も楽しめる、岡山観光の中心地。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/Df1W1M8Cchk/"
+  author: "@wild_satoshi_"
+maps_url: "https://www.google.com/maps/search/?api=1&query=岡山後楽園"
+featured: false
+status: active
+added_at: 2026-11-27
+
+official:
+  instagram: "@okayamakorakuen"
+  instagram_url: "https://www.instagram.com/okayamakorakuen/"
+  website: "https://okayama-korakuen.jp/"
+  website_label: 公式サイト
+
+highlights: [日本三名園の一つで300年以上の歴史を持つ大名庭園, "敷地面積は約133,000平方メートル（東京ドーム約3個分）", 岡山城を望む借景と池・築山の回遊式庭園, 園内の茶店で味わうお抹茶セット, 季節のライトアップ「幻想庭園」]
+
+related_posts:
+  captured_at: 2026-11-27
+  found_count: 17
+  items:
+    - { post_url: "https://www.instagram.com/p/DJJZOaMpNN-/", author: "@rena_yamazaki.official", posted_at: 2025-05-02, likes: 10620, note: "テレビ番組のロケで後楽園と岡山城を訪れたオフショット（園内が中心の12枚カルーセル）" }
+    - { post_url: "https://www.instagram.com/p/DcirOm_FNY_/", author: "@ushiosarina8_8", posted_at: 2026-08-27, likes: 5406, note: "夏の幻想庭園のライトアップと岡山城を巡る夜の訪問記" }
+    - { post_url: "https://www.instagram.com/p/DfOh0y8ifrS/", author: "@wild_satoshi_", posted_at: 2026-11-02, likes: 2515, note: "園内の茶店でのお抹茶セットを紹介するカルーセル" }
+    - { post_url: "https://www.instagram.com/p/Df1W1M8Cchk/", author: "@wild_satoshi_", posted_at: 2026-11-17, likes: 1675, note: "園内のライトアップと岡山城を望む眺めを収めたカルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DNFSghAym_f/", author: "@okayamakorakuen", posted_at: 2025-08-08, likes: 563, note: "公式アカウントによる正門と総合案内所の紹介カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DXyysauisZo/", author: "@okayamakorakuen", posted_at: 2026-05-01, likes: 244, note: "公式アカウントによる新緑の園内と春の幻想庭園の紹介" }
+    - { post_url: "https://www.instagram.com/reel/DW6UEr9kpYa/", author: "@tomidakensaku", posted_at: 2026-04-09, likes: 64, note: "池と鯉、茶室を巡る園内の散策リール" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-27
+  note: "住所は岡山市北区後楽園1-5（〒703-8257）でジオコーダのフルアドレスマッチ（relevance 95、北緯34.6685947・東経133.9344347）。Googleマップのピンは同住所の一致と、複数投稿の位置情報タグ「岡山後楽園」、公式アカウントの存在、GoogleマップCID（ChIJhwt8jCQGVDURabQ6FPH0nXQ）で確認。places CLIには住所検索がなく数値のplace_idは未取得。出典投稿は単独主役（後楽園）で、キャプションに池田綱政の作庭・敷地面積133,000平方メートルの記載あり。通年開園で定休日なし（公式サイト・観光情報で確認）。"
