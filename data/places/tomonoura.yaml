@@ -1,0 +1,45 @@
+slug: tomonoura
+name: 鞆の浦
+kind: spot
+tags: [港町, 常夜灯, 日本遺産, 歴史的町並み]
+area: { prefecture: 広島県, label: 福山市・鞆町 }
+summary: 江戸時代の港湾施設と町並みがほぼ当時のまま残る、瀬戸内海の歴史ある港町。1859年に建てられた石造の常夜灯をシンボルに、雁木と呼ばれる石段の船着き場や白壁の町家が港を取り囲む。坂本龍馬ゆかりの桝屋清右衛門宅や、朝鮮通信使を迎えた對潮楼など見どころが多く、映画やアニメの舞台にもなった穏やかな港の風景を求めて、国内外から多くの人が訪れる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/DNa5hCYSNRS/"
+  author: "@_manishlifestyle"
+maps_url: "https://www.google.com/maps/search/?api=1&query=鞆の浦+福山市鞆町"
+featured: false
+status: active
+added_at: 2026-11-28
+
+official:
+  website: "https://www.city.fukuyama.hiroshima.jp/soshiki/kanko/85750.html"
+  website_label: 福山市公式サイト「鞆の浦について」
+
+highlights:
+  - 常夜灯（1859年建立の石造灯台、町のシンボル）
+  - 江戸時代の港湾施設と町並み（雁木・船番所跡・大波止）
+  - 對潮楼（福禅寺客殿、朝鮮通信使を迎えた眺望）
+  - 坂本龍馬ゆかりの桝屋清右衛門宅（隠れ部屋）
+  - 仙酔島への市営渡船（港から約5分）
+
+related_posts:
+  captured_at: 2026-11-28
+  found_count: 38
+  items:
+    - { post_url: "https://www.instagram.com/p/DSvvTu4EiUo/", author: "@sea8950", posted_at: 2025-12-27, likes: 1605, note: "夜に灯る常夜灯の1枚" }
+    - { post_url: "https://www.instagram.com/p/DJfPb9lzedP/", author: "@sukko501029", posted_at: 2025-05-10, likes: 1402, note: "係船環越しに見る夕暮れの常夜灯" }
+    - { post_url: "https://www.instagram.com/p/DF6FyHhzPAY/", author: "@toru_jinguji_xx19", posted_at: 2025-02-10, likes: 1027, note: "青空の下の常夜灯を低角度で撮った1枚" }
+    - { post_url: "https://www.instagram.com/p/DJ5DChzz5MI/", author: "@tomonoura_awamura", posted_at: 2025-05-21, likes: 460, note: "夕暮れの常夜灯" }
+    - { post_url: "https://www.instagram.com/p/DKb-v6pvZ2g/", author: "@karakky0918", posted_at: 2025-06-03, likes: 441, note: "夕闇に浮かぶ常夜灯と港" }
+    - { post_url: "https://www.instagram.com/p/DOf8srgEsxS/", author: "@tomonoura_awamura", posted_at: 2025-09-12, likes: 394, note: "10年目の初投稿を振り返る夕景の港" }
+    - { post_url: "https://www.instagram.com/reel/DNa5hCYSNRS/", author: "@_manishlifestyle", posted_at: 2025-08-16, likes: 334, note: "夏の鞆の浦をめぐるリール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DFd2tXjTPXj/", author: "@kiyushito8", posted_at: 2025-01-30, likes: 216, note: "夜の港と常夜灯" }
+    - { post_url: "https://www.instagram.com/reel/DF9_hm_hrPV/", author: "@yuusan_fukuyama", posted_at: 2025-02-12, likes: 162, note: "鞆の浦の古民家カフェ「スープとおにぎり クランク」の紹介" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-28
+  note: "Googleマップのピン（place_id 2042716552734644、名称「鞆の浦看板」、福山市鞆町・市営渡船場）をplaces CLIで2026-11-28に確認。出典投稿のキャプション「広島県福山市鞆町」と一致。is_permanently_closed／is_temporarily_closedはfalseで、2026年10月の訪問投稿が複数あり現況を確認。鞆の浦は町全体が対象のため、象徴地点である鞆の浦看板（常夜灯そば）のピンを使用する。出典投稿は2025-08-16とやや古いが、町並みは恒常的なスポットのため問題なし。"

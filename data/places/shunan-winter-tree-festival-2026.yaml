@@ -1,0 +1,49 @@
+slug: shunan-winter-tree-festival-2026
+name: 第42回 周南冬のツリーまつり～ウィンターイルミネーション2026～
+kind: event
+tags: [イルミネーション, クリスマス, 冬, 夜, 家族]
+area: { prefecture: 山口県, label: 周南市・徳山駅前 }
+summary: 徳山駅前一帯が約100万球のLEDで彩られる、42回目を迎える周南の冬の風物詩。「日本夜景遺産」にも認定されている。御幸通りや青空公園、駅前ロータリーなどに光のキャンドルや光のトンネルが並び、週末にはサンタのお菓子配りやキッチンカーも。12月19日のファンタジックナイトでは御幸通りが歩行者天国になり、ステージイベントやクリスマスマーケットが開かれる。コンビナート企業の照明が全点灯する日は、工場夜景も一緒に楽しめる。
+period: { start: 2026-12-01, end: 2026-12-28 }
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DgQ6tAmGQ90/"
+  author: "@odekake_yamaguchi8"
+maps_url: "https://www.google.com/maps/search/?api=1&query=徳山駅北口駅前広場+周南市"
+featured: false
+status: active
+added_at: 2026-11-28
+
+official:
+  website: "https://tokuyama-cci.or.jp/publics/index/111/"
+  website_label: 主催者公式ページ
+
+highlights:
+  - 約100万球のLEDイルミネーション
+  - 「日本夜景遺産」に認定された冬の風物詩
+  - 青空公園のキャンドル型イルミネーションと光のトンネル
+  - 12月19日のファンタジックナイト（御幸通り歩行者天国・ステージ・クリスマスマーケット）
+  - コンビナート企業の照明全点灯（12月12日・19日、工場夜景も楽しめる）
+
+related_posts:
+  captured_at: 2026-11-28
+  found_count: 45
+  items:
+    - { post_url: "https://www.instagram.com/p/DgQ6tAmGQ90/", author: "@odekake_yamaguchi8", posted_at: 2026-11-27, likes: 7, note: "2026年版の紹介カルーセル（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DDRlRg6TwiE/", author: "@hara.da72", posted_at: 2024-12-07, likes: 857, note: "徳山駅前のイルミネーションを捉えた夜景写真のカルーセル" }
+    - { post_url: "https://www.instagram.com/p/DD3uQF9zHPF/", author: "@ta1010da", posted_at: 2024-12-21, likes: 741, note: "家族で訪れた様子のカルーセル（御幸通りを位置情報タグ付き）" }
+    - { post_url: "https://www.instagram.com/p/DD1kR38zPKU/", author: "@ta1010da", posted_at: 2024-12-21, likes: 693, note: "家族で訪れた様子のカルーセル（御幸通りを位置情報タグ付き）" }
+    - { post_url: "https://www.instagram.com/p/DDJwD5yTc2k/", author: "@kyoko_gourmet", posted_at: 2024-12-04, likes: 670, note: "期間・点灯数・アクセスをまとめた案内カルーセル（徳山駅タグ付き）" }
+    - { post_url: "https://www.instagram.com/p/DRogShljWD7/", author: "@shunankeizai", posted_at: 2025-11-29, likes: 511, note: "2025年版の点灯式レポート（周南経済新聞）" }
+    - { post_url: "https://www.instagram.com/p/DRmMIKxktce/", author: "@shunancity", posted_at: 2025-11-28, likes: 497, note: "2025年版の開幕告知カルーセル（周南市公式）" }
+    - { post_url: "https://www.instagram.com/reel/DDHIZZZTUsW/", author: "@kyoko_gourmet", posted_at: 2024-12-03, likes: 492, note: "昼と夜のビフォーアフター動画（徳山駅タグ付き）" }
+    - { post_url: "https://www.instagram.com/p/DC8-B0Nyh8G/", author: "@shunancity", posted_at: 2024-11-29, likes: 457, note: "2024年版の開幕告知カルーセル（周南市公式）" }
+
+notices:
+  - { date: "2026-11-28", text: "点灯式は12月1日（火）17:20〜18:30（予定）。最新情報は主催者ページで確認を。" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-28
+  note: "Googleマップのピン（place_id 1605708993398871、徳山駅北口駅前広場、周南市御幸通2丁目）をplaces CLIで2026-11-28に確認。会場は御幸通り・青空公園・PH通り・徳山駅前ロータリー・TOKUYAMA DECKの複数箇所にまたがるため、代表地点として徳山駅北口駅前広場のピンを使用する。期間2026-12-01〜12-28・点灯17:00〜22:00は主催者・徳山商工会議所の公式ページで確認。点灯式の時刻は主催者ページ「17:20〜18:30（予定）」を正とし、出典投稿の「17:30〜19:00」とは異なる。関連投稿の大半は2024・2025年版のもので、毎年恒例の同一イベントであることは名称・会場・主催者の一致で確認済み。出典投稿の反応は7いいねと小さいが、2026年版・単独主役・期間明記の条件を満たすため採用。"

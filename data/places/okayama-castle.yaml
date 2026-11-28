@@ -1,0 +1,49 @@
+slug: okayama-castle
+name: 岡山城
+kind: spot
+tags: [城, 天守閣, 観光名所]
+area: { prefecture: 岡山県, label: 岡山市北区・丸の内 }
+summary: 宇喜多秀家が築いた、黒い下見板張りの天守で知られる「烏城」。1966年に復元された天守は内部が展示施設となり、金鯱や甲冑、城主の間の再現展示と、最上階からの旭川・市街地の眺めを楽しめる。旭川を挟んで後楽園と向き合う岡山観光の中心で、秋の夜間ライトアップ「烏城灯源郷」でも知られる。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DMjUVEryglI/"
+  author: "@yazhij"
+maps_url: "https://www.google.com/maps/search/?api=1&query=岡山城"
+featured: false
+status: active
+added_at: 2026-11-28
+
+official:
+  instagram: "@okayama_castle"
+  instagram_url: "https://www.instagram.com/okayama_castle/"
+  website: "https://okayama-castle.jp/"
+  website_label: 公式サイト
+
+highlights:
+  - 黒い下見板張りの天守「烏城」の外観
+  - 天守最上階からの旭川・市街地の眺め
+  - 金鯱（金のシャチホコ）の屋根飾り
+  - 天守内部の甲冑・大名道具などの展示
+  - 月見櫓・石垣など城郭の遺構めぐり
+  - 夜間ライトアップ「烏城灯源郷」（季節限定）
+
+related_posts:
+  captured_at: 2026-11-28
+  found_count: 20
+  items:
+    - { post_url: "https://www.instagram.com/p/DJJZOaMpNN-/", author: "@rena_yamazaki.official", posted_at: 2025-05-02, likes: 10620, note: "後楽園と岡山城を巡る訪問記（後楽園中心の12枚カルーセル。岡山後楽園の関連投稿にも採用済み）" }
+    - { post_url: "https://www.instagram.com/p/DcirOm_FNY_/", author: "@ushiosarina8_8", posted_at: 2026-08-27, likes: 5406, note: "夏の幻想庭園と岡山城ライトアップの夜の訪問記（岡山後楽園の関連投稿にも採用済み）" }
+    - { post_url: "https://www.instagram.com/p/De3u59RILlE/", author: "@lifewithshigotoneko", posted_at: 2026-10-24, likes: 2024, note: "仕事猫フィギュアと巡る天守の外観・内部・金鯱（12枚、城単独）" }
+    - { post_url: "https://www.instagram.com/p/DMjUVEryglI/", author: "@yazhij", posted_at: 2025-07-25, likes: 1750, note: "出典投稿。城郭建築の昼の写真紀行20枚（城単独）" }
+    - { post_url: "https://www.instagram.com/p/DRCXj_pksAe/", author: "@kanon_morishita", posted_at: 2025-11-14, likes: 1249, note: "秋の夜間ライトアップ「烏城灯源郷」の訪問記（城単独）" }
+    - { post_url: "https://www.instagram.com/p/DWD2mimGJIj/", author: "@okayamapref_japan", posted_at: 2026-03-19, likes: 609, note: "桜と岡山城の1枚（岡山県公式アカウント）" }
+    - { post_url: "https://www.instagram.com/p/DMErmfLphLx/", author: "@sokoizumi", posted_at: 2025-07-13, likes: 542, note: "甲冑体験・堀のスワンボートなど城めぐり（城中心）" }
+    - { post_url: "https://www.instagram.com/p/DbnmdmsPWnD/", author: "@yatagarasu555", posted_at: 2026-08-04, likes: 275, note: "金鯱のクローズアップと堀の眺め（1枚）" }
+    - { post_url: "https://www.instagram.com/p/DeWqShmlCfX/", author: "@o19__a3", posted_at: 2026-10-11, likes: 226, note: "天守外観と金鯱の写真紀行10枚（城単独）" }
+    - { post_url: "https://www.instagram.com/p/DgHXPwvkvgV/", author: "@mossy3545", posted_at: 2026-11-23, likes: 50, note: "雨の日の城内見学（石垣・模型・展示、8枚、城単独）" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-28
+  note: "Googleマップのピン（place_id 453862946625990、住所 岡山市北区丸の内2-3-1）をplaces CLIで2026-11-28に確認。住所は岡山市公式資料と一致（places APIのcity表記は「中区」だったが、公式資料・郵便番号700-0823はいずれも北区のため北区を採用）。is_permanently_closed／is_temporarily_closedはfalse。開館9:00〜17:30、休館は年末12/29〜12/31のみ（公式サイト）。2026-11-23の訪問投稿でも営業中を確認。関連投稿1・2件目のいいね数は2026-11-27確認値（2026-11-28のCLI再確認では両投稿ともlikesが非表示で取得不可だったため）。出典投稿は2025-07-25とやや古いが、城郭そのものの紹介であり、直近の訪問投稿で営業継続を確認済み。"

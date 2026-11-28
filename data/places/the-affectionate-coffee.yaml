@@ -1,0 +1,45 @@
+slug: the-affectionate-coffee
+name: THE AFFECTIONATE COFFEE
+kind: shop
+tags: [カフェ, 自家焙煎, スペシャルティコーヒー]
+area: { prefecture: 鳥取県, label: 鳥取市吉岡温泉町 }
+summary: 吉岡温泉の温泉街にある自家焙煎のコーヒー専門店。15年続く焙煎所に併設する形で、2026年10月1日に蔵を改装したカフェ「納屋」がオープンした。2台の焙煎機を使い分けて豆の個性を引き出し、3種飲み比べセットで自分の好みを探せる。エスプレッソを練り込んだバスクチーズケーキも名物。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/reel/Dd3XdutzvkG/"
+  author: "@inaba_fu_fu"
+maps_url: "https://www.google.com/maps/search/?api=1&query=アフェクショネイト珈琲+吉岡本店+鳥取市吉岡温泉町465"
+featured: false
+status: active
+added_at: 2026-11-28
+
+official:
+  instagram: "@affectionatecoffee"
+  instagram_url: "https://www.instagram.com/affectionatecoffee/"
+  website: "https://affection.shopselect.net/"
+  website_label: 公式サイト
+
+highlights:
+  - 3種飲み比べセット（コーヒーテイスティング）
+  - 2台の焙煎機を使い分けた自家焙煎
+  - エスプレッソ入りバスクチーズケーキ
+  - 蔵を改装した「納屋」の店内
+  - 世界各地のシングルオリジン豆の販売
+
+related_posts:
+  captured_at: 2026-11-28
+  found_count: 7
+  items:
+    - { post_url: "https://www.instagram.com/reel/Dd3XdutzvkG/", author: "@inaba_fu_fu", posted_at: 2026-09-29, likes: 958, note: "グランドオープンを紹介する訪問リール（出典投稿）" }
+    - { post_url: "https://www.instagram.com/reel/DE8jBbxzXd5/", author: "@tory_spot", posted_at: 2025-01-18, likes: 188, note: "蔵を改装した黒い外観と注文式のドリップを紹介するリール" }
+    - { post_url: "https://www.instagram.com/p/DegmY6oIPWO/", author: "@0102rim.0712chie", posted_at: 2026-10-15, likes: 101, note: "カフェラテとバスクチーズケーキ、ティラミスの訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DeU4ElmE9Rs/", author: "@luz.nishitani", posted_at: 2026-10-10, likes: 83, note: "布フィルターでのドリップと納屋の店内を巡る18枚カルーセル" }
+    - { post_url: "https://www.instagram.com/reel/DeCRUbQBnow/", author: "@sumire1112", posted_at: 2026-10-03, likes: 70, note: "3種飲み比べの様子と店内を紹介するリール" }
+    - { post_url: "https://www.instagram.com/p/DfZMQX3k71-/", author: "@chi_3_5_8", posted_at: 2026-11-06, likes: 53, note: "テイクアウトカップと店内外を紹介する訪問カルーセル" }
+    - { post_url: "https://www.instagram.com/p/DYMKZPokTx_/", author: "@t.k.c_66", posted_at: 2026-05-11, note: "豆の説明とメニュー看板を紹介するカルーセル（いいね数未確認）" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-28
+  note: "Googleマップのピン（place_id 1528865030997280、住所 鳥取市吉岡温泉町465、営業時間10:00〜16:00・月火定休）をplaces CLIで2026-11-28に確認。住所・営業時間は出典投稿のキャプションおよび公式プロフィールと一致。opening_statusは調査時刻21:42時点でCLOSEDだったが営業時間外のためで、is_permanently_closed／is_temporarily_closedはfalse。公式アカウントの最新投稿は2026-11-27で営業中。同ブランドの道の駅清流茶屋かわはら店（place_id 1296524648299698）は別拠点のため、本件の関連投稿には含めていない。2026年10月1日のグランドオープンは、15年続く焙煎所の隣に蔵を改装したカフェ「納屋」を新設したもの。"

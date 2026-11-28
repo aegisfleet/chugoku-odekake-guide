@@ -1,0 +1,47 @@
+slug: kyu-taisha-eki
+name: 旧大社駅
+kind: spot
+tags: [歴史建築, 鉄道, 重要文化財, レトロ]
+area: { prefecture: 島根県, label: 出雲市大社町・北荒木 }
+summary: 1924年に建てられた純和風の木造駅舎で、国の重要文化財。1990年の大社線廃止後も駅舎が残り、約5年の保存修理を経て2026年4月に公開を再開した。格天井の待合室や格子窓の切符売り場など大正時代の姿がよみがえり、構内に保存されるD51蒸気機関車や運転シミュレーターも見どころ。出雲大社から神門通りを歩いて約15分の場所にある。
+source:
+  platform: instagram
+  post_url: "https://www.instagram.com/p/DXTuylXAavK/"
+  author: "@oshiawase2"
+maps_url: "https://www.google.com/maps/search/?api=1&query=旧大社駅+出雲市大社町北荒木441-3"
+featured: false
+status: active
+added_at: 2026-11-28
+
+official:
+  instagram: "@kyutaishaeki_official"
+  instagram_url: "https://www.instagram.com/kyutaishaeki_official/"
+  website: "https://former-taisha-station.jp/"
+  website_label: 公式サイト
+
+highlights:
+  - 大正13年築の純和風木造駅舎（国の重要文化財）
+  - 格天井の三等待合室とレトロな切符売り場・格子窓
+  - 構内に保存展示されるD51蒸気機関車
+  - 運転シミュレーターなどの体験展示
+  - 駅舎正面の赤いポストと車寄せの外観
+
+related_posts:
+  captured_at: 2026-11-28
+  found_count: 38
+  items:
+    - { post_url: "https://www.instagram.com/p/DXTuylXAavK/", author: "@oshiawase2", posted_at: 2026-04-19, likes: 9064, note: "修復後の駅舎内部を10枚で巡る記録。D51模型や運転シミュレーター、初代駅舎の基礎遺構まで（出典投稿）" }
+    - { post_url: "https://www.instagram.com/p/DQysOUhEivX/", author: "@jyhida", posted_at: 2025-11-08, likes: 2561, note: "2020年撮影の写真で綴る駅舎外観と切符売り場ホールの記録" }
+    - { post_url: "https://www.instagram.com/p/Db5n5wOAe2P/", author: "@shimanekko_kankou", posted_at: 2026-08-11, likes: 2168, note: "しまねっこが駅舎の外観からホーム、待合室まで案内する写真ツアー" }
+    - { post_url: "https://www.instagram.com/p/Db-slhmDxfz/", author: "@tanakamaidayo", posted_at: 2026-08-13, likes: 1900, note: "駅名標の下で切符を手にポーズするなど駅舎を楽しむ様子（いいね数は検索表示1.9Kの概数）" }
+    - { post_url: "https://www.instagram.com/p/DXtlt1bEa1n/", author: "@varitres23", posted_at: 2026-04-29, likes: 770, note: "修復再開直後の駅舎内部、格子窓の切符売り場を中心とした記録（いいね数は検索表示の概数）" }
+    - { post_url: "https://www.instagram.com/p/Df9M0PhFUeU/", author: "@kisetsu_hibigurashi", posted_at: 2026-11-20, likes: 511, note: "天井やシャンデリア、発車標など建築の細部を追う7枚の写真ツアー" }
+    - { post_url: "https://www.instagram.com/p/DbPnbaEj3hz/", author: "@shimanekurashi", posted_at: 2026-07-26, likes: 320, note: "外観、ホームのD51、重文の説明板を巡る静かな建築紹介（いいね数は検索表示の概数）" }
+    - { post_url: "https://www.instagram.com/p/DXCAtLokVUa/", author: "@izumo_guide", posted_at: 2026-04-12, likes: 145, note: "リニューアル記念イベント「大社駅はじまりフェスタ2026」の告知ポスター画像" }
+    - { post_url: "https://www.instagram.com/p/DeqoUfyzrWC/", author: "@kyutaishaeki_official", posted_at: 2026-10-19, likes: 109, note: "来館者2万人達成の記念写真（公式アカウント）" }
+
+_verification:
+  map_match: matched
+  closed_check: not_closed
+  checked_at: 2026-11-28
+  note: "数値のplace_idは未取得（places CLIに検索機能がなく、browser.searchからも得られず）。住所は公式サイト・出雲市公式PDF・Trip.comの3者で「出雲市大社町北荒木441-3」と一致し、出典投稿の場所タグ「旧JR大社駅 停留所」とも一致するためmap_matchとした。2026年4月15日に保存修理を終えて公開を再開（Wikipedia・TBS NEWS DIG・山陰放送・毎日新聞・朝日新聞・出雲市資料で一致）。公式サイトで2026-11-27時点の開館日表示と2026-10-19の来館者2万人達成のお知らせを確認し、2026-11-20の訪問投稿でも内部見学を確認。開館時間9:00〜16:30、休館日は水曜日（祝日の場合は翌日）。"
